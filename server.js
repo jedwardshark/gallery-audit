@@ -10,6 +10,9 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import pLimit from 'p-limit';
 import cron from 'node-cron';
+import Anthropic from '@anthropic-ai/sdk';
+import { config as dotenvConfig } from 'dotenv';
+dotenvConfig();
 
 chromiumStealth.use(StealthPlugin());
 
@@ -1049,6 +1052,170 @@ function groupByHost(images) {
       previews: g.images.slice(0, 5).map(i => ({ src: i.src, w: i.width, h: i.height })),
     }));
 }
+
+// ── Creative audit ────────────────────────────────────────────────────────────
+
+const AUDIT_CACHE_PATH = path.join(__dirname, 'data/creative_audit_cache.json');
+
+function loadAuditCache() {
+  return fs.existsSync(AUDIT_CACHE_PATH) ? JSON.parse(fs.readFileSync(AUDIT_CACHE_PATH, 'utf8')) : {};
+}
+function saveAuditCache(cache) {
+  fs.writeFileSync(AUDIT_CACHE_PATH, JSON.stringify(cache, null, 2));
+}
+
+function sampleGalleryImages(images, max = 6) {
+  if (images.length <= max) return images;
+  const out = [images[0]];
+  const step = (images.length - 1) / (max - 1);
+  for (let i = 1; i < max - 1; i++) out.push(images[Math.round(i * step)]);
+  out.push(images[images.length - 1]);
+  return out;
+}
+
+async function fetchImageBase64(url) {
+  const { data, headers } = await axios.get(url, {
+    responseType: 'arraybuffer', timeout: 12000, headers: HEADERS,
+  });
+  const mediaType = (headers['content-type'] || 'image/jpeg').split(';')[0].trim();
+  return { data: Buffer.from(data).toString('base64'), mediaType };
+}
+
+const CREATIVE_AUDIT_PROMPT = `You are a senior PDP creative director. Audit this brand.com product gallery.
+
+Platform: brand.com — apply these standards:
+- Environmental/contextual hero preferred over pure white; creative latitude allowed
+- Bold typography, dark/moody aesthetics acceptable if on-brand
+- Consistency across the product line matters more than strict retailer compliance
+- Video or motion in top slot strongly preferred
+
+Auto-detect product category from visual cues only (no text clues needed):
+Electronics: hardware, buttons, cables, displays, mesh grilles, hard plastic/metal housing
+Beauty: pumps, droppers, compacts, glass/soft-touch packaging, swatches, skin/hair close-ups
+Hybrid: device with direct skin/hair contact (electric razor, hair dryer)
+
+Evaluate the gallery using the 7-Beat Framework:
+Beat 1 "hero" — product identification | Beat 2 "lifestyle" — product in use
+Beat 3 "benefit" — benefit callout | Beat 4 "technical" — how it works
+Beat 5 "detail" — quality/material close-up | Beat 6 "social" — diverse lifestyle
+Beat 7 "proof" — awards/social proof
+
+For each image, score relevant dimensions 1–10 (null if not applicable):
+- composition: framing, negative space, product prominence
+- lighting: evenness, mood, color accuracy
+- appeal: emotional pull, aspirational quality within 2 seconds
+- textLegibility: hierarchy, thumbnail legibility, contrast (infographics only)
+- brandConsistency: color/font/tone coherence with rest of gallery
+
+Gallery score = weighted average of all asset scores. Apply brand.com thresholds:
+Approved ≥7.5 | Conditional 6.0–7.4 | Revise <6.0
+
+Return ONLY valid JSON — no markdown fences, no commentary:
+{
+  "detectedCategory": "Electronics | Beauty | Hybrid",
+  "galleryScore": <1-10>,
+  "readiness": "Approved | Conditional | Revise",
+  "storyArc": {
+    "score": <1-10>,
+    "beatsPresent": ["hero","lifestyle",...],
+    "beatsMissing": ["detail",...],
+    "assessment": "<2-3 specific sentences about narrative strength>"
+  },
+  "assets": [
+    {
+      "position": <1-based>,
+      "type": "Hero | Lifestyle | Infographic | Detail | Video Thumbnail | Packshot",
+      "scores": { "composition": <n|null>, "lighting": <n|null>, "appeal": <n|null>, "textLegibility": <n|null>, "brandConsistency": <n|null> },
+      "observations": "<2-3 specific, observational sentences — reference what is visible>",
+      "criticalActions": ["<issue — why it matters — specific fix>"],
+      "recommendedActions": ["<issue — why it matters — specific fix>"]
+    }
+  ],
+  "summary": {
+    "strengths": "<what works and why>",
+    "gaps": "<dominant creative gap>",
+    "crossAssetConsistency": "<visual coherence assessment>"
+  },
+  "priorityActions": [
+    { "tier": "critical | recommended | optional", "action": "<specific action>" }
+  ]
+}`;
+
+app.post('/api/creative-audit', async (req, res) => {
+  const { pdpUrl, brandName, images } = req.body;
+  if (!pdpUrl || !Array.isArray(images) || !images.length) {
+    return res.status(400).json({ error: 'pdpUrl and images required' });
+  }
+
+  const cache = loadAuditCache();
+  if (cache[pdpUrl]) return res.json({ cached: true, ...cache[pdpUrl] });
+
+  if (!process.env.ANTHROPIC_API_KEY) {
+    return res.status(500).json({ error: 'ANTHROPIC_API_KEY not set. Add it to a .env file in the project root.' });
+  }
+
+  const sampled = sampleGalleryImages(images, 6);
+
+  // Fetch images concurrently, skip any that fail
+  const imageBlocks = (await Promise.all(
+    sampled.map(async img => {
+      try {
+        const { data, mediaType } = await fetchImageBase64(img.src);
+        return { type: 'image', source: { type: 'base64', media_type: mediaType, data } };
+      } catch { return null; }
+    })
+  )).filter(Boolean);
+
+  if (!imageBlocks.length) {
+    return res.status(500).json({ error: 'Could not fetch any gallery images for analysis.' });
+  }
+
+  try {
+    const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+
+    const message = await anthropic.messages.create({
+      model: 'claude-sonnet-4-6',
+      max_tokens: 2048,
+      messages: [{
+        role: 'user',
+        content: [
+          ...imageBlocks,
+          {
+            type: 'text',
+            text: `${CREATIVE_AUDIT_PROMPT}\n\nBrand: ${brandName}\nPDP: ${pdpUrl}\nImages shown: ${imageBlocks.length} of ${images.length} total (evenly sampled).`,
+          },
+        ],
+      }],
+    });
+
+    let rawText = message.content[0].text.trim();
+    // Strip markdown fences if present
+    rawText = rawText.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '').trim();
+
+    const result = JSON.parse(rawText);
+    result.auditedAt    = new Date().toISOString();
+    result.imageCount   = images.length;
+    result.sampledCount = imageBlocks.length;
+
+    cache[pdpUrl] = result;
+    saveAuditCache(cache);
+
+    res.json({ cached: false, ...result });
+  } catch (e) {
+    console.error('[Audit]', e.message);
+    res.status(500).json({ error: e.message });
+  }
+});
+
+app.get('/api/creative-audit/cache', (_req, res) => res.json(loadAuditCache()));
+
+app.delete('/api/creative-audit/cache', (req, res) => {
+  const { url } = req.body;
+  const cache = loadAuditCache();
+  if (url && cache[url]) { delete cache[url]; saveAuditCache(cache); }
+  else if (!url) { saveAuditCache({}); }
+  res.json({ ok: true });
+});
 
 // ── Brand config persistence (imageHost, useStealth per brand) ───────────────
 function loadBrandConfigs() {

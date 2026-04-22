@@ -182,6 +182,43 @@
   .change-brand-name { font-weight: 600; margin-bottom: 4px; }
   .change-brand-stats { color: var(--muted); display: flex; gap: 10px; flex-wrap: wrap; }
 
+  /* ── Creative Audit ── */
+  .creative-score-badge { margin-left: 6px; padding: 2px 8px; border-radius: 99px; font-size: 11px; font-weight: 700; vertical-align: middle; }
+  .cr-approved    { background: rgba(62,207,142,0.15); color: var(--green); }
+  .cr-conditional { background: rgba(245,200,66,0.15); color: var(--yellow); }
+  .cr-revise      { background: rgba(255,79,100,0.15); color: var(--red); }
+  .audit-section { border-top: 1px solid var(--border); padding: 18px 20px; }
+  .audit-cta { display: flex; align-items: center; gap: 14px; }
+  .audit-cta-hint { font-size: 12px; color: var(--muted); }
+  .audit-panel { display: flex; flex-direction: column; gap: 16px; }
+  .audit-verdict { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .audit-score-big { font-size: 36px; font-weight: 800; line-height: 1; color: var(--text); }
+  .audit-score-big span { font-size: 16px; font-weight: 400; color: var(--muted); }
+  .readiness-pill { padding: 4px 12px; border-radius: 99px; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; }
+  .rp-approved    { background: rgba(62,207,142,0.15);  color: var(--green); }
+  .rp-conditional { background: rgba(245,200,66,0.15);  color: var(--yellow); }
+  .rp-revise      { background: rgba(255,79,100,0.15);  color: var(--red); }
+  .audit-category-tag { font-size: 11px; color: var(--muted); border: 1px solid var(--border); border-radius: 99px; padding: 2px 10px; }
+  .audit-meta { font-size: 11px; color: var(--muted); margin-left: auto; }
+  .audit-subsection { background: var(--surface2); border-radius: 8px; padding: 14px 16px; }
+  .audit-subsection-title { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+  .audit-arc-score { background: var(--surface); border-radius: 99px; padding: 1px 8px; font-size: 11px; color: var(--text); font-weight: 700; }
+  .beat-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .beat-tag { padding: 3px 9px; border-radius: 99px; font-size: 11px; font-weight: 600; }
+  .beat-tag.present { background: rgba(62,207,142,0.12); color: var(--green); }
+  .beat-tag.missing { background: var(--surface); color: var(--muted); border: 1px solid var(--border); text-decoration: line-through; opacity: 0.6; }
+  .audit-text { font-size: 13px; color: var(--text); line-height: 1.55; }
+  .audit-text + .audit-text { margin-top: 6px; }
+  .audit-dims { display: flex; flex-wrap: wrap; gap: 8px; }
+  .audit-dim { background: var(--surface); border-radius: 6px; padding: 6px 10px; font-size: 12px; }
+  .audit-dim-label { color: var(--muted); font-size: 11px; margin-bottom: 2px; }
+  .audit-dim-val { font-weight: 700; color: var(--text); }
+  .audit-action { display: flex; gap: 8px; font-size: 12px; line-height: 1.5; padding: 4px 0; border-bottom: 1px solid var(--border); }
+  .audit-action:last-child { border-bottom: none; }
+  .audit-action-icon { flex-shrink: 0; font-size: 14px; }
+  .audit-loading { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 13px; padding: 4px 0; }
+  .audit-loading-spinner { width: 14px; height: 14px; border: 2px solid var(--border); border-top-color: var(--blue); border-radius: 50%; animation: spin 0.8s linear infinite; }
+
   /* ── Add Brand Modal ── */
   .modal-backdrop { display: none; position: fixed; inset: 0; background: #000a; z-index: 200; align-items: center; justify-content: center; padding: 20px; }
   .modal-backdrop.open { display: flex; }
@@ -754,6 +791,11 @@ function renderTable() {
     const cnt = p.galleryImageCount;
     const badge = `<span class="count-badge ${countClass(cnt)}">${cnt}</span>`;
 
+    const ca = auditCache[p.url];
+    const creativeBadge = ca
+      ? `<span class="creative-score-badge cr-${ca.readiness.toLowerCase().split(' ')[0]}" title="Creative score: ${ca.readiness}">${ca.galleryScore.toFixed(1)}</span>`
+      : '';
+
     const row = document.createElement('div');
     row.className = 'pdp-row' + (expandedRows.has(globalIdx) ? ' expanded' : '');
     row.dataset.idx = globalIdx;
@@ -761,7 +803,7 @@ function renderTable() {
       <div class="thumb-strip">${thumbHtml || '<span style="color:var(--muted);font-size:11px">—</span>'}</div>
       <div><div class="pdp-family">${dot}${p.family.replace(/-/g, ' ')}</div><div class="pdp-url">${p.url}</div></div>
       <div>${dot}${p.brandName}</div>
-      <div>${badge}</div>
+      <div>${badge}${creativeBadge}</div>
       <div class="expand-icon">${expandedRows.has(globalIdx) ? '▲' : '▼'}</div>
     `;
     row.addEventListener('click', () => toggleRow(globalIdx, p, row));
@@ -778,7 +820,18 @@ function renderTable() {
       const imgs = p.images.map((img, i) =>
         `<img src="${img.src}" alt="Position ${img.sequencePosition}" loading="lazy" title="Position ${img.sequencePosition}" onclick="openLightbox(${globalIdx},${i},event)">`
       ).join('');
-      expand.innerHTML = `<div class="image-grid">${imgs}</div>`;
+      const cachedAudit = auditCache[p.url];
+      const auditSection = `
+        <div class="audit-section" id="audit-section-${globalIdx}">
+          ${cachedAudit
+            ? renderAuditHTML(cachedAudit)
+            : `<div class="audit-cta">
+                 <button class="btn btn-ghost btn-sm" onclick="runCreativeAudit(${JSON.stringify(p.url)},${JSON.stringify(p.brandName)},${globalIdx})">Run Creative Audit</button>
+                 <span class="audit-cta-hint">Scores this gallery against brand.com creative standards using Claude vision</span>
+               </div>`
+          }
+        </div>`;
+      expand.innerHTML = `<div class="image-grid">${imgs}</div>${auditSection}`;
     }
     tableEl.appendChild(expand);
   });
@@ -1525,6 +1578,127 @@ window.startCrawl = async () => {
   es.onerror = () => { es.close(); clearInterval(timerInterval); };
 };
 
+// ── Creative Audit ───────────────────────────────────────────────────────────
+let auditCache = {};
+
+const ALL_BEATS = ['hero','lifestyle','benefit','technical','detail','social','proof'];
+
+function avgDim(assets, dim) {
+  const vals = assets.map(a => a.scores?.[dim]).filter(v => v != null);
+  return vals.length ? (vals.reduce((s, v) => s + v, 0) / vals.length) : null;
+}
+
+function dimBar(score) {
+  if (score == null) return '<span style="color:var(--muted)">—</span>';
+  const color = score >= 8 ? 'var(--green)' : score >= 6 ? 'var(--blue)' : 'var(--yellow)';
+  return `<span style="color:${color};font-weight:700">${score.toFixed(1)}</span>`;
+}
+
+function renderAuditHTML(r) {
+  const rpKey = r.readiness.toLowerCase().split(' ')[0];
+  const dims = ['composition','lighting','appeal','textLegibility','brandConsistency'];
+  const dimLabels = { composition:'Composition', lighting:'Lighting', appeal:'Appeal', textLegibility:'Text', brandConsistency:'Brand Consistency' };
+
+  const dimHTML = dims.map(d => {
+    const avg = avgDim(r.assets, d);
+    if (avg == null) return '';
+    return `<div class="audit-dim"><div class="audit-dim-label">${dimLabels[d]}</div><div class="audit-dim-val">${dimBar(avg)}</div></div>`;
+  }).filter(Boolean).join('');
+
+  const beatHTML = ALL_BEATS.map(b =>
+    `<span class="beat-tag ${r.storyArc.beatsPresent?.includes(b) ? 'present' : 'missing'}">${b}</span>`
+  ).join('');
+
+  const actionHTML = (r.priorityActions || []).slice(0, 6).map(a => {
+    const icon = a.tier === 'critical' ? '🔴' : a.tier === 'recommended' ? '🟡' : '🔵';
+    return `<div class="audit-action"><span class="audit-action-icon">${icon}</span><span>${a.action}</span></div>`;
+  }).join('');
+
+  const sampledNote = r.sampledCount < r.imageCount
+    ? `${r.sampledCount} of ${r.imageCount} images sampled` : `${r.imageCount} images`;
+
+  return `<div class="audit-panel">
+    <div class="audit-verdict">
+      <div class="audit-score-big">${r.galleryScore.toFixed(1)}<span>/10</span></div>
+      <span class="readiness-pill rp-${rpKey}">${r.readiness}</span>
+      <span class="audit-category-tag">${r.detectedCategory} · brand.com</span>
+      <span class="audit-meta">${fmtDate(r.auditedAt)} · ${sampledNote}
+        <button onclick="rerunAudit(${JSON.stringify(r._url || '')})" style="margin-left:8px;background:none;border:none;color:var(--muted);cursor:pointer;font-size:11px;padding:0" title="Re-run audit">↺</button>
+      </span>
+    </div>
+    <div class="audit-subsection">
+      <div class="audit-subsection-title">Gallery Story Arc <span class="audit-arc-score">${r.storyArc.score}/10</span></div>
+      <div class="beat-tags">${beatHTML}</div>
+      <div class="audit-text">${r.storyArc.assessment}</div>
+    </div>
+    ${dimHTML ? `<div class="audit-subsection"><div class="audit-subsection-title">Dimension Scores (avg)</div><div class="audit-dims">${dimHTML}</div></div>` : ''}
+    <div class="audit-subsection">
+      <div class="audit-subsection-title">Creative Summary</div>
+      <div class="audit-text"><strong>Strengths:</strong> ${r.summary.strengths}</div>
+      <div class="audit-text"><strong>Gaps:</strong> ${r.summary.gaps}</div>
+      <div class="audit-text"><strong>Consistency:</strong> ${r.summary.crossAssetConsistency}</div>
+    </div>
+    ${actionHTML ? `<div class="audit-subsection"><div class="audit-subsection-title">Priority Actions</div>${actionHTML}</div>` : ''}
+  </div>`;
+}
+
+window.runCreativeAudit = async function(pdpUrl, brandName, globalIdx) {
+  const section = document.getElementById(`audit-section-${globalIdx}`);
+  if (!section) return;
+  section.innerHTML = `<div class="audit-loading"><div class="audit-loading-spinner"></div>Analyzing gallery with Claude vision… this takes ~15s</div>`;
+
+  const pdp = allData.find(p => p.url === pdpUrl);
+  if (!pdp) { section.innerHTML = '<div class="audit-loading">PDP not found in data.</div>'; return; }
+
+  try {
+    const resp = await fetch('/api/creative-audit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ pdpUrl, brandName, images: pdp.images }),
+    });
+    const result = await resp.json();
+    if (!resp.ok) {
+      section.innerHTML = `<div class="audit-cta"><span style="color:var(--red);font-size:13px">Error: ${result.error}</span></div>`;
+      return;
+    }
+    result._url = pdpUrl;
+    auditCache[pdpUrl] = result;
+    section.innerHTML = renderAuditHTML(result);
+    // Update the score badge on the row without full re-render
+    const rowEl = document.querySelector(`.pdp-row[data-idx="${globalIdx}"]`);
+    if (rowEl) {
+      const existingBadge = rowEl.querySelector('.creative-score-badge');
+      const rpKey = result.readiness.toLowerCase().split(' ')[0];
+      const newBadge = document.createElement('span');
+      newBadge.className = `creative-score-badge cr-${rpKey}`;
+      newBadge.title = `Creative score: ${result.readiness}`;
+      newBadge.textContent = result.galleryScore.toFixed(1);
+      if (existingBadge) existingBadge.replaceWith(newBadge);
+      else rowEl.querySelectorAll('div')[3]?.appendChild(newBadge);
+    }
+  } catch (e) {
+    section.innerHTML = `<div class="audit-cta"><span style="color:var(--red);font-size:13px">Error: ${e.message}</span></div>`;
+  }
+};
+
+window.rerunAudit = async function(pdpUrl) {
+  if (!pdpUrl) return;
+  await fetch('/api/creative-audit/cache', {
+    method: 'DELETE',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ url: pdpUrl }),
+  });
+  delete auditCache[pdpUrl];
+  renderTable();
+};
+
+async function loadAuditCache() {
+  try {
+    const data = await fetch('/api/creative-audit/cache').then(r => r.json());
+    auditCache = data || {};
+  } catch { auditCache = {}; }
+}
+
 // ── Refresh schedule ─────────────────────────────────────────────────────────
 window.refreshStatus = null;
 
@@ -1699,7 +1873,7 @@ initDiscoverTrigger();
 // ── Load data
 fetch('./data/gallery_raw.json')
   .then(r => r.json())
-  .then(data => { allData = data; render(data); loadRefreshStatus(); })
+  .then(async data => { allData = data; await loadAuditCache(); render(data); loadRefreshStatus(); })
   .catch(() => {
     document.getElementById('app').innerHTML = `
       <div class="loading">
