@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: gallery-audit
+    runtime: docker
+    healthCheckPath: /viewer.html
+    autoDeploy: true

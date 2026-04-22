@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PDP Gallery Audit — SharkNinja</title>
+<style>
+  :root {
+    --bg: #0d0d0f;
+    --surface: #18181c;
+    --surface2: #222228;
+    --border: #2e2e38;
+    --text: #f0f0f5;
+    --muted: #8888aa;
+    --sn-orange: #ff6b00;
+    --sn-orange-dim: #ff6b0022;
+    --blue: #4ea7ff;
+    --green: #3ecf8e;
+    --yellow: #f5c842;
+    --red: #ff4f64;
+    --brand-sn: #ff6b00;
+    --brand-vitamix: #e63946;
+    --brand-breville: #2a9d8f;
+    --brand-ws: #6a5acd;
+    --brand-dyson: #c0272d;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; min-height: 100vh; }
+
+  /* ── Header ── */
+  .header { border-bottom: 1px solid var(--border); padding: 20px 32px; display: flex; align-items: center; gap: 16px; background: var(--surface); }
+  .header-logo { width: 32px; height: 32px; background: var(--sn-orange); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 13px; color: #fff; letter-spacing: -0.5px; }
+  .header-title { font-size: 16px; font-weight: 600; color: var(--text); }
+  .header-sub { font-size: 12px; color: var(--muted); margin-top: 1px; }
+  .header-badge { margin-left: auto; background: var(--sn-orange-dim); border: 1px solid var(--sn-orange); color: var(--sn-orange); font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 99px; }
+
+  /* ── Layout ── */
+  .main { padding: 32px; max-width: 1400px; margin: 0 auto; }
+  .section-title { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 16px; }
+
+  /* ── KPI Row ── */
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 36px; }
+  .kpi-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; }
+  .kpi-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
+  .kpi-value { font-size: 32px; font-weight: 700; line-height: 1; color: var(--text); }
+  .kpi-sub { font-size: 12px; color: var(--muted); margin-top: 6px; }
+  .kpi-card.highlight { border-color: var(--sn-orange); background: var(--sn-orange-dim); }
+  .kpi-card.highlight .kpi-value { color: var(--sn-orange); }
+
+  /* ── Brand Cards ── */
+  .brand-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; margin-bottom: 36px; }
+  .brand-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; position: relative; overflow: hidden; }
+  .brand-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; border-radius: 10px 10px 0 0; }
+  .brand-card[data-brand="sharkninja"]::before { background: var(--brand-sn); }
+  .brand-card[data-brand="vitamix"]::before { background: var(--brand-vitamix); }
+  .brand-card[data-brand="breville"]::before { background: var(--brand-breville); }
+  .brand-card[data-brand="williamssonoma"]::before { background: var(--brand-ws); }
+  .brand-card[data-brand="dyson"]::before { background: var(--brand-dyson); }
+  .brand-name { font-size: 14px; font-weight: 600; margin-bottom: 14px; }
+  .brand-stat { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--border); }
+  .brand-stat:last-child { border-bottom: none; }
+  .brand-stat-label { font-size: 12px; color: var(--muted); }
+  .brand-stat-value { font-size: 13px; font-weight: 600; }
+  .stat-warn { color: var(--yellow); }
+  .stat-good { color: var(--green); }
+  .stat-neutral { color: var(--blue); }
+
+  /* ── Chart ── */
+  .chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 36px; }
+  .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 24px; }
+  .chart-card canvas { width: 100% !important; }
+  .chart-title { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+  .chart-sub { font-size: 11px; color: var(--muted); margin-bottom: 20px; }
+
+  /* ── Filter bar ── */
+  .filter-bar { display: flex; gap: 10px; margin-bottom: 20px; align-items: center; flex-wrap: wrap; }
+  .filter-btn { padding: 6px 14px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface); color: var(--muted); font-size: 12px; font-weight: 500; cursor: pointer; transition: all 0.15s; }
+  .filter-btn:hover { border-color: var(--text); color: var(--text); }
+  .filter-btn.active { background: var(--sn-orange); border-color: var(--sn-orange); color: #fff; }
+  .filter-btn[data-brand="sharkninja"].active { background: var(--brand-sn); border-color: var(--brand-sn); }
+  .filter-btn[data-brand="vitamix"].active { background: var(--brand-vitamix); border-color: var(--brand-vitamix); }
+  .filter-btn[data-brand="breville"].active { background: var(--brand-breville); border-color: var(--brand-breville); }
+  .filter-btn[data-brand="williamssonoma"].active { background: var(--brand-ws); border-color: var(--brand-ws); }
+  .filter-btn[data-brand="dyson"].active { background: var(--brand-dyson); border-color: var(--brand-dyson); }
+  .search-box { flex: 1; max-width: 280px; padding: 6px 12px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface2); color: var(--text); font-size: 12px; outline: none; }
+  .search-box::placeholder { color: var(--muted); }
+  .search-box:focus { border-color: var(--sn-orange); }
+  .sort-label { font-size: 12px; color: var(--muted); margin-left: auto; }
+  .sort-select { background: var(--surface2); border: 1px solid var(--border); color: var(--text); font-size: 12px; padding: 5px 10px; border-radius: 6px; outline: none; cursor: pointer; }
+
+  /* ── PDP Table ── */
+  .pdp-table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 36px; }
+  .pdp-row { display: grid; grid-template-columns: 90px 1fr 100px 120px 80px; align-items: center; padding: 12px 16px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.12s; gap: 16px; }
+  .pdp-row:last-child { border-bottom: none; }
+  .pdp-row:hover { background: var(--surface2); }
+  .pdp-row.expanded { background: var(--surface2); }
+  .pdp-row-header { display: grid; grid-template-columns: 90px 1fr 100px 120px 80px; padding: 10px 16px; border-bottom: 1px solid var(--border); gap: 16px; background: var(--surface2); }
+  .pdp-row-header span { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+  .thumb-strip { display: flex; gap: 3px; }
+  .thumb { width: 24px; height: 24px; border-radius: 3px; object-fit: cover; background: var(--surface2); flex-shrink: 0; }
+  .thumb-more { width: 24px; height: 24px; border-radius: 3px; background: var(--surface2); display: flex; align-items: center; justify-content: center; font-size: 9px; color: var(--muted); flex-shrink: 0; }
+  .pdp-family { font-size: 12px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .pdp-url { font-size: 10px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px; }
+  .brand-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 6px; vertical-align: middle; flex-shrink: 0; }
+  .count-badge { display: inline-block; padding: 2px 8px; border-radius: 99px; font-size: 11px; font-weight: 600; }
+  .count-0 { background: #ff4f6422; color: var(--red); }
+  .count-low { background: #f5c84222; color: var(--yellow); }
+  .count-mid { background: #4ea7ff22; color: var(--blue); }
+  .count-high { background: #3ecf8e22; color: var(--green); }
+  .expand-icon { color: var(--muted); font-size: 12px; text-align: right; }
+
+  /* ── Image Lightbox row ── */
+  .image-expand { display: none; background: var(--bg); border-bottom: 1px solid var(--border); padding: 20px 16px 20px 106px; }
+  .image-expand.open { display: block; }
+  .image-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+  .image-grid img { width: 100px; height: 100px; object-fit: cover; border-radius: 6px; border: 1px solid var(--border); cursor: zoom-in; transition: transform 0.15s; }
+  .image-grid img:hover { transform: scale(1.04); border-color: var(--sn-orange); }
+  .empty-gallery { color: var(--muted); font-size: 12px; font-style: italic; }
+
+  /* ── Pagination ── */
+  .pagination { display: flex; gap: 8px; justify-content: center; align-items: center; padding: 16px; }
+  .page-btn { padding: 6px 12px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface); color: var(--muted); font-size: 12px; cursor: pointer; transition: all 0.12s; }
+  .page-btn:hover:not(:disabled) { border-color: var(--text); color: var(--text); }
+  .page-btn.active { background: var(--sn-orange); border-color: var(--sn-orange); color: #fff; }
+  .page-btn:disabled { opacity: 0.3; cursor: default; }
+  .page-info { font-size: 12px; color: var(--muted); }
+
+  /* ── Lightbox modal ── */
+  .lightbox { display: none; position: fixed; inset: 0; background: #000c; z-index: 1000; align-items: center; justify-content: center; }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-width: 90vw; max-height: 90vh; border-radius: 8px; box-shadow: 0 40px 120px #000; }
+  .lightbox-close { position: fixed; top: 20px; right: 24px; font-size: 28px; color: #fff; cursor: pointer; z-index: 1001; opacity: 0.7; }
+  .lightbox-close:hover { opacity: 1; }
+  .lightbox-nav { position: fixed; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.12); border: none; color: #fff; font-size: 28px; width: 52px; height: 52px; border-radius: 50%; cursor: pointer; z-index: 1001; display: flex; align-items: center; justify-content: center; transition: background 0.15s; }
+  .lightbox-nav:hover { background: rgba(255,255,255,0.28); }
+  .lightbox-nav.prev { left: 20px; }
+  .lightbox-nav.next { right: 20px; }
+  .lightbox-nav:disabled { opacity: 0.2; cursor: default; }
+  .lightbox-counter { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.6); font-size: 13px; z-index: 1001; letter-spacing: 0.04em; }
+
+  /* ── Refresh strip ── */
+  .refresh-strip { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 20px; margin-bottom: 28px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .refresh-icon { font-size: 16px; opacity: 0.7; flex-shrink: 0; }
+  .refresh-meta { flex: 1; min-width: 0; }
+  .refresh-title { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); margin-bottom: 3px; }
+  .refresh-detail { font-size: 13px; color: var(--text); display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+  .refresh-sep { color: var(--border); }
+  .refresh-change-pos { color: var(--green); font-weight: 600; }
+  .refresh-change-neu { color: var(--muted); }
+  .refresh-change-neg { color: var(--yellow); font-weight: 600; }
+  .refresh-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .refresh-toggle { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); cursor: pointer; }
+  .toggle-switch { width: 32px; height: 18px; background: var(--border); border-radius: 9px; position: relative; transition: background 0.2s; cursor: pointer; flex-shrink: 0; }
+  .toggle-switch.on { background: var(--green); }
+  .toggle-switch::after { content: ''; position: absolute; width: 12px; height: 12px; background: #fff; border-radius: 50%; top: 3px; left: 3px; transition: left 0.2s; }
+  .toggle-switch.on::after { left: 17px; }
+  /* Refresh progress (shown while running) */
+  .refresh-running { display: none; flex-direction: column; gap: 8px; flex: 1; }
+  .refresh-running.visible { display: flex; }
+  .refresh-run-bar-wrap { height: 4px; background: var(--surface2); border-radius: 2px; overflow: hidden; }
+  .refresh-run-bar { height: 100%; background: var(--blue); border-radius: 2px; transition: width 0.3s; width: 0%; }
+  .refresh-run-label { font-size: 12px; color: var(--muted); }
+  /* Brand card delta row */
+  .brand-delta { font-size: 11px; padding-top: 8px; margin-top: 4px; color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; }
+  .delta-pill { padding: 2px 7px; border-radius: 99px; font-weight: 600; font-size: 11px; }
+  .delta-new  { background: rgba(62,207,142,0.12); color: var(--green); }
+  .delta-upd  { background: rgba(78,167,255,0.12); color: var(--blue); }
+  .delta-rem  { background: rgba(245,200,66,0.12); color: var(--yellow); }
+  /* Changes history panel */
+  .changes-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 36px; overflow: hidden; }
+  .changes-header { padding: 14px 20px; display: flex; align-items: center; gap: 10px; cursor: pointer; user-select: none; }
+  .changes-header:hover { background: var(--surface2); }
+  .changes-toggle-icon { font-size: 10px; color: var(--muted); transition: transform 0.2s; }
+  .changes-panel.open .changes-toggle-icon { transform: rotate(90deg); }
+  .changes-body { display: none; padding: 0 20px 16px; }
+  .changes-panel.open .changes-body { display: block; }
+  .change-run { border-top: 1px solid var(--border); padding: 12px 0; }
+  .change-run-date { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
+  .change-run-totals { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 8px; }
+  .change-brand-rows { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 6px; }
+  .change-brand-row { background: var(--surface2); border-radius: 6px; padding: 8px 10px; font-size: 12px; }
+  .change-brand-name { font-weight: 600; margin-bottom: 4px; }
+  .change-brand-stats { color: var(--muted); display: flex; gap: 10px; flex-wrap: wrap; }
+
+  /* ── Add Brand Modal ── */
+  .modal-backdrop { display: none; position: fixed; inset: 0; background: #000a; z-index: 200; align-items: center; justify-content: center; padding: 20px; }
+  .modal-backdrop.open { display: flex; }
+  .modal { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; width: 100%; max-width: 620px; max-height: 90vh; overflow-y: auto; box-shadow: 0 40px 120px #000; }
+  .modal-header { padding: 24px 28px 16px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+  .modal-title { font-size: 16px; font-weight: 600; }
+  .modal-close { background: none; border: none; color: var(--muted); font-size: 20px; cursor: pointer; padding: 4px 8px; border-radius: 6px; }
+  .modal-close:hover { color: var(--text); background: var(--surface2); }
+  .modal-body { padding: 24px 28px; }
+  .modal-footer { padding: 16px 28px 24px; display: flex; gap: 10px; justify-content: flex-end; border-top: 1px solid var(--border); }
+
+  /* form elements */
+  .form-group { margin-bottom: 18px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 18px; }
+  .form-label { display: block; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); margin-bottom: 6px; }
+  .form-hint { font-size: 11px; color: var(--muted); margin-top: 4px; }
+  .form-input { width: 100%; background: var(--surface2); border: 1px solid var(--border); color: var(--text); font-size: 13px; padding: 9px 12px; border-radius: 7px; outline: none; transition: border-color 0.15s; }
+  .form-input:focus { border-color: var(--sn-orange); }
+  .form-input::placeholder { color: var(--muted); }
+  .form-input.error { border-color: var(--red); }
+
+  /* sample size slider */
+  .slider-wrap { display: flex; align-items: center; gap: 12px; }
+  .form-slider { flex: 1; accent-color: var(--sn-orange); }
+  .slider-val { font-size: 13px; font-weight: 600; color: var(--sn-orange); min-width: 32px; text-align: right; }
+
+  /* probe area */
+  .probe-section { background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 18px; }
+  .probe-title { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); margin-bottom: 10px; }
+  .probe-row { display: flex; gap: 8px; }
+  .probe-result { margin-top: 12px; }
+  .probe-group { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 6px; border: 1px solid var(--border); margin-bottom: 6px; cursor: pointer; transition: all 0.12s; }
+  .probe-group:hover { border-color: var(--sn-orange); background: var(--sn-orange-dim); }
+  .probe-group.selected { border-color: var(--sn-orange); background: var(--sn-orange-dim); }
+  .probe-host { font-size: 12px; font-weight: 500; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .probe-count { font-size: 11px; color: var(--muted); flex-shrink: 0; }
+  .probe-thumbs { display: flex; gap: 4px; flex-shrink: 0; }
+  .probe-thumb { width: 28px; height: 28px; object-fit: cover; border-radius: 4px; background: var(--border); }
+  .probe-status { font-size: 12px; color: var(--muted); font-style: italic; }
+
+  /* ── Discovery panel ── */
+  .discover-row { display: flex; gap: 8px; margin-bottom: 6px; }
+  .discovery-panel { background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 18px; display: none; }
+  .discovery-panel.visible { display: block; }
+  .discovery-section { padding: 14px 16px; border-bottom: 1px solid var(--border); }
+  .discovery-section:last-child { border-bottom: none; }
+  .discovery-section-title { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between; }
+  .sitemap-opt { display: flex; align-items: center; gap: 8px; padding: 7px 10px; border-radius: 6px; border: 1px solid var(--border); margin-bottom: 5px; cursor: pointer; font-size: 12px; transition: all 0.12s; word-break: break-all; }
+  .sitemap-opt:hover { border-color: var(--sn-orange); }
+  .sitemap-opt.selected { border-color: var(--sn-orange); background: var(--sn-orange-dim); }
+  .sitemap-radio { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--border); flex-shrink: 0; transition: all 0.12s; }
+  .sitemap-opt.selected .sitemap-radio { border-color: var(--sn-orange); background: var(--sn-orange); box-shadow: inset 0 0 0 2px var(--surface2); }
+  .sitemap-manual { font-size: 11px; color: var(--muted); padding: 4px 2px; cursor: pointer; }
+  .sitemap-manual:hover { color: var(--text); }
+  .pattern-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .pattern-chip { padding: 4px 10px; border-radius: 99px; border: 1px solid var(--border); font-size: 11px; font-weight: 500; cursor: pointer; color: var(--muted); font-family: monospace; transition: all 0.12s; }
+  .pattern-chip:hover { border-color: var(--blue); color: var(--blue); }
+  .pattern-chip.selected { border-color: var(--blue); background: #4ea7ff22; color: var(--blue); }
+  .sample-url-item { font-size: 10px; font-family: monospace; color: var(--muted); padding: 2px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .log-item { font-size: 11px; color: var(--muted); padding: 2px 0; display: flex; gap: 6px; }
+  .log-item::before { content: '›'; color: var(--sn-orange); flex-shrink: 0; }
+  .log-warn { color: var(--yellow); }
+  .discover-warning { font-size: 12px; color: var(--yellow); padding: 10px 12px; background: #f5c84211; border-radius: 6px; border: 1px solid #f5c84233; }
+
+  /* ── Bypass methods ── */
+  .bypass-section { padding: 14px 16px; background: #0d0d0f; border-top: 1px solid var(--border); }
+  .bypass-title { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 10px; }
+  .bypass-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; }
+  .bypass-btn { padding: 10px 12px; border-radius: 7px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.15s; text-align: left; }
+  .bypass-btn:hover:not(:disabled) { border-color: var(--blue); background: #4ea7ff11; }
+  .bypass-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .bypass-btn .bypass-icon { font-size: 16px; display: block; margin-bottom: 4px; }
+  .bypass-btn .bypass-label { font-size: 11px; color: var(--muted); font-weight: 400; display: block; margin-top: 2px; }
+  .bypass-progress { display: none; }
+  .bypass-progress.visible { display: block; }
+  .bypass-progress-bar-wrap { background: var(--border); border-radius: 99px; height: 4px; overflow: hidden; margin: 8px 0 4px; }
+  .bypass-progress-fill { height: 100%; background: var(--blue); border-radius: 99px; transition: width 0.4s ease; width: 0%; }
+  .bypass-progress-label { font-size: 11px; color: var(--muted); }
+  .bypass-result { font-size: 12px; padding: 8px 10px; border-radius: 6px; border: 1px solid; display: none; }
+  .bypass-result.visible { display: block; }
+  .bypass-result.success { border-color: #3ecf8e44; background: #3ecf8e11; color: var(--green); }
+  .bypass-result.warn { border-color: #f5c84244; background: #f5c84211; color: var(--yellow); }
+
+  .toggle-row { display: flex; align-items: center; gap: 10px; padding: 4px 0; }
+  .toggle-label { font-size: 12px; color: var(--muted); cursor: pointer; }
+  .toggle-input { accent-color: var(--sn-orange); width: 14px; height: 14px; cursor: pointer; }
+
+  /* progress panel */
+  .progress-panel { display: none; background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+  .progress-panel.visible { display: block; }
+  .progress-bar-wrap { background: var(--border); border-radius: 99px; height: 6px; overflow: hidden; margin: 0 0 10px; }
+  .progress-bar-fill { height: 100%; background: var(--sn-orange); border-radius: 99px; transition: width 0.35s ease; width: 0%; }
+  /* step tracker */
+  .step-track { display: flex; align-items: flex-start; margin-bottom: 16px; }
+  .step-item { display: flex; flex-direction: column; align-items: center; gap: 5px; }
+  .step-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--surface); border: 2px solid var(--border); transition: all 0.2s; flex-shrink: 0; }
+  .step-lbl { font-size: 10px; color: var(--muted); white-space: nowrap; font-weight: 500; }
+  .step-connector { flex: 1; height: 2px; background: var(--border); margin: 4px 4px 0; min-width: 16px; border-radius: 1px; transition: background 0.2s; }
+  .step-item.s-active .step-dot { background: var(--sn-orange); border-color: var(--sn-orange); box-shadow: 0 0 0 3px var(--sn-orange-dim); }
+  .step-item.s-active .step-lbl { color: var(--sn-orange); font-weight: 700; }
+  .step-item.s-done .step-dot { background: var(--green); border-color: var(--green); }
+  .step-item.s-done .step-lbl { color: var(--green); }
+  .step-connector.s-done { background: var(--green); }
+  /* status row */
+  .progress-status-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
+  .progress-label { font-size: 12px; color: var(--text); }
+  .progress-elapsed { font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  /* stats */
+  .progress-stats { display: none; flex-wrap: wrap; gap: 20px; margin: 10px 0 4px; padding: 10px 12px; background: var(--bg); border-radius: 6px; border: 1px solid var(--border); }
+  .progress-stats.visible { display: flex; }
+  .stat-item { font-size: 11px; color: var(--muted); }
+  .stat-num { font-size: 20px; font-weight: 700; color: var(--text); line-height: 1; display: block; }
+  .stat-item.s-err .stat-num { color: var(--red); }
+  .stat-item.s-ok .stat-num { color: var(--green); }
+  /* log feed */
+  .progress-log { display: none; max-height: 130px; overflow-y: auto; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; padding: 7px 10px; margin: 8px 0 4px; scrollbar-width: thin; }
+  .progress-log.visible { display: block; }
+  .log-line { font-size: 11px; color: var(--muted); padding: 2px 0; display: flex; gap: 8px; line-height: 1.4; }
+  .log-line .log-ts { color: var(--border); flex-shrink: 0; font-variant-numeric: tabular-nums; min-width: 36px; }
+  .log-line.l-current { color: var(--text); }
+  .log-line.l-err { color: var(--red); }
+  .log-line.l-done { color: var(--green); }
+  /* done */
+  .progress-done { display: none; text-align: center; padding: 10px 0 4px; }
+  .progress-done.visible { display: block; }
+  .progress-done-title { font-size: 15px; font-weight: 600; color: var(--green); margin-bottom: 4px; }
+  .progress-done-sub { font-size: 12px; color: var(--muted); }
+
+  /* btn styles */
+  .btn { padding: 9px 18px; border-radius: 7px; font-size: 13px; font-weight: 600; cursor: pointer; border: 1px solid transparent; transition: all 0.15s; }
+  .btn-primary { background: var(--sn-orange); color: #fff; }
+  .btn-primary:hover { opacity: 0.88; }
+  .btn-primary:disabled { opacity: 0.4; cursor: not-allowed; }
+  .btn-ghost { background: transparent; border-color: var(--border); color: var(--muted); }
+  .btn-ghost:hover { border-color: var(--text); color: var(--text); }
+  .btn-sm { padding: 6px 12px; font-size: 12px; border-radius: 6px; }
+  .btn-danger { background: var(--red); color: #fff; }
+  .btn-danger:hover { opacity: 0.85; }
+
+  /* ── Spinner ── */
+  .loading { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 300px; gap: 16px; color: var(--muted); font-size: 13px; }
+  .spinner { width: 32px; height: 32px; border: 3px solid var(--border); border-top-color: var(--sn-orange); border-radius: 50%; animation: spin 0.7s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── Responsive ── */
+  @media (max-width: 900px) {
+    .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    .brand-grid { grid-template-columns: repeat(2, 1fr); }
+    .chart-row { grid-template-columns: 1fr; }
+    .pdp-row, .pdp-row-header { grid-template-columns: 64px 1fr 80px; }
+    .pdp-row > *:nth-child(4), .pdp-row > *:nth-child(5),
+    .pdp-row-header > *:nth-child(4), .pdp-row-header > *:nth-child(5) { display: none; }
+    .image-expand { padding-left: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-logo">SN</div>
+  <div>
+    <div class="header-title">PDP Gallery Audit</div>
+    <div class="header-sub" id="header-sub">Competitive analysis</div>
+  </div>
+  <div class="header-badge" id="audit-date"></div>
+  <button class="btn btn-primary btn-sm" onclick="openAddBrand()" style="margin-left:12px">+ Add Brand</button>
+</div>
+
+<!-- Add Brand Modal -->
+<div class="modal-backdrop" id="add-brand-modal" onclick="handleBackdropClick(event)">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title">Add Brand</div>
+      <button class="modal-close" onclick="closeAddBrand()">✕</button>
+    </div>
+    <div class="modal-body">
+
+      <!-- Step 1: Identity -->
+      <div class="form-row">
+        <div>
+          <label class="form-label">Brand Name</label>
+          <input class="form-input" id="ab-name" placeholder="e.g. Dyson" oninput="syncBrandKey()">
+        </div>
+        <div>
+          <label class="form-label">Brand Key</label>
+          <input class="form-input" id="ab-key" placeholder="e.g. dyson">
+        </div>
+      </div>
+
+      <!-- Step 2: Discover sitemap (fully automatic) -->
+      <div class="form-group">
+        <label class="form-label">Brand Website</label>
+        <input class="form-input" id="ab-website" placeholder="https://www.dyson.com">
+        <div class="form-hint" id="discover-status-hint">Enter a URL above — sitemap is detected automatically.</div>
+      </div>
+
+      <!-- Discovery results -->
+      <div class="discovery-panel" id="discovery-panel">
+        <div class="discovery-section" id="disc-sitemaps-section">
+          <div class="discovery-section-title">
+            Sitemaps Found
+            <span id="disc-manual-link" class="sitemap-manual" onclick="showManualSitemap()">enter manually ›</span>
+          </div>
+          <div id="disc-sitemaps"></div>
+        </div>
+        <div class="discovery-section" id="disc-patterns-section">
+          <div class="discovery-section-title">Suggested PDP Filters <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--muted)">(click to apply)</span></div>
+          <div class="pattern-chips" id="disc-patterns"></div>
+        </div>
+        <div class="discovery-section">
+          <div class="discovery-section-title">Sample URLs</div>
+          <div id="disc-samples"></div>
+        </div>
+        <div class="discovery-section" id="disc-log-section">
+          <div class="discovery-section-title">Discovery Log</div>
+          <div id="disc-log"></div>
+        </div>
+
+        <!-- Bypass methods — shown when no sitemap found OR always as an alternative -->
+        <div class="bypass-section" id="bypass-section">
+          <div class="bypass-title">No sitemap? Use a bypass method instead</div>
+          <div class="bypass-grid">
+            <button class="bypass-btn" id="bypass-nav-btn" onclick="runBypass('nav')">
+              <span class="bypass-icon">🧭</span>
+              Crawl Site Navigation
+              <span class="bypass-label">Follows nav links → category pages → product pages</span>
+            </button>
+            <button class="bypass-btn" id="bypass-search-btn" onclick="runBypass('search')">
+              <span class="bypass-icon">🔍</span>
+              Detect Platform &amp; Search Web
+              <span class="bypass-label">Shopify API → WooCommerce sitemap → Google browser search</span>
+            </button>
+          </div>
+          <div class="bypass-progress" id="bypass-progress">
+            <div class="bypass-progress-bar-wrap"><div class="bypass-progress-fill" id="bypass-fill"></div></div>
+            <div class="bypass-progress-label" id="bypass-label"></div>
+          </div>
+          <div class="bypass-result" id="bypass-result"></div>
+        </div>
+      </div>
+
+      <!-- Step 3: PDP filter + hidden sitemap (auto-filled; manual override via discovery panel) -->
+      <div id="sitemap-fields">
+        <input type="hidden" id="ab-sitemap">
+        <div id="sitemap-manual-group" class="form-group" style="display:none">
+          <label class="form-label">Sitemap URL <span style="font-weight:400;font-size:11px;color:var(--muted)">(manual override)</span></label>
+          <input class="form-input" id="ab-sitemap-visible" placeholder="https://www.brand.com/sitemap.xml">
+          <div class="form-hint">Supports sitemap indexes — sub-sitemaps followed automatically. Handles .xml.gz too.</div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">PDP URL Filter <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></label>
+          <input class="form-input" id="ab-filter" placeholder="e.g. /products/ — only URLs containing this are crawled">
+          <div class="form-hint">Leave blank to crawl all URLs in the sitemap.</div>
+        </div>
+      </div>
+
+      <!-- Step 4: Probe for image host -->
+      <div class="probe-section">
+        <div class="probe-title">Detect Gallery Image Host</div>
+        <div class="probe-row">
+          <input class="form-input" id="ab-sample-url" placeholder="Paste any PDP URL from this brand to detect the image CDN…" style="flex:1">
+          <button class="btn btn-ghost btn-sm" id="probe-btn" onclick="runProbe()">Test</button>
+        </div>
+        <div class="probe-result" id="probe-result"></div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Gallery Image Host <span style="font-weight:400;text-transform:none;letter-spacing:0">(auto-filled from probe)</span></label>
+        <input class="form-input" id="ab-image-host" placeholder="e.g. cdn.brand.com — leave blank to count all large images">
+        <div class="form-hint">Images not from this host are excluded. Prevents counting nav/logos/icons.</div>
+      </div>
+
+      <!-- Step 5: Options -->
+      <div class="form-group">
+        <label class="form-label">Max PDPs to crawl</label>
+        <div class="slider-wrap">
+          <input type="range" class="form-slider" id="ab-sample" min="10" max="300" value="50" oninput="document.getElementById('ab-sample-val').textContent=this.value">
+          <span class="slider-val" id="ab-sample-val">50</span>
+        </div>
+        <div class="form-hint">Start with 50 to verify the config works, then re-run at full scale.</div>
+      </div>
+
+      <div class="toggle-row">
+        <input type="checkbox" class="toggle-input" id="ab-stealth">
+        <label class="toggle-label" for="ab-stealth">Use stealth mode (slower but bypasses bot detection on anti-scraping sites)</label>
+      </div>
+
+      <!-- Progress -->
+      <div class="progress-panel" id="progress-panel" style="margin-top:18px">
+
+        <!-- Step tracker -->
+        <div class="step-track">
+          <div class="step-item" id="step-crawl">
+            <div class="step-dot"></div>
+            <div class="step-lbl">Sitemap</div>
+          </div>
+          <div class="step-connector" id="conn-1"></div>
+          <div class="step-item" id="step-extract">
+            <div class="step-dot"></div>
+            <div class="step-lbl">Extract</div>
+          </div>
+          <div class="step-connector" id="conn-2"></div>
+          <div class="step-item" id="step-merge">
+            <div class="step-dot"></div>
+            <div class="step-lbl">Merge</div>
+          </div>
+        </div>
+
+        <!-- Bar -->
+        <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progress-fill"></div></div>
+
+        <!-- Status + timer -->
+        <div class="progress-status-row">
+          <div class="progress-label" id="progress-label">Starting…</div>
+          <div class="progress-elapsed" id="progress-elapsed"></div>
+        </div>
+
+        <!-- Stats (shown during extraction) -->
+        <div class="progress-stats" id="progress-stats">
+          <div class="stat-item s-ok">
+            <span class="stat-num" id="stat-done-n">0</span>done
+          </div>
+          <div class="stat-item s-err" id="stat-err-wrap" style="display:none">
+            <span class="stat-num" id="stat-err-n">0</span>errors
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" id="stat-total-n">–</span>total
+          </div>
+          <div class="stat-item" style="border-left:1px solid var(--border);padding-left:20px">
+            <span class="stat-num" id="stat-images-n">0</span>assets
+          </div>
+        </div>
+
+        <!-- Live log feed -->
+        <div class="progress-log" id="progress-log"></div>
+
+        <!-- Done summary -->
+        <div class="progress-done" id="progress-done">
+          <div class="progress-done-title" id="progress-done-title"></div>
+          <div class="progress-done-sub" id="progress-done-sub"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-ghost" id="modal-cancel-btn" onclick="closeAddBrand()">Cancel</button>
+      <button class="btn btn-primary" id="modal-run-btn" onclick="startCrawl()">Run Crawl</button>
+    </div>
+  </div>
+</div>
+
+<div class="main" id="app">
+  <div class="loading">
+    <div class="spinner"></div>
+    Loading audit data…
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">✕</span>
+  <button class="lightbox-nav prev" id="lb-prev" onclick="event.stopPropagation();lbStep(-1)" aria-label="Previous image">&#8592;</button>
+  <img id="lightbox-img" src="" alt="" onclick="event.stopPropagation()">
+  <button class="lightbox-nav next" id="lb-next" onclick="event.stopPropagation();lbStep(1)" aria-label="Next image">&#8594;</button>
+  <div class="lightbox-counter" id="lb-counter"></div>
+</div>
+
+<script>
+const BRAND_COLORS = {
+  sharkninja:     '#ff6b00',
+  vitamix:        '#e63946',
+  breville:       '#2a9d8f',
+  williamssonoma: '#6a5acd',
+  dyson:          '#c0272d',
+};
+const BRAND_NAMES = {
+  sharkninja:     'SharkNinja',
+  vitamix:        'Vitamix',
+  breville:       'Breville',
+  williamssonoma: 'Williams-Sonoma',
+  dyson:          'Dyson',
+};
+
+let allData = [];
+let filtered = [];
+let currentPage = 1;
+const PAGE_SIZE = 30;
+let activeBrand = 'all';
+let searchQuery = '';
+let sortKey = 'gallery_desc';
+let expandedRows = new Set();
+
+function countClass(n) {
+  if (n === 0) return 'count-0';
+  if (n <= 3) return 'count-low';
+  if (n <= 8) return 'count-mid';
+  return 'count-high';
+}
+
+function brandStats(data) {
+  const stats = {};
+  for (const p of data) {
+    const b = p.brand;
+    if (!stats[b]) stats[b] = { brand: b, name: p.brandName, pdps: 0, images: 0, sizes: [] };
+    stats[b].pdps++;
+    stats[b].images += p.galleryImageCount;
+    stats[b].sizes.push(p.galleryImageCount);
+  }
+  return Object.values(stats).map(s => ({
+    ...s,
+    avg: s.images / s.pdps,
+    min: Math.min(...s.sizes),
+    max: Math.max(...s.sizes),
+  }));
+}
+
+function drawBarChart(canvas, labels, values, colors, title) {
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const W = canvas.offsetWidth || 500;
+  const H = 180;
+  canvas.width = W * dpr;
+  canvas.height = H * dpr;
+  canvas.style.width = W + 'px';
+  canvas.style.height = H + 'px';
+  ctx.scale(dpr, dpr);
+
+  const pad = { top: 16, right: 16, bottom: 40, left: 48 };
+  const chartW = W - pad.left - pad.right;
+  const chartH = H - pad.top - pad.bottom;
+  const maxVal = Math.max(...values) * 1.15 || 1;
+  const barW = Math.floor(chartW / labels.length * 0.6);
+  const gap = Math.floor(chartW / labels.length);
+
+  ctx.clearRect(0, 0, W, H);
+
+  // grid lines
+  for (let i = 0; i <= 4; i++) {
+    const y = pad.top + chartH - (i / 4) * chartH;
+    ctx.strokeStyle = '#2e2e38';
+    ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(W - pad.right, y); ctx.stroke();
+    ctx.fillStyle = '#8888aa';
+    ctx.font = '10px system-ui';
+    ctx.textAlign = 'right';
+    ctx.fillText(Math.round(maxVal * i / 4 * 10) / 10, pad.left - 6, y + 3.5);
+  }
+
+  // bars
+  values.forEach((v, i) => {
+    const x = pad.left + i * gap + (gap - barW) / 2;
+    const barH = (v / maxVal) * chartH;
+    const y = pad.top + chartH - barH;
+    ctx.fillStyle = colors[i] || '#ff6b00';
+    ctx.beginPath();
+    ctx.roundRect(x, y, barW, barH, [4, 4, 0, 0]);
+    ctx.fill();
+
+    // value label
+    ctx.fillStyle = '#f0f0f5';
+    ctx.font = 'bold 11px system-ui';
+    ctx.textAlign = 'center';
+    ctx.fillText(typeof v === 'number' ? (v % 1 ? v.toFixed(1) : v) : v, x + barW / 2, y - 5);
+
+    // x label
+    ctx.fillStyle = '#8888aa';
+    ctx.font = '11px system-ui';
+    ctx.fillText(labels[i], x + barW / 2, pad.top + chartH + 18);
+  });
+}
+
+function drawDistChart(canvas, dist, color) {
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const W = canvas.offsetWidth || 500;
+  const H = 160;
+  canvas.width = W * dpr;
+  canvas.height = H * dpr;
+  canvas.style.width = W + 'px';
+  canvas.style.height = H + 'px';
+  ctx.scale(dpr, dpr);
+
+  const pad = { top: 16, right: 8, bottom: 28, left: 36 };
+  const chartW = W - pad.left - pad.right;
+  const chartH = H - pad.top - pad.bottom;
+
+  const maxKey = Math.max(...Object.keys(dist).map(Number));
+  const keys = Array.from({ length: maxKey + 1 }, (_, i) => i);
+  const values = keys.map(k => dist[k] || 0);
+  const maxVal = Math.max(...values) || 1;
+  const barW = Math.max(2, Math.floor(chartW / keys.length * 0.7));
+  const step = chartW / keys.length;
+
+  ctx.clearRect(0, 0, W, H);
+
+  // grid
+  for (let i = 0; i <= 3; i++) {
+    const y = pad.top + chartH - (i / 3) * chartH;
+    ctx.strokeStyle = '#2e2e38'; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(W - pad.right, y); ctx.stroke();
+    if (i > 0) {
+      ctx.fillStyle = '#8888aa'; ctx.font = '9px system-ui'; ctx.textAlign = 'right';
+      ctx.fillText(Math.round(maxVal * i / 3), pad.left - 4, y + 3);
+    }
+  }
+
+  // bars
+  keys.forEach((k, i) => {
+    const v = values[i];
+    const x = pad.left + i * step + (step - barW) / 2;
+    const barH = (v / maxVal) * chartH;
+    const y = pad.top + chartH - barH;
+    ctx.fillStyle = v > 0 ? color : '#2e2e38';
+    ctx.beginPath();
+    ctx.roundRect(x, y, barW, barH, [2, 2, 0, 0]);
+    ctx.fill();
+
+    // x label (every few)
+    if (k % 3 === 0 || k === maxKey) {
+      ctx.fillStyle = '#8888aa'; ctx.font = '9px system-ui'; ctx.textAlign = 'center';
+      ctx.fillText(k, x + barW / 2, pad.top + chartH + 14);
+    }
+  });
+}
+
+function applyFilters() {
+  filtered = allData.filter(p => {
+    if (activeBrand !== 'all' && p.brand !== activeBrand) return false;
+    if (searchQuery) {
+      const q = searchQuery.toLowerCase();
+      if (!p.family.includes(q) && !p.url.toLowerCase().includes(q) && !p.brandName.toLowerCase().includes(q)) return false;
+    }
+    return true;
+  });
+
+  filtered.sort((a, b) => {
+    if (sortKey === 'gallery_desc') return b.galleryImageCount - a.galleryImageCount;
+    if (sortKey === 'gallery_asc') return a.galleryImageCount - b.galleryImageCount;
+    if (sortKey === 'name_asc') return a.family.localeCompare(b.family);
+    return 0;
+  });
+
+  currentPage = 1;
+  expandedRows.clear();
+  renderTable();
+}
+
+function renderTable() {
+  const start = (currentPage - 1) * PAGE_SIZE;
+  const page = filtered.slice(start, start + PAGE_SIZE);
+  const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
+
+  const tableEl = document.getElementById('pdp-table-body');
+  tableEl.innerHTML = '';
+
+  if (filtered.length === 0) {
+    tableEl.innerHTML = '<div style="padding:40px;text-align:center;color:var(--muted);">No results</div>';
+    renderPagination(0, 0);
+    return;
+  }
+
+  page.forEach((p, idx) => {
+    const globalIdx = start + idx;
+    const thumbs = p.images.slice(0, 4);
+    const extra = Math.max(0, p.images.length - 4);
+    const thumbHtml = thumbs.map(img =>
+      `<img class="thumb" src="${img.src}" alt="" loading="lazy" onerror="this.style.display='none'">`
+    ).join('') + (extra > 0 ? `<div class="thumb-more">+${extra}</div>` : '');
+
+    const dot = `<span class="brand-dot" style="background:${BRAND_COLORS[p.brand]}"></span>`;
+    const cnt = p.galleryImageCount;
+    const badge = `<span class="count-badge ${countClass(cnt)}">${cnt}</span>`;
+
+    const row = document.createElement('div');
+    row.className = 'pdp-row' + (expandedRows.has(globalIdx) ? ' expanded' : '');
+    row.dataset.idx = globalIdx;
+    row.innerHTML = `
+      <div class="thumb-strip">${thumbHtml || '<span style="color:var(--muted);font-size:11px">—</span>'}</div>
+      <div><div class="pdp-family">${dot}${p.family.replace(/-/g, ' ')}</div><div class="pdp-url">${p.url}</div></div>
+      <div>${dot}${p.brandName}</div>
+      <div>${badge}</div>
+      <div class="expand-icon">${expandedRows.has(globalIdx) ? '▲' : '▼'}</div>
+    `;
+    row.addEventListener('click', () => toggleRow(globalIdx, p, row));
+    tableEl.appendChild(row);
+
+    const expand = document.createElement('div');
+    expand.className = 'image-expand' + (expandedRows.has(globalIdx) ? ' open' : '');
+    expand.id = `expand-${globalIdx}`;
+
+    if (p.images.length === 0) {
+      expand.innerHTML = '<div class="empty-gallery">No gallery images captured for this PDP.</div>';
+    } else {
+      lbImageMap.set(globalIdx, p.images.map(img => img.src));
+      const imgs = p.images.map((img, i) =>
+        `<img src="${img.src}" alt="Position ${img.sequencePosition}" loading="lazy" title="Position ${img.sequencePosition}" onclick="openLightbox(${globalIdx},${i},event)">`
+      ).join('');
+      expand.innerHTML = `<div class="image-grid">${imgs}</div>`;
+    }
+    tableEl.appendChild(expand);
+  });
+
+  renderPagination(currentPage, totalPages);
+  document.getElementById('pdp-count').textContent = `${filtered.length} PDPs`;
+}
+
+function toggleRow(idx, p, rowEl) {
+  if (expandedRows.has(idx)) {
+    expandedRows.delete(idx);
+    rowEl.classList.remove('expanded');
+    rowEl.querySelector('.expand-icon').textContent = '▼';
+    document.getElementById(`expand-${idx}`)?.classList.remove('open');
+  } else {
+    expandedRows.add(idx);
+    rowEl.classList.add('expanded');
+    rowEl.querySelector('.expand-icon').textContent = '▲';
+    document.getElementById(`expand-${idx}`)?.classList.add('open');
+  }
+}
+
+function renderPagination(page, totalPages) {
+  const el = document.getElementById('pagination');
+  if (totalPages <= 1) { el.innerHTML = ''; return; }
+  let html = `<button class="page-btn" onclick="goPage(${page - 1})" ${page === 1 ? 'disabled' : ''}>‹</button>`;
+  const range = [];
+  for (let i = 1; i <= totalPages; i++) {
+    if (i === 1 || i === totalPages || Math.abs(i - page) <= 2) range.push(i);
+    else if (range[range.length - 1] !== '…') range.push('…');
+  }
+  range.forEach(r => {
+    if (r === '…') html += `<span class="page-info">…</span>`;
+    else html += `<button class="page-btn${r === page ? ' active' : ''}" onclick="goPage(${r})">${r}</button>`;
+  });
+  html += `<button class="page-btn" onclick="goPage(${page + 1})" ${page === totalPages ? 'disabled' : ''}>›</button>`;
+  html += `<span class="page-info">${filtered.length} total</span>`;
+  el.innerHTML = html;
+}
+
+function goPage(n) {
+  currentPage = n;
+  expandedRows.clear();
+  renderTable();
+  document.getElementById('pdp-table-wrap').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+const lbImageMap = new Map();
+let lbImages = [];
+let lbIndex = 0;
+
+function openLightbox(globalIdx, imgIndex, e) {
+  e.stopPropagation();
+  lbImages = lbImageMap.get(globalIdx) || [];
+  lbIndex = imgIndex;
+  lbShow();
+  document.getElementById('lightbox').classList.add('open');
+}
+function lbShow() {
+  document.getElementById('lightbox-img').src = lbImages[lbIndex] || '';
+  document.getElementById('lb-counter').textContent = lbImages.length > 1
+    ? `${lbIndex + 1} / ${lbImages.length}` : '';
+  document.getElementById('lb-prev').disabled = lbIndex === 0;
+  document.getElementById('lb-next').disabled = lbIndex === lbImages.length - 1;
+}
+function lbStep(dir) {
+  const next = lbIndex + dir;
+  if (next < 0 || next >= lbImages.length) return;
+  lbIndex = next;
+  lbShow();
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+}
+document.addEventListener('keydown', e => {
+  if (!document.getElementById('lightbox').classList.contains('open')) return;
+  if (e.key === 'Escape') closeLightbox();
+  else if (e.key === 'ArrowLeft') lbStep(-1);
+  else if (e.key === 'ArrowRight') lbStep(1);
+});
+
+function brandColor(key) {
+  return BRAND_COLORS[key] || '#888899';
+}
+
+function render(data) {
+  const stats = brandStats(data);
+  const totalPdps = data.length;
+  const totalImages = data.reduce((s, p) => s + p.galleryImageCount, 0);
+  const snStats = stats.find(s => s.brand === 'sharkninja');
+  const competitorAvg = stats.filter(s => s.brand !== 'sharkninja').reduce((s, b) => s + b.avg, 0) /
+    stats.filter(s => s.brand !== 'sharkninja').length;
+
+  // Update header dynamically
+  document.getElementById('header-sub').textContent =
+    'Competitive analysis — ' + stats.map(s => s.name).join(' · ');
+  const latestDate = data.reduce((latest, p) => {
+    const d = p.extractedAt ? new Date(p.extractedAt) : null;
+    return d && (!latest || d > latest) ? d : latest;
+  }, null);
+  document.getElementById('audit-date').textContent = latestDate
+    ? 'Crawled ' + latestDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+    : '';
+
+  const app = document.getElementById('app');
+  app.innerHTML = `
+    <!-- KPI Row -->
+    <div style="margin-bottom:10px" class="section-title">Overview</div>
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">PDPs Audited</div>
+        <div class="kpi-value">${totalPdps.toLocaleString()}</div>
+        <div class="kpi-sub">across ${stats.length} brands</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Gallery Images</div>
+        <div class="kpi-value">${totalImages.toLocaleString()}</div>
+        <div class="kpi-sub">total captured</div>
+      </div>
+      <div class="kpi-card highlight">
+        <div class="kpi-label">SharkNinja Avg Gallery</div>
+        <div class="kpi-value">${snStats.avg.toFixed(1)}</div>
+        <div class="kpi-sub">images per PDP</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Competitor Avg Gallery</div>
+        <div class="kpi-value">${competitorAvg.toFixed(1)}</div>
+        <div class="kpi-sub">images per PDP</div>
+      </div>
+    </div>
+
+    <!-- Refresh strip (populated by loadRefreshStatus) -->
+    <div class="refresh-strip" id="refresh-strip">
+      <div class="refresh-icon">↺</div>
+      <div class="refresh-meta">
+        <div class="refresh-title">Weekly Auto-Refresh</div>
+        <div class="refresh-detail" id="refresh-detail"><span style="color:var(--muted)">Loading schedule…</span></div>
+      </div>
+      <div class="refresh-running" id="refresh-running">
+        <div class="refresh-run-bar-wrap"><div class="refresh-run-bar" id="refresh-run-bar"></div></div>
+        <div class="refresh-run-label" id="refresh-run-label"></div>
+      </div>
+      <div class="refresh-actions">
+        <button class="btn btn-ghost btn-sm" id="refresh-now-btn" onclick="triggerRefresh()">Refresh Now</button>
+        <label class="refresh-toggle" title="Enable / disable weekly auto-refresh">
+          <div class="toggle-switch" id="refresh-toggle-switch" onclick="toggleRefreshEnabled()"></div>
+        </label>
+      </div>
+    </div>
+
+    <!-- Brand Cards -->
+    <div class="section-title">By Brand</div>
+    <div class="brand-grid">
+      ${stats.map(s => {
+        const bd = window.refreshStatus?.recentHistory?.[0]?.brands?.[s.brand];
+        const deltaPills = bd ? [
+          bd.added   > 0 ? `<span class="delta-pill delta-new">+${bd.added} new</span>`      : '',
+          bd.changed > 0 ? `<span class="delta-pill delta-upd">${bd.changed} updated</span>` : '',
+          bd.removed > 0 ? `<span class="delta-pill delta-rem">${bd.removed} removed</span>` : '',
+        ].filter(Boolean).join('') : '';
+        return `
+        <div class="brand-card" data-brand="${s.brand}">
+          <div class="brand-name">${s.name}</div>
+          <div class="brand-stat"><span class="brand-stat-label">PDPs</span><span class="brand-stat-value stat-neutral">${s.pdps}</span></div>
+          <div class="brand-stat"><span class="brand-stat-label">Total Images</span><span class="brand-stat-value stat-neutral">${s.images.toLocaleString()}</span></div>
+          <div class="brand-stat"><span class="brand-stat-label">Avg Gallery Size</span><span class="brand-stat-value ${s.avg < 4 ? 'stat-warn' : s.avg >= 8 ? 'stat-good' : 'stat-neutral'}">${s.avg.toFixed(1)}</span></div>
+          <div class="brand-stat"><span class="brand-stat-label">Min / Max</span><span class="brand-stat-value">${s.min} – ${s.max}</span></div>
+          ${deltaPills ? `<div class="brand-delta">${deltaPills}</div>` : ''}
+        </div>`;
+      }).join('')}
+    </div>
+
+    <!-- Recent Changes panel (populated by loadRefreshStatus) -->
+    <div class="changes-panel" id="changes-panel" style="display:none">
+      <div class="changes-header" onclick="this.closest('.changes-panel').classList.toggle('open')">
+        <span class="changes-toggle-icon">▶</span>
+        <span class="section-title" style="margin:0">Recent Refresh History</span>
+        <span id="changes-header-sub" style="font-size:12px;color:var(--muted);margin-left:auto"></span>
+      </div>
+      <div class="changes-body" id="changes-body"></div>
+    </div>
+
+    <!-- Charts -->
+    <div class="section-title">Gallery Size Analysis</div>
+    <div class="chart-row">
+      <div class="chart-card">
+        <div class="chart-title">Average Gallery Images per PDP</div>
+        <div class="chart-sub">Number of images in the PDP gallery carousel</div>
+        <canvas id="chart-avg" height="180"></canvas>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Total Images Captured</div>
+        <div class="chart-sub">Raw volume of images collected per brand</div>
+        <canvas id="chart-total" height="180"></canvas>
+      </div>
+    </div>
+    <div class="chart-row" id="dist-charts">
+      ${stats.map(s => `
+        <div class="chart-card">
+          <div class="chart-title">${s.name} — Gallery Size Distribution</div>
+          <div class="chart-sub"># PDPs with N gallery images</div>
+          <canvas id="dist-${s.brand}" height="160"></canvas>
+        </div>
+      `).join('')}
+    </div>
+
+    <!-- PDP Browser -->
+    <div class="section-title">PDP Browser</div>
+    <div class="filter-bar">
+      <button class="filter-btn active" data-brand="all" onclick="setBrand('all', this)">All</button>
+      ${stats.map(s => `<button class="filter-btn" data-brand="${s.brand}" onclick="setBrand('${s.brand}', this)">${s.name} <span style="color:var(--muted);font-weight:400">${s.pdps}</span></button>`).join('')}
+      <input class="search-box" id="search" placeholder="Search product family or URL…" oninput="setSearch(this.value)">
+      <span class="sort-label">Sort:</span>
+      <select class="sort-select" onchange="setSort(this.value)">
+        <option value="gallery_desc">Gallery size ↓</option>
+        <option value="gallery_asc">Gallery size ↑</option>
+        <option value="name_asc">Name A–Z</option>
+      </select>
+    </div>
+    <div class="pdp-table-wrap" id="pdp-table-wrap">
+      <div class="pdp-row-header">
+        <span>Preview</span><span>Product</span><span>Brand</span><span>Gallery Size</span><span></span>
+      </div>
+      <div id="pdp-table-body"></div>
+    </div>
+    <div id="pagination" class="pagination"></div>
+    <div id="pdp-count" style="text-align:center;font-size:11px;color:var(--muted);margin-bottom:32px;"></div>
+  `;
+
+  // Draw charts after DOM is ready
+  requestAnimationFrame(() => {
+    const labels = stats.map(s => s.name.replace('Williams-Sonoma', 'W-S'));
+    const colors = stats.map(s => brandColor(s.brand));
+
+    drawBarChart(document.getElementById('chart-avg'), labels, stats.map(s => s.avg), colors);
+    drawBarChart(document.getElementById('chart-total'), labels, stats.map(s => s.images), colors);
+
+    stats.forEach(s => {
+      const dist = {};
+      s.sizes.forEach(n => dist[n] = (dist[n] || 0) + 1);
+      drawDistChart(document.getElementById(`dist-${s.brand}`), dist, brandColor(s.brand));
+    });
+  });
+
+  filtered = [...data];
+  applyFilters();
+}
+
+window.setBrand = (brand, btn) => {
+  activeBrand = brand;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  applyFilters();
+};
+window.setSearch = (val) => { searchQuery = val.toLowerCase(); applyFilters(); };
+window.setSort = (val) => { sortKey = val; applyFilters(); };
+window.goPage = goPage;
+window.openLightbox = openLightbox;
+window.lbStep = lbStep;
+
+// ── Add Brand modal ─────────────────────────────────────────────────────────
+window.openAddBrand = () => {
+  document.getElementById('add-brand-modal').classList.add('open');
+  resetModal();
+};
+window.closeAddBrand = () => {
+  document.getElementById('add-brand-modal').classList.remove('open');
+};
+window.handleBackdropClick = (e) => {
+  if (e.target === document.getElementById('add-brand-modal')) closeAddBrand();
+};
+window.syncBrandKey = () => {
+  const name = document.getElementById('ab-name').value;
+  document.getElementById('ab-key').value = name.toLowerCase().replace(/[^a-z0-9]+/g, '');
+};
+window.showManualSitemap = () => {
+  const group = document.getElementById('sitemap-manual-group');
+  group.style.display = 'block';
+  document.getElementById('ab-sitemap-visible').focus();
+  group.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+};
+
+function resetModal() {
+  document.getElementById('progress-panel').classList.remove('visible');
+  document.getElementById('progress-fill').style.width = '0%';
+  document.getElementById('progress-label').textContent = 'Starting…';
+  document.getElementById('progress-label').style.color = '';
+  document.getElementById('progress-log').innerHTML = '';
+  document.getElementById('progress-log').classList.remove('visible');
+  document.getElementById('progress-stats').classList.remove('visible');
+  document.getElementById('progress-elapsed').textContent = '';
+  ['step-crawl', 'step-extract', 'step-merge'].forEach(id =>
+    document.getElementById(id).className = 'step-item'
+  );
+  ['conn-1', 'conn-2'].forEach(id =>
+    document.getElementById(id).className = 'step-connector'
+  );
+  document.getElementById('progress-done').classList.remove('visible');
+  document.getElementById('modal-run-btn').disabled = false;
+  document.getElementById('modal-run-btn').textContent = 'Run Crawl';
+  document.getElementById('modal-run-btn').onclick = startCrawl;
+  document.getElementById('modal-cancel-btn').textContent = 'Cancel';
+  document.getElementById('discovery-panel').classList.remove('visible');
+  document.getElementById('ab-sitemap').value = '';
+  document.getElementById('ab-sitemap-visible').value = '';
+  document.getElementById('sitemap-manual-group').style.display = 'none';
+  setDiscoverStatus('', 'Enter a URL above — sitemap is detected automatically.');
+  bypassUrls = null;
+}
+
+// ── Discover: fires automatically when website URL is entered ────────────────
+let _discoverDebounce = null;
+
+function initDiscoverTrigger() {
+  const field = document.getElementById('ab-website');
+  field.addEventListener('input', () => {
+    clearTimeout(_discoverDebounce);
+    const val = field.value.trim();
+    if (!val || !val.startsWith('http')) {
+      setDiscoverStatus('', 'Enter a URL above — sitemap is detected automatically.');
+      return;
+    }
+    setDiscoverStatus('detecting', 'Detecting sitemap…');
+    _discoverDebounce = setTimeout(runDiscover, 900);
+  });
+  field.addEventListener('blur', () => {
+    clearTimeout(_discoverDebounce);
+    const val = field.value.trim();
+    if (val && val.startsWith('http')) runDiscover();
+  });
+}
+
+function setDiscoverStatus(state, text) {
+  const el = document.getElementById('discover-status-hint');
+  el.textContent = text;
+  el.style.color = state === 'ok' ? 'var(--green)' : state === 'warn' ? 'var(--yellow)' : state === 'err' ? 'var(--red)' : '';
+}
+
+window.runDiscover = async () => {
+  const url = document.getElementById('ab-website').value.trim();
+  if (!url || !url.startsWith('http')) return;
+  document.getElementById('ab-website').classList.remove('error');
+
+  setDiscoverStatus('detecting', 'Detecting sitemap…');
+
+  // Auto-fill brand name from hostname if empty
+  if (!document.getElementById('ab-name').value.trim()) {
+    try {
+      const host = new URL(url).hostname.replace(/^www\./, '');
+      const name = host.split('.')[0];
+      document.getElementById('ab-name').value = name.charAt(0).toUpperCase() + name.slice(1);
+      syncBrandKey();
+    } catch {}
+  }
+
+  try {
+    const res = await fetch('/api/discover', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url }),
+    });
+    const data = await res.json();
+    renderDiscovery(data);
+
+    if (data.sitemaps?.length) {
+      const short = data.sitemaps[0].replace(/^https?:\/\/[^/]+/, '');
+      setDiscoverStatus('ok', `✓ Sitemap detected: ${short}`);
+    } else {
+      setDiscoverStatus('warn', 'No sitemap found — use a bypass method below.');
+    }
+  } catch (e) {
+    renderDiscovery({ sitemaps: [], patterns: [], sampleUrls: [], log: [], warning: e.message });
+    setDiscoverStatus('err', `Detection failed: ${e.message}`);
+  }
+};
+
+function renderDiscovery({ sitemaps, patterns, sampleUrls, log, warning }) {
+  const panel = document.getElementById('discovery-panel');
+  panel.classList.add('visible');
+
+  // Show bypass section — always present but titled differently depending on whether sitemap found
+  const bypassSection = document.getElementById('bypass-section');
+  bypassSection.querySelector('.bypass-title').textContent = sitemaps.length
+    ? 'Or use a bypass method if the sitemap is missing products'
+    : 'No sitemap found — use a bypass method to discover product URLs';
+  // Reset bypass result
+  document.getElementById('bypass-result').className = 'bypass-result';
+  document.getElementById('bypass-progress').classList.remove('visible');
+  document.getElementById('bypass-fill').style.width = '0%';
+
+  // Sitemaps
+  const smEl = document.getElementById('disc-sitemaps');
+  if (warning) {
+    smEl.innerHTML = `<div class="discover-warning">${warning}</div>`;
+  } else if (!sitemaps.length) {
+    smEl.innerHTML = '<div class="discover-warning">No sitemaps found automatically. Enter one below or use a bypass method.</div>';
+  } else {
+    smEl.innerHTML = sitemaps.map((s, i) => `
+      <div class="sitemap-opt${i === 0 ? ' selected' : ''}" onclick="selectSitemap('${s.replace(/'/g, "\\'")}', this)">
+        <div class="sitemap-radio"></div>
+        <span>${s}</span>
+      </div>
+    `).join('');
+    // Auto-fill the sitemap field with the first one
+    document.getElementById('ab-sitemap').value = sitemaps[0];
+  }
+
+  // PDP patterns
+  const ptEl = document.getElementById('disc-patterns');
+  if (!patterns.length) {
+    ptEl.innerHTML = '<span style="font-size:11px;color:var(--green)">✓ All URLs appear to be products — no filter needed. Leave the PDP filter field blank.</span>';
+  } else {
+    ptEl.innerHTML = patterns.map(p => `
+      <span class="pattern-chip" onclick="selectPattern('${p.pattern.replace(/'/g, "\\'")}', this)" title="${p.score} URL matches">${p.pattern}</span>
+    `).join('');
+  }
+
+  // Sample URLs
+  const spEl = document.getElementById('disc-samples');
+  spEl.innerHTML = (sampleUrls || []).slice(0, 8).map(u =>
+    `<div class="sample-url-item" title="${u}">${u}</div>`
+  ).join('') || '<span style="font-size:11px;color:var(--muted)">No URLs sampled.</span>';
+
+  // Log
+  const lgEl = document.getElementById('disc-log');
+  lgEl.innerHTML = (log || []).map(l =>
+    `<div class="log-item">${l}</div>`
+  ).join('') || '<div class="log-item">No log entries.</div>';
+}
+
+window.selectSitemap = (url, el) => {
+  document.querySelectorAll('.sitemap-opt').forEach(o => o.classList.remove('selected'));
+  el.classList.add('selected');
+  document.getElementById('ab-sitemap').value = url;
+  const short = url.replace(/^https?:\/\/[^/]+/, '');
+  setDiscoverStatus('ok', `✓ Sitemap selected: ${short}`);
+};
+
+window.selectPattern = (pattern, el) => {
+  document.querySelectorAll('.pattern-chip').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  document.getElementById('ab-filter').value = pattern;
+};
+
+// ── Bypass discovery (category crawl or web search) ──────────────────────────
+let bypassUrls = null; // filled when a bypass method succeeds
+
+window.runBypass = async (method) => {
+  const websiteUrl = document.getElementById('ab-website').value.trim();
+  const brandKey   = document.getElementById('ab-key').value.trim();
+  const brandName  = document.getElementById('ab-name').value.trim();
+  const useStealth = document.getElementById('ab-stealth').checked;
+
+  if (!websiteUrl) { document.getElementById('ab-website').classList.add('error'); return; }
+  if (!brandKey)   { document.getElementById('ab-key').classList.add('error'); return; }
+
+  const navBtn    = document.getElementById('bypass-nav-btn');
+  const searchBtn = document.getElementById('bypass-search-btn');
+  const prog      = document.getElementById('bypass-progress');
+  const fill      = document.getElementById('bypass-fill');
+  const label     = document.getElementById('bypass-label');
+  const result    = document.getElementById('bypass-result');
+
+  // Reset UI
+  navBtn.disabled = true; searchBtn.disabled = true;
+  prog.classList.add('visible');
+  result.className = 'bypass-result';
+  fill.style.width = '0%';
+  label.textContent = method === 'nav' ? 'Launching browser…' : 'Detecting platform…';
+
+  // Stream ID — create SSE subscription first
+  const streamId = `bypass-${Date.now()}`;
+  const es = new EventSource(`/api/stream/${streamId}`);
+
+  es.onmessage = (e) => {
+    const msg = JSON.parse(e.data);
+    if (msg.type === 'progress') {
+      fill.style.width = msg.pct + '%';
+      label.textContent = msg.message;
+    } else if (msg.type === 'done') {
+      es.close();
+      fill.style.width = '100%';
+      const methodLabel = msg.method === 'category-crawl' ? 'site navigation crawl' : 'web search';
+      result.className = 'bypass-result visible ' + (msg.count > 0 ? 'success' : 'warn');
+      result.textContent = msg.count > 0
+        ? `✓ Found ${msg.count} product URLs via ${methodLabel}. Ready — click Run Crawl.`
+        : `No product URLs found via ${methodLabel}. Try the other method or enter a sitemap URL manually.`;
+
+      // Clear sitemap so pipeline auto-loads the discovered file
+      if (msg.count > 0) {
+        document.getElementById('ab-sitemap').value = '';
+        bypassUrls = { brandKey, count: msg.count };
+      }
+
+      navBtn.disabled = false; searchBtn.disabled = false;
+    } else if (msg.type === 'error') {
+      es.close();
+      fill.style.width = '0%';
+      result.className = 'bypass-result visible warn';
+      result.textContent = `Error: ${msg.message}`;
+      navBtn.disabled = false; searchBtn.disabled = false;
+    }
+  };
+
+  es.onerror = () => {
+    es.close();
+    label.textContent = 'Connection lost';
+    navBtn.disabled = false; searchBtn.disabled = false;
+  };
+
+  // Kick off the endpoint
+  const endpoint = method === 'nav' ? '/api/crawl-categories' : '/api/search-urls';
+  await fetch(endpoint, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ url: websiteUrl, brandKey, brandName, useStealth, streamId }),
+  });
+};
+
+// ── Probe: visit sample PDP, detect gallery image groups, auto-retry stealth ─
+window.runProbe = async (useStealth = false) => {
+  const url = document.getElementById('ab-sample-url').value.trim();
+  if (!url) return;
+
+  const btn = document.getElementById('probe-btn');
+  const result = document.getElementById('probe-result');
+  btn.disabled = true;
+  btn.textContent = useStealth ? 'Stealth…' : 'Visiting…';
+  result.innerHTML = '<div class="probe-status">Loading page and detecting images' + (useStealth ? ' (stealth mode)' : '') + '…</div>';
+
+  try {
+    const res = await fetch('/api/probe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url, useStealth }),
+    });
+    const data = await res.json();
+
+    // Server says to retry with stealth
+    if (data.retry) {
+      result.innerHTML = `<div class="probe-status log-warn">Standard load failed (${data.error}). Retrying with stealth…</div>`;
+      btn.disabled = false;
+      btn.textContent = 'Test';
+      document.getElementById('ab-stealth').checked = true;
+      return runProbe(true);
+    }
+
+    if (data.error) throw new Error(data.error);
+    if (!data.groups?.length) {
+      result.innerHTML = '<div class="probe-status">No large images found. Try enabling stealth mode and testing again.</div>';
+      return;
+    }
+
+    const stealthNote = data.usedStealth ? ' <span style="color:var(--green);font-size:10px">[stealth]</span>' : '';
+    result.innerHTML = data.groups.map(g => `
+      <div class="probe-group" data-host="${g.host}" onclick="selectHost('${g.host}', this)">
+        <div class="probe-thumbs">${g.previews.slice(0, 4).map(p =>
+          `<img class="probe-thumb" src="${p.src}" alt="" onerror="this.style.opacity=0.15">`
+        ).join('')}</div>
+        <div class="probe-host">${g.host}${stealthNote}</div>
+        <div class="probe-count">${g.count} image${g.count !== 1 ? 's' : ''}</div>
+      </div>
+    `).join('');
+  } catch (e) {
+    result.innerHTML = `<div class="probe-status" style="color:var(--red)">Error: ${e.message}</div>`;
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Test';
+  }
+};
+
+window.selectHost = (host, el) => {
+  document.querySelectorAll('.probe-group').forEach(g => g.classList.remove('selected'));
+  el.classList.add('selected');
+  document.getElementById('ab-image-host').value = host;
+};
+
+// ── Run the full crawl pipeline ──────────────────────────────────────────────
+window.startCrawl = async () => {
+  const brandName  = document.getElementById('ab-name').value.trim();
+  const brandKey   = document.getElementById('ab-key').value.trim();
+  // Use manual override if entered, otherwise fall back to auto-detected hidden value
+  const manualOverride = document.getElementById('ab-sitemap-visible').value.trim();
+  const sitemapUrl = manualOverride || document.getElementById('ab-sitemap').value.trim();
+  const pdpFilter  = document.getElementById('ab-filter').value.trim();
+  const imageHost  = document.getElementById('ab-image-host').value.trim();
+  const sampleSize = parseInt(document.getElementById('ab-sample').value, 10);
+  const useStealth = document.getElementById('ab-stealth').checked;
+
+  let valid = true;
+  ['ab-name', 'ab-key'].forEach(id => {
+    const el = document.getElementById(id);
+    el.classList.toggle('error', !el.value.trim());
+    if (!el.value.trim()) valid = false;
+  });
+  if (!valid) return;
+
+  // Reset progress UI
+  document.getElementById('progress-fill').style.width = '0%';
+  document.getElementById('progress-label').textContent = 'Starting…';
+  document.getElementById('progress-label').style.color = '';
+  document.getElementById('progress-elapsed').textContent = '';
+  document.getElementById('progress-log').innerHTML = '';
+  document.getElementById('progress-log').classList.remove('visible');
+  document.getElementById('progress-stats').classList.remove('visible');
+  document.getElementById('progress-done').classList.remove('visible');
+  document.getElementById('stat-done-n').textContent = '0';
+  document.getElementById('stat-err-n').textContent = '0';
+  document.getElementById('stat-total-n').textContent = '–';
+  document.getElementById('stat-images-n').textContent = '0';
+  document.getElementById('stat-err-wrap').style.display = 'none';
+  ['step-crawl', 'step-extract', 'step-merge'].forEach(id =>
+    document.getElementById(id).className = 'step-item'
+  );
+  ['conn-1', 'conn-2'].forEach(id =>
+    document.getElementById(id).className = 'step-connector'
+  );
+
+  document.getElementById('progress-panel').classList.add('visible');
+  document.getElementById('modal-run-btn').disabled = true;
+  document.getElementById('modal-run-btn').textContent = 'Running…';
+  document.getElementById('modal-cancel-btn').textContent = 'Close';
+
+  const startRes = await fetch('/api/add-brand', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ brandKey, brandName, sitemapUrl, pdpFilter, imageHost, sampleSize, useStealth }),
+  });
+  const { streamId } = await startRes.json();
+
+  // Elapsed timer
+  const crawlStart = Date.now();
+  const elapsedEl = document.getElementById('progress-elapsed');
+  const timerInterval = setInterval(() => {
+    const s = Math.floor((Date.now() - crawlStart) / 1000);
+    const m = Math.floor(s / 60);
+    elapsedEl.textContent = m > 0 ? `${m}m ${s % 60}s` : `${s}s`;
+  }, 1000);
+
+  const STEPS = { crawl: 0, extract: 1, merge: 2 };
+  const STEP_IDS = ['step-crawl', 'step-extract', 'step-merge'];
+  const CONN_IDS = ['conn-1', 'conn-2'];
+  let currentStepIdx = -1;
+
+  function advanceStep(stepName) {
+    const idx = STEPS[stepName] ?? -1;
+    if (idx === currentStepIdx) return;
+    // Mark all previous steps done, current active
+    for (let i = 0; i < STEP_IDS.length; i++) {
+      const el = document.getElementById(STEP_IDS[i]);
+      if (i < idx) {
+        el.className = 'step-item s-done';
+        if (i < CONN_IDS.length) document.getElementById(CONN_IDS[i]).className = 'step-connector s-done';
+      } else if (i === idx) {
+        el.className = 'step-item s-active';
+      } else {
+        el.className = 'step-item';
+      }
+    }
+    currentStepIdx = idx;
+  }
+
+  const logEl = document.getElementById('progress-log');
+  function appendLog(text, cls = '') {
+    logEl.classList.add('visible');
+    const s = Math.floor((Date.now() - crawlStart) / 1000);
+    const ts = `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+    // Remove l-current from previous latest line
+    logEl.querySelectorAll('.l-current').forEach(el => el.classList.remove('l-current'));
+    const line = document.createElement('div');
+    line.className = `log-line l-current ${cls}`;
+    line.innerHTML = `<span class="log-ts">${ts}</span><span>${text}</span>`;
+    logEl.appendChild(line);
+    logEl.scrollTop = logEl.scrollHeight;
+    // Keep log from growing unbounded
+    while (logEl.children.length > 60) logEl.removeChild(logEl.firstChild);
+  }
+
+  const es = new EventSource(`/api/stream/${streamId}`);
+  es.onmessage = (e) => {
+    const msg = JSON.parse(e.data);
+
+    if (msg.type === 'progress') {
+      if (msg.step) advanceStep(msg.step);
+      document.getElementById('progress-label').textContent = msg.message;
+      document.getElementById('progress-fill').style.width = msg.pct + '%';
+      appendLog(msg.message);
+
+      // Stats block during extraction
+      if (msg.step === 'extract' && msg.total != null) {
+        document.getElementById('progress-stats').classList.add('visible');
+        document.getElementById('stat-done-n').textContent = msg.done ?? 0;
+        document.getElementById('stat-total-n').textContent = msg.total;
+        document.getElementById('stat-images-n').textContent = (msg.images ?? 0).toLocaleString();
+        if (msg.errors > 0) {
+          document.getElementById('stat-err-wrap').style.display = '';
+          document.getElementById('stat-err-n').textContent = msg.errors;
+        }
+      }
+
+    } else if (msg.type === 'done') {
+      es.close();
+      clearInterval(timerInterval);
+
+      // Mark all steps done
+      STEP_IDS.forEach(id => document.getElementById(id).className = 'step-item s-done');
+      CONN_IDS.forEach(id => document.getElementById(id).className = 'step-connector s-done');
+
+      document.getElementById('progress-fill').style.width = '100%';
+      document.getElementById('progress-label').textContent = 'Complete!';
+      appendLog(`Done — ${msg.successCount}/${msg.added} PDPs succeeded`, 'l-done');
+
+      const doneEl = document.getElementById('progress-done');
+      doneEl.classList.add('visible');
+      document.getElementById('progress-done-title').textContent =
+        `${msg.brandName} added — ${msg.successCount} of ${msg.added} PDPs extracted`;
+      const errNote = msg.failures ? `${msg.failures} error${msg.failures > 1 ? 's' : ''} · ` : '';
+      const elapsed = Math.floor((Date.now() - crawlStart) / 1000);
+      const timeNote = elapsed >= 60
+        ? `${Math.floor(elapsed / 60)}m ${elapsed % 60}s · `
+        : `${elapsed}s · `;
+      document.getElementById('progress-done-sub').textContent =
+        `${errNote}${timeNote}Dataset now has ${msg.total} total PDPs`;
+
+      document.getElementById('modal-run-btn').textContent = 'Reload Dashboard';
+      document.getElementById('modal-run-btn').disabled = false;
+      document.getElementById('modal-run-btn').onclick = () => {
+        closeAddBrand();
+        fetch('./data/gallery_raw.json').then(r => r.json()).then(d => { allData = d; render(d); });
+        document.getElementById('modal-run-btn').onclick = startCrawl;
+      };
+
+    } else if (msg.type === 'error') {
+      es.close();
+      clearInterval(timerInterval);
+      appendLog('Error: ' + msg.message, 'l-err');
+      document.getElementById('progress-label').textContent = msg.message;
+      document.getElementById('progress-label').style.color = 'var(--red)';
+      document.getElementById('modal-run-btn').disabled = false;
+      document.getElementById('modal-run-btn').textContent = 'Retry';
+      document.getElementById('modal-run-btn').onclick = startCrawl;
+    }
+  };
+  es.onerror = () => { es.close(); clearInterval(timerInterval); };
+};
+
+// ── Refresh schedule ─────────────────────────────────────────────────────────
+window.refreshStatus = null;
+
+function fmtDate(iso) {
+  if (!iso) return '—';
+  return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
+async function loadRefreshStatus() {
+  try {
+    const status = await fetch('/api/refresh/status').then(r => r.json());
+    window.refreshStatus = status;
+    renderRefreshStrip(status);
+    renderChangesPanel(status);
+  } catch {
+    const detail = document.getElementById('refresh-detail');
+    if (detail) detail.innerHTML = '<span style="color:var(--muted)">Server offline — start with npm start</span>';
+  }
+}
+
+function renderRefreshStrip(status) {
+  const detail = document.getElementById('refresh-detail');
+  const toggle = document.getElementById('refresh-toggle-switch');
+  if (!detail || !toggle) return;
+
+  toggle.classList.toggle('on', status.enabled);
+
+  const last = status.lastRun ? `Last: <strong>${fmtDate(status.lastRun)}</strong>` : 'No runs yet';
+  const next = status.nextRun ? `Next: <strong>${fmtDate(status.nextRun)}</strong>` : '';
+
+  const t = status.recentHistory?.[0]?.totals;
+  let changeStr = '';
+  if (t) {
+    const parts = [];
+    if (t.added   > 0) parts.push(`<span class="refresh-change-pos">+${t.added} new</span>`);
+    if (t.changed > 0) parts.push(`<span class="refresh-change-neu">${t.changed} updated</span>`);
+    if (t.removed > 0) parts.push(`<span class="refresh-change-neg">${t.removed} removed</span>`);
+    if (parts.length === 0) parts.push('<span class="refresh-change-neu">No changes</span>');
+    changeStr = parts.join(' · ');
+  }
+
+  detail.innerHTML = [
+    last,
+    next ? `<span class="refresh-sep">·</span>${next}` : '',
+    changeStr ? `<span class="refresh-sep">·</span>${changeStr}` : '',
+    `<span class="refresh-sep">·</span><span style="color:var(--muted);font-size:12px">Every Sunday 2am</span>`,
+  ].filter(Boolean).join(' ');
+}
+
+function renderChangesPanel(status) {
+  const history = status.recentHistory;
+  const panel = document.getElementById('changes-panel');
+  const body  = document.getElementById('changes-body');
+  const sub   = document.getElementById('changes-header-sub');
+  if (!panel || !body || !history?.length) return;
+
+  panel.style.display = '';
+
+  const totalChanges = history.reduce((s, r) => s + r.totals.added + r.totals.changed + r.totals.removed, 0);
+  sub.textContent = `${history.length} run${history.length > 1 ? 's' : ''} · ${totalChanges} total changes`;
+
+  body.innerHTML = history.map(run => {
+    const t = run.totals;
+    const brandRows = Object.entries(run.brands || {}).map(([key, b]) => {
+      const parts = [];
+      if (b.added   > 0) parts.push(`<span class="refresh-change-pos">+${b.added}</span>`);
+      if (b.changed > 0) parts.push(`<span class="refresh-change-neu">${b.changed}↑</span>`);
+      if (b.removed > 0) parts.push(`<span class="refresh-change-neg">${b.removed}↓</span>`);
+      if (b.errors  > 0) parts.push(`<span style="color:var(--red)">${b.errors} err</span>`);
+      if (!parts.length)  parts.push('<span class="refresh-change-neu">unchanged</span>');
+      return `<div class="change-brand-row">
+        <div class="change-brand-name">${b.brandName}</div>
+        <div class="change-brand-stats">${parts.join(' ')}</div>
+      </div>`;
+    }).join('');
+
+    const totalStr = [
+      t.added   > 0 ? `<span class="refresh-change-pos">+${t.added} new</span>`      : '',
+      t.changed > 0 ? `<span class="refresh-change-neu">${t.changed} updated</span>` : '',
+      t.removed > 0 ? `<span class="refresh-change-neg">${t.removed} removed</span>` : '',
+      t.errors  > 0 ? `<span style="color:var(--red)">${t.errors} errors</span>`     : '',
+    ].filter(Boolean).join(' · ') || '<span class="refresh-change-neu">No changes detected</span>';
+
+    const duration = run.completedAt && run.startedAt
+      ? Math.round((new Date(run.completedAt) - new Date(run.startedAt)) / 60000)
+      : null;
+
+    return `<div class="change-run">
+      <div class="change-run-date">${fmtDate(run.startedAt)}${duration != null ? ` — ${duration}m` : ''}</div>
+      <div class="change-run-totals">${totalStr}</div>
+      ${brandRows ? `<div class="change-brand-rows">${brandRows}</div>` : ''}
+    </div>`;
+  }).join('');
+}
+
+window.toggleRefreshEnabled = async () => {
+  const current = window.refreshStatus?.enabled !== false;
+  const toggle  = document.getElementById('refresh-toggle-switch');
+  if (toggle) toggle.classList.toggle('on', !current);
+  try {
+    await fetch('/api/refresh/config', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ enabled: !current }),
+    });
+    await loadRefreshStatus();
+  } catch { await loadRefreshStatus(); }
+};
+
+window.triggerRefresh = async () => {
+  const btn     = document.getElementById('refresh-now-btn');
+  const running = document.getElementById('refresh-running');
+  const bar     = document.getElementById('refresh-run-bar');
+  const label   = document.getElementById('refresh-run-label');
+  if (!btn) return;
+
+  btn.disabled = true;
+  btn.textContent = 'Running…';
+  running?.classList.add('visible');
+
+  let es;
+  try {
+    const { streamId } = await fetch('/api/refresh/trigger', { method: 'POST' }).then(r => r.json());
+    es = new EventSource(`/api/stream/${streamId}`);
+
+    es.onmessage = async (e) => {
+      const msg = JSON.parse(e.data);
+      if (msg.type === 'progress') {
+        if (bar)   bar.style.width  = msg.pct + '%';
+        if (label) label.textContent = msg.message;
+      } else if (msg.type === 'log') {
+        if (label) label.textContent = msg.message;
+      } else if (msg.type === 'done') {
+        es.close();
+        if (bar)   bar.style.width = '100%';
+        if (label) label.textContent = 'Complete — reloading data…';
+        btn.textContent = 'Done!';
+        // Reload gallery data and re-render, then refresh the status strip
+        const fresh = await fetch('./data/gallery_raw.json').then(r => r.json());
+        allData = fresh;
+        render(fresh);
+        await loadRefreshStatus();
+        setTimeout(() => {
+          btn.disabled = false;
+          btn.textContent = 'Refresh Now';
+          running?.classList.remove('visible');
+        }, 1500);
+      } else if (msg.type === 'error') {
+        es.close();
+        if (label) label.textContent = 'Error: ' + msg.message;
+        if (label) label.style.color = 'var(--red)';
+        btn.disabled = false;
+        btn.textContent = 'Retry';
+      }
+    };
+    es.onerror = () => {
+      es.close();
+      btn.disabled = false;
+      btn.textContent = 'Refresh Now';
+      running?.classList.remove('visible');
+    };
+  } catch {
+    btn.disabled = false;
+    btn.textContent = 'Refresh Now';
+    running?.classList.remove('visible');
+  }
+};
+
+// ── Init auto-discover trigger on modal website field
+initDiscoverTrigger();
+
+// ── Load data
+fetch('./data/gallery_raw.json')
+  .then(r => r.json())
+  .then(data => { allData = data; render(data); loadRefreshStatus(); })
+  .catch(() => {
+    document.getElementById('app').innerHTML = `
+      <div class="loading">
+        <div style="font-size:24px">⚠️</div>
+        <div>Could not load gallery_raw.json</div>
+        <div style="font-size:12px;color:var(--muted)">Run: <code style="background:var(--surface2);padding:2px 8px;border-radius:4px">python3 -m http.server 8080</code> from the gallery-audit directory, then open <a href="http://localhost:8080/viewer.html" style="color:var(--sn-orange)">localhost:8080/viewer.html</a></div>
+      </div>
+    `;
+  });
+</script>
+</body>
+</html>
