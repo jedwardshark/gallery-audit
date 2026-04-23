@@ -1413,9 +1413,8 @@ window.selectHost = (host, el) => {
 window.startCrawl = async () => {
   const brandName  = document.getElementById('ab-name').value.trim();
   const brandKey   = document.getElementById('ab-key').value.trim();
-  // Use manual override if entered, otherwise fall back to auto-detected hidden value
   const manualOverride = document.getElementById('ab-sitemap-visible').value.trim();
-  const sitemapUrl = manualOverride || document.getElementById('ab-sitemap').value.trim();
+  let sitemapUrl   = manualOverride || document.getElementById('ab-sitemap').value.trim();
   const pdpFilter  = document.getElementById('ab-filter').value.trim();
   const imageHost  = document.getElementById('ab-image-host').value.trim();
   const sampleSize = parseInt(document.getElementById('ab-sample').value, 10);
@@ -1428,6 +1427,22 @@ window.startCrawl = async () => {
     if (!el.value.trim()) valid = false;
   });
   if (!valid) return;
+
+  // If no sitemap was auto-detected and no bypass ran, try deriving /sitemap.xml from website URL
+  if (!sitemapUrl && !bypassUrls) {
+    const websiteUrl = document.getElementById('ab-website').value.trim();
+    if (websiteUrl.startsWith('http')) {
+      try { sitemapUrl = new URL('/sitemap.xml', websiteUrl).href; } catch {}
+    }
+  }
+
+  // Still nothing — show a clear inline error and stop
+  if (!sitemapUrl && !bypassUrls) {
+    const hint = document.getElementById('discover-status-hint');
+    hint.textContent = 'No sitemap detected. Enter one manually using "enter manually ›" above, or use a bypass method.';
+    hint.style.color = 'var(--red)';
+    return;
+  }
 
   // Reset progress UI
   document.getElementById('progress-fill').style.width = '0%';

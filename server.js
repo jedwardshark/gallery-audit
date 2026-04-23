@@ -805,7 +805,10 @@ async function runPipeline(config, streamId) {
     }
 
     if (!unique.length) {
-      emit(streamId, 'error', { message: 'No product URLs found. Check the sitemap URL, PDP filter, or run a discovery first.' });
+      const hint = resolvedSitemapUrl
+        ? `Sitemap at ${resolvedSitemapUrl} returned no URLs matching the filter "${pdpFilter || '(none)'}". Try removing the PDP filter or entering a different sitemap URL.`
+        : 'No sitemap URL was provided and no bypass URLs were found. Use the discovery panel or enter a sitemap URL manually.';
+      emit(streamId, 'error', { message: hint });
       return;
     }
   }
