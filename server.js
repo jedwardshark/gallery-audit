@@ -32,19 +32,29 @@ app.use(express.json());
 
 // ── SSE registry ────────────────────────────────────────────────────────────
 const streams = new Map();
+const streamBuffers = new Map(); // replay buffer so late-connecting clients don't miss early messages
 
 function emit(id, type, data) {
+  const msg = `data: ${JSON.stringify({ type, ...data })}\n\n`;
+  if (!streamBuffers.has(id)) streamBuffers.set(id, []);
+  streamBuffers.get(id).push(msg);
   const res = streams.get(id);
-  if (res) res.write(`data: ${JSON.stringify({ type, ...data })}\n\n`);
+  if (res) res.write(msg);
 }
 
 app.get('/api/stream/:id', (req, res) => {
   res.setHeader('Content-Type', 'text/event-stream');
   res.setHeader('Cache-Control', 'no-cache');
   res.setHeader('Connection', 'keep-alive');
+  res.setHeader('X-Accel-Buffering', 'no'); // prevent Render/nginx proxy buffering
   res.flushHeaders();
   streams.set(req.params.id, res);
-  req.on('close', () => streams.delete(req.params.id));
+  // Replay any messages that fired before the client connected
+  (streamBuffers.get(req.params.id) || []).forEach(msg => res.write(msg));
+  req.on('close', () => {
+    streams.delete(req.params.id);
+    streamBuffers.delete(req.params.id);
+  });
 });
 
 // ── Realistic browser layer ──────────────────────────────────────────────────
