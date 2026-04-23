@@ -1149,6 +1149,7 @@ function initDiscoverTrigger() {
   const field = document.getElementById('ab-website');
   field.addEventListener('input', () => {
     clearTimeout(_discoverDebounce);
+    field.classList.remove('error');
     const val = field.value.trim();
     if (!val || !val.startsWith('http')) {
       setDiscoverStatus('', 'Enter a URL above — sitemap is detected automatically.');
@@ -1428,20 +1429,19 @@ window.startCrawl = async () => {
   });
   if (!valid) return;
 
-  // If no sitemap was auto-detected and no bypass ran, try deriving /sitemap.xml from website URL
+  // If no sitemap yet, require a website URL — validate it, then derive /sitemap.xml as fallback
   if (!sitemapUrl && !bypassUrls) {
-    const websiteUrl = document.getElementById('ab-website').value.trim();
-    if (websiteUrl.startsWith('http')) {
-      try { sitemapUrl = new URL('/sitemap.xml', websiteUrl).href; } catch {}
+    const websiteEl = document.getElementById('ab-website');
+    const websiteUrl = websiteEl.value.trim();
+    if (!websiteUrl || !websiteUrl.startsWith('http')) {
+      websiteEl.classList.add('error');
+      const hint = document.getElementById('discover-status-hint');
+      hint.textContent = 'Enter the brand website URL so the sitemap can be detected automatically.';
+      hint.style.color = 'var(--red)';
+      websiteEl.focus();
+      return;
     }
-  }
-
-  // Still nothing — show a clear inline error and stop
-  if (!sitemapUrl && !bypassUrls) {
-    const hint = document.getElementById('discover-status-hint');
-    hint.textContent = 'No sitemap detected. Enter one manually using "enter manually ›" above, or use a bypass method.';
-    hint.style.color = 'var(--red)';
-    return;
+    try { sitemapUrl = new URL('/sitemap.xml', websiteUrl).href; } catch {}
   }
 
   // Reset progress UI
