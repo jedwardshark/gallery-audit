@@ -1571,11 +1571,16 @@ window.startCrawl = async () => {
       document.getElementById('progress-done-sub').textContent =
         `${errNote}${timeNote}Dataset now has ${msg.total} total PDPs`;
 
-      document.getElementById('modal-run-btn').textContent = 'Reload Dashboard';
+      // Auto-reload data immediately so the brand appears as soon as modal is closed
+      fetch('./data/gallery_raw.json')
+        .then(r => r.json())
+        .then(async d => { allData = d; await loadAuditCache(); render(d); loadRefreshStatus(); })
+        .catch(() => {});
+
+      document.getElementById('modal-run-btn').textContent = 'View Dashboard';
       document.getElementById('modal-run-btn').disabled = false;
       document.getElementById('modal-run-btn').onclick = () => {
         closeAddBrand();
-        fetch('./data/gallery_raw.json').then(r => r.json()).then(d => { allData = d; render(d); });
         document.getElementById('modal-run-btn').onclick = startCrawl;
       };
 
