@@ -40940,8 +40940,9 @@
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-air-fryer-pro-4-in-1/AF141.html",
+    "sku": "AF141",
     "family": "ninja-air-fryer-pro-4-in-1",
-    "category": "AF141.html",
+    "category": "ninja-air-fryer-pro-4-in-1",
     "galleryImageCount": 8,
     "images": [
       {
@@ -41009,14 +41010,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:33:53.074Z"
+    "extractedAt": "2026-04-28T08:09:23.932Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-air-fryer-pro-xl-6-in-1/AF181.html",
+    "sku": "AF181",
     "family": "ninja-air-fryer-pro-xl-6-in-1",
-    "category": "AF181.html",
+    "category": "ninja-air-fryer-pro-xl-6-in-1",
     "galleryImageCount": 17,
     "images": [
       {
@@ -41156,14 +41158,15 @@
         "sequencePosition": 17
       }
     ],
-    "extractedAt": "2026-04-21T21:33:53.185Z"
+    "extractedAt": "2026-04-28T08:09:23.962Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-spatula/AMC14.html",
+    "sku": "AMC14",
     "family": "ninja-spatula",
-    "category": "AMC14.html",
+    "category": "ninja-spatula",
     "galleryImageCount": 1,
     "images": [
       {
@@ -41175,14 +41178,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:53.277Z"
+    "extractedAt": "2026-04-28T08:09:24.057Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-spoon/AMC15.html",
+    "sku": "AMC15",
     "family": "ninja-spoon",
-    "category": "AMC15.html",
+    "category": "ninja-spoon",
     "galleryImageCount": 1,
     "images": [
       {
@@ -41194,14 +41198,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:53.278Z"
+    "extractedAt": "2026-04-28T08:09:24.003Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-mini-warmer---cooking-system/AMC17.html",
+    "sku": "AMC17",
     "family": "ninja-mini-warmer---cooking-system",
-    "category": "AMC17.html",
+    "category": "ninja-mini-warmer---cooking-system",
     "galleryImageCount": 1,
     "images": [
       {
@@ -41213,14 +41218,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:53.349Z"
+    "extractedAt": "2026-04-28T08:09:23.974Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-instant-cooker-glass-lid/APC02.html",
+    "sku": "APC02",
     "family": "ninja-instant-cooker-glass-lid",
-    "category": "APC02.html",
+    "category": "ninja-instant-cooker-glass-lid",
     "galleryImageCount": 1,
     "images": [
       {
@@ -41232,14 +41238,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:53.442Z"
+    "extractedAt": "2026-04-28T08:09:23.992Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-ion-robot-vacuum-a73-with-wi-fi/AV753.html",
+    "sku": "AV753",
     "family": "shark-ion-robot-vacuum-a73-with-wi-fi",
-    "category": "AV753.html",
+    "category": "shark-ion-robot-vacuum-a73-with-wi-fi",
     "galleryImageCount": 1,
     "images": [
       {
@@ -41251,14 +41258,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:53.496Z"
+    "extractedAt": "2026-04-28T08:09:23.967Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-instant-cooker-steam-rack/APC01.html",
+    "sku": "APC01",
     "family": "ninja-instant-cooker-steam-rack",
-    "category": "APC01.html",
+    "category": "ninja-instant-cooker-steam-rack",
     "galleryImageCount": 1,
     "images": [
       {
@@ -41270,14 +41278,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:53.497Z"
+    "extractedAt": "2026-04-28T08:09:23.930Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerboost-cordless-2-in-1-car%2Fhome-handheld-powervac/BH102.html",
+    "sku": "BH102",
     "family": "shark-powerboost-cordless-2-in-1-car%2Fhome-handheld-powervac",
-    "category": "BH102.html",
+    "category": "shark-powerboost-cordless-2-in-1-car%2Fhome-handheld-powervac",
     "galleryImageCount": 10,
     "images": [
       {
@@ -41361,14 +41370,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:53.555Z"
+    "extractedAt": "2026-04-28T08:09:24.291Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-professional-plus-food-processor/BN601.html",
+    "sku": "BN601",
     "family": "ninja-professional-plus-food-processor",
-    "category": "BN601.html",
+    "category": "ninja-professional-plus-food-processor",
     "galleryImageCount": 6,
     "images": [
       {
@@ -41420,14 +41430,15 @@
         "sequencePosition": 6
       }
     ],
-    "extractedAt": "2026-04-21T21:33:53.631Z"
+    "extractedAt": "2026-04-28T08:09:24.436Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-nutri-blender-pro-with-auto-iq/BN401.html",
+    "sku": "BN401",
     "family": "ninja-nutri-blender-pro-with-auto-iq",
-    "category": "BN401.html",
+    "category": "ninja-nutri-blender-pro-with-auto-iq",
     "galleryImageCount": 9,
     "images": [
       {
@@ -41503,14 +41514,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:33:53.632Z"
+    "extractedAt": "2026-04-28T08:09:24.250Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-professional-plus-blender-with-auto-iq/BN701.html",
+    "sku": "BN701",
     "family": "ninja-professional-plus-blender-with-auto-iq",
-    "category": "BN701.html",
+    "category": "ninja-professional-plus-blender-with-auto-iq",
     "galleryImageCount": 10,
     "images": [
       {
@@ -41594,14 +41606,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:53.722Z"
+    "extractedAt": "2026-04-28T08:09:24.358Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-professional-plus-blender-duo-with-auto-iq/BN751.html",
+    "sku": "BN751",
     "family": "ninja-professional-plus-blender-duo-with-auto-iq",
-    "category": "BN751.html",
+    "category": "ninja-professional-plus-blender-duo-with-auto-iq",
     "galleryImageCount": 7,
     "images": [
       {
@@ -41661,14 +41674,15 @@
         "sequencePosition": 7
       }
     ],
-    "extractedAt": "2026-04-21T21:33:53.786Z"
+    "extractedAt": "2026-04-28T08:09:24.276Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-professional-plus-kitchen-system-with-auto-iq/BN801.html",
+    "sku": "BN801",
     "family": "ninja-professional-plus-kitchen-system-with-auto-iq",
-    "category": "BN801.html",
+    "category": "ninja-professional-plus-kitchen-system-with-auto-iq",
     "galleryImageCount": 9,
     "images": [
       {
@@ -41744,14 +41758,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:33:53.820Z"
+    "extractedAt": "2026-04-28T08:09:24.335Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-ultracyclone-pet-pro-cordless-handheld-vacuum/CH951.html",
+    "sku": "CH951",
     "family": "shark-ultracyclone-pet-pro-cordless-handheld-vacuum",
-    "category": "CH951.html",
+    "category": "shark-ultracyclone-pet-pro-cordless-handheld-vacuum",
     "galleryImageCount": 10,
     "images": [
       {
@@ -41835,14 +41850,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:53.951Z"
+    "extractedAt": "2026-04-28T08:09:24.301Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-ultracrush-professional-kitchen-system/BP401.html",
+    "sku": "BP401",
     "family": "ninja-ultracrush-professional-kitchen-system",
-    "category": "BP401.html",
+    "category": "ninja-ultracrush-professional-kitchen-system",
     "galleryImageCount": 7,
     "images": [
       {
@@ -41902,14 +41918,15 @@
         "sequencePosition": 7
       }
     ],
-    "extractedAt": "2026-04-21T21:33:53.952Z"
+    "extractedAt": "2026-04-28T08:09:24.420Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-freshbrew-coffee-maker/CE451.html",
+    "sku": "CE451",
     "family": "ninja-freshbrew-coffee-maker",
-    "category": "CE451.html",
+    "category": "ninja-freshbrew-coffee-maker",
     "galleryImageCount": 12,
     "images": [
       {
@@ -42009,14 +42026,15 @@
         "sequencePosition": 12
       }
     ],
-    "extractedAt": "2026-04-21T21:33:53.996Z"
+    "extractedAt": "2026-04-28T08:09:24.678Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-prestige-smart-xl-air-fryer-countertop-oven/DT501.html",
+    "sku": "DT501",
     "family": "ninja-prestige-smart-xl-air-fryer-countertop-oven",
-    "category": "DT501.html",
+    "category": "ninja-prestige-smart-xl-air-fryer-countertop-oven",
     "galleryImageCount": 10,
     "images": [
       {
@@ -42100,14 +42118,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:54.113Z"
+    "extractedAt": "2026-04-28T08:09:24.587Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-hot-iced-xl-coffee-maker-with-rapid-cold-brew/CM371.html",
+    "sku": "CM371",
     "family": "ninja-hot-iced-xl-coffee-maker-with-rapid-cold-brew",
-    "category": "CM371.html",
+    "category": "ninja-hot-iced-xl-coffee-maker-with-rapid-cold-brew",
     "galleryImageCount": 9,
     "images": [
       {
@@ -42183,14 +42202,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:33:54.164Z"
+    "extractedAt": "2026-04-28T08:09:24.637Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-foodi-smart-xl-6-in-1-indoor-grill-air-fryer-with-built-in-thermometer/DG551.html",
+    "sku": "DG551",
     "family": "ninja-foodi-smart-xl-6-in-1-indoor-grill-air-fryer-with-built-in-thermometer",
-    "category": "DG551.html",
+    "category": "ninja-foodi-smart-xl-6-in-1-indoor-grill-air-fryer-with-built-in-thermometer",
     "galleryImageCount": 10,
     "images": [
       {
@@ -42274,14 +42294,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:54.165Z"
+    "extractedAt": "2026-04-28T08:09:24.562Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-prestige-smart-xl-air-fryer-countertop-oven-pro-cook/DT551.html",
+    "sku": "DT551",
     "family": "ninja-prestige-smart-xl-air-fryer-countertop-oven-pro-cook",
-    "category": "DT551.html",
+    "category": "ninja-prestige-smart-xl-air-fryer-countertop-oven-pro-cook",
     "galleryImageCount": 10,
     "images": [
       {
@@ -42365,14 +42386,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:54.312Z"
+    "extractedAt": "2026-04-28T08:09:24.634Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-foodi-flexbasket-air-fryer-with-7qt-megazone/DZ071.html",
+    "sku": "DZ071",
     "family": "ninja-foodi-flexbasket-air-fryer-with-7qt-megazone",
-    "category": "DZ071.html",
+    "category": "ninja-foodi-flexbasket-air-fryer-with-7qt-megazone",
     "galleryImageCount": 10,
     "images": [
       {
@@ -42456,14 +42478,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:54.338Z"
+    "extractedAt": "2026-04-28T08:09:24.687Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-foodi-6-in-1-smart-10-qt.-2-basket-air-fryer/DZ550.html",
+    "sku": "DZ550",
     "family": "ninja-foodi-6-in-1-smart-10-qt.-2-basket-air-fryer",
-    "category": "DZ550.html",
+    "category": "ninja-foodi-6-in-1-smart-10-qt.-2-basket-air-fryer",
     "galleryImageCount": 10,
     "images": [
       {
@@ -42547,14 +42570,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:54.588Z"
+    "extractedAt": "2026-04-28T08:09:24.730Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-foodi-6-in-1-indoor-grill-4-quart-air-fryer/EG201.html",
+    "sku": "EG201",
     "family": "ninja-foodi-6-in-1-indoor-grill-4-quart-air-fryer",
-    "category": "EG201.html",
+    "category": "ninja-foodi-6-in-1-indoor-grill-4-quart-air-fryer",
     "galleryImageCount": 9,
     "images": [
       {
@@ -42630,14 +42654,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:33:54.685Z"
+    "extractedAt": "2026-04-28T08:09:24.689Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-carpetxpert-with-stainstriker-upright-deep-carpet-cleaner/EX201.html",
+    "sku": "EX201",
     "family": "shark-carpetxpert-with-stainstriker-upright-deep-carpet-cleaner",
-    "category": "EX201.html",
+    "category": "shark-carpetxpert-with-stainstriker-upright-deep-carpet-cleaner",
     "galleryImageCount": 8,
     "images": [
       {
@@ -42705,14 +42730,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:33:54.792Z"
+    "extractedAt": "2026-04-28T08:09:24.910Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-flexbreeze-indoor-outdoor-pedestal-table-fan-with-cover/FA202.html",
+    "sku": "FA202",
     "family": "shark-flexbreeze-indoor-outdoor-pedestal-table-fan-with-cover",
-    "category": "FA202.html",
+    "category": "shark-flexbreeze-indoor-outdoor-pedestal-table-fan-with-cover",
     "galleryImageCount": 8,
     "images": [
       {
@@ -42780,14 +42806,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:33:54.977Z"
+    "extractedAt": "2026-04-28T08:09:24.989Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-carpetxpert-hairpro-with-stainstriker/EX301.html",
+    "sku": "EX301",
     "family": "shark-carpetxpert-hairpro-with-stainstriker",
-    "category": "EX301.html",
+    "category": "shark-carpetxpert-hairpro-with-stainstriker",
     "galleryImageCount": 10,
     "images": [
       {
@@ -42871,14 +42898,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:55.004Z"
+    "extractedAt": "2026-04-28T08:09:24.911Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-foodi-6-in-1-8-qt.-2-basket-air-fryer-with-dualzone-technology/DZ201.html",
+    "sku": "DZ201",
     "family": "ninja-foodi-6-in-1-8-qt.-2-basket-air-fryer-with-dualzone-technology",
-    "category": "DZ201.html",
+    "category": "ninja-foodi-6-in-1-8-qt.-2-basket-air-fryer-with-dualzone-technology",
     "galleryImageCount": 7,
     "images": [
       {
@@ -42938,14 +42966,15 @@
         "sequencePosition": 7
       }
     ],
-    "extractedAt": "2026-04-21T21:33:55.093Z"
+    "extractedAt": "2026-04-28T08:09:24.991Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-french-door-premier-air-fryer-convection-oven-toaster-stainless-steel/FO101.html",
+    "sku": "FO101",
     "family": "ninja-french-door-premier-air-fryer-convection-oven-toaster-stainless-steel",
-    "category": "FO101.html",
+    "category": "ninja-french-door-premier-air-fryer-convection-oven-toaster-stainless-steel",
     "galleryImageCount": 1,
     "images": [
       {
@@ -42957,14 +42986,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:55.111Z"
+    "extractedAt": "2026-04-28T08:09:24.979Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-slushi-professional-frozen-drink-maker/FS301.html",
+    "sku": "FS301",
     "family": "ninja-slushi-professional-frozen-drink-maker",
-    "category": "FS301.html",
+    "category": "ninja-slushi-professional-frozen-drink-maker",
     "galleryImageCount": 14,
     "images": [
       {
@@ -43080,14 +43110,15 @@
         "sequencePosition": 14
       }
     ],
-    "extractedAt": "2026-04-21T21:33:55.324Z"
+    "extractedAt": "2026-04-28T08:09:25.060Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-dualbrew-coffee-grounds-pods/GP161.html",
+    "sku": "GP161",
     "family": "ninja-dualbrew-coffee-grounds-pods",
-    "category": "GP161.html",
+    "category": "ninja-dualbrew-coffee-grounds-pods",
     "galleryImageCount": 9,
     "images": [
       {
@@ -43163,14 +43194,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:33:55.326Z"
+    "extractedAt": "2026-04-28T08:09:25.020Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---blue-frost/FW312.html",
+    "sku": "FW312",
     "family": "shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---blue-frost",
-    "category": "FW312.html",
+    "category": "shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---blue-frost",
     "galleryImageCount": 3,
     "images": [
       {
@@ -43198,14 +43230,15 @@
         "sequencePosition": 3
       }
     ],
-    "extractedAt": "2026-04-21T21:33:55.327Z"
+    "extractedAt": "2026-04-28T08:09:25.212Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-sizzle-indoor-grill-griddle/GR101.html",
+    "sku": "GR101",
     "family": "ninja-sizzle-indoor-grill-griddle",
-    "category": "GR101.html",
+    "category": "ninja-sizzle-indoor-grill-griddle",
     "galleryImageCount": 8,
     "images": [
       {
@@ -43273,14 +43306,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:33:55.448Z"
+    "extractedAt": "2026-04-28T08:09:25.277Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-speedstyle-essential-high-velocity-dryer-with-concentrator/HD301.html",
+    "sku": "HD301",
     "family": "shark-speedstyle-essential-high-velocity-dryer-with-concentrator",
-    "category": "HD301.html",
+    "category": "shark-speedstyle-essential-high-velocity-dryer-with-concentrator",
     "galleryImageCount": 2,
     "images": [
       {
@@ -43300,14 +43334,15 @@
         "sequencePosition": 2
       }
     ],
-    "extractedAt": "2026-04-21T21:33:55.483Z"
+    "extractedAt": "2026-04-28T08:09:25.202Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-flexstyle-air-styling-drying-system/HD430.html",
+    "sku": "HD430",
     "family": "shark-flexstyle-air-styling-drying-system",
-    "category": "HD430.html",
+    "category": "shark-flexstyle-air-styling-drying-system",
     "galleryImageCount": 9,
     "images": [
       {
@@ -43383,14 +43418,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:33:55.562Z"
+    "extractedAt": "2026-04-28T08:09:25.446Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-flexstyle-air-styling-drying-system-with-diffuser/HD435.html",
+    "sku": "HD435",
     "family": "shark-flexstyle-air-styling-drying-system-with-diffuser",
-    "category": "HD435.html",
+    "category": "shark-flexstyle-air-styling-drying-system-with-diffuser",
     "galleryImageCount": 2,
     "images": [
       {
@@ -43410,14 +43446,15 @@
         "sequencePosition": 2
       }
     ],
-    "extractedAt": "2026-04-21T21:33:55.723Z"
+    "extractedAt": "2026-04-28T08:09:25.313Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-speedstyle-pro-flex-hair-dryer-system-mocha-silver/HD542.html",
+    "sku": "HD542",
     "family": "shark-speedstyle-pro-flex-hair-dryer-system-mocha-silver",
-    "category": "HD542.html",
+    "category": "shark-speedstyle-pro-flex-hair-dryer-system-mocha-silver",
     "galleryImageCount": 10,
     "images": [
       {
@@ -43501,14 +43538,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:55.790Z"
+    "extractedAt": "2026-04-28T08:09:25.355Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-speedstyle-pro-hair-dryer-straight-wavy/HD731.html",
+    "sku": "HD731",
     "family": "shark-speedstyle-pro-hair-dryer-straight-wavy",
-    "category": "HD731.html",
+    "category": "shark-speedstyle-pro-hair-dryer-straight-wavy",
     "galleryImageCount": 7,
     "images": [
       {
@@ -43568,14 +43606,15 @@
         "sequencePosition": 7
       }
     ],
-    "extractedAt": "2026-04-21T21:33:55.873Z"
+    "extractedAt": "2026-04-28T08:09:25.648Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-air-purifier-with-true-hepa/HP102.html",
+    "sku": "HP102",
     "family": "shark-air-purifier-with-true-hepa",
-    "category": "HP102.html",
+    "category": "shark-air-purifier-with-true-hepa",
     "galleryImageCount": 10,
     "images": [
       {
@@ -43659,14 +43698,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:55.882Z"
+    "extractedAt": "2026-04-28T08:09:25.402Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-neverchange-air-purifier/HP152.html",
+    "sku": "HP152",
     "family": "shark-neverchange-air-purifier",
-    "category": "HP152.html",
+    "category": "shark-neverchange-air-purifier",
     "galleryImageCount": 8,
     "images": [
       {
@@ -43734,14 +43774,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:33:55.933Z"
+    "extractedAt": "2026-04-28T08:09:25.479Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-air-purifier-max-with-true-hepa/HP201.html",
+    "sku": "HP201",
     "family": "shark-air-purifier-max-with-true-hepa",
-    "category": "HP201.html",
+    "category": "shark-air-purifier-max-with-true-hepa",
     "galleryImageCount": 1,
     "images": [
       {
@@ -43753,14 +43794,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:55.983Z"
+    "extractedAt": "2026-04-28T08:09:25.522Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-air-purifier-max-with-true-hepa/HP202.html",
+    "sku": "HP202",
     "family": "shark-air-purifier-max-with-true-hepa",
-    "category": "HP202.html",
+    "category": "shark-air-purifier-max-with-true-hepa",
     "galleryImageCount": 10,
     "images": [
       {
@@ -43844,14 +43886,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.018Z"
+    "extractedAt": "2026-04-28T08:09:25.561Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-clean-sense-air-purifier-max-with-odor-neutralizer-technology/HP232.html",
+    "sku": "HP232",
     "family": "shark-clean-sense-air-purifier-max-with-odor-neutralizer-technology",
-    "category": "HP232.html",
+    "category": "shark-clean-sense-air-purifier-max-with-odor-neutralizer-technology",
     "galleryImageCount": 9,
     "images": [
       {
@@ -43927,14 +43970,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.028Z"
+    "extractedAt": "2026-04-28T08:09:25.625Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-neverchange-air-purifier-max/HP301.html",
+    "sku": "HP301",
     "family": "shark-neverchange-air-purifier-max",
-    "category": "HP301.html",
+    "category": "shark-neverchange-air-purifier-max",
     "galleryImageCount": 1,
     "images": [
       {
@@ -43946,14 +43990,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.071Z"
+    "extractedAt": "2026-04-28T08:09:25.698Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-neverchange-air-purifier-max/HP302.html",
+    "sku": "HP302",
     "family": "shark-neverchange-air-purifier-max",
-    "category": "HP302.html",
+    "category": "shark-neverchange-air-purifier-max",
     "galleryImageCount": 11,
     "images": [
       {
@@ -44045,14 +44090,15 @@
         "sequencePosition": 11
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.108Z"
+    "extractedAt": "2026-04-28T08:09:25.660Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-breatheclear-max-with-neverchange-air-purifier-dove/HP362.html",
+    "sku": "HP362",
     "family": "shark-breatheclear-max-with-neverchange-air-purifier-dove",
-    "category": "HP362.html",
+    "category": "shark-breatheclear-max-with-neverchange-air-purifier-dove",
     "galleryImageCount": 1,
     "images": [
       {
@@ -44064,14 +44110,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.159Z"
+    "extractedAt": "2026-04-28T08:09:25.935Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-rocket-pro-dlx-corded-stick-vacuum/HV371.html",
+    "sku": "HV371",
     "family": "shark-rocket-pro-dlx-corded-stick-vacuum",
-    "category": "HV371.html",
+    "category": "shark-rocket-pro-dlx-corded-stick-vacuum",
     "galleryImageCount": 10,
     "images": [
       {
@@ -44155,14 +44202,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.211Z"
+    "extractedAt": "2026-04-28T08:09:25.818Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-ultralight-petpro-corded-stick-vacuum/HZ702.html",
+    "sku": "HZ702",
     "family": "shark-ultralight-petpro-corded-stick-vacuum",
-    "category": "HZ702.html",
+    "category": "shark-ultralight-petpro-corded-stick-vacuum",
     "galleryImageCount": 10,
     "images": [
       {
@@ -44246,14 +44294,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.252Z"
+    "extractedAt": "2026-04-28T08:09:25.848Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-rocket-corded-stick-vacuum/HV251.html",
+    "sku": "HV251",
     "family": "shark-rocket-corded-stick-vacuum",
-    "category": "HV251.html",
+    "category": "shark-rocket-corded-stick-vacuum",
     "galleryImageCount": 1,
     "images": [
       {
@@ -44265,14 +44314,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.261Z"
+    "extractedAt": "2026-04-28T08:09:25.848Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-stainforce-cordless-portable-spot-spill-cleaner/HX101.html",
+    "sku": "HX101",
     "family": "shark-stainforce-cordless-portable-spot-spill-cleaner",
-    "category": "HX101.html",
+    "category": "shark-stainforce-cordless-portable-spot-spill-cleaner",
     "galleryImageCount": 8,
     "images": [
       {
@@ -44340,14 +44390,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.422Z"
+    "extractedAt": "2026-04-28T08:09:25.912Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-neverclog-cold-press-juicer/JC151.html",
+    "sku": "JC151",
     "family": "ninja-neverclog-cold-press-juicer",
-    "category": "JC151.html",
+    "category": "ninja-neverclog-cold-press-juicer",
     "galleryImageCount": 10,
     "images": [
       {
@@ -44431,14 +44482,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.442Z"
+    "extractedAt": "2026-04-28T08:09:25.937Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-artisan-5-in-1-portable-electric-pizza-outdoor-oven/MO201.html",
+    "sku": "MO201",
     "family": "ninja-artisan-5-in-1-portable-electric-pizza-outdoor-oven",
-    "category": "MO201.html",
+    "category": "ninja-artisan-5-in-1-portable-electric-pizza-outdoor-oven",
     "galleryImageCount": 8,
     "images": [
       {
@@ -44506,14 +44558,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.551Z"
+    "extractedAt": "2026-04-28T08:09:25.985Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-precision-temperature-kettle/KT200.html",
+    "sku": "KT200",
     "family": "ninja-precision-temperature-kettle",
-    "category": "KT200.html",
+    "category": "ninja-precision-temperature-kettle",
     "galleryImageCount": 9,
     "images": [
       {
@@ -44589,14 +44642,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.578Z"
+    "extractedAt": "2026-04-28T08:09:25.941Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-detect-lift-away-adv-corded-upright-vacuum/LA492.html",
+    "sku": "LA492",
     "family": "shark-detect-lift-away-adv-corded-upright-vacuum",
-    "category": "LA492.html",
+    "category": "shark-detect-lift-away-adv-corded-upright-vacuum",
     "galleryImageCount": 7,
     "images": [
       {
@@ -44656,14 +44710,15 @@
         "sequencePosition": 7
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.635Z"
+    "extractedAt": "2026-04-28T08:09:26.096Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-navigator-lift-away-deluxe-upright-vacuum/NV360.html",
+    "sku": "NV360",
     "family": "shark-navigator-lift-away-deluxe-upright-vacuum",
-    "category": "NV360.html",
+    "category": "shark-navigator-lift-away-deluxe-upright-vacuum",
     "galleryImageCount": 8,
     "images": [
       {
@@ -44731,14 +44786,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.688Z"
+    "extractedAt": "2026-04-28T08:09:26.153Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-single-serve-pods-grounds-specialty-coffee-maker-black/PB051.html",
+    "sku": "PB051",
     "family": "ninja-single-serve-pods-grounds-specialty-coffee-maker-black",
-    "category": "PB051.html",
+    "category": "ninja-single-serve-pods-grounds-specialty-coffee-maker-black",
     "galleryImageCount": 8,
     "images": [
       {
@@ -44806,14 +44862,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.783Z"
+    "extractedAt": "2026-04-28T08:09:26.216Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-flexflame-proconnect-smart-cooking-system/PG305.html",
+    "sku": "PG305",
     "family": "ninja-flexflame-proconnect-smart-cooking-system",
-    "category": "PG305.html",
+    "category": "ninja-flexflame-proconnect-smart-cooking-system",
     "galleryImageCount": 1,
     "images": [
       {
@@ -44825,14 +44882,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.793Z"
+    "extractedAt": "2026-04-28T08:09:26.207Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-stainstriker-portable-carpet-upholstery-cleaner/PX201.html",
+    "sku": "PX201",
     "family": "shark-stainstriker-portable-carpet-upholstery-cleaner",
-    "category": "PX201.html",
+    "category": "shark-stainstriker-portable-carpet-upholstery-cleaner",
     "galleryImageCount": 8,
     "images": [
       {
@@ -44900,14 +44958,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.799Z"
+    "extractedAt": "2026-04-28T08:09:26.219Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-stainstriker-hairpro-portable-spot-stain-deep-cleaner/PX251.html",
+    "sku": "PX251",
     "family": "shark-stainstriker-hairpro-portable-spot-stain-deep-cleaner",
-    "category": "PX251.html",
+    "category": "shark-stainstriker-hairpro-portable-spot-stain-deep-cleaner",
     "galleryImageCount": 9,
     "images": [
       {
@@ -44983,14 +45042,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.867Z"
+    "extractedAt": "2026-04-28T08:09:26.244Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-steamspot-steam-mop-with-steam-blaster/S2001.html",
+    "sku": "S2001",
     "family": "shark-steamspot-steam-mop-with-steam-blaster",
-    "category": "S2001.html",
+    "category": "shark-steamspot-steam-mop-with-steam-blaster",
     "galleryImageCount": 10,
     "images": [
       {
@@ -45074,14 +45134,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.884Z"
+    "extractedAt": "2026-04-28T08:09:26.238Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-steam-mop/S1000.html",
+    "sku": "S1000",
     "family": "shark-steam-mop",
-    "category": "S1000.html",
+    "category": "shark-steam-mop",
     "galleryImageCount": 6,
     "images": [
       {
@@ -45133,14 +45194,15 @@
         "sequencePosition": 6
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.927Z"
+    "extractedAt": "2026-04-28T08:09:26.263Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-steam-pickup-3-in-1-hard-floor-cleaner/SD201.html",
+    "sku": "SD201",
     "family": "shark-steam-pickup-3-in-1-hard-floor-cleaner",
-    "category": "SD201.html",
+    "category": "shark-steam-pickup-3-in-1-hard-floor-cleaner",
     "galleryImageCount": 9,
     "images": [
       {
@@ -45216,14 +45278,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:33:56.991Z"
+    "extractedAt": "2026-04-28T08:09:26.369Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-steam-scrub-steam-scrubbing-and-sanitizing-steam-blaster-mop/S8201.html",
+    "sku": "S8201",
     "family": "shark-steam-scrub-steam-scrubbing-and-sanitizing-steam-blaster-mop",
-    "category": "S8201.html",
+    "category": "shark-steam-scrub-steam-scrubbing-and-sanitizing-steam-blaster-mop",
     "galleryImageCount": 9,
     "images": [
       {
@@ -45299,14 +45362,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:33:57.022Z"
+    "extractedAt": "2026-04-28T08:09:26.450Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-doublestack-2-basket-10-qt-air-fryer-with-smart-thermometer/SL451.html",
+    "sku": "SL451",
     "family": "ninja-doublestack-2-basket-10-qt-air-fryer-with-smart-thermometer",
-    "category": "SL451.html",
+    "category": "ninja-doublestack-2-basket-10-qt-air-fryer-with-smart-thermometer",
     "galleryImageCount": 9,
     "images": [
       {
@@ -45382,14 +45446,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:33:57.108Z"
+    "extractedAt": "2026-04-28T08:09:26.521Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-flip-toaster-oven-air-fryer/SP151.html",
+    "sku": "SP151",
     "family": "ninja-flip-toaster-oven-air-fryer",
-    "category": "SP151.html",
+    "category": "ninja-flip-toaster-oven-air-fryer",
     "galleryImageCount": 10,
     "images": [
       {
@@ -45473,14 +45538,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:57.162Z"
+    "extractedAt": "2026-04-28T08:09:26.596Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-doublestack-8-qt-2-basket-air-fryer/SL201.html",
+    "sku": "SL201",
     "family": "ninja-doublestack-8-qt-2-basket-air-fryer",
-    "category": "SL201.html",
+    "category": "ninja-doublestack-8-qt-2-basket-air-fryer",
     "galleryImageCount": 10,
     "images": [
       {
@@ -45564,14 +45630,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:57.198Z"
+    "extractedAt": "2026-04-28T08:09:26.660Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-twisti-high-speed-blender-duo-euro-pro-bundle/SS151.html",
+    "sku": "SS151",
     "family": "ninja-twisti-high-speed-blender-duo-euro-pro-bundle",
-    "category": "SS151.html",
+    "category": "ninja-twisti-high-speed-blender-duo-euro-pro-bundle",
     "galleryImageCount": 10,
     "images": [
       {
@@ -45655,14 +45722,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:57.234Z"
+    "extractedAt": "2026-04-28T08:09:26.565Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-doublestack-xl-2-basket-10-qt-air-fryer/SL401.html",
+    "sku": "SL401",
     "family": "ninja-doublestack-xl-2-basket-10-qt-air-fryer",
-    "category": "SL401.html",
+    "category": "ninja-doublestack-xl-2-basket-10-qt-air-fryer",
     "galleryImageCount": 13,
     "images": [
       {
@@ -45770,14 +45838,15 @@
         "sequencePosition": 13
       }
     ],
-    "extractedAt": "2026-04-21T21:33:57.295Z"
+    "extractedAt": "2026-04-28T08:09:26.610Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-foodi-smoothie-bowl-maker-and-nutrient-extractor-1200wp-4-auto-iq/SS101.html",
+    "sku": "SS101",
     "family": "ninja-foodi-smoothie-bowl-maker-and-nutrient-extractor-1200wp-4-auto-iq",
-    "category": "SS101.html",
+    "category": "ninja-foodi-smoothie-bowl-maker-and-nutrient-extractor-1200wp-4-auto-iq",
     "galleryImageCount": 10,
     "images": [
       {
@@ -45861,14 +45930,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:57.340Z"
+    "extractedAt": "2026-04-28T08:09:26.589Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-foodi-power-blender-ultimate-system/SS401.html",
+    "sku": "SS401",
     "family": "ninja-foodi-power-blender-ultimate-system",
-    "category": "SS401.html",
+    "category": "ninja-foodi-power-blender-ultimate-system",
     "galleryImageCount": 10,
     "images": [
       {
@@ -45952,14 +46022,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:57.366Z"
+    "extractedAt": "2026-04-28T08:09:26.676Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-detect-power-blender-pro/TB201.html",
+    "sku": "TB201",
     "family": "ninja-detect-power-blender-pro",
-    "category": "TB201.html",
+    "category": "ninja-detect-power-blender-pro",
     "galleryImageCount": 8,
     "images": [
       {
@@ -46027,14 +46098,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:33:57.401Z"
+    "extractedAt": "2026-04-28T08:09:26.733Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-detect-duo-power-blender-smoothie-maker-with-blendsense/TB301.html",
+    "sku": "TB301",
     "family": "ninja-detect-duo-power-blender-smoothie-maker-with-blendsense",
-    "category": "TB301.html",
+    "category": "ninja-detect-duo-power-blender-smoothie-maker-with-blendsense",
     "galleryImageCount": 8,
     "images": [
       {
@@ -46102,14 +46174,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:33:57.452Z"
+    "extractedAt": "2026-04-28T08:09:26.854Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-detect-kitchen-system-power-blender-plus-processor-pro-with-blendsense-technology/TB401.html",
+    "sku": "TB401",
     "family": "ninja-detect-kitchen-system-power-blender-plus-processor-pro-with-blendsense-technology",
-    "category": "TB401.html",
+    "category": "ninja-detect-kitchen-system-power-blender-plus-processor-pro-with-blendsense-technology",
     "galleryImageCount": 9,
     "images": [
       {
@@ -46185,14 +46258,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:33:57.486Z"
+    "extractedAt": "2026-04-28T08:09:26.954Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-vacmop-pet-multi-surface-floor-cleaner-2l/VCO60.html",
+    "sku": "VCO60",
     "family": "shark-vacmop-pet-multi-surface-floor-cleaner-2l",
-    "category": "VCO60.html",
+    "category": "shark-vacmop-pet-multi-surface-floor-cleaner-2l",
     "galleryImageCount": 7,
     "images": [
       {
@@ -46252,14 +46326,15 @@
         "sequencePosition": 7
       }
     ],
-    "extractedAt": "2026-04-21T21:33:57.510Z"
+    "extractedAt": "2026-04-28T08:09:26.894Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-vacmop-disposable-pads-10-ct/VMP10.html",
+    "sku": "VMP10",
     "family": "shark-vacmop-disposable-pads-10-ct",
-    "category": "VMP10.html",
+    "category": "shark-vacmop-disposable-pads-10-ct",
     "galleryImageCount": 1,
     "images": [
       {
@@ -46271,14 +46346,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:57.649Z"
+    "extractedAt": "2026-04-28T08:09:26.896Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-vacmop-reveal-cordless-floor-vacuum-and-spray-mop/VM401.html",
+    "sku": "VM401",
     "family": "shark-vacmop-reveal-cordless-floor-vacuum-and-spray-mop",
-    "category": "VM401.html",
+    "category": "shark-vacmop-reveal-cordless-floor-vacuum-and-spray-mop",
     "galleryImageCount": 2,
     "images": [
       {
@@ -46298,14 +46374,15 @@
         "sequencePosition": 2
       }
     ],
-    "extractedAt": "2026-04-21T21:33:57.653Z"
+    "extractedAt": "2026-04-28T08:09:26.989Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-vacmop-disposable-pads-16-ct/VMP16.html",
+    "sku": "VMP16",
     "family": "shark-vacmop-disposable-pads-16-ct",
-    "category": "VMP16.html",
+    "category": "shark-vacmop-disposable-pads-16-ct",
     "galleryImageCount": 1,
     "images": [
       {
@@ -46317,14 +46394,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:57.760Z"
+    "extractedAt": "2026-04-28T08:09:26.937Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-messmaster-portable-wet%2Fdry-vacuum/VS101.html",
+    "sku": "VS101",
     "family": "shark-messmaster-portable-wet%2Fdry-vacuum",
-    "category": "VS101.html",
+    "category": "shark-messmaster-portable-wet%2Fdry-vacuum",
     "galleryImageCount": 10,
     "images": [
       {
@@ -46408,14 +46486,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:57.774Z"
+    "extractedAt": "2026-04-28T08:09:26.923Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-hydrovac-messmaster-corded-3-in-1-vacuum-mop-and-self-cleaning-system/WD161.html",
+    "sku": "WD161",
     "family": "shark-hydrovac-messmaster-corded-3-in-1-vacuum-mop-and-self-cleaning-system",
-    "category": "WD161.html",
+    "category": "shark-hydrovac-messmaster-corded-3-in-1-vacuum-mop-and-self-cleaning-system",
     "galleryImageCount": 8,
     "images": [
       {
@@ -46483,14 +46562,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:33:57.873Z"
+    "extractedAt": "2026-04-28T08:09:27.023Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-vacmop-disposable-hard-floor-pads-30-ct/VMP30.html",
+    "sku": "VMP30",
     "family": "shark-vacmop-disposable-hard-floor-pads-30-ct",
-    "category": "VMP30.html",
+    "category": "shark-vacmop-disposable-hard-floor-pads-30-ct",
     "galleryImageCount": 1,
     "images": [
       {
@@ -46502,14 +46582,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:57.923Z"
+    "extractedAt": "2026-04-28T08:09:27.181Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-hydrovac-messmaster-cordless-3-in-1-cleaner/WD261.html",
+    "sku": "WD261",
     "family": "shark-hydrovac-messmaster-cordless-3-in-1-cleaner",
-    "category": "WD261.html",
+    "category": "shark-hydrovac-messmaster-cordless-3-in-1-cleaner",
     "galleryImageCount": 9,
     "images": [
       {
@@ -46585,14 +46666,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:33:58.098Z"
+    "extractedAt": "2026-04-28T08:09:27.229Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-rotator-pet-upright-vacuum-with-powerfins-hairpro-and-odor-neutralizer-technology/ZU102.html",
+    "sku": "ZU102",
     "family": "shark-rotator-pet-upright-vacuum-with-powerfins-hairpro-and-odor-neutralizer-technology",
-    "category": "ZU102.html",
+    "category": "shark-rotator-pet-upright-vacuum-with-powerfins-hairpro-and-odor-neutralizer-technology",
     "galleryImageCount": 10,
     "images": [
       {
@@ -46676,14 +46758,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:58.175Z"
+    "extractedAt": "2026-04-28T08:09:27.237Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-foodi-silicone-mitts/AMC108.html",
+    "sku": "AMC108",
     "family": "ninja-foodi-silicone-mitts",
-    "category": "AMC108.html",
+    "category": "ninja-foodi-silicone-mitts",
     "galleryImageCount": 2,
     "images": [
       {
@@ -46703,14 +46786,15 @@
         "sequencePosition": 2
       }
     ],
-    "extractedAt": "2026-04-21T21:33:58.313Z"
+    "extractedAt": "2026-04-28T08:09:27.203Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-hydroduo-cordless-wet-dry-hard-floor-cleaner/WW201.html",
+    "sku": "WW201",
     "family": "shark-hydroduo-cordless-wet-dry-hard-floor-cleaner",
-    "category": "WW201.html",
+    "category": "shark-hydroduo-cordless-wet-dry-hard-floor-cleaner",
     "galleryImageCount": 9,
     "images": [
       {
@@ -46786,14 +46870,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:33:58.332Z"
+    "extractedAt": "2026-04-28T08:09:27.249Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-stratos-duoclean-powerfins-hairpro-upright-vacuum/AZ3002.html",
+    "sku": "AZ3002",
     "family": "shark-stratos-duoclean-powerfins-hairpro-upright-vacuum",
-    "category": "AZ3002.html",
+    "category": "shark-stratos-duoclean-powerfins-hairpro-upright-vacuum",
     "galleryImageCount": 10,
     "images": [
       {
@@ -46877,14 +46962,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:58.402Z"
+    "extractedAt": "2026-04-28T08:09:27.205Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-foodi-neverstick-premium-12-cup-muffin-pan/B30212.html",
+    "sku": "B30212",
     "family": "ninja-foodi-neverstick-premium-12-cup-muffin-pan",
-    "category": "B30212.html",
+    "category": "ninja-foodi-neverstick-premium-12-cup-muffin-pan",
     "galleryImageCount": 1,
     "images": [
       {
@@ -46896,14 +46982,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:58.452Z"
+    "extractedAt": "2026-04-28T08:09:27.369Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-prochef-wireless-thermometer/WP100.html",
+    "sku": "WP100",
     "family": "ninja-prochef-wireless-thermometer",
-    "category": "WP100.html",
+    "category": "ninja-prochef-wireless-thermometer",
     "galleryImageCount": 7,
     "images": [
       {
@@ -46963,14 +47050,15 @@
         "sequencePosition": 7
       }
     ],
-    "extractedAt": "2026-04-21T21:33:58.511Z"
+    "extractedAt": "2026-04-28T08:09:27.338Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-clean-empty-cordless-stick-vacuum-auto-empty-system/BU3521.html",
+    "sku": "BU3521",
     "family": "shark-clean-empty-cordless-stick-vacuum-auto-empty-system",
-    "category": "BU3521.html",
+    "category": "shark-clean-empty-cordless-stick-vacuum-auto-empty-system",
     "galleryImageCount": 7,
     "images": [
       {
@@ -47030,14 +47118,15 @@
         "sequencePosition": 7
       }
     ],
-    "extractedAt": "2026-04-21T21:33:58.685Z"
+    "extractedAt": "2026-04-28T08:09:27.539Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-belgian-waffle-maker-pro-neverstick/BW1001.html",
+    "sku": "BW1001",
     "family": "ninja-belgian-waffle-maker-pro-neverstick",
-    "category": "BW1001.html",
+    "category": "ninja-belgian-waffle-maker-pro-neverstick",
     "galleryImageCount": 9,
     "images": [
       {
@@ -47113,14 +47202,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:33:58.722Z"
+    "extractedAt": "2026-04-28T08:09:27.499Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-neverstick-premium-5-piece-bakeware-set/B35005.html",
+    "sku": "B35005",
     "family": "ninja-neverstick-premium-5-piece-bakeware-set",
-    "category": "B35005.html",
+    "category": "ninja-neverstick-premium-5-piece-bakeware-set",
     "galleryImageCount": 7,
     "images": [
       {
@@ -47180,14 +47270,15 @@
         "sequencePosition": 7
       }
     ],
-    "extractedAt": "2026-04-21T21:33:58.722Z"
+    "extractedAt": "2026-04-28T08:09:27.488Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-everclad-commercial-grade-stainless-steel-cookware-12-piece-set/C99012.html",
+    "sku": "C99012",
     "family": "ninja-everclad-commercial-grade-stainless-steel-cookware-12-piece-set",
-    "category": "C99012.html",
+    "category": "ninja-everclad-commercial-grade-stainless-steel-cookware-12-piece-set",
     "galleryImageCount": 7,
     "images": [
       {
@@ -47247,14 +47338,15 @@
         "sequencePosition": 7
       }
     ],
-    "extractedAt": "2026-04-21T21:33:58.833Z"
+    "extractedAt": "2026-04-28T08:09:27.494Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-espresso-coffee-barista-system/CFN601.html",
+    "sku": "CFN601",
     "family": "ninja-espresso-coffee-barista-system",
-    "category": "CFN601.html",
+    "category": "ninja-espresso-coffee-barista-system",
     "galleryImageCount": 22,
     "images": [
       {
@@ -47434,14 +47526,15 @@
         "sequencePosition": 22
       }
     ],
-    "extractedAt": "2026-04-21T21:33:58.883Z"
+    "extractedAt": "2026-04-28T08:09:27.653Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-double-stack-xl-countertop-oven-air-fryer/DCT601.html",
+    "sku": "DCT601",
     "family": "ninja-double-stack-xl-countertop-oven-air-fryer",
-    "category": "DCT601.html",
+    "category": "ninja-double-stack-xl-countertop-oven-air-fryer",
     "galleryImageCount": 10,
     "images": [
       {
@@ -47525,14 +47618,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:58.986Z"
+    "extractedAt": "2026-04-28T08:09:27.549Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-dualbrew-pro-specialty-coffee-system/CFP301.html",
+    "sku": "CFP301",
     "family": "ninja-dualbrew-pro-specialty-coffee-system",
-    "category": "CFP301.html",
+    "category": "ninja-dualbrew-pro-specialty-coffee-system",
     "galleryImageCount": 11,
     "images": [
       {
@@ -47624,14 +47718,15 @@
         "sequencePosition": 11
       }
     ],
-    "extractedAt": "2026-04-21T21:33:59.057Z"
+    "extractedAt": "2026-04-28T08:09:27.773Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-dualbrew-hot-iced-coffee-maker/CFP101.html",
+    "sku": "CFP101",
     "family": "ninja-dualbrew-hot-iced-coffee-maker",
-    "category": "CFP101.html",
+    "category": "ninja-dualbrew-hot-iced-coffee-maker",
     "galleryImageCount": 9,
     "images": [
       {
@@ -47707,14 +47802,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:33:59.070Z"
+    "extractedAt": "2026-04-28T08:09:27.773Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-carpetxpert-with-stainstriker-upright-deep-carpet-cleaner/EX201B.html",
+    "sku": "EX201B",
     "family": "shark-carpetxpert-with-stainstriker-upright-deep-carpet-cleaner",
-    "category": "EX201B.html",
+    "category": "shark-carpetxpert-with-stainstriker-upright-deep-carpet-cleaner",
     "galleryImageCount": 8,
     "images": [
       {
@@ -47782,14 +47878,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:33:59.211Z"
+    "extractedAt": "2026-04-28T08:09:27.832Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-carpetxpert-hairpro-with-stainstriker/EX301B.html",
+    "sku": "EX301B",
     "family": "shark-carpetxpert-hairpro-with-stainstriker",
-    "category": "EX301B.html",
+    "category": "shark-carpetxpert-hairpro-with-stainstriker",
     "galleryImageCount": 10,
     "images": [
       {
@@ -47873,14 +47970,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:59.256Z"
+    "extractedAt": "2026-04-28T08:09:27.791Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-carpetxpert-deep-clean-pro-formula-48oz/EXCM48.html",
+    "sku": "EXCM48",
     "family": "shark-carpetxpert-deep-clean-pro-formula-48oz",
-    "category": "EXCM48.html",
+    "category": "shark-carpetxpert-deep-clean-pro-formula-48oz",
     "galleryImageCount": 2,
     "images": [
       {
@@ -47900,14 +47998,15 @@
         "sequencePosition": 2
       }
     ],
-    "extractedAt": "2026-04-21T21:33:59.377Z"
+    "extractedAt": "2026-04-28T08:09:27.758Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-deep-clean-pet-formula-48oz/EXCP48.html",
+    "sku": "EXCP48",
     "family": "shark-deep-clean-pet-formula-48oz",
-    "category": "EXCP48.html",
+    "category": "shark-deep-clean-pet-formula-48oz",
     "galleryImageCount": 1,
     "images": [
       {
@@ -47919,14 +48018,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:59.388Z"
+    "extractedAt": "2026-04-28T08:09:27.834Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-double-stack-xl-countertop-oven-air-fryer-with-pro-cook-system/DCT651.html",
+    "sku": "DCT651",
     "family": "ninja-double-stack-xl-countertop-oven-air-fryer-with-pro-cook-system",
-    "category": "DCT651.html",
+    "category": "ninja-double-stack-xl-countertop-oven-air-fryer-with-pro-cook-system",
     "galleryImageCount": 10,
     "images": [
       {
@@ -48010,14 +48110,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:59.388Z"
+    "extractedAt": "2026-04-28T08:09:27.818Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-ultra-light-corded-stick-vacuum/HZ4002.html",
+    "sku": "HZ4002",
     "family": "shark-powerdetect-ultra-light-corded-stick-vacuum",
-    "category": "HZ4002.html",
+    "category": "shark-powerdetect-ultra-light-corded-stick-vacuum",
     "galleryImageCount": 10,
     "images": [
       {
@@ -48101,14 +48202,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:33:59.505Z"
+    "extractedAt": "2026-04-28T08:09:28.018Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-stainstriker-oxy-multiplier-formula-32oz/EXOX32.html",
+    "sku": "EXOX32",
     "family": "shark-stainstriker-oxy-multiplier-formula-32oz",
-    "category": "EXOX32.html",
+    "category": "shark-stainstriker-oxy-multiplier-formula-32oz",
     "galleryImageCount": 1,
     "images": [
       {
@@ -48120,14 +48222,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:59.520Z"
+    "extractedAt": "2026-04-28T08:09:28.028Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-stainforce-cordless-portable-stain-cleaner/HX101B.html",
+    "sku": "HX101B",
     "family": "shark-stainforce-cordless-portable-stain-cleaner",
-    "category": "HX101B.html",
+    "category": "shark-stainforce-cordless-portable-stain-cleaner",
     "galleryImageCount": 2,
     "images": [
       {
@@ -48147,14 +48250,15 @@
         "sequencePosition": 2
       }
     ],
-    "extractedAt": "2026-04-21T21:33:59.538Z"
+    "extractedAt": "2026-04-28T08:09:28.199Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-speed-cordless-stick-vacuum/IA1241.html",
+    "sku": "IA1241",
     "family": "shark-powerdetect-speed-cordless-stick-vacuum",
-    "category": "IA1241.html",
+    "category": "shark-powerdetect-speed-cordless-stick-vacuum",
     "galleryImageCount": 1,
     "images": [
       {
@@ -48166,14 +48270,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:59.619Z"
+    "extractedAt": "2026-04-28T08:09:28.979Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-cordless-powerdetect-clean-empty-system/IP3251.html",
+    "sku": "IP3251",
     "family": "shark-cordless-powerdetect-clean-empty-system",
-    "category": "IP3251.html",
+    "category": "shark-cordless-powerdetect-clean-empty-system",
     "galleryImageCount": 12,
     "images": [
       {
@@ -48273,14 +48378,15 @@
         "sequencePosition": 12
       }
     ],
-    "extractedAt": "2026-04-21T21:33:59.765Z"
+    "extractedAt": "2026-04-28T08:09:28.059Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html",
+    "sku": "IA3241",
     "family": "shark-powerdetect-speed-clean-empty-system",
-    "category": "IA3241.html",
+    "category": "shark-powerdetect-speed-clean-empty-system",
     "galleryImageCount": 1,
     "images": [
       {
@@ -48292,14 +48398,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:59.809Z"
+    "extractedAt": "2026-04-28T08:09:28.206Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-cordless-stick-vacuum/IP1251.html",
+    "sku": "IP1251",
     "family": "shark-powerdetect-cordless-stick-vacuum",
-    "category": "IP1251.html",
+    "category": "shark-powerdetect-cordless-stick-vacuum",
     "galleryImageCount": 7,
     "images": [
       {
@@ -48359,14 +48466,15 @@
         "sequencePosition": 7
       }
     ],
-    "extractedAt": "2026-04-21T21:33:59.853Z"
+    "extractedAt": "2026-04-28T08:09:28.283Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-rocket-dirt-engage-lightweight/IZ362H.html",
+    "sku": "IZ362H",
     "family": "shark-rocket-dirt-engage-lightweight",
-    "category": "IZ362H.html",
+    "category": "shark-rocket-dirt-engage-lightweight",
     "galleryImageCount": 1,
     "images": [
       {
@@ -48378,14 +48486,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:59.921Z"
+    "extractedAt": "2026-04-28T08:09:28.219Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-vertex-cordless-stick-vacuum-with-duoclean-powerfins/IZ462H.html",
+    "sku": "IZ462H",
     "family": "shark-vertex-cordless-stick-vacuum-with-duoclean-powerfins",
-    "category": "IZ462H.html",
+    "category": "shark-vertex-cordless-stick-vacuum-with-duoclean-powerfins",
     "galleryImageCount": 1,
     "images": [
       {
@@ -48397,14 +48506,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:33:59.982Z"
+    "extractedAt": "2026-04-28T08:09:28.416Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerpro-reveal-cordless-vacuum/IZ376H.html",
+    "sku": "IZ376H",
     "family": "shark-powerpro-reveal-cordless-vacuum",
-    "category": "IZ376H.html",
+    "category": "shark-powerpro-reveal-cordless-vacuum",
     "galleryImageCount": 1,
     "images": [
       {
@@ -48416,14 +48526,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:00.020Z"
+    "extractedAt": "2026-04-28T08:09:28.454Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-neverdull-system-knife-sharpener/K31300.html",
+    "sku": "K31300",
     "family": "ninja-neverdull-system-knife-sharpener",
-    "category": "K31300.html",
+    "category": "ninja-neverdull-system-knife-sharpener",
     "galleryImageCount": 8,
     "images": [
       {
@@ -48491,14 +48602,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:34:00.089Z"
+    "extractedAt": "2026-04-28T08:09:28.334Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-neverdull-14-piece-premium-knife-system/K32014.html",
+    "sku": "K32014",
     "family": "ninja-neverdull-14-piece-premium-knife-system",
-    "category": "K32014.html",
+    "category": "ninja-neverdull-14-piece-premium-knife-system",
     "galleryImageCount": 9,
     "images": [
       {
@@ -48574,14 +48686,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:34:00.179Z"
+    "extractedAt": "2026-04-28T08:09:28.541Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-neverdull-12-piece-premium-knife-system/K32012.html",
+    "sku": "K32012",
     "family": "ninja-neverdull-12-piece-premium-knife-system",
-    "category": "K32012.html",
+    "category": "ninja-neverdull-12-piece-premium-knife-system",
     "galleryImageCount": 8,
     "images": [
       {
@@ -48649,14 +48762,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:34:00.213Z"
+    "extractedAt": "2026-04-28T08:09:28.514Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-neverdull-17-piece-premium-knife-system/K32017.html",
+    "sku": "K32017",
     "family": "ninja-neverdull-17-piece-premium-knife-system",
-    "category": "K32017.html",
+    "category": "ninja-neverdull-17-piece-premium-knife-system",
     "galleryImageCount": 10,
     "images": [
       {
@@ -48740,14 +48854,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:34:00.297Z"
+    "extractedAt": "2026-04-28T08:09:28.553Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-neverdull-premium-13-piece-wood-series-knife-system/K52013.html",
+    "sku": "K52013",
     "family": "ninja-neverdull-premium-13-piece-wood-series-knife-system",
-    "category": "K52013.html",
+    "category": "ninja-neverdull-premium-13-piece-wood-series-knife-system",
     "galleryImageCount": 8,
     "images": [
       {
@@ -48815,14 +48930,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:34:00.400Z"
+    "extractedAt": "2026-04-28T08:09:28.614Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-neverdull-premium-14-piece-stainless-knife-system/K62014.html",
+    "sku": "K62014",
     "family": "ninja-neverdull-premium-14-piece-stainless-knife-system",
-    "category": "K62014.html",
+    "category": "ninja-neverdull-premium-14-piece-stainless-knife-system",
     "galleryImageCount": 7,
     "images": [
       {
@@ -48882,14 +48998,15 @@
         "sequencePosition": 7
       }
     ],
-    "extractedAt": "2026-04-21T21:34:00.412Z"
+    "extractedAt": "2026-04-28T08:09:28.627Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-14-in-1-possiblecooker-pro-8.5-qt/MC1001.html",
+    "sku": "MC1001",
     "family": "ninja-14-in-1-possiblecooker-pro-8.5-qt",
-    "category": "MC1001.html",
+    "category": "ninja-14-in-1-possiblecooker-pro-8.5-qt",
     "galleryImageCount": 1,
     "images": [
       {
@@ -48901,14 +49018,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:00.469Z"
+    "extractedAt": "2026-04-28T08:09:28.723Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-deep-clean-pet-formula-6oz/PXCP6C.html",
+    "sku": "PXCP6C",
     "family": "shark-deep-clean-pet-formula-6oz",
-    "category": "PXCP6C.html",
+    "category": "shark-deep-clean-pet-formula-6oz",
     "galleryImageCount": 1,
     "images": [
       {
@@ -48920,14 +49038,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:00.585Z"
+    "extractedAt": "2026-04-28T08:09:28.775Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-10-in-1-everyday-possiblecooker-pro-6.5-qt/MC1101.html",
+    "sku": "MC1101",
     "family": "ninja-10-in-1-everyday-possiblecooker-pro-6.5-qt",
-    "category": "MC1101.html",
+    "category": "ninja-10-in-1-everyday-possiblecooker-pro-6.5-qt",
     "galleryImageCount": 9,
     "images": [
       {
@@ -49003,14 +49122,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:34:00.609Z"
+    "extractedAt": "2026-04-28T08:09:28.871Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-combi-all-in-one-multicooker-oven-and-air-fryer/SFP701.html",
+    "sku": "SFP701",
     "family": "ninja-combi-all-in-one-multicooker-oven-and-air-fryer",
-    "category": "SFP701.html",
+    "category": "ninja-combi-all-in-one-multicooker-oven-and-air-fryer",
     "galleryImageCount": 10,
     "images": [
       {
@@ -49094,14 +49214,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:34:00.645Z"
+    "extractedAt": "2026-04-28T08:09:28.818Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-turboblade-ultra-customizable-bladeless-tower-fan-charcoal/TF202S.html",
+    "sku": "TF202S",
     "family": "shark-turboblade-ultra-customizable-bladeless-tower-fan-charcoal",
-    "category": "TF202S.html",
+    "category": "shark-turboblade-ultra-customizable-bladeless-tower-fan-charcoal",
     "galleryImageCount": 10,
     "images": [
       {
@@ -49185,14 +49306,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:34:00.829Z"
+    "extractedAt": "2026-04-28T08:09:28.988Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-hydrovac-disinfectant-cleaning-solution-2l/WDCD60.html",
+    "sku": "WDCD60",
     "family": "shark-hydrovac-disinfectant-cleaning-solution-2l",
-    "category": "WDCD60.html",
+    "category": "shark-hydrovac-disinfectant-cleaning-solution-2l",
     "galleryImageCount": 1,
     "images": [
       {
@@ -49204,14 +49326,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:00.831Z"
+    "extractedAt": "2026-04-28T08:09:28.859Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-pet-pro-cordless-stick-vacuum-with-multiflex/UZ351H.html",
+    "sku": "UZ351H",
     "family": "shark-pet-pro-cordless-stick-vacuum-with-multiflex",
-    "category": "UZ351H.html",
+    "category": "shark-pet-pro-cordless-stick-vacuum-with-multiflex",
     "galleryImageCount": 2,
     "images": [
       {
@@ -49231,14 +49354,15 @@
         "sequencePosition": 2
       }
     ],
-    "extractedAt": "2026-04-21T21:34:00.916Z"
+    "extractedAt": "2026-04-28T08:09:28.908Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-hydrovac-multi-surface-concentrate-1l/WDCM30.html",
+    "sku": "WDCM30",
     "family": "shark-hydrovac-multi-surface-concentrate-1l",
-    "category": "WDCM30.html",
+    "category": "shark-hydrovac-multi-surface-concentrate-1l",
     "galleryImageCount": 1,
     "images": [
       {
@@ -49250,14 +49374,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:00.924Z"
+    "extractedAt": "2026-04-28T08:09:29.095Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-mini-prep-bowl-kit/XPB003.html",
+    "sku": "XPB003",
     "family": "ninja-mini-prep-bowl-kit",
-    "category": "XPB003.html",
+    "category": "ninja-mini-prep-bowl-kit",
     "galleryImageCount": 1,
     "images": [
       {
@@ -49269,14 +49394,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:00.959Z"
+    "extractedAt": "2026-04-28T08:09:29.119Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-professional-prep-system/XSK770.html",
+    "sku": "XSK770",
     "family": "ninja-professional-prep-system",
-    "category": "XSK770.html",
+    "category": "ninja-professional-prep-system",
     "galleryImageCount": 1,
     "images": [
       {
@@ -49288,14 +49414,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:01.035Z"
+    "extractedAt": "2026-04-28T08:09:29.100Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-ai-ultra-robot-self-empty/AV2501S.html",
+    "sku": "AV2501S",
     "family": "shark-ai-ultra-robot-self-empty",
-    "category": "AV2501S.html",
+    "category": "shark-ai-ultra-robot-self-empty",
     "galleryImageCount": 1,
     "images": [
       {
@@ -49307,14 +49434,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:01.176Z"
+    "extractedAt": "2026-04-28T08:09:29.157Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-self-emptying-robot-vacuum-av2820s/AV2820S.html",
+    "sku": "AV2820S",
     "family": "shark-powerdetect-self-emptying-robot-vacuum-av2820s",
-    "category": "AV2820S.html",
+    "category": "shark-powerdetect-self-emptying-robot-vacuum-av2820s",
     "galleryImageCount": 1,
     "images": [
       {
@@ -49326,14 +49454,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:01.244Z"
+    "extractedAt": "2026-04-28T08:09:29.222Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-portable-blender-tinted-aqua/BC151AQ.html",
+    "sku": "BC151AQ",
     "family": "ninja-blast-portable-blender-tinted-aqua",
-    "category": "BC151AQ.html",
+    "category": "ninja-blast-portable-blender-tinted-aqua",
     "galleryImageCount": 8,
     "images": [
       {
@@ -49401,14 +49530,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:34:01.317Z"
+    "extractedAt": "2026-04-28T08:09:29.297Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-portable-blender-black/BC151BK.html",
+    "sku": "BC151BK",
     "family": "ninja-blast-portable-blender-black",
-    "category": "BC151BK.html",
+    "category": "ninja-blast-portable-blender-black",
     "galleryImageCount": 9,
     "images": [
       {
@@ -49484,14 +49614,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:34:01.385Z"
+    "extractedAt": "2026-04-28T08:09:29.348Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-portable-blender-cranberry/BC151CR.html",
+    "sku": "BC151CR",
     "family": "ninja-blast-portable-blender-cranberry",
-    "category": "BC151CR.html",
+    "category": "ninja-blast-portable-blender-cranberry",
     "galleryImageCount": 10,
     "images": [
       {
@@ -49575,14 +49706,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:34:01.472Z"
+    "extractedAt": "2026-04-28T08:09:29.308Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-portable-blender-forest-green/BC151EM.html",
+    "sku": "BC151EM",
     "family": "ninja-blast-portable-blender-forest-green",
-    "category": "BC151EM.html",
+    "category": "ninja-blast-portable-blender-forest-green",
     "galleryImageCount": 12,
     "images": [
       {
@@ -49682,14 +49814,15 @@
         "sequencePosition": 12
       }
     ],
-    "extractedAt": "2026-04-21T21:34:01.508Z"
+    "extractedAt": "2026-04-28T08:09:29.463Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-portable-blender-lemon-meringue/BC151LB.html",
+    "sku": "BC151LB",
     "family": "ninja-blast-portable-blender-lemon-meringue",
-    "category": "BC151LB.html",
+    "category": "ninja-blast-portable-blender-lemon-meringue",
     "galleryImageCount": 8,
     "images": [
       {
@@ -49757,14 +49890,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:34:01.731Z"
+    "extractedAt": "2026-04-28T08:09:29.437Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-portable-blender-tinted-lavender/BC151LD.html",
+    "sku": "BC151LD",
     "family": "ninja-blast-portable-blender-tinted-lavender",
-    "category": "BC151LD.html",
+    "category": "ninja-blast-portable-blender-tinted-lavender",
     "galleryImageCount": 8,
     "images": [
       {
@@ -49832,14 +49966,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:34:01.756Z"
+    "extractedAt": "2026-04-28T08:09:29.470Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-portable-blender-muted-lavender/BC151ML.html",
+    "sku": "BC151ML",
     "family": "ninja-blast-portable-blender-muted-lavender",
-    "category": "BC151ML.html",
+    "category": "ninja-blast-portable-blender-muted-lavender",
     "galleryImageCount": 8,
     "images": [
       {
@@ -49907,14 +50042,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:34:01.758Z"
+    "extractedAt": "2026-04-28T08:09:29.483Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-portable-blender-denim-blue/BC151NV.html",
+    "sku": "BC151NV",
     "family": "ninja-blast-portable-blender-denim-blue",
-    "category": "BC151NV.html",
+    "category": "ninja-blast-portable-blender-denim-blue",
     "galleryImageCount": 10,
     "images": [
       {
@@ -49998,14 +50134,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:34:01.958Z"
+    "extractedAt": "2026-04-28T08:09:29.647Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-portable-blender-deep-navy/BC151ND.html",
+    "sku": "BC151ND",
     "family": "ninja-blast-portable-blender-deep-navy",
-    "category": "BC151ND.html",
+    "category": "ninja-blast-portable-blender-deep-navy",
     "galleryImageCount": 8,
     "images": [
       {
@@ -50073,14 +50210,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:34:01.972Z"
+    "extractedAt": "2026-04-28T08:09:29.631Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-portable-blender-tinted-mint/BC151MT.html",
+    "sku": "BC151MT",
     "family": "ninja-blast-portable-blender-tinted-mint",
-    "category": "BC151MT.html",
+    "category": "ninja-blast-portable-blender-tinted-mint",
     "galleryImageCount": 8,
     "images": [
       {
@@ -50148,14 +50286,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:34:02.109Z"
+    "extractedAt": "2026-04-28T08:09:29.726Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-portable-blender-passion-fruit/BC151PR.html",
+    "sku": "BC151PR",
     "family": "ninja-blast-portable-blender-passion-fruit",
-    "category": "BC151PR.html",
+    "category": "ninja-blast-portable-blender-passion-fruit",
     "galleryImageCount": 10,
     "images": [
       {
@@ -50239,14 +50378,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:34:02.253Z"
+    "extractedAt": "2026-04-28T08:09:29.732Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-portable-blender-tinted-pink/BC151PK.html",
+    "sku": "BC151PK",
     "family": "ninja-blast-portable-blender-tinted-pink",
-    "category": "BC151PK.html",
+    "category": "ninja-blast-portable-blender-tinted-pink",
     "galleryImageCount": 12,
     "images": [
       {
@@ -50346,14 +50486,15 @@
         "sequencePosition": 12
       }
     ],
-    "extractedAt": "2026-04-21T21:34:02.288Z"
+    "extractedAt": "2026-04-28T08:09:29.798Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-portable-blender-metallic-vanilla-bean/BC151VB.html",
+    "sku": "BC151VB",
     "family": "ninja-blast-portable-blender-metallic-vanilla-bean",
-    "category": "BC151VB.html",
+    "category": "ninja-blast-portable-blender-metallic-vanilla-bean",
     "galleryImageCount": 12,
     "images": [
       {
@@ -50453,14 +50594,15 @@
         "sequencePosition": 12
       }
     ],
-    "extractedAt": "2026-04-21T21:34:02.365Z"
+    "extractedAt": "2026-04-28T08:09:30.717Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-max-cordless-portable-blender-cool-grey/BC251GY.html",
+    "sku": "BC251GY",
     "family": "ninja-blast-max-cordless-portable-blender-cool-grey",
-    "category": "BC251GY.html",
+    "category": "ninja-blast-max-cordless-portable-blender-cool-grey",
     "galleryImageCount": 1,
     "images": [
       {
@@ -50472,14 +50614,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:02.512Z"
+    "extractedAt": "2026-04-28T08:09:29.837Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-portable-blender-white/BC151WH.html",
+    "sku": "BC151WH",
     "family": "ninja-blast-portable-blender-white",
-    "category": "BC151WH.html",
+    "category": "ninja-blast-portable-blender-white",
     "galleryImageCount": 5,
     "images": [
       {
@@ -50523,80 +50666,87 @@
         "sequencePosition": 5
       }
     ],
-    "extractedAt": "2026-04-21T21:34:02.517Z"
+    "extractedAt": "2026-04-28T08:09:29.923Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-max-cordless-portable-blender-cream/BC251IV.html",
+    "sku": "BC251IV",
     "family": "ninja-blast-max-cordless-portable-blender-cream",
-    "category": "BC251IV.html",
+    "category": "ninja-blast-max-cordless-portable-blender-cream",
     "images": [],
     "galleryImageCount": 0,
     "error": "Request failed with status code 404",
-    "extractedAt": "2026-04-21T21:34:02.654Z"
+    "extractedAt": "2026-04-28T08:09:29.973Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-max-cordless-portable-blender-lavender/BC251LD.html",
+    "sku": "BC251LD",
     "family": "ninja-blast-max-cordless-portable-blender-lavender",
-    "category": "BC251LD.html",
+    "category": "ninja-blast-max-cordless-portable-blender-lavender",
     "images": [],
     "galleryImageCount": 0,
     "error": "Request failed with status code 404",
-    "extractedAt": "2026-04-21T21:34:02.811Z"
+    "extractedAt": "2026-04-28T08:09:29.871Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-max-cordless-portable-blender-deep-navy/BC251NV.html",
+    "sku": "BC251NV",
     "family": "ninja-blast-max-cordless-portable-blender-deep-navy",
-    "category": "BC251NV.html",
+    "category": "ninja-blast-max-cordless-portable-blender-deep-navy",
     "images": [],
     "galleryImageCount": 0,
     "error": "Request failed with status code 404",
-    "extractedAt": "2026-04-21T21:34:02.885Z"
+    "extractedAt": "2026-04-28T08:09:30.185Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-max-cordless-portable-blender-dusty-pink/BC251PK.html",
+    "sku": "BC251PK",
     "family": "ninja-blast-max-cordless-portable-blender-dusty-pink",
-    "category": "BC251PK.html",
+    "category": "ninja-blast-max-cordless-portable-blender-dusty-pink",
     "images": [],
     "galleryImageCount": 0,
     "error": "Request failed with status code 404",
-    "extractedAt": "2026-04-21T21:34:03.084Z"
+    "extractedAt": "2026-04-28T08:09:29.972Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-max-cordless-portable-blender-sea-glass/BC251MT.html",
+    "sku": "BC251MT",
     "family": "ninja-blast-max-cordless-portable-blender-sea-glass",
-    "category": "BC251MT.html",
+    "category": "ninja-blast-max-cordless-portable-blender-sea-glass",
     "images": [],
     "galleryImageCount": 0,
     "error": "Request failed with status code 404",
-    "extractedAt": "2026-04-21T21:34:03.102Z"
+    "extractedAt": "2026-04-28T08:09:30.000Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blast-max-cordless-portable-blender-platinum-silver/BC251SL.html",
+    "sku": "BC251SL",
     "family": "ninja-blast-max-cordless-portable-blender-platinum-silver",
-    "category": "BC251SL.html",
+    "category": "ninja-blast-max-cordless-portable-blender-platinum-silver",
     "images": [],
     "galleryImageCount": 0,
     "error": "Request failed with status code 404",
-    "extractedAt": "2026-04-21T21:34:03.143Z"
+    "extractedAt": "2026-04-28T08:09:30.052Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-luxe-cafe-pro-designed-by-david-beckham/ES771BK.html",
+    "sku": "ES771BK",
     "family": "ninja-luxe-cafe-pro-designed-by-david-beckham",
-    "category": "ES771BK.html",
+    "category": "ninja-luxe-cafe-pro-designed-by-david-beckham",
     "galleryImageCount": 1,
     "images": [
       {
@@ -50608,14 +50758,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:03.321Z"
+    "extractedAt": "2026-04-28T08:09:30.193Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-foodi-xlprogrillgriddle-beginners/CBIG6XX.html",
+    "sku": "CBIG6XX",
     "family": "ninja-foodi-xlprogrillgriddle-beginners",
-    "category": "CBIG6XX.html",
+    "category": "ninja-foodi-xlprogrillgriddle-beginners",
     "galleryImageCount": 1,
     "images": [
       {
@@ -50627,14 +50778,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:03.420Z"
+    "extractedAt": "2026-04-28T08:09:30.376Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-frostvault-30qt-hard-cooler-with-cold-dry-zone-slate-gray/FB131GY.html",
+    "sku": "FB131GY",
     "family": "ninja-frostvault-30qt-hard-cooler-with-cold-dry-zone-slate-gray",
-    "category": "FB131GY.html",
+    "category": "ninja-frostvault-30qt-hard-cooler-with-cold-dry-zone-slate-gray",
     "galleryImageCount": 9,
     "images": [
       {
@@ -50710,14 +50862,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:34:03.616Z"
+    "extractedAt": "2026-04-28T08:09:30.281Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-frostvault-30qt-hard-cooler-with-cold-dry-zone-lakeshore-blue/FB131BL.html",
+    "sku": "FB131BL",
     "family": "ninja-frostvault-30qt-hard-cooler-with-cold-dry-zone-lakeshore-blue",
-    "category": "FB131BL.html",
+    "category": "ninja-frostvault-30qt-hard-cooler-with-cold-dry-zone-lakeshore-blue",
     "galleryImageCount": 10,
     "images": [
       {
@@ -50801,14 +50954,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:34:03.664Z"
+    "extractedAt": "2026-04-28T08:09:30.432Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-frostvault-30qt-hard-cooler-with-cold-dry-zone-cloud-white/FB131WH.html",
+    "sku": "FB131WH",
     "family": "ninja-frostvault-30qt-hard-cooler-with-cold-dry-zone-cloud-white",
-    "category": "FB131WH.html",
+    "category": "ninja-frostvault-30qt-hard-cooler-with-cold-dry-zone-cloud-white",
     "galleryImageCount": 15,
     "images": [
       {
@@ -50932,14 +51086,15 @@
         "sequencePosition": 15
       }
     ],
-    "extractedAt": "2026-04-21T21:34:03.778Z"
+    "extractedAt": "2026-04-28T08:09:30.351Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-foodi-6-in-1-10-qt.-xl-2-basket-air-fryer-with-dualzone-technology-stone-and-soft-gold/DZ401SD.html",
+    "sku": "DZ401SD",
     "family": "ninja-foodi-6-in-1-10-qt.-xl-2-basket-air-fryer-with-dualzone-technology-stone-and-soft-gold",
-    "category": "DZ401SD.html",
+    "category": "ninja-foodi-6-in-1-10-qt.-xl-2-basket-air-fryer-with-dualzone-technology-stone-and-soft-gold",
     "galleryImageCount": 12,
     "images": [
       {
@@ -51039,14 +51194,15 @@
         "sequencePosition": 12
       }
     ],
-    "extractedAt": "2026-04-21T21:34:03.807Z"
+    "extractedAt": "2026-04-28T08:09:30.423Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-frostvault-50qt-hard-cooler-with-cold-dry-zone-olive-green/FB151GN.html",
+    "sku": "FB151GN",
     "family": "ninja-frostvault-50qt-hard-cooler-with-cold-dry-zone-olive-green",
-    "category": "FB151GN.html",
+    "category": "ninja-frostvault-50qt-hard-cooler-with-cold-dry-zone-olive-green",
     "galleryImageCount": 8,
     "images": [
       {
@@ -51114,14 +51270,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:34:03.984Z"
+    "extractedAt": "2026-04-28T08:09:30.579Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-frostvault-50qt-hard-cooler-with-cold-dry-zone-slate-gray/FB151GY.html",
+    "sku": "FB151GY",
     "family": "ninja-frostvault-50qt-hard-cooler-with-cold-dry-zone-slate-gray",
-    "category": "FB151GY.html",
+    "category": "ninja-frostvault-50qt-hard-cooler-with-cold-dry-zone-slate-gray",
     "galleryImageCount": 9,
     "images": [
       {
@@ -51197,14 +51354,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:34:04.034Z"
+    "extractedAt": "2026-04-28T08:09:30.486Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-frostvault-50qt-hard-cooler-with-cold-dry-zone-lakeshore-blue/FB151BL.html",
+    "sku": "FB151BL",
     "family": "ninja-frostvault-50qt-hard-cooler-with-cold-dry-zone-lakeshore-blue",
-    "category": "FB151BL.html",
+    "category": "ninja-frostvault-50qt-hard-cooler-with-cold-dry-zone-lakeshore-blue",
     "galleryImageCount": 9,
     "images": [
       {
@@ -51280,14 +51438,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:34:04.059Z"
+    "extractedAt": "2026-04-28T08:09:30.573Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-frostvault-30qt-wheeled-cooler-with-cold-dry-zone-lakeshore-blue/FB230BL.html",
+    "sku": "FB230BL",
     "family": "ninja-frostvault-30qt-wheeled-cooler-with-cold-dry-zone-lakeshore-blue",
-    "category": "FB230BL.html",
+    "category": "ninja-frostvault-30qt-wheeled-cooler-with-cold-dry-zone-lakeshore-blue",
     "galleryImageCount": 8,
     "images": [
       {
@@ -51295,7 +51454,7 @@
         "alt": "",
         "width": 3600,
         "height": 3600,
-        "viewType": "large",
+        "viewType": "",
         "sequencePosition": 1
       },
       {
@@ -51303,7 +51462,7 @@
         "alt": "",
         "width": 3600,
         "height": 3600,
-        "viewType": "large",
+        "viewType": "",
         "sequencePosition": 2
       },
       {
@@ -51311,7 +51470,7 @@
         "alt": "",
         "width": 3600,
         "height": 3600,
-        "viewType": "large",
+        "viewType": "",
         "sequencePosition": 3
       },
       {
@@ -51319,7 +51478,7 @@
         "alt": "",
         "width": 3600,
         "height": 3600,
-        "viewType": "large",
+        "viewType": "",
         "sequencePosition": 4
       },
       {
@@ -51327,7 +51486,7 @@
         "alt": "",
         "width": 3600,
         "height": 3600,
-        "viewType": "large",
+        "viewType": "",
         "sequencePosition": 5
       },
       {
@@ -51335,7 +51494,7 @@
         "alt": "",
         "width": 3600,
         "height": 3600,
-        "viewType": "large",
+        "viewType": "",
         "sequencePosition": 6
       },
       {
@@ -51343,7 +51502,7 @@
         "alt": "",
         "width": 3600,
         "height": 3600,
-        "viewType": "large",
+        "viewType": "",
         "sequencePosition": 7
       },
       {
@@ -51351,18 +51510,19 @@
         "alt": "",
         "width": 3600,
         "height": 3600,
-        "viewType": "large",
+        "viewType": "",
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:34:04.214Z"
+    "extractedAt": "2026-04-28T08:09:30.697Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-frostvault-50qt-hard-cooler-with-cold-dry-zone-cloud-white/FB151WH.html",
+    "sku": "FB151WH",
     "family": "ninja-frostvault-50qt-hard-cooler-with-cold-dry-zone-cloud-white",
-    "category": "FB151WH.html",
+    "category": "ninja-frostvault-50qt-hard-cooler-with-cold-dry-zone-cloud-white",
     "galleryImageCount": 9,
     "images": [
       {
@@ -51438,14 +51598,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:34:04.285Z"
+    "extractedAt": "2026-04-28T08:09:30.692Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-frostvault-30qt-wheeled-cooler-with-dry-zone-slate-gray/FB230GY.html",
+    "sku": "FB230GY",
     "family": "ninja-frostvault-30qt-wheeled-cooler-with-dry-zone-slate-gray",
-    "category": "FB230GY.html",
+    "category": "ninja-frostvault-30qt-wheeled-cooler-with-dry-zone-slate-gray",
     "galleryImageCount": 8,
     "images": [
       {
@@ -51453,7 +51614,7 @@
         "alt": "",
         "width": 3600,
         "height": 3600,
-        "viewType": "large",
+        "viewType": "",
         "sequencePosition": 1
       },
       {
@@ -51461,7 +51622,7 @@
         "alt": "",
         "width": 3600,
         "height": 3600,
-        "viewType": "large",
+        "viewType": "",
         "sequencePosition": 2
       },
       {
@@ -51469,7 +51630,7 @@
         "alt": "",
         "width": 3600,
         "height": 3600,
-        "viewType": "large",
+        "viewType": "",
         "sequencePosition": 3
       },
       {
@@ -51477,7 +51638,7 @@
         "alt": "",
         "width": 3600,
         "height": 3600,
-        "viewType": "large",
+        "viewType": "",
         "sequencePosition": 4
       },
       {
@@ -51485,7 +51646,7 @@
         "alt": "",
         "width": 3600,
         "height": 3600,
-        "viewType": "large",
+        "viewType": "",
         "sequencePosition": 5
       },
       {
@@ -51493,7 +51654,7 @@
         "alt": "",
         "width": 3600,
         "height": 3600,
-        "viewType": "large",
+        "viewType": "",
         "sequencePosition": 6
       },
       {
@@ -51501,7 +51662,7 @@
         "alt": "",
         "width": 3600,
         "height": 3600,
-        "viewType": "large",
+        "viewType": "",
         "sequencePosition": 7
       },
       {
@@ -51509,18 +51670,19 @@
         "alt": "",
         "width": 3600,
         "height": 3600,
-        "viewType": "large",
+        "viewType": "",
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:34:04.287Z"
+    "extractedAt": "2026-04-28T08:09:30.732Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-facialpro-glow-at-home-hydro-powered-facial-system-blue/FH320SN.html",
+    "sku": "FH320SN",
     "family": "shark-facialpro-glow-at-home-hydro-powered-facial-system-blue",
-    "category": "FH320SN.html",
+    "category": "shark-facialpro-glow-at-home-hydro-powered-facial-system-blue",
     "galleryImageCount": 1,
     "images": [
       {
@@ -51532,14 +51694,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:04.401Z"
+    "extractedAt": "2026-04-28T08:09:30.695Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-crispi-portable-cooking-system/FN101PK.html",
+    "sku": "FN101PK",
     "family": "ninja-crispi-portable-cooking-system",
-    "category": "FN101PK.html",
+    "category": "ninja-crispi-portable-cooking-system",
     "galleryImageCount": 1,
     "images": [
       {
@@ -51551,14 +51714,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:04.492Z"
+    "extractedAt": "2026-04-28T08:09:30.801Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-crispi-4-in-1-portable-glass-air-fryer-cooking-system/FN101GY.html",
+    "sku": "FN101GY",
     "family": "ninja-crispi-4-in-1-portable-glass-air-fryer-cooking-system",
-    "category": "FN101GY.html",
+    "category": "ninja-crispi-4-in-1-portable-glass-air-fryer-cooking-system",
     "galleryImageCount": 2,
     "images": [
       {
@@ -51578,14 +51742,15 @@
         "sequencePosition": 2
       }
     ],
-    "extractedAt": "2026-04-21T21:34:04.496Z"
+    "extractedAt": "2026-04-28T08:09:30.926Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-crispi-4-in-1-portable-glass-air-fryer-cooking-system-sage/FN101SG.html",
+    "sku": "FN101SG",
     "family": "ninja-crispi-4-in-1-portable-glass-air-fryer-cooking-system-sage",
-    "category": "FN101SG.html",
+    "category": "ninja-crispi-4-in-1-portable-glass-air-fryer-cooking-system-sage",
     "galleryImageCount": 1,
     "images": [
       {
@@ -51597,14 +51762,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:04.576Z"
+    "extractedAt": "2026-04-28T08:09:31.328Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-slushi-professional-frozen-drink-maker-tote-bundle/FS301BB.html",
+    "sku": "FS301BB",
     "family": "ninja-slushi-professional-frozen-drink-maker-tote-bundle",
-    "category": "FS301BB.html",
+    "category": "ninja-slushi-professional-frozen-drink-maker-tote-bundle",
     "galleryImageCount": 10,
     "images": [
       {
@@ -51688,14 +51854,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:34:04.705Z"
+    "extractedAt": "2026-04-28T08:09:31.079Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-crispi-5-in-1-portable-glass-air-fryer-cooking-system/FN103BF.html",
+    "sku": "FN103BF",
     "family": "ninja-crispi-5-in-1-portable-glass-air-fryer-cooking-system",
-    "category": "FN103BF.html",
+    "category": "ninja-crispi-5-in-1-portable-glass-air-fryer-cooking-system",
     "galleryImageCount": 9,
     "images": [
       {
@@ -51771,14 +51938,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:34:04.792Z"
+    "extractedAt": "2026-04-28T08:09:31.096Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-crispi-4-in-1-portable-glass-air-fryer-cooking-system-stone/FN101ST.html",
+    "sku": "FN101ST",
     "family": "ninja-crispi-4-in-1-portable-glass-air-fryer-cooking-system-stone",
-    "category": "FN101ST.html",
+    "category": "ninja-crispi-4-in-1-portable-glass-air-fryer-cooking-system-stone",
     "galleryImageCount": 1,
     "images": [
       {
@@ -51790,14 +51958,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:04.793Z"
+    "extractedAt": "2026-04-28T08:09:31.197Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-slushi-max-smart-frozen-drink-maker-150-oz-mocha/FS605BR.html",
+    "sku": "FS605BR",
     "family": "ninja-slushi-max-smart-frozen-drink-maker-150-oz-mocha",
-    "category": "FS605BR.html",
+    "category": "ninja-slushi-max-smart-frozen-drink-maker-150-oz-mocha",
     "galleryImageCount": 5,
     "images": [
       {
@@ -51841,14 +52010,15 @@
         "sequencePosition": 5
       }
     ],
-    "extractedAt": "2026-04-21T21:34:04.964Z"
+    "extractedAt": "2026-04-28T08:09:31.026Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---blue-frost/FW312B2.html",
+    "sku": "FW312B2",
     "family": "shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---blue-frost",
-    "category": "FW312B2.html",
+    "category": "shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---blue-frost",
     "galleryImageCount": 1,
     "images": [
       {
@@ -51860,14 +52030,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:04.977Z"
+    "extractedAt": "2026-04-28T08:09:31.063Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---blue-frost/FW312FH.html",
+    "sku": "FW312FH",
     "family": "shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---blue-frost",
-    "category": "FW312FH.html",
+    "category": "shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---blue-frost",
     "galleryImageCount": 11,
     "images": [
       {
@@ -51959,15 +52130,16 @@
         "sequencePosition": 11
       }
     ],
-    "extractedAt": "2026-04-21T21:34:05.035Z"
+    "extractedAt": "2026-04-28T08:09:31.152Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---lilac-chill/FW312PL.html",
+    "sku": "FW312PL",
     "family": "shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---lilac-chill",
-    "category": "FW312PL.html",
-    "galleryImageCount": 10,
+    "category": "shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---lilac-chill",
+    "galleryImageCount": 9,
     "images": [
       {
         "src": "https://sharkninja-sfcc-prod-res.cloudinary.com/image/upload/f_auto,q_auto,w_800/SharkNinja-NA/FW312PL_10",
@@ -52040,24 +52212,17 @@
         "height": 3600,
         "viewType": "large",
         "sequencePosition": 9
-      },
-      {
-        "src": "https://sharkninja-sfcc-prod-res.cloudinary.com/image/upload/f_auto,q_auto,w_800/SharkNinja-NA/FW312PL_01",
-        "alt": "",
-        "width": 1080,
-        "height": 1090,
-        "viewType": "large",
-        "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:34:05.303Z"
+    "extractedAt": "2026-04-28T08:09:31.160Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-cryoglow-marilyn-monroe-icon-collection-red-blue-infrared-iqled-face-mask-under-eye-cooling-ruby-glow/FW322RD.html",
+    "sku": "FW322RD",
     "family": "shark-cryoglow-marilyn-monroe-icon-collection-red-blue-infrared-iqled-face-mask-under-eye-cooling-ruby-glow",
-    "category": "FW322RD.html",
+    "category": "shark-cryoglow-marilyn-monroe-icon-collection-red-blue-infrared-iqled-face-mask-under-eye-cooling-ruby-glow",
     "galleryImageCount": 1,
     "images": [
       {
@@ -52069,14 +52234,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:05.387Z"
+    "extractedAt": "2026-04-28T08:09:31.413Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-flexstyle-air-styling-drying-system/HD400B2.html",
+    "sku": "HD400B2",
     "family": "shark-flexstyle-air-styling-drying-system",
-    "category": "HD400B2.html",
+    "category": "shark-flexstyle-air-styling-drying-system",
     "galleryImageCount": 1,
     "images": [
       {
@@ -52088,14 +52254,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:05.447Z"
+    "extractedAt": "2026-04-28T08:09:31.381Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-flexstyle-air-styling-drying-system-mocha-silver/HD431BR.html",
+    "sku": "HD431BR",
     "family": "shark-flexstyle-air-styling-drying-system-mocha-silver",
-    "category": "HD431BR.html",
+    "category": "shark-flexstyle-air-styling-drying-system-mocha-silver",
     "galleryImageCount": 2,
     "images": [
       {
@@ -52115,14 +52282,15 @@
         "sequencePosition": 2
       }
     ],
-    "extractedAt": "2026-04-21T21:34:05.526Z"
+    "extractedAt": "2026-04-28T08:09:31.613Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-flexstyle-marilyn-monroe-icon-collection-air-styling-drying-system-ruby-red-diamond/HD442JR.html",
+    "sku": "HD442JR",
     "family": "shark-flexstyle-marilyn-monroe-icon-collection-air-styling-drying-system-ruby-red-diamond",
-    "category": "HD442JR.html",
+    "category": "shark-flexstyle-marilyn-monroe-icon-collection-air-styling-drying-system-ruby-red-diamond",
     "galleryImageCount": 1,
     "images": [
       {
@@ -52134,14 +52302,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:05.648Z"
+    "extractedAt": "2026-04-28T08:09:31.519Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-flexstyle-air-styling-drying-system-orchid-sunrise/HD434PU.html",
+    "sku": "HD434PU",
     "family": "shark-flexstyle-air-styling-drying-system-orchid-sunrise",
-    "category": "HD434PU.html",
+    "category": "shark-flexstyle-air-styling-drying-system-orchid-sunrise",
     "galleryImageCount": 1,
     "images": [
       {
@@ -52153,14 +52322,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:05.695Z"
+    "extractedAt": "2026-04-28T08:09:31.644Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-neverchange-air-purifier-compact-pro-dove/HP072B2.html",
+    "sku": "HP072B2",
     "family": "shark-neverchange-air-purifier-compact-pro-dove",
-    "category": "HP072B2.html",
+    "category": "shark-neverchange-air-purifier-compact-pro-dove",
     "galleryImageCount": 11,
     "images": [
       {
@@ -52252,14 +52422,15 @@
         "sequencePosition": 11
       }
     ],
-    "extractedAt": "2026-04-21T21:34:05.748Z"
+    "extractedAt": "2026-04-28T08:09:31.500Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-neverchange-air-purifier/HP152B2.html",
+    "sku": "HP152B2",
     "family": "shark-neverchange-air-purifier",
-    "category": "HP152B2.html",
+    "category": "shark-neverchange-air-purifier",
     "galleryImageCount": 8,
     "images": [
       {
@@ -52327,14 +52498,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:34:05.802Z"
+    "extractedAt": "2026-04-28T08:09:31.463Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-glam-ceramic-powerful-air-styling-drying-system-with-diffuser/HD6052S.html",
+    "sku": "HD6052S",
     "family": "shark-glam-ceramic-powerful-air-styling-drying-system-with-diffuser",
-    "category": "HD6052S.html",
+    "category": "shark-glam-ceramic-powerful-air-styling-drying-system-with-diffuser",
     "galleryImageCount": 2,
     "images": [
       {
@@ -52354,14 +52526,15 @@
         "sequencePosition": 2
       }
     ],
-    "extractedAt": "2026-04-21T21:34:05.867Z"
+    "extractedAt": "2026-04-28T08:09:31.852Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-stainforce-dual-formula-refill-cartridge-16.9oz/HXCM500.html",
+    "sku": "HXCM500",
     "family": "shark-stainforce-dual-formula-refill-cartridge-16.9oz",
-    "category": "HXCM500.html",
+    "category": "shark-stainforce-dual-formula-refill-cartridge-16.9oz",
     "galleryImageCount": 8,
     "images": [
       {
@@ -52429,14 +52602,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:34:05.909Z"
+    "extractedAt": "2026-04-28T08:09:31.697Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-glossi-marilyn-monroe-icon-collection-2-in-1-hot-tool-and-air-glosser-liquid-gold/HT302GD.html",
+    "sku": "HT302GD",
     "family": "shark-glossi-marilyn-monroe-icon-collection-2-in-1-hot-tool-and-air-glosser-liquid-gold",
-    "category": "HT302GD.html",
+    "category": "shark-glossi-marilyn-monroe-icon-collection-2-in-1-hot-tool-and-air-glosser-liquid-gold",
     "galleryImageCount": 2,
     "images": [
       {
@@ -52456,14 +52630,15 @@
         "sequencePosition": 2
       }
     ],
-    "extractedAt": "2026-04-21T21:34:05.942Z"
+    "extractedAt": "2026-04-28T08:09:31.719Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-neverstick-vivid-8-inch-glass-lid/LID20C2.html",
+    "sku": "LID20C2",
     "family": "ninja-neverstick-vivid-8-inch-glass-lid",
-    "category": "LID20C2.html",
+    "category": "ninja-neverstick-vivid-8-inch-glass-lid",
     "galleryImageCount": 1,
     "images": [
       {
@@ -52475,14 +52650,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:06.027Z"
+    "extractedAt": "2026-04-28T08:09:31.723Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-neverstick-premium-8-inch-glass-lid/LID20C3.html",
+    "sku": "LID20C3",
     "family": "ninja-neverstick-premium-8-inch-glass-lid",
-    "category": "LID20C3.html",
+    "category": "ninja-neverstick-premium-8-inch-glass-lid",
     "galleryImageCount": 1,
     "images": [
       {
@@ -52494,14 +52670,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:06.081Z"
+    "extractedAt": "2026-04-28T08:09:31.865Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-neverstick-premium-nest-system-8-inch-glass-lid/LID20C5.html",
+    "sku": "LID20C5",
     "family": "ninja-neverstick-premium-nest-system-8-inch-glass-lid",
-    "category": "LID20C5.html",
+    "category": "ninja-neverstick-premium-nest-system-8-inch-glass-lid",
     "galleryImageCount": 1,
     "images": [
       {
@@ -52513,14 +52690,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:06.083Z"
+    "extractedAt": "2026-04-28T08:09:31.881Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-neverstick-vivid-10-1%2F4-inch-glass-lid/LID26C2.html",
+    "sku": "LID26C2",
     "family": "ninja-neverstick-vivid-10-1%2F4-inch-glass-lid",
-    "category": "LID26C2.html",
+    "category": "ninja-neverstick-vivid-10-1%2F4-inch-glass-lid",
     "galleryImageCount": 1,
     "images": [
       {
@@ -52532,14 +52710,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:06.141Z"
+    "extractedAt": "2026-04-28T08:09:31.971Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-neverstick-premium-10-1%2F4-inch-glass-lid/LID26C3.html",
+    "sku": "LID26C3",
     "family": "ninja-neverstick-premium-10-1%2F4-inch-glass-lid",
-    "category": "LID26C3.html",
+    "category": "ninja-neverstick-premium-10-1%2F4-inch-glass-lid",
     "galleryImageCount": 1,
     "images": [
       {
@@ -52551,14 +52730,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:06.181Z"
+    "extractedAt": "2026-04-28T08:09:31.975Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-neverstick-premium-nest-system-10-1%2F4-inch-glass-lid/LID26C5.html",
+    "sku": "LID26C5",
     "family": "ninja-neverstick-premium-nest-system-10-1%2F4-inch-glass-lid",
-    "category": "LID26C5.html",
+    "category": "ninja-neverstick-premium-nest-system-10-1%2F4-inch-glass-lid",
     "galleryImageCount": 1,
     "images": [
       {
@@ -52570,14 +52750,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:06.256Z"
+    "extractedAt": "2026-04-28T08:09:32.019Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-neverstick-essential-12-inch-glass-lid/LID30C1.html",
+    "sku": "LID30C1",
     "family": "ninja-neverstick-essential-12-inch-glass-lid",
-    "category": "LID30C1.html",
+    "category": "ninja-neverstick-essential-12-inch-glass-lid",
     "galleryImageCount": 1,
     "images": [
       {
@@ -52589,14 +52770,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:06.264Z"
+    "extractedAt": "2026-04-28T08:09:32.101Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-neverstick-vivid-12-inch-glass-lid/LID30C2.html",
+    "sku": "LID30C2",
     "family": "ninja-neverstick-vivid-12-inch-glass-lid",
-    "category": "LID30C2.html",
+    "category": "ninja-neverstick-vivid-12-inch-glass-lid",
     "galleryImageCount": 1,
     "images": [
       {
@@ -52608,14 +52790,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:06.352Z"
+    "extractedAt": "2026-04-28T08:09:32.110Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-neverstick-premium-nest-system-12-inch-glass-lid/LID30C5.html",
+    "sku": "LID30C5",
     "family": "ninja-neverstick-premium-nest-system-12-inch-glass-lid",
-    "category": "LID30C5.html",
+    "category": "ninja-neverstick-premium-nest-system-12-inch-glass-lid",
     "galleryImageCount": 1,
     "images": [
       {
@@ -52627,14 +52810,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:06.452Z"
+    "extractedAt": "2026-04-28T08:09:32.413Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-fireside360-outdoor-heater-fire-pit-and-top-cover-bundle/OF105GY.html",
+    "sku": "OF105GY",
     "family": "ninja-fireside360-outdoor-heater-fire-pit-and-top-cover-bundle",
-    "category": "OF105GY.html",
+    "category": "ninja-fireside360-outdoor-heater-fire-pit-and-top-cover-bundle",
     "galleryImageCount": 1,
     "images": [
       {
@@ -52646,14 +52830,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:06.579Z"
+    "extractedAt": "2026-04-28T08:09:32.175Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-creami-deluxe-11-in-1-ice-cream-maker-bundle/NC501B1.html",
+    "sku": "NC501B1",
     "family": "ninja-creami-deluxe-11-in-1-ice-cream-maker-bundle",
-    "category": "NC501B1.html",
+    "category": "ninja-creami-deluxe-11-in-1-ice-cream-maker-bundle",
     "galleryImageCount": 1,
     "images": [
       {
@@ -52665,14 +52850,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:06.621Z"
+    "extractedAt": "2026-04-28T08:09:32.190Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-neverstick-premium-12-inch-glass-lid/LID30C3.html",
+    "sku": "LID30C3",
     "family": "ninja-neverstick-premium-12-inch-glass-lid",
-    "category": "LID30C3.html",
+    "category": "ninja-neverstick-premium-12-inch-glass-lid",
     "galleryImageCount": 1,
     "images": [
       {
@@ -52684,14 +52870,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:06.743Z"
+    "extractedAt": "2026-04-28T08:09:32.270Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-single-serve-pods-grounds-specialty-coffee-maker-glacier-blue/PB051GB.html",
+    "sku": "PB051GB",
     "family": "ninja-single-serve-pods-grounds-specialty-coffee-maker-glacier-blue",
-    "category": "PB051GB.html",
+    "category": "ninja-single-serve-pods-grounds-specialty-coffee-maker-glacier-blue",
     "galleryImageCount": 10,
     "images": [
       {
@@ -52775,14 +52962,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:34:06.795Z"
+    "extractedAt": "2026-04-28T08:09:32.349Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-woodfire-outdoor-grill-smoker-og301/OG301SN.html",
+    "sku": "OG301SN",
     "family": "ninja-woodfire-outdoor-grill-smoker-og301",
-    "category": "OG301SN.html",
+    "category": "ninja-woodfire-outdoor-grill-smoker-og301",
     "galleryImageCount": 10,
     "images": [
       {
@@ -52866,14 +53054,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:34:06.968Z"
+    "extractedAt": "2026-04-28T08:09:32.330Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-flexflame-proconnect-smart-cooking-system-pg305/PG305B1.html",
+    "sku": "PG305B1",
     "family": "ninja-flexflame-proconnect-smart-cooking-system-pg305",
-    "category": "PG305B1.html",
+    "category": "ninja-flexflame-proconnect-smart-cooking-system-pg305",
     "galleryImageCount": 2,
     "images": [
       {
@@ -52893,14 +53082,15 @@
         "sequencePosition": 2
       }
     ],
-    "extractedAt": "2026-04-21T21:34:07.009Z"
+    "extractedAt": "2026-04-28T08:09:32.439Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-single-serve-pods-grounds-specialty-coffee-maker-sage-green/PB051SG.html",
+    "sku": "PB051SG",
     "family": "ninja-single-serve-pods-grounds-specialty-coffee-maker-sage-green",
-    "category": "PB051SG.html",
+    "category": "ninja-single-serve-pods-grounds-specialty-coffee-maker-sage-green",
     "galleryImageCount": 10,
     "images": [
       {
@@ -52984,14 +53174,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:34:07.099Z"
+    "extractedAt": "2026-04-28T08:09:32.433Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-breakfast-bar/REC4852.html",
+    "sku": "REC4852",
     "family": "ninja-breakfast-bar",
-    "category": "REC4852.html",
+    "category": "ninja-breakfast-bar",
     "galleryImageCount": 1,
     "images": [
       {
@@ -53003,14 +53194,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:07.118Z"
+    "extractedAt": "2026-04-28T08:09:32.572Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-flexflame-proconnect-smart-cooking-system-pg305/PG305B3.html",
+    "sku": "PG305B3",
     "family": "ninja-flexflame-proconnect-smart-cooking-system-pg305",
-    "category": "PG305B3.html",
+    "category": "ninja-flexflame-proconnect-smart-cooking-system-pg305",
     "galleryImageCount": 1,
     "images": [
       {
@@ -53022,14 +53214,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:07.127Z"
+    "extractedAt": "2026-04-28T08:09:32.520Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-wandvac-power-pet-cordless-handheld-vacuum/WV410BL.html",
+    "sku": "WV410BL",
     "family": "shark-wandvac-power-pet-cordless-handheld-vacuum",
-    "category": "WV410BL.html",
+    "category": "shark-wandvac-power-pet-cordless-handheld-vacuum",
     "galleryImageCount": 10,
     "images": [
       {
@@ -53113,14 +53306,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:34:07.297Z"
+    "extractedAt": "2026-04-28T08:09:32.597Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-hydrovac-multi-surface-concentrate/WDCM30C.html",
+    "sku": "WDCM30C",
     "family": "shark-hydrovac-multi-surface-concentrate",
-    "category": "WDCM30C.html",
+    "category": "shark-hydrovac-multi-surface-concentrate",
     "galleryImageCount": 1,
     "images": [
       {
@@ -53132,14 +53326,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:07.324Z"
+    "extractedAt": "2026-04-28T08:09:32.627Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-ai-ultra-robot/AV2501AE.html",
+    "sku": "AV2501AE",
     "family": "shark-ai-ultra-robot",
-    "category": "AV2501AE.html",
+    "category": "shark-ai-ultra-robot",
     "galleryImageCount": 1,
     "images": [
       {
@@ -53151,14 +53346,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:07.417Z"
+    "extractedAt": "2026-04-28T08:09:32.783Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-ai-ultra-robot-self-empty-robot-vacuum-av2511ae/AV2511AE.html",
+    "sku": "AV2511AE",
     "family": "shark-ai-ultra-robot-self-empty-robot-vacuum-av2511ae",
-    "category": "AV2511AE.html",
+    "category": "shark-ai-ultra-robot-self-empty-robot-vacuum-av2511ae",
     "galleryImageCount": 2,
     "images": [
       {
@@ -53178,14 +53374,15 @@
         "sequencePosition": 2
       }
     ],
-    "extractedAt": "2026-04-21T21:34:07.449Z"
+    "extractedAt": "2026-04-28T08:09:33.255Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-matrix-plus-2-in-1-robot-self-empty-xl/AV2610WA.html",
+    "sku": "AV2610WA",
     "family": "shark-matrix-plus-2-in-1-robot-self-empty-xl",
-    "category": "AV2610WA.html",
+    "category": "shark-matrix-plus-2-in-1-robot-self-empty-xl",
     "galleryImageCount": 1,
     "images": [
       {
@@ -53197,14 +53394,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:07.505Z"
+    "extractedAt": "2026-04-28T08:09:32.703Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-matrix-plus-2-in-1-robot-self-empty-xl/AV2620WA.html",
+    "sku": "AV2620WA",
     "family": "shark-matrix-plus-2-in-1-robot-self-empty-xl",
-    "category": "AV2620WA.html",
+    "category": "shark-matrix-plus-2-in-1-robot-self-empty-xl",
     "galleryImageCount": 1,
     "images": [
       {
@@ -53216,14 +53414,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:07.609Z"
+    "extractedAt": "2026-04-28T08:09:33.006Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-matrix-plus-2-in-1-robot-self-empty-xl/AV2630WA.html",
+    "sku": "AV2630WA",
     "family": "shark-matrix-plus-2-in-1-robot-self-empty-xl",
-    "category": "AV2630WA.html",
+    "category": "shark-matrix-plus-2-in-1-robot-self-empty-xl",
     "galleryImageCount": 1,
     "images": [
       {
@@ -53235,14 +53434,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:07.638Z"
+    "extractedAt": "2026-04-28T08:09:32.833Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-vacmop-reveal-cordless-floor-vacuum-and-spray-mop/VM401SN.html",
+    "sku": "VM401SN",
     "family": "shark-vacmop-reveal-cordless-floor-vacuum-and-spray-mop",
-    "category": "VM401SN.html",
+    "category": "shark-vacmop-reveal-cordless-floor-vacuum-and-spray-mop",
     "galleryImageCount": 1,
     "images": [
       {
@@ -53254,14 +53454,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:07.668Z"
+    "extractedAt": "2026-04-28T08:09:32.986Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-2-in-1-robot-vacuum-and-mop-with-nevertouch-pro-base/AV2800ZE.html",
+    "sku": "AV2800ZE",
     "family": "shark-powerdetect-2-in-1-robot-vacuum-and-mop-with-nevertouch-pro-base",
-    "category": "AV2800ZE.html",
+    "category": "shark-powerdetect-2-in-1-robot-vacuum-and-mop-with-nevertouch-pro-base",
     "galleryImageCount": 2,
     "images": [
       {
@@ -53281,14 +53482,15 @@
         "sequencePosition": 2
       }
     ],
-    "extractedAt": "2026-04-21T21:34:07.769Z"
+    "extractedAt": "2026-04-28T08:09:32.930Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-av2810ys-powerdetect-nevertouch-robot-vacuum/AV2810YS.html",
+    "sku": "AV2810YS",
     "family": "shark-av2810ys-powerdetect-nevertouch-robot-vacuum",
-    "category": "AV2810YS.html",
+    "category": "shark-av2810ys-powerdetect-nevertouch-robot-vacuum",
     "galleryImageCount": 1,
     "images": [
       {
@@ -53300,14 +53502,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:07.818Z"
+    "extractedAt": "2026-04-28T08:09:32.876Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-robot/AV2820AE.html",
+    "sku": "AV2820AE",
     "family": "shark-powerdetect-robot",
-    "category": "AV2820AE.html",
+    "category": "shark-powerdetect-robot",
     "galleryImageCount": 1,
     "images": [
       {
@@ -53319,14 +53522,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:07.936Z"
+    "extractedAt": "2026-04-28T08:09:33.108Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-upright-vacuum-with-ultimate-cleaning-tools/AZ407KT1.html",
+    "sku": "AZ407KT1",
     "family": "shark-powerdetect-upright-vacuum-with-ultimate-cleaning-tools",
-    "category": "AZ407KT1.html",
+    "category": "shark-powerdetect-upright-vacuum-with-ultimate-cleaning-tools",
     "galleryImageCount": 2,
     "images": [
       {
@@ -53346,14 +53550,15 @@
         "sequencePosition": 2
       }
     ],
-    "extractedAt": "2026-04-21T21:34:07.937Z"
+    "extractedAt": "2026-04-28T08:09:33.186Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-flexbreeze-remote-control/FA002REM.html",
+    "sku": "FA002REM",
     "family": "shark-flexbreeze-remote-control",
-    "category": "FA002REM.html",
+    "category": "shark-flexbreeze-remote-control",
     "galleryImageCount": 1,
     "images": [
       {
@@ -53365,14 +53570,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:07.985Z"
+    "extractedAt": "2026-04-28T08:09:33.183Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-certified-renewed-flexstyle-air-styling-drying-system---straight-wavy/HD430REF.html",
+    "sku": "HD430REF",
     "family": "shark-certified-renewed-flexstyle-air-styling-drying-system---straight-wavy",
-    "category": "HD430REF.html",
+    "category": "shark-certified-renewed-flexstyle-air-styling-drying-system---straight-wavy",
     "galleryImageCount": 10,
     "images": [
       {
@@ -53456,14 +53662,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:34:08.136Z"
+    "extractedAt": "2026-04-28T08:09:33.192Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-fan-car-charger/FA20XCAR.html",
+    "sku": "FA20XCAR",
     "family": "shark-fan-car-charger",
-    "category": "FA20XCAR.html",
+    "category": "shark-fan-car-charger",
     "galleryImageCount": 1,
     "images": [
       {
@@ -53475,14 +53682,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:08.199Z"
+    "extractedAt": "2026-04-28T08:09:33.191Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-hyperair-iq-curl-defining-diffuser/HD100VDA.html",
+    "sku": "HD100VDA",
     "family": "shark-hyperair-iq-curl-defining-diffuser",
-    "category": "HD100VDA.html",
+    "category": "shark-hyperair-iq-curl-defining-diffuser",
     "galleryImageCount": 2,
     "images": [
       {
@@ -53502,14 +53710,15 @@
         "sequencePosition": 2
       }
     ],
-    "extractedAt": "2026-04-21T21:34:08.201Z"
+    "extractedAt": "2026-04-28T08:09:33.383Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-flexstyle-air-styling-drying-system---curly-coily/HD435REF.html",
+    "sku": "HD435REF",
     "family": "shark-flexstyle-air-styling-drying-system---curly-coily",
-    "category": "HD435REF.html",
+    "category": "shark-flexstyle-air-styling-drying-system---curly-coily",
     "galleryImageCount": 10,
     "images": [
       {
@@ -53593,14 +53802,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:34:08.291Z"
+    "extractedAt": "2026-04-28T08:09:33.285Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-professional-xl-12-cup-food-processor/NF705BRN.html",
+    "sku": "NF705BRN",
     "family": "ninja-professional-xl-12-cup-food-processor",
-    "category": "NF705BRN.html",
+    "category": "ninja-professional-xl-12-cup-food-processor",
     "galleryImageCount": 1,
     "images": [
       {
@@ -53612,14 +53822,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:08.339Z"
+    "extractedAt": "2026-04-28T08:09:33.471Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-stainforce-dual-formula-refill-cartridge-spray-head/HXCM500S.html",
+    "sku": "HXCM500S",
     "family": "shark-stainforce-dual-formula-refill-cartridge-spray-head",
-    "category": "HXCM500S.html",
+    "category": "shark-stainforce-dual-formula-refill-cartridge-spray-head",
     "galleryImageCount": 7,
     "images": [
       {
@@ -53679,14 +53890,15 @@
         "sequencePosition": 7
       }
     ],
-    "extractedAt": "2026-04-21T21:34:08.416Z"
+    "extractedAt": "2026-04-28T08:09:33.468Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-matrix-plus-2-in-1-self-empty-robot-vacuum-and-mop/RV2610WA.html",
+    "sku": "RV2610WA",
     "family": "shark-matrix-plus-2-in-1-self-empty-robot-vacuum-and-mop",
-    "category": "RV2610WA.html",
+    "category": "shark-matrix-plus-2-in-1-self-empty-robot-vacuum-and-mop",
     "galleryImageCount": 8,
     "images": [
       {
@@ -53754,14 +53966,15 @@
         "sequencePosition": 8
       }
     ],
-    "extractedAt": "2026-04-21T21:34:08.557Z"
+    "extractedAt": "2026-04-28T08:09:33.536Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-stratos-nevertouch-2-in-1-robot-vacuum-mop/RV2720ZE.html",
+    "sku": "RV2720ZE",
     "family": "shark-stratos-nevertouch-2-in-1-robot-vacuum-mop",
-    "category": "RV2720ZE.html",
+    "category": "shark-stratos-nevertouch-2-in-1-robot-vacuum-mop",
     "galleryImageCount": 1,
     "images": [
       {
@@ -53773,14 +53986,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:08.745Z"
+    "extractedAt": "2026-04-28T08:09:33.492Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-self-empty-robot-vacuum/RV2820AE.html",
+    "sku": "RV2820AE",
     "family": "shark-powerdetect-self-empty-robot-vacuum",
-    "category": "RV2820AE.html",
+    "category": "shark-powerdetect-self-empty-robot-vacuum",
     "galleryImageCount": 3,
     "images": [
       {
@@ -53808,14 +54022,15 @@
         "sequencePosition": 3
       }
     ],
-    "extractedAt": "2026-04-21T21:34:08.746Z"
+    "extractedAt": "2026-04-28T08:09:33.681Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-2-in-1-robot-vacuum-and-mop-with-nevertouch-base/RV2820YE.html",
+    "sku": "RV2820YE",
     "family": "shark-powerdetect-2-in-1-robot-vacuum-and-mop-with-nevertouch-base",
-    "category": "RV2820YE.html",
+    "category": "shark-powerdetect-2-in-1-robot-vacuum-and-mop-with-nevertouch-base",
     "galleryImageCount": 9,
     "images": [
       {
@@ -53891,14 +54106,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:34:08.937Z"
+    "extractedAt": "2026-04-28T08:09:33.546Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-2-in-1-robot-vacuum-and-mop-with-nevertouch-pro-base/RV2820ZE.html",
+    "sku": "RV2820ZE",
     "family": "shark-powerdetect-2-in-1-robot-vacuum-and-mop-with-nevertouch-pro-base",
-    "category": "RV2820ZE.html",
+    "category": "shark-powerdetect-2-in-1-robot-vacuum-and-mop-with-nevertouch-pro-base",
     "galleryImageCount": 17,
     "images": [
       {
@@ -54038,14 +54254,15 @@
         "sequencePosition": 17
       }
     ],
-    "extractedAt": "2026-04-21T21:34:09.038Z"
+    "extractedAt": "2026-04-28T08:09:33.620Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html",
+    "sku": "RV3020XE",
     "family": "shark-powerdetect-uv-reveal-2-in-1-vac-mop",
-    "category": "RV3020XE.html",
+    "category": "shark-powerdetect-uv-reveal-2-in-1-vac-mop",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54057,14 +54274,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:09.093Z"
+    "extractedAt": "2026-04-28T08:09:33.931Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-lift-away-5-in-1-steam-mop-with-detachable-handheld-steamer/S3972BRN.html",
+    "sku": "S3972BRN",
     "family": "shark-lift-away-5-in-1-steam-mop-with-detachable-handheld-steamer",
-    "category": "S3972BRN.html",
+    "category": "shark-lift-away-5-in-1-steam-mop-with-detachable-handheld-steamer",
     "galleryImageCount": 9,
     "images": [
       {
@@ -54140,14 +54358,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:34:09.216Z"
+    "extractedAt": "2026-04-28T08:09:33.741Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-robot-ai-base/XDRV2300.html",
+    "sku": "XDRV2300",
     "family": "shark-robot-ai-base",
-    "category": "XDRV2300.html",
+    "category": "shark-robot-ai-base",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54159,14 +54378,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:09.256Z"
+    "extractedAt": "2026-04-28T08:09:33.765Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-thirsti-60l-co2-canister/WCX00CO2.html",
+    "sku": "WCX00CO2",
     "family": "ninja-thirsti-60l-co2-canister",
-    "category": "WCX00CO2.html",
+    "category": "ninja-thirsti-60l-co2-canister",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54178,14 +54398,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:09.303Z"
+    "extractedAt": "2026-04-28T08:09:33.948Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-steam-scrub-body/XPDS8000.html",
+    "sku": "XPDS8000",
     "family": "shark-steam-scrub-body",
-    "category": "XPDS8000.html",
+    "category": "shark-steam-scrub-body",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54197,14 +54418,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:09.399Z"
+    "extractedAt": "2026-04-28T08:09:33.884Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-steam-scrub-body/XPDS8001.html",
+    "sku": "XPDS8001",
     "family": "shark-steam-scrub-body",
-    "category": "XPDS8001.html",
+    "category": "shark-steam-scrub-body",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54216,14 +54438,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:09.406Z"
+    "extractedAt": "2026-04-28T08:09:33.860Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-steam-scrub-body/XPDS8200.html",
+    "sku": "XPDS8200",
     "family": "shark-steam-scrub-body",
-    "category": "XPDS8200.html",
+    "category": "shark-steam-scrub-body",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54235,14 +54458,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:09.433Z"
+    "extractedAt": "2026-04-28T08:09:34.087Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-steam-scrub-body/XPDS8201.html",
+    "sku": "XPDS8201",
     "family": "shark-steam-scrub-body",
-    "category": "XPDS8201.html",
+    "category": "shark-steam-scrub-body",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54254,14 +54478,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:09.494Z"
+    "extractedAt": "2026-04-28T08:09:33.949Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-professional-prep-system/XSK642W2.html",
+    "sku": "XSK642W2",
     "family": "ninja-professional-prep-system",
-    "category": "XSK642W2.html",
+    "category": "ninja-professional-prep-system",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54273,14 +54498,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:09.518Z"
+    "extractedAt": "2026-04-28T08:09:34.102Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-foodi-cook-crisp-basket-insert/AOP102BRN.html",
+    "sku": "AOP102BRN",
     "family": "ninja-foodi-cook-crisp-basket-insert",
-    "category": "AOP102BRN.html",
+    "category": "ninja-foodi-cook-crisp-basket-insert",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54292,14 +54518,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:09.549Z"
+    "extractedAt": "2026-04-28T08:09:34.030Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-foodi-mini-muffin-mold/AOP203BRN.html",
+    "sku": "AOP203BRN",
     "family": "ninja-foodi-mini-muffin-mold",
-    "category": "AOP203BRN.html",
+    "category": "ninja-foodi-mini-muffin-mold",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54311,14 +54538,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:09.638Z"
+    "extractedAt": "2026-04-28T08:09:34.306Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-crispi-pro-6-in-1-countertop-glass-air-fryer-ash-gray/AS101DGSN.html",
+    "sku": "AS101DGSN",
     "family": "ninja-crispi-pro-6-in-1-countertop-glass-air-fryer-ash-gray",
-    "category": "AS101DGSN.html",
+    "category": "ninja-crispi-pro-6-in-1-countertop-glass-air-fryer-ash-gray",
     "galleryImageCount": 9,
     "images": [
       {
@@ -54394,14 +54622,15 @@
         "sequencePosition": 9
       }
     ],
-    "extractedAt": "2026-04-21T21:34:09.722Z"
+    "extractedAt": "2026-04-28T08:09:34.251Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-crispi-pro-6-in-1-countertop-glass-air-fryer-rose-quartz/AS101RSSN.html",
+    "sku": "AS101RSSN",
     "family": "ninja-crispi-pro-6-in-1-countertop-glass-air-fryer-rose-quartz",
-    "category": "AS101RSSN.html",
+    "category": "ninja-crispi-pro-6-in-1-countertop-glass-air-fryer-rose-quartz",
     "galleryImageCount": 10,
     "images": [
       {
@@ -54485,14 +54714,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:34:09.804Z"
+    "extractedAt": "2026-04-28T08:09:34.246Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-crispi-pro-6-in-1-glass-countertop-air-fryer-cyberspace/AS101CYSN.html",
+    "sku": "AS101CYSN",
     "family": "ninja-crispi-pro-6-in-1-glass-countertop-air-fryer-cyberspace",
-    "category": "AS101CYSN.html",
+    "category": "ninja-crispi-pro-6-in-1-glass-countertop-air-fryer-cyberspace",
     "galleryImageCount": 10,
     "images": [
       {
@@ -54576,14 +54806,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:34:09.853Z"
+    "extractedAt": "2026-04-28T08:09:35.230Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-foodi-grill-cookbook-for-beginners/CBAG30XBG.html",
+    "sku": "CBAG30XBG",
     "family": "ninja-foodi-grill-cookbook-for-beginners",
-    "category": "CBAG30XBG.html",
+    "category": "ninja-foodi-grill-cookbook-for-beginners",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54595,14 +54826,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:09.892Z"
+    "extractedAt": "2026-04-28T08:09:34.235Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-upright-vacuum-with-truepet-upgrade/AZ407UPG1.html",
+    "sku": "AZ407UPG1",
     "family": "shark-powerdetect-upright-vacuum-with-truepet-upgrade",
-    "category": "AZ407UPG1.html",
+    "category": "shark-powerdetect-upright-vacuum-with-truepet-upgrade",
     "galleryImageCount": 2,
     "images": [
       {
@@ -54622,14 +54854,15 @@
         "sequencePosition": 2
       }
     ],
-    "extractedAt": "2026-04-21T21:34:09.951Z"
+    "extractedAt": "2026-04-28T08:09:34.332Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-foodi-grill-complete-keto-cookbook/CBAG30XCK.html",
+    "sku": "CBAG30XCK",
     "family": "ninja-foodi-grill-complete-keto-cookbook",
-    "category": "CBAG30XCK.html",
+    "category": "ninja-foodi-grill-complete-keto-cookbook",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54641,14 +54874,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:09.974Z"
+    "extractedAt": "2026-04-28T08:09:34.486Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-foodi-pressure-cooker-complete-keto-cookbook/CBOP30XCK.html",
+    "sku": "CBOP30XCK",
     "family": "ninja-foodi-pressure-cooker-complete-keto-cookbook",
-    "category": "CBOP30XCK.html",
+    "category": "ninja-foodi-pressure-cooker-complete-keto-cookbook",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54660,14 +54894,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:10.008Z"
+    "extractedAt": "2026-04-28T08:09:34.759Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-extended-life-ceramic-select-10-piece-cookware-set/CK89010BF.html",
+    "sku": "CK89010BF",
     "family": "ninja-extended-life-ceramic-select-10-piece-cookware-set",
-    "category": "CK89010BF.html",
+    "category": "ninja-extended-life-ceramic-select-10-piece-cookware-set",
     "galleryImageCount": 6,
     "images": [
       {
@@ -54719,14 +54954,15 @@
         "sequencePosition": 6
       }
     ],
-    "extractedAt": "2026-04-21T21:34:10.050Z"
+    "extractedAt": "2026-04-28T08:09:34.529Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-ceramic-pro-11-piece-cookware-set-neutral-gray/CW39011GY.html",
+    "sku": "CW39011GY",
     "family": "ninja-ceramic-pro-11-piece-cookware-set-neutral-gray",
-    "category": "CW39011GY.html",
+    "category": "ninja-ceramic-pro-11-piece-cookware-set-neutral-gray",
     "galleryImageCount": 10,
     "images": [
       {
@@ -54810,14 +55046,15 @@
         "sequencePosition": 10
       }
     ],
-    "extractedAt": "2026-04-21T21:34:10.161Z"
+    "extractedAt": "2026-04-28T08:09:34.595Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blendboss-tumbler-blender-with-26oz-travel-tumbler-removable-straw-extra-cyberspace-straw-cup/DB351CYB1.html",
+    "sku": "DB351CYB1",
     "family": "ninja-blendboss-tumbler-blender-with-26oz-travel-tumbler-removable-straw-extra-cyberspace-straw-cup",
-    "category": "DB351CYB1.html",
+    "category": "ninja-blendboss-tumbler-blender-with-26oz-travel-tumbler-removable-straw-extra-cyberspace-straw-cup",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54829,14 +55066,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:10.195Z"
+    "extractedAt": "2026-04-28T08:09:34.520Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-blendboss-tumbler-blender-bundle-with-26-oz-travel-tumbler-detachable-straw-cyberspace/DB301CYB1.html",
+    "sku": "DB301CYB1",
     "family": "ninja-blendboss-tumbler-blender-bundle-with-26-oz-travel-tumbler-detachable-straw-cyberspace",
-    "category": "DB301CYB1.html",
+    "category": "ninja-blendboss-tumbler-blender-bundle-with-26-oz-travel-tumbler-detachable-straw-cyberspace",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54848,14 +55086,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:10.229Z"
+    "extractedAt": "2026-04-28T08:09:34.670Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-carpetxpert-deep-clean-pro-formula-32oz/EXCM15032.html",
+    "sku": "EXCM15032",
     "family": "shark-carpetxpert-deep-clean-pro-formula-32oz",
-    "category": "EXCM15032.html",
+    "category": "shark-carpetxpert-deep-clean-pro-formula-32oz",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54867,14 +55106,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:10.290Z"
+    "extractedAt": "2026-04-28T08:09:34.655Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---lilac-chill/FW312PLB2.html",
+    "sku": "FW312PLB2",
     "family": "shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---lilac-chill",
-    "category": "FW312PLB2.html",
+    "category": "shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---lilac-chill",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54886,14 +55126,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:10.529Z"
+    "extractedAt": "2026-04-28T08:09:34.851Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---lilac-chill/FW312PLPU.html",
+    "sku": "FW312PLPU",
     "family": "shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---lilac-chill",
-    "category": "FW312PLPU.html",
+    "category": "shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---lilac-chill",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54905,14 +55146,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:10.534Z"
+    "extractedAt": "2026-04-28T08:09:34.914Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---blue-frost/FW312PLFH.html",
+    "sku": "FW312PLFH",
     "family": "shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---blue-frost",
-    "category": "FW312PLFH.html",
+    "category": "shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---blue-frost",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54924,14 +55166,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:10.577Z"
+    "extractedAt": "2026-04-28T08:09:34.958Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-glam-ceramic-powerful-air-styling-drying-system-starlight-dream/HD6042SPL.html",
+    "sku": "HD6042SPL",
     "family": "shark-glam-ceramic-powerful-air-styling-drying-system-starlight-dream",
-    "category": "HD6042SPL.html",
+    "category": "shark-glam-ceramic-powerful-air-styling-drying-system-starlight-dream",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54943,14 +55186,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:10.761Z"
+    "extractedAt": "2026-04-28T08:09:35.059Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-creami-scoop-swirl-ice-cream-soft-serve-maker/NC701STGD.html",
+    "sku": "NC701STGD",
     "family": "ninja-creami-scoop-swirl-ice-cream-soft-serve-maker",
-    "category": "NC701STGD.html",
+    "category": "ninja-creami-scoop-swirl-ice-cream-soft-serve-maker",
     "galleryImageCount": 3,
     "images": [
       {
@@ -54978,14 +55222,15 @@
         "sequencePosition": 3
       }
     ],
-    "extractedAt": "2026-04-21T21:34:10.827Z"
+    "extractedAt": "2026-04-28T08:09:34.992Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-flexstyle-spearmint/HD400TGSN.html",
+    "sku": "HD400TGSN",
     "family": "shark-flexstyle-spearmint",
-    "category": "HD400TGSN.html",
+    "category": "shark-flexstyle-spearmint",
     "galleryImageCount": 1,
     "images": [
       {
@@ -54997,14 +55242,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:10.867Z"
+    "extractedAt": "2026-04-28T08:09:35.112Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-combination-robot-dust-cup/XDC2800WD.html",
+    "sku": "XDC2800WD",
     "family": "shark-powerdetect-combination-robot-dust-cup",
-    "category": "XDC2800WD.html",
+    "category": "shark-powerdetect-combination-robot-dust-cup",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55016,14 +55262,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:11.021Z"
+    "extractedAt": "2026-04-28T08:09:35.081Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-robot-ai-self-empty-base/XDRV2300S.html",
+    "sku": "XDRV2300S",
     "family": "shark-robot-ai-self-empty-base",
-    "category": "XDRV2300S.html",
+    "category": "shark-robot-ai-self-empty-base",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55035,14 +55282,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:11.064Z"
+    "extractedAt": "2026-04-28T08:09:35.129Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-debris-dust-cup-for-self-empty-base-30-day/XDRV28LDC.html",
+    "sku": "XDRV28LDC",
     "family": "shark-powerdetect-debris-dust-cup-for-self-empty-base-30-day",
-    "category": "XDRV28LDC.html",
+    "category": "shark-powerdetect-debris-dust-cup-for-self-empty-base-30-day",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55054,14 +55302,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:11.149Z"
+    "extractedAt": "2026-04-28T08:09:35.185Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-debris-dust-cup-for-self-empty-base-60-day/XDRV28LDO.html",
+    "sku": "XDRV28LDO",
     "family": "shark-powerdetect-debris-dust-cup-for-self-empty-base-60-day",
-    "category": "XDRV28LDO.html",
+    "category": "shark-powerdetect-debris-dust-cup-for-self-empty-base-60-day",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55073,14 +55322,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:11.233Z"
+    "extractedAt": "2026-04-28T08:09:35.306Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-with-nevertouch-base-60-day/XDRV28XL1.html",
+    "sku": "XDRV28XL1",
     "family": "shark-powerdetect-with-nevertouch-base-60-day",
-    "category": "XDRV28XL1.html",
+    "category": "shark-powerdetect-with-nevertouch-base-60-day",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55092,14 +55342,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:11.254Z"
+    "extractedAt": "2026-04-28T08:09:35.375Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-debris-dust-cup-for-self-empty-base-60-day/XDRV28LXD.html",
+    "sku": "XDRV28LXD",
     "family": "shark-powerdetect-debris-dust-cup-for-self-empty-base-60-day",
-    "category": "XDRV28LXD.html",
+    "category": "shark-powerdetect-debris-dust-cup-for-self-empty-base-60-day",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55111,14 +55362,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:11.255Z"
+    "extractedAt": "2026-04-28T08:09:35.537Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-robot-pad-plate/XPP2800WD.html",
+    "sku": "XPP2800WD",
     "family": "shark-powerdetect-robot-pad-plate",
-    "category": "XPP2800WD.html",
+    "category": "shark-powerdetect-robot-pad-plate",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55130,14 +55382,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:11.797Z"
+    "extractedAt": "2026-04-28T08:09:35.392Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-flexstyle-storage-case/XHD400SAC.html",
+    "sku": "XHD400SAC",
     "family": "shark-flexstyle-storage-case",
-    "category": "XHD400SAC.html",
+    "category": "shark-flexstyle-storage-case",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55149,14 +55402,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:11.798Z"
+    "extractedAt": "2026-04-28T08:09:35.510Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-with--nevertouch-base-60-day/XDRV28XL2.html",
+    "sku": "XDRV28XL2",
     "family": "shark-powerdetect-with--nevertouch-base-60-day",
-    "category": "XDRV28XL2.html",
+    "category": "shark-powerdetect-with--nevertouch-base-60-day",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55168,14 +55422,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:11.799Z"
+    "extractedAt": "2026-04-28T08:09:35.543Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-foodi-xl-smoothie-bowl-maker-and-storage-lid/XSK18PNBL.html",
+    "sku": "XSK18PNBL",
     "family": "ninja-foodi-xl-smoothie-bowl-maker-and-storage-lid",
-    "category": "XSK18PNBL.html",
+    "category": "ninja-foodi-xl-smoothie-bowl-maker-and-storage-lid",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55187,14 +55442,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:11.928Z"
+    "extractedAt": "2026-04-28T08:09:35.523Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-robot-pod/XPRV28WD1.html",
+    "sku": "XPRV28WD1",
     "family": "shark-powerdetect-robot-pod",
-    "category": "XPRV28WD1.html",
+    "category": "shark-powerdetect-robot-pod",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55206,14 +55462,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:12.019Z"
+    "extractedAt": "2026-04-28T08:09:35.593Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-robot-pod/XPRV28WD2.html",
+    "sku": "XPRV28WD2",
     "family": "shark-powerdetect-robot-pod",
-    "category": "XPRV28WD2.html",
+    "category": "shark-powerdetect-robot-pod",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55225,14 +55482,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:12.036Z"
+    "extractedAt": "2026-04-28T08:09:35.707Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-stainforce-dual-formula-refill-cartridge-spray-head/HXCM500SWM.html",
+    "sku": "HXCM500SWM",
     "family": "shark-stainforce-dual-formula-refill-cartridge-spray-head",
-    "category": "HXCM500SWM.html",
+    "category": "shark-stainforce-dual-formula-refill-cartridge-spray-head",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55244,14 +55502,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:12.065Z"
+    "extractedAt": "2026-04-28T08:09:35.709Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-robot-self--empty-xl-dock/XDCK2600WA.html",
+    "sku": "XDCK2600WA",
     "family": "shark-robot-self--empty-xl-dock",
-    "category": "XDCK2600WA.html",
+    "category": "shark-robot-self--empty-xl-dock",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55263,14 +55522,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:12.174Z"
+    "extractedAt": "2026-04-28T08:09:35.766Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-robot-self--empty-lite-dock/XDKR2400WS.html",
+    "sku": "XDKR2400WS",
     "family": "shark-robot-self--empty-lite-dock",
-    "category": "XDKR2400WS.html",
+    "category": "shark-robot-self--empty-lite-dock",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55282,14 +55542,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:12.253Z"
+    "extractedAt": "2026-04-28T08:09:36.003Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-combination-robot-dust-cup/XDC2800WD1.html",
+    "sku": "XDC2800WD1",
     "family": "shark-powerdetect-combination-robot-dust-cup",
-    "category": "XDC2800WD1.html",
+    "category": "shark-powerdetect-combination-robot-dust-cup",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55301,14 +55562,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:12.287Z"
+    "extractedAt": "2026-04-28T08:09:35.843Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-robot-ai-self-empty-xl-base/XDRV2310AE.html",
+    "sku": "XDRV2310AE",
     "family": "shark-robot-ai-self-empty-xl-base",
-    "category": "XDRV2310AE.html",
+    "category": "shark-robot-ai-self-empty-xl-base",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55320,14 +55582,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:12.418Z"
+    "extractedAt": "2026-04-28T08:09:35.990Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-robot-dock/XDRV2600WD.html",
+    "sku": "XDRV2600WD",
     "family": "shark-robot-dock",
-    "category": "XDRV2600WD.html",
+    "category": "shark-robot-dock",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55339,14 +55602,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:12.466Z"
+    "extractedAt": "2026-04-28T08:09:35.936Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-self-empty-base-30-day/XDRV2800LT.html",
+    "sku": "XDRV2800LT",
     "family": "shark-powerdetect-self-empty-base-30-day",
-    "category": "XDRV2800LT.html",
+    "category": "shark-powerdetect-self-empty-base-30-day",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55358,14 +55622,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:12.499Z"
+    "extractedAt": "2026-04-28T08:09:35.936Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-matrix-robot-single-dust-cup-xl-self-empty-base/XDRV2600WA.html",
+    "sku": "XDRV2600WA",
     "family": "shark-matrix-robot-single-dust-cup-xl-self-empty-base",
-    "category": "XDRV2600WA.html",
+    "category": "shark-matrix-robot-single-dust-cup-xl-self-empty-base",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55377,14 +55642,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:12.576Z"
+    "extractedAt": "2026-04-28T08:09:36.033Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-with-nevertouch-base-60-day/XDRV2800XL.html",
+    "sku": "XDRV2800XL",
     "family": "shark-powerdetect-with-nevertouch-base-60-day",
-    "category": "XDRV2800XL.html",
+    "category": "shark-powerdetect-with-nevertouch-base-60-day",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55396,14 +55662,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:12.589Z"
+    "extractedAt": "2026-04-28T08:09:35.976Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-self-empty-base-60-day/XDRV2800LX.html",
+    "sku": "XDRV2800LX",
     "family": "shark-powerdetect-self-empty-base-60-day",
-    "category": "XDRV2800LX.html",
+    "category": "shark-powerdetect-self-empty-base-60-day",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55415,14 +55682,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:12.617Z"
+    "extractedAt": "2026-04-28T08:09:36.140Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-with-nevertouch-base-clean-water-tank/XDRV28XLCW.html",
+    "sku": "XDRV28XLCW",
     "family": "shark-powerdetect-with-nevertouch-base-clean-water-tank",
-    "category": "XDRV28XLCW.html",
+    "category": "shark-powerdetect-with-nevertouch-base-clean-water-tank",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55434,14 +55702,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:12.765Z"
+    "extractedAt": "2026-04-28T08:09:36.121Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-with-nevertouch-base-debris-dust-cup-60-day/XDRV28XLDC.html",
+    "sku": "XDRV28XLDC",
     "family": "shark-powerdetect-with-nevertouch-base-debris-dust-cup-60-day",
-    "category": "XDRV28XLDC.html",
+    "category": "shark-powerdetect-with-nevertouch-base-debris-dust-cup-60-day",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55453,14 +55722,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:12.865Z"
+    "extractedAt": "2026-04-28T08:09:36.290Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-debris-dust-cup-for-self-empty-base-30-day/XDRV28LXDO.html",
+    "sku": "XDRV28LXDO",
     "family": "shark-powerdetect-debris-dust-cup-for-self-empty-base-30-day",
-    "category": "XDRV28LXDO.html",
+    "category": "shark-powerdetect-debris-dust-cup-for-self-empty-base-30-day",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55472,14 +55742,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:12.866Z"
+    "extractedAt": "2026-04-28T08:09:36.526Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-with-nevertouch-base-debris-dust-cup-60-day/XDRV28XLD1.html",
+    "sku": "XDRV28XLD1",
     "family": "shark-powerdetect-with-nevertouch-base-debris-dust-cup-60-day",
-    "category": "XDRV28XLD1.html",
+    "category": "shark-powerdetect-with-nevertouch-base-debris-dust-cup-60-day",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55491,14 +55762,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:12.990Z"
+    "extractedAt": "2026-04-28T08:09:36.464Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-nevertouch-pro-base-clean-water-tank%E2%80%8B/XDRV29XLCW.html",
+    "sku": "XDRV29XLCW",
     "family": "shark-nevertouch-pro-base-clean-water-tank%E2%80%8B",
-    "category": "XDRV29XLCW.html",
+    "category": "shark-nevertouch-pro-base-clean-water-tank%E2%80%8B",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55510,14 +55782,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:13.085Z"
+    "extractedAt": "2026-04-28T08:09:36.296Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-with-nevertouch-base-grey-water-tank/XDRV28XLDW.html",
+    "sku": "XDRV28XLDW",
     "family": "shark-powerdetect-with-nevertouch-base-grey-water-tank",
-    "category": "XDRV28XLDW.html",
+    "category": "shark-powerdetect-with-nevertouch-base-grey-water-tank",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55529,14 +55802,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:13.253Z"
+    "extractedAt": "2026-04-28T08:09:36.332Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-robot-pod/XPRV2800TB.html",
+    "sku": "XPRV2800TB",
     "family": "shark-powerdetect-robot-pod",
-    "category": "XPRV2800TB.html",
+    "category": "shark-powerdetect-robot-pod",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55548,14 +55822,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:13.287Z"
+    "extractedAt": "2026-04-28T08:09:36.409Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-robot-ai-self-empty-xl-base/XDUR2350AE.html",
+    "sku": "XDUR2350AE",
     "family": "shark-robot-ai-self-empty-xl-base",
-    "category": "XDUR2350AE.html",
+    "category": "shark-robot-ai-self-empty-xl-base",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55567,14 +55842,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:13.361Z"
+    "extractedAt": "2026-04-28T08:09:36.449Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-robot-pod/XPRV2800WD.html",
+    "sku": "XPRV2800WD",
     "family": "shark-powerdetect-robot-pod",
-    "category": "XPRV2800WD.html",
+    "category": "shark-powerdetect-robot-pod",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55586,14 +55862,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:13.395Z"
+    "extractedAt": "2026-04-28T08:09:36.433Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-robot-pod/XPRV2800TG.html",
+    "sku": "XPRV2800TG",
     "family": "shark-powerdetect-robot-pod",
-    "category": "XPRV2800TG.html",
+    "category": "shark-powerdetect-robot-pod",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55605,14 +55882,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:13.410Z"
+    "extractedAt": "2026-04-28T08:09:36.673Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-speedstyle-pro-flex-lift-stretch-wide-tooth-comb/XSKH5WTCMS.html",
+    "sku": "XSKH5WTCMS",
     "family": "shark-speedstyle-pro-flex-lift-stretch-wide-tooth-comb",
-    "category": "XSKH5WTCMS.html",
+    "category": "shark-speedstyle-pro-flex-lift-stretch-wide-tooth-comb",
     "galleryImageCount": 2,
     "images": [
       {
@@ -55632,14 +55910,15 @@
         "sequencePosition": 2
       }
     ],
-    "extractedAt": "2026-04-21T21:34:13.474Z"
+    "extractedAt": "2026-04-28T08:09:36.604Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-self-empty-base-ramp/XDRV2800RPL.html",
+    "sku": "XDRV2800RPL",
     "family": "shark-powerdetect-self-empty-base-ramp",
-    "category": "XDRV2800RPL.html",
+    "category": "shark-powerdetect-self-empty-base-ramp",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55651,14 +55930,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:13.479Z"
+    "extractedAt": "2026-04-28T08:09:36.658Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-steam-scrub-body/XPDS8201QMT.html",
+    "sku": "XPDS8201QMT",
     "family": "shark-steam-scrub-body",
-    "category": "XPDS8201QMT.html",
+    "category": "shark-steam-scrub-body",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55670,14 +55950,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:13.601Z"
+    "extractedAt": "2026-04-28T08:09:36.866Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-nevertouch-pro-base-debris-dust-bin-60-day%E2%80%8B%E2%80%8B/XDRV29XLDOB.html",
+    "sku": "XDRV29XLDOB",
     "family": "shark-nevertouch-pro-base-debris-dust-bin-60-day%E2%80%8B%E2%80%8B",
-    "category": "XDRV29XLDOB.html",
+    "category": "shark-nevertouch-pro-base-debris-dust-bin-60-day%E2%80%8B%E2%80%8B",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55689,14 +55970,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:13.759Z"
+    "extractedAt": "2026-04-28T08:09:36.731Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-steam-scrub-body/XPDS8201QEG.html",
+    "sku": "XPDS8201QEG",
     "family": "shark-steam-scrub-body",
-    "category": "XPDS8201QEG.html",
+    "category": "shark-steam-scrub-body",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55708,14 +55990,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:13.855Z"
+    "extractedAt": "2026-04-28T08:09:36.932Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-thermacharged-nevertouch-pro-base-60-day/XDRV2900XLW2.html",
+    "sku": "XDRV2900XLW2",
     "family": "shark-thermacharged-nevertouch-pro-base-60-day",
-    "category": "XDRV2900XLW2.html",
+    "category": "shark-thermacharged-nevertouch-pro-base-60-day",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55727,14 +56010,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:13.920Z"
+    "extractedAt": "2026-04-28T08:09:36.829Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-thermacharged-robot-pod%E2%80%8B/XPRV2900WDB1.html",
+    "sku": "XPRV2900WDB1",
     "family": "shark-powerdetect-thermacharged-robot-pod%E2%80%8B",
-    "category": "XPRV2900WDB1.html",
+    "category": "shark-powerdetect-thermacharged-robot-pod%E2%80%8B",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55746,14 +56030,15 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:14.117Z"
+    "extractedAt": "2026-04-28T08:09:36.866Z"
   },
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-powerdetect-thermacharged-robot-pod%E2%80%8B/XPRV2900WDW2.html",
+    "sku": "XPRV2900WDW2",
     "family": "shark-powerdetect-thermacharged-robot-pod%E2%80%8B",
-    "category": "XPRV2900WDW2.html",
+    "category": "shark-powerdetect-thermacharged-robot-pod%E2%80%8B",
     "galleryImageCount": 1,
     "images": [
       {
@@ -55765,6 +56050,6 @@
         "sequencePosition": 1
       }
     ],
-    "extractedAt": "2026-04-21T21:34:14.195Z"
+    "extractedAt": "2026-04-28T08:09:36.946Z"
   }
 ]

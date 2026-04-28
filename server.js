@@ -872,17 +872,15 @@ async function runPipeline(config, streamId) {
 // ── SharkNinja: pull gallery via Cloudinary list API (no browser needed) ─────
 async function extractSharkNinjaViaCloudinary(url, brandName) {
   const pathParts = new URL(url).pathname.split('/').filter(Boolean);
-  const base = {
-    brand: 'sharkninja',
-    brandName,
-    url,
-    family: pathParts[0] || 'unknown',
-    category: pathParts[1] || pathParts[0] || 'unknown',
-  };
+  // Last segment is SKU.html; everything before is the product-family slug
+  const lastSeg   = pathParts[pathParts.length - 1] || '';
+  const sku       = lastSeg.replace(/\.html$/i, '').toUpperCase();
+  const family    = pathParts.length > 1 ? pathParts[pathParts.length - 2] : pathParts[0] || 'unknown';
+  const category  = pathParts.length > 2 ? pathParts[pathParts.length - 3] : family;
 
-  // Product ID is the last path segment without .html
-  const productId = pathParts[pathParts.length - 1].replace(/\.html$/i, '');
-  const apiUrl = `https://sharkninja-sfcc-prod-res.cloudinary.com/image/list/${productId}.json`;
+  const base = { brand: 'sharkninja', brandName, url, sku, family, category };
+
+  const apiUrl = `https://sharkninja-sfcc-prod-res.cloudinary.com/image/list/${sku.toLowerCase()}.json`;
 
   try {
     const { data } = await axios.get(apiUrl, { timeout: 15000, headers: HEADERS });
