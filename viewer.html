@@ -764,6 +764,7 @@ function applyFilters() {
     if (sortKey === 'rating_desc') return (b.rating ?? -1) - (a.rating ?? -1);
     if (sortKey === 'rating_asc')  return (a.rating ?? 99) - (b.rating ?? 99);
     if (sortKey === 'reviews_desc') return (b.reviewCount ?? -1) - (a.reviewCount ?? -1);
+    if (sortKey === 'reviews_asc')  return (a.reviewCount ?? 99999) - (b.reviewCount ?? 99999);
     return 0;
   });
 
@@ -1059,6 +1060,7 @@ function render(data) {
         <option value="rating_desc">Rating ↓</option>
         <option value="rating_asc">Rating ↑</option>
         <option value="reviews_desc">Most reviewed</option>
+        <option value="reviews_asc">Least reviewed</option>
       </select>
     </div>
     <div class="pdp-table-wrap" id="pdp-table-wrap">
