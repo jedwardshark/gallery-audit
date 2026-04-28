@@ -858,7 +858,8 @@ async function runPipeline(config, streamId) {
   // ─ Step 3: merge ─
   emit(streamId, 'progress', { step: 'merge', message: 'Merging into dataset…', pct: 90 });
   const rawPath = path.join(__dirname, 'data/gallery_raw.json');
-  const existing = JSON.parse(fs.readFileSync(rawPath, 'utf8'));
+  let existing = [];
+  try { existing = JSON.parse(fs.readFileSync(rawPath, 'utf8')); } catch {}
   const merged = [...existing.filter(p => p.brand !== brandKey), ...results];
   fs.writeFileSync(rawPath, JSON.stringify(merged, null, 2));
 
