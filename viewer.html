@@ -761,6 +761,9 @@ function applyFilters() {
     if (sortKey === 'gallery_desc') return b.galleryImageCount - a.galleryImageCount;
     if (sortKey === 'gallery_asc') return a.galleryImageCount - b.galleryImageCount;
     if (sortKey === 'name_asc') return a.family.localeCompare(b.family);
+    if (sortKey === 'rating_desc') return (b.rating ?? -1) - (a.rating ?? -1);
+    if (sortKey === 'rating_asc')  return (a.rating ?? 99) - (b.rating ?? 99);
+    if (sortKey === 'reviews_desc') return (b.reviewCount ?? -1) - (a.reviewCount ?? -1);
     return 0;
   });
 
@@ -1053,6 +1056,9 @@ function render(data) {
         <option value="gallery_desc">Gallery size ↓</option>
         <option value="gallery_asc">Gallery size ↑</option>
         <option value="name_asc">Name A–Z</option>
+        <option value="rating_desc">Rating ↓</option>
+        <option value="rating_asc">Rating ↑</option>
+        <option value="reviews_desc">Most reviewed</option>
       </select>
     </div>
     <div class="pdp-table-wrap" id="pdp-table-wrap">
