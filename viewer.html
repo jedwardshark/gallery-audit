@@ -101,6 +101,9 @@
   .thumb-more { width: 24px; height: 24px; border-radius: 3px; background: var(--surface2); display: flex; align-items: center; justify-content: center; font-size: 9px; color: var(--muted); flex-shrink: 0; }
   .pdp-family { font-size: 12px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .sku-tag { display: inline-block; margin-left: 6px; padding: 1px 6px; border-radius: 4px; font-size: 10px; font-weight: 600; font-family: monospace; background: var(--surface2); color: var(--muted); letter-spacing: 0.04em; vertical-align: middle; }
+  .star-rating { display: inline-flex; align-items: center; gap: 3px; margin-left: 8px; vertical-align: middle; font-size: 11px; }
+  .stars { color: #f5b731; letter-spacing: -1px; }
+  .star-count { color: var(--muted); font-size: 10px; }
   .pdp-url { font-size: 10px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px; }
   .brand-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 6px; vertical-align: middle; flex-shrink: 0; }
   .count-badge { display: inline-block; padding: 2px 8px; border-radius: 99px; font-size: 11px; font-weight: 600; }
@@ -802,7 +805,7 @@ function renderTable() {
     row.dataset.idx = globalIdx;
     row.innerHTML = `
       <div class="thumb-strip">${thumbHtml || '<span style="color:var(--muted);font-size:11px">—</span>'}</div>
-      <div><div class="pdp-family">${dot}${p.family.replace(/-/g, ' ')}${p.sku ? ` <span class="sku-tag">${p.sku}</span>` : ''}</div><div class="pdp-url">${p.url}</div></div>
+      <div><div class="pdp-family">${dot}${p.family.replace(/-/g, ' ')}${p.sku ? ` <span class="sku-tag">${p.sku}</span>` : ''}${renderStars(p.rating, p.reviewCount)}</div><div class="pdp-url">${p.url}</div></div>
       <div>${dot}${p.brandName}</div>
       <div>${badge}${creativeBadge}</div>
       <div class="expand-icon">${expandedRows.has(globalIdx) ? '▲' : '▼'}</div>
@@ -1613,6 +1616,16 @@ function dimBar(score) {
   if (score == null) return '<span style="color:var(--muted)">—</span>';
   const color = score >= 8 ? 'var(--green)' : score >= 6 ? 'var(--blue)' : 'var(--yellow)';
   return `<span style="color:${color};font-weight:700">${score.toFixed(1)}</span>`;
+}
+
+function renderStars(rating, reviewCount) {
+  if (rating === null || rating === undefined) return '';
+  const full  = Math.floor(rating);
+  const half  = (rating - full) >= 0.25 && (rating - full) < 0.75 ? 1 : 0;
+  const empty = 5 - full - half;
+  const stars = '★'.repeat(full) + (half ? '½' : '') + '☆'.repeat(empty);
+  const countStr = reviewCount ? ` <span class="star-count">(${reviewCount.toLocaleString()})</span>` : '';
+  return `<span class="star-rating"><span class="stars" title="${rating.toFixed(1)} out of 5">${stars}</span><span style="color:var(--fg);font-size:11px">${rating.toFixed(1)}</span>${countStr}</span>`;
 }
 
 function renderAuditHTML(r) {
