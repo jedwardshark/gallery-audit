@@ -1245,6 +1245,20 @@ app.post('/api/creative-audit', async (req, res) => {
 
 app.get('/api/creative-audit/cache', (_req, res) => res.json(loadAuditCache()));
 
+// ── Review flags (Phase 3 — color/appearance mismatch monitoring) ────────────
+app.get('/api/reviews/flagged', (_req, res) => {
+  const p = path.join(__dirname, 'data/reviews_flagged.json');
+  if (!fs.existsSync(p)) return res.json({ lastUpdatedAt: null, pdps: {} });
+  try {
+    const raw = JSON.parse(fs.readFileSync(p, 'utf8'));
+    // Tolerate the Phase 2 array shape by returning empty until the pipeline overwrites it.
+    if (Array.isArray(raw)) return res.json({ lastUpdatedAt: null, pdps: {} });
+    res.json(raw);
+  } catch (e) {
+    res.status(500).json({ error: `Could not read reviews_flagged.json: ${e.message}` });
+  }
+});
+
 app.delete('/api/creative-audit/cache', (req, res) => {
   const { url } = req.body;
   const cache = loadAuditCache();

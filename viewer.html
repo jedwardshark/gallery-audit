@@ -191,6 +191,21 @@
   .cr-approved    { background: rgba(62,207,142,0.15); color: var(--green); }
   .cr-conditional { background: rgba(245,200,66,0.15); color: var(--yellow); }
   .cr-revise      { background: rgba(255,79,100,0.15); color: var(--red); }
+
+  /* Color/photo mismatch flag (Phase 3 review monitoring) */
+  .color-flag-badge { margin-left: 6px; padding: 2px 8px; border-radius: 99px; font-size: 11px; font-weight: 700; vertical-align: middle; cursor: help; }
+  .cf-low    { background: rgba(245,200,66,0.18); color: var(--yellow); }
+  .cf-medium { background: rgba(255,140,60,0.18); color: #ff8c3c; }
+  .cf-high   { background: rgba(255,79,100,0.20); color: var(--red); }
+  .review-flag-section { border-top: 1px solid var(--border); padding: 18px 20px; }
+  .review-flag-heading { font-size: 13px; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .review-flag-card { background: var(--surface2); border-radius: 6px; padding: 12px 14px; margin-bottom: 8px; border-left: 3px solid var(--yellow); }
+  .review-flag-card.confidence-high { border-left-color: var(--red); }
+  .review-flag-card.confidence-medium { border-left-color: #ff8c3c; }
+  .review-flag-meta { font-size: 11px; color: var(--muted); margin-bottom: 6px; display: flex; gap: 12px; flex-wrap: wrap; }
+  .review-flag-title { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+  .review-flag-quote { font-size: 13px; font-style: italic; color: var(--text); margin: 6px 0; padding: 6px 10px; background: rgba(255,255,255,0.03); border-radius: 4px; }
+  .review-flag-reason { font-size: 11px; color: var(--muted); margin-top: 6px; }
   .audit-section { border-top: 1px solid var(--border); padding: 18px 20px; }
   .audit-cta { display: flex; align-items: center; gap: 14px; }
   .audit-cta-hint { font-size: 12px; color: var(--muted); }
@@ -812,6 +827,11 @@ function renderTable() {
       ? `<span class="creative-score-badge cr-${ca.readiness.toLowerCase().split(' ')[0]}" title="Creative score: ${ca.readiness}">${ca.galleryScore.toFixed(1)}</span>`
       : '';
 
+    const flagData = reviewFlags[p.url];
+    const colorFlagBadge = (flagData && flagData.flaggedCount > 0)
+      ? `<span class="color-flag-badge cf-${flagData.severity}" title="${flagData.flaggedCount} customer review${flagData.flaggedCount === 1 ? '' : 's'} flagged for photo/color mismatch (severity: ${flagData.severity})">Color ${flagData.flaggedCount}</span>`
+      : '';
+
     const row = document.createElement('div');
     row.className = 'pdp-row' + (expandedRows.has(globalIdx) ? ' expanded' : '');
     row.dataset.idx = globalIdx;
@@ -819,7 +839,7 @@ function renderTable() {
       <div class="thumb-strip">${thumbHtml || '<span style="color:var(--muted);font-size:11px">—</span>'}</div>
       <div><div class="pdp-family">${dot}${p.family.replace(/-/g, ' ')}${p.sku ? ` <span class="sku-tag">${p.sku}</span>` : ''}${renderStars(p.rating, p.reviewCount)}</div><div class="pdp-url">${p.url}</div></div>
       <div>${dot}${p.brandName}</div>
-      <div>${badge}${creativeBadge}</div>
+      <div>${badge}${creativeBadge}${colorFlagBadge}</div>
       <div class="expand-icon">${expandedRows.has(globalIdx) ? '▲' : '▼'}</div>
     `;
     row.addEventListener('click', () => toggleRow(globalIdx, p, row));
@@ -847,7 +867,7 @@ function renderTable() {
                </div>`
           }
         </div>`;
-      expand.innerHTML = `<div class="image-grid">${imgs}</div>${auditSection}`;
+      expand.innerHTML = `<div class="image-grid">${imgs}</div>${auditSection}${renderReviewFlagSection(p.url)}`;
     }
     tableEl.appendChild(expand);
   });
@@ -1594,7 +1614,7 @@ window.startCrawl = async () => {
       // Auto-reload data immediately so the brand appears as soon as modal is closed
       fetch('./data/gallery_raw.json')
         .then(r => r.json())
-        .then(async d => { allData = d; await loadAuditCache(); render(d); loadRefreshStatus(); })
+        .then(async d => { allData = d; await loadAuditCache(); await loadReviewFlags(); render(d); loadRefreshStatus(); })
         .catch(() => {});
 
       document.getElementById('modal-run-btn').textContent = 'View Dashboard';
@@ -1747,6 +1767,46 @@ async function loadAuditCache() {
     const data = await fetch('/api/creative-audit/cache').then(r => r.json());
     auditCache = data || {};
   } catch { auditCache = {}; }
+}
+
+// ── Review flags (Phase 3) ───────────────────────────────────────────────────
+let reviewFlags = {}; // url -> { lastScrapedAt, flaggedCount, severity, flaggedReviews: [...] }
+
+async function loadReviewFlags() {
+  try {
+    const data = await fetch('/api/reviews/flagged').then(r => r.json());
+    reviewFlags = (data && data.pdps) || {};
+  } catch { reviewFlags = {}; }
+}
+
+function escapeHtml(s) {
+  return String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function renderReviewFlagSection(pdpUrl) {
+  const flag = reviewFlags[pdpUrl];
+  if (!flag || flag.flaggedCount === 0) return '';
+  const cards = (flag.flaggedReviews || []).map(r => `
+    <div class="review-flag-card confidence-${escapeHtml(r.confidence || 'low')}">
+      <div class="review-flag-meta">
+        <span>${escapeHtml((r.rating ?? '?') + '★')}</span>
+        <span>${fmtDate(r.submittedAt)}</span>
+        <span>Confidence: ${escapeHtml(r.confidence || 'low')}</span>
+      </div>
+      <div class="review-flag-title">${escapeHtml(r.title || '(untitled)')}</div>
+      ${r.relevantQuote ? `<div class="review-flag-quote">"${escapeHtml(r.relevantQuote)}"</div>` : ''}
+      <div class="review-flag-reason">${escapeHtml(r.reason || '')}</div>
+    </div>
+  `).join('');
+  return `
+    <div class="review-flag-section">
+      <div class="review-flag-heading">
+        Customer photo/color mismatch flags
+        <span class="color-flag-badge cf-${escapeHtml(flag.severity)}">${flag.flaggedCount} flagged — ${escapeHtml(flag.severity)}</span>
+      </div>
+      ${cards}
+    </div>
+  `;
 }
 
 // ── Refresh schedule ─────────────────────────────────────────────────────────
@@ -1923,7 +1983,7 @@ initDiscoverTrigger();
 // ── Load data
 fetch('./data/gallery_raw.json')
   .then(r => r.json())
-  .then(async data => { allData = data; await loadAuditCache(); render(data); loadRefreshStatus(); })
+  .then(async data => { allData = data; await loadAuditCache(); await loadReviewFlags(); render(data); loadRefreshStatus(); })
   .catch(() => {
     document.getElementById('app').innerHTML = `
       <div class="loading">

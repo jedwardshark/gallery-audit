@@ -9,6 +9,7 @@ import { config as dotenvConfig } from 'dotenv';
 dotenvConfig();
 
 import { runFullRefresh } from './server.js';
+import { runReviewPipelineRolling } from './review_pipeline.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -20,7 +21,12 @@ const FILES_TO_COMMIT = [
   'data/gallery_raw.json',
   'data/refresh_history.json',
   'data/refresh_config.json',
+  'data/reviews_flagged.json',
 ];
+
+// Rolling-window size for the weekly review pipeline. ~75 per week covers all 293
+// SharkNinja PDPs in roughly 4 weeks. Override via REVIEW_TARGET_COUNT env if needed.
+const REVIEW_TARGET_COUNT = parseInt(process.env.REVIEW_TARGET_COUNT || '75', 10);
 
 const GH_HEADERS = () => ({
   'Authorization': `Bearer ${GH_TOKEN}`,
@@ -81,8 +87,20 @@ async function main() {
     process.exit(1);
   }
 
+  // After the gallery refresh, run a rolling-window review scan on SharkNinja PDPs.
+  // Failures here are non-fatal — gallery data still gets committed.
+  let reviewSummary = null;
+  try {
+    reviewSummary = await runReviewPipelineRolling({ targetCount: REVIEW_TARGET_COUNT });
+  } catch (e) {
+    console.error('[Refresh] Review pipeline failed (non-fatal):', e.message);
+  }
+
   const t = record.totals;
-  const message = `chore(refresh): weekly auto-refresh — +${t.added} new, ${t.changed} changed, ${t.removed} removed`;
+  const reviewSuffix = reviewSummary
+    ? ` · reviews: ${reviewSummary.processed} PDPs scanned, ${reviewSummary.totalFlagged} flagged`
+    : '';
+  const message = `chore(refresh): weekly auto-refresh — +${t.added} new, ${t.changed} changed, ${t.removed} removed${reviewSuffix}`;
 
   let failures = 0;
   for (const f of FILES_TO_COMMIT) {

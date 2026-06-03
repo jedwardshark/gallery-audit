@@ -1,0 +1,21 @@
+{
+  "lastUpdatedAt": "2026-06-03T21:08:23.649Z",
+  "pdps": {
+    "https://www.sharkninja.com/ninja-air-fryer-pro-4-in-1/AF141.html": {
+      "lastScrapedAt": "2026-06-03T21:08:14.471Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-air-fryer-pro-xl-6-in-1/AF181.html": {
+      "lastScrapedAt": "2026-06-03T21:08:23.634Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    }
+  }
+}
