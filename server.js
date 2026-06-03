@@ -918,8 +918,9 @@ async function extractOnePdp(url, brandKey, brandName, imageHost, stdBrowser, st
   };
 
   for (const [attempt, browser] of [[1, preferStealth ? stealthBrowser : stdBrowser], [2, stealthBrowser]]) {
+    let page = null;
     try {
-      const page = await browser.newPage();
+      page = await browser.newPage();
       await setupPage(page);
 
       const waitUntil = attempt === 2 ? 'networkidle' : 'domcontentloaded';
@@ -936,8 +937,7 @@ async function extractOnePdp(url, brandKey, brandName, imageHost, stdBrowser, st
       const blockResult = detectBlocked(await page.title(), page.url(), bodyText);
 
       if (blockResult.blocked) {
-        await page.close();
-        // On attempt 1: skip straight to stealth but mark it; on attempt 2: return blocked result
+        // On attempt 1: skip straight to stealth on next iteration; on attempt 2: return blocked.
         if (attempt === 2) {
           return {
             ...base,
@@ -948,13 +948,11 @@ async function extractOnePdp(url, brandKey, brandName, imageHost, stdBrowser, st
             extractedAt: new Date().toISOString(),
           };
         }
-        // Let the loop continue to attempt 2
         continue;
       }
 
       await progressiveScroll(page, extraWait);
       const images = await extractAllImageSrcs(page, imageHost || '');
-      await page.close();
 
       return {
         ...base,
@@ -968,6 +966,9 @@ async function extractOnePdp(url, brandKey, brandName, imageHost, stdBrowser, st
         return { ...base, images: [], galleryImageCount: 0, error: e.message, extractedAt: new Date().toISOString() };
       }
       // Will retry with stealth on next iteration
+    } finally {
+      // Always close the page — guards against leaks when any page.* call above throws.
+      if (page) await page.close().catch(() => {});
     }
   }
 }
@@ -1292,28 +1293,33 @@ app.delete('/api/brands/:key', (req, res) => {
 // ── Weekly refresh: re-extract all brands and diff against previous data ──────
 
 async function reExtractBrand(brandKey, brandName, urls, imageHost, useStealth, onProgress) {
-  const limit = pLimit(3);
+  // Sequential within a brand and a single browser, to fit Render 512MB starter tier.
+  // Prior version ran pLimit(3) + two parallel browsers — peak ~600MB and OOM-killed on Render.
+  // Brands are already sequential in runFullRefresh, so this caps total peak at ~300MB.
   const results = [];
   let done = 0;
 
   if (brandKey === 'sharkninja') {
-    await Promise.all(urls.map(url => limit(async () => {
+    // No browser — Cloudinary direct HTTP. Sequential to avoid even small memory spikes.
+    for (const url of urls) {
       results.push(await extractSharkNinjaViaCloudinary(url, brandName));
       onProgress?.(++done, urls.length);
-    })));
+    }
     return results;
   }
 
-  const stdBrowser = await chromium.launch({ headless: true });
-  const stealthBrowser = await chromiumStealth.launch({ headless: true });
+  // Single stealth-capable browser. Stealth is a superset of std chromium for our use,
+  // so we drop the second browser entirely to halve browser memory.
+  // extractOnePdp's retry path varies waitUntil/extraWait — passing the same browser
+  // as both "std" and "stealth" args still exercises that retry, just with one process.
+  const browser = await chromiumStealth.launch({ headless: true });
   try {
-    await Promise.all(urls.map(url => limit(async () => {
-      results.push(await extractOnePdp(url, brandKey, brandName, imageHost, stdBrowser, stealthBrowser, useStealth));
+    for (const url of urls) {
+      results.push(await extractOnePdp(url, brandKey, brandName, imageHost, browser, browser, useStealth));
       onProgress?.(++done, urls.length);
-    })));
+    }
   } finally {
-    await stdBrowser.close();
-    await stealthBrowser.close();
+    await browser.close();
   }
   return results;
 }
