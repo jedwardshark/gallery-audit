@@ -9,7 +9,6 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import pLimit from 'p-limit';
-import cron from 'node-cron';
 import Anthropic from '@anthropic-ai/sdk';
 import { config as dotenvConfig } from 'dotenv';
 dotenvConfig();
@@ -1454,19 +1453,10 @@ async function runFullRefresh(streamId = null) {
   return refreshRecord;
 }
 
-// ── Cron management ───────────────────────────────────────────────────────────
-let cronTask = null;
-
-function startCronSchedule(cronExpression) {
-  cronTask?.stop();
-  cronTask = null;
-  if (!cron.validate(cronExpression)) { console.warn(`[Refresh] Invalid cron: ${cronExpression}`); return; }
-  cronTask = cron.schedule(cronExpression, () => {
-    console.log('[Refresh] Weekly scheduled refresh starting…');
-    runFullRefresh().catch(e => console.error('[Refresh] Scheduled refresh failed:', e));
-  });
-  console.log(`[Refresh] Schedule active: ${cronExpression}`);
-}
+// Scheduling lives outside this process — see render.yaml's cron service running refresh.js.
+// 5-field cron validator used only by /api/refresh/config (informational, no longer drives anything).
+const CRON_5FIELD_REGEX = /^\s*\S+\s+\S+\s+\S+\s+\S+\s+\S+\s*$/;
+const isValidCron = (s) => typeof s === 'string' && CRON_5FIELD_REGEX.test(s);
 
 // ── Refresh endpoints ─────────────────────────────────────────────────────────
 app.get('/api/refresh/status', (req, res) => {
@@ -1493,33 +1483,28 @@ app.post('/api/refresh/trigger', (req, res) => {
 });
 
 app.post('/api/refresh/config', (req, res) => {
+  // Note: schedule field is now informational only. The actual cron is defined in render.yaml.
+  // To change when the refresh runs in production, edit render.yaml and redeploy.
   const { enabled, schedule } = req.body;
   const configPath = path.join(__dirname, 'data/refresh_config.json');
   const existing = fs.existsSync(configPath) ? JSON.parse(fs.readFileSync(configPath, 'utf8')) : { schedule: '0 2 * * 0' };
   const updated = { ...existing };
   if (typeof enabled === 'boolean') updated.enabled = enabled;
-  if (schedule && cron.validate(schedule)) { updated.schedule = schedule; }
+  if (schedule && isValidCron(schedule)) { updated.schedule = schedule; }
   updated.nextRun = computeNextRun(updated.schedule);
   fs.writeFileSync(configPath, JSON.stringify(updated, null, 2));
-  if (updated.enabled !== false) startCronSchedule(updated.schedule);
-  else { cronTask?.stop(); cronTask = null; }
   res.json({ ok: true, ...updated });
 });
 
-// ── Initialize schedule on startup ────────────────────────────────────────────
-{
-  const configPath = path.join(__dirname, 'data/refresh_config.json');
-  if (!fs.existsSync(configPath)) {
-    const defaultCfg = { enabled: true, schedule: '0 2 * * 0', nextRun: computeNextRun('0 2 * * 0') };
-    fs.mkdirSync(path.join(__dirname, 'data'), { recursive: true });
-    fs.writeFileSync(configPath, JSON.stringify(defaultCfg, null, 2));
-  }
-  const initCfg = JSON.parse(fs.readFileSync(configPath, 'utf8'));
-  if (initCfg.enabled !== false) startCronSchedule(initCfg.schedule || '0 2 * * 0');
-}
-
 app.use(express.static(__dirname));
 
-app.listen(PORT, () => {
-  console.log(`\nGallery Audit server  ->  http://localhost:${PORT}/viewer.html\n`);
-});
+// Export runFullRefresh for refresh.js (the standalone cron entry point).
+// app.listen is gated below so importing this module doesn't start the server.
+export { runFullRefresh };
+
+const isMainModule = process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1]);
+if (isMainModule) {
+  app.listen(PORT, () => {
+    console.log(`\nGallery Audit server  ->  http://localhost:${PORT}/viewer.html\n`);
+  });
+}

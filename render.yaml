@@ -4,3 +4,10 @@ services:
     runtime: docker
     healthCheckPath: /viewer.html
     autoDeploy: true
+
+  - type: cron
+    name: gallery-audit-refresh
+    runtime: docker
+    schedule: "0 2 * * 0"
+    dockerCommand: "node refresh.js"
+    autoDeploy: true
