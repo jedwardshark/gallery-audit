@@ -823,36 +823,65 @@ async function runPipeline(config, streamId) {
   });
 
   // ─ Step 2: extract galleries ─
+  // Sequential + single stealth browser to fit Render 512MB web tier. Prior version ran
+  // pLimit(3) + two browsers (chromium + chromiumStealth) ≈ 650MB peak — OOM-killed the
+  // web service on Add Brand with 50+ PDPs. Same fix already applied to reExtractBrand
+  // (cron path) — stealth is a superset of std chromium so we drop the second browser.
+  // Trade-off: ~3x slower than concurrent, but the 5s heartbeat below keeps the modal alive.
   const results = [];
+  const startedAt = Date.now();
+  let started = 0;
   let done = 0;
   let failures = 0;
   let totalImages = 0;
-  const limit = pLimit(3);
 
   const needsBrowser = brandKey !== 'sharkninja';
-  const stdBrowser     = needsBrowser ? await chromium.launch({ headless: true }) : null;
-  const stealthBrowser = needsBrowser ? await chromiumStealth.launch({ headless: true }) : null;
+  const browser = needsBrowser ? await chromiumStealth.launch({ headless: true }) : null;
 
-  await Promise.all(sampled.map(url => limit(async () => {
-    const result = await extractOnePdp(url, brandKey, brandName, imageHost, stdBrowser, stealthBrowser, useStealth);
-    results.push(result);
-    if (result.error) failures++;
-    totalImages += result.galleryImageCount || 0;
-
-    done++;
+  // Heartbeat: ticks every 5s so the modal doesn't look frozen during a slow PDP
+  // (a single page load + scroll + extract can take 15-30s).
+  const heartbeat = setInterval(() => {
+    const inFlight = started - done;
+    const elapsed  = Math.round((Date.now() - startedAt) / 1000);
     emit(streamId, 'progress', {
-      step: 'extract',
-      message: `Extracting galleries… ${done} / ${sampled.length}${failures ? ` (${failures} errors)` : ''}`,
-      pct: 25 + Math.round((done / sampled.length) * 62),
-      done,
-      total: sampled.length,
-      errors: failures,
-      images: totalImages,
+      step:     'extract',
+      message:  `Extracting… ${done} done · ${inFlight} in flight · ${sampled.length - started} pending · ${elapsed}s elapsed${failures ? ` · ${failures} errors` : ''}`,
+      pct:      25 + Math.round((done / sampled.length) * 62),
+      done, started, total: sampled.length, errors: failures, images: totalImages, elapsedSec: elapsed,
     });
-  })));
+  }, 5000);
 
-  await stdBrowser?.close();
-  await stealthBrowser?.close();
+  try {
+    for (const url of sampled) {
+      started++;
+      const skuLabel = url.split('/').filter(Boolean).pop() || url;
+      emit(streamId, 'progress', {
+        step:    'extract',
+        message: `Starting ${started} / ${sampled.length} — ${skuLabel}`,
+        pct:     25 + Math.round((done / sampled.length) * 62),
+        done, started, total: sampled.length, errors: failures, images: totalImages,
+      });
+
+      // Pass the same browser as both std + stealth args — extractOnePdp's retry path
+      // varies waitUntil/extraWait, not browser type. Identical pattern to reExtractBrand.
+      const result = await extractOnePdp(url, brandKey, brandName, imageHost, browser, browser, useStealth);
+      results.push(result);
+      if (result.error) failures++;
+      totalImages += result.galleryImageCount || 0;
+
+      done++;
+      emit(streamId, 'progress', {
+        step:    'extract',
+        message: `Done ${done} / ${sampled.length}${failures ? ` (${failures} errors)` : ''} — ${skuLabel}`,
+        pct:     25 + Math.round((done / sampled.length) * 62),
+        done, started, total: sampled.length, errors: failures, images: totalImages,
+      });
+    }
+  } finally {
+    clearInterval(heartbeat);
+  }
+
+  await browser?.close();
 
   // ─ Step 3: merge ─
   emit(streamId, 'progress', { step: 'merge', message: 'Merging into dataset…', pct: 90 });
