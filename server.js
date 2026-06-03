@@ -1153,23 +1153,15 @@ Return ONLY valid JSON — no markdown fences, no commentary:
   ]
 }`;
 
-app.post('/api/creative-audit', async (req, res) => {
-  const { pdpUrl, brandName, images } = req.body;
+// Reusable audit core — used by both /api/creative-audit (single-PDP) and audit_pipeline.js (bulk).
+// Throws on failure; caller handles cache + HTTP semantics.
+export async function runCreativeAuditForPdp({ pdpUrl, brandName, images, apiKey }) {
   if (!pdpUrl || !Array.isArray(images) || !images.length) {
-    return res.status(400).json({ error: 'pdpUrl and images required' });
+    throw new Error('pdpUrl and images required');
   }
-
-  const cache = loadAuditCache();
-  if (cache[pdpUrl]) return res.json({ cached: true, ...cache[pdpUrl] });
-
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    return res.status(500).json({ error: 'ANTHROPIC_API_KEY not set. Add it to a .env file in the project root.' });
-  }
+  if (!apiKey) throw new Error('ANTHROPIC_API_KEY not set');
 
   const sampled = sampleGalleryImages(images, 6);
-
-  // Fetch images concurrently, skip any that fail
   const imageBlocks = (await Promise.all(
     sampled.map(async img => {
       try {
@@ -1178,65 +1170,53 @@ app.post('/api/creative-audit', async (req, res) => {
       } catch { return null; }
     })
   )).filter(Boolean);
+  if (!imageBlocks.length) throw new Error('Could not fetch any gallery images for analysis');
 
-  if (!imageBlocks.length) {
-    return res.status(500).json({ error: 'Could not fetch any gallery images for analysis.' });
+  const useBearer = apiKey.startsWith('sn_live_');
+  const anthropic = new Anthropic({
+    baseURL: process.env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com',
+    ...(useBearer ? { authToken: apiKey, apiKey: null } : { apiKey }),
+  });
+
+  const message = await anthropic.messages.create({
+    model: 'claude-sonnet-4-6',
+    max_tokens: 8192,
+    messages: [{
+      role: 'user',
+      content: [
+        ...imageBlocks,
+        { type: 'text', text: `${CREATIVE_AUDIT_PROMPT}\n\nBrand: ${brandName}\nPDP: ${pdpUrl}\nImages shown: ${imageBlocks.length} of ${images.length} total (evenly sampled).` },
+      ],
+    }],
+  });
+
+  if (message.stop_reason === 'max_tokens') {
+    throw new Error('Audit response was truncated (hit max_tokens)');
   }
 
+  let rawText = message.content[0].text.trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '').trim();
+  const result = JSON.parse(rawText);
+  result.auditedAt        = new Date().toISOString();
+  result.imageCount       = images.length;
+  result.sampledCount     = imageBlocks.length;
+  // Sorted URL set — used by audit_pipeline.js to detect gallery changes since last audit.
+  result.auditedImageUrls = [...images].map(i => i.src).sort();
+  return result;
+}
+
+app.post('/api/creative-audit', async (req, res) => {
+  const { pdpUrl, brandName, images } = req.body;
+
+  const cache = loadAuditCache();
+  if (cache[pdpUrl]) return res.json({ cached: true, ...cache[pdpUrl] });
+
+  const apiKey = process.env.ANTHROPIC_API_KEY;
+  if (!apiKey) return res.status(500).json({ error: 'ANTHROPIC_API_KEY not set' });
+
   try {
-    // SharkNinja AI Hub tokens (sn_live_*) use Authorization: Bearer instead of x-api-key.
-    // baseURL also reads ANTHROPIC_BASE_URL via the SDK, but we set it explicitly for clarity.
-    const useBearer = apiKey.startsWith('sn_live_');
-    const anthropic = new Anthropic({
-      baseURL: process.env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com',
-      ...(useBearer ? { authToken: apiKey, apiKey: null } : { apiKey }),
-    });
-
-    const message = await anthropic.messages.create({
-      model: 'claude-sonnet-4-6',
-      max_tokens: 8192,
-      messages: [{
-        role: 'user',
-        content: [
-          ...imageBlocks,
-          {
-            type: 'text',
-            text: `${CREATIVE_AUDIT_PROMPT}\n\nBrand: ${brandName}\nPDP: ${pdpUrl}\nImages shown: ${imageBlocks.length} of ${images.length} total (evenly sampled).`,
-          },
-        ],
-      }],
-    });
-
-    if (message.stop_reason === 'max_tokens') {
-      return res.status(502).json({
-        error: 'Audit response was truncated (hit max_tokens). Try fewer images or a shorter prompt.',
-        stopReason: message.stop_reason,
-      });
-    }
-
-    let rawText = message.content[0].text.trim();
-    // Strip markdown fences if present
-    rawText = rawText.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '').trim();
-
-    let result;
-    try {
-      result = JSON.parse(rawText);
-    } catch (parseErr) {
-      console.error('[Audit] JSON parse failed:', parseErr.message);
-      console.error('[Audit] Raw response (first 500 chars):', rawText.slice(0, 500));
-      return res.status(502).json({
-        error: `Model returned invalid JSON: ${parseErr.message}`,
-        stopReason: message.stop_reason,
-        rawPreview: rawText.slice(0, 500),
-      });
-    }
-    result.auditedAt    = new Date().toISOString();
-    result.imageCount   = images.length;
-    result.sampledCount = imageBlocks.length;
-
+    const result = await runCreativeAuditForPdp({ pdpUrl, brandName, images, apiKey });
     cache[pdpUrl] = result;
     saveAuditCache(cache);
-
     res.json({ cached: false, ...result });
   } catch (e) {
     console.error('[Audit]', e.message);
@@ -1245,6 +1225,43 @@ app.post('/api/creative-audit', async (req, res) => {
 });
 
 app.get('/api/creative-audit/cache', (_req, res) => res.json(loadAuditCache()));
+
+// ── Bulk audit (Phase 4) ─────────────────────────────────────────────────────
+const AUDIT_JOBS_PATH   = path.join(__dirname, 'data/audit_jobs.json');
+const AUDIT_REPORT_PATH = path.join(__dirname, 'data/audit_report.json');
+
+// POST: button writes a job-queue request. The next bulk-audit cron run picks it up.
+// On free tier we can't remotely trigger a cron, so this is feedback-only — the cron
+// runs on its own schedule (Wednesday 2 AM UTC) and the queue request expands its coverage.
+app.post('/api/audit/bulk/trigger', (_req, res) => {
+  const job = { requested: new Date().toISOString() };
+  fs.mkdirSync(path.dirname(AUDIT_JOBS_PATH), { recursive: true });
+  fs.writeFileSync(AUDIT_JOBS_PATH, JSON.stringify(job, null, 2));
+  res.json({ queued: true, ...job });
+});
+
+// GET: coverage status — how many SharkNinja PDPs have a current audit.
+app.get('/api/audit/bulk/status', (_req, res) => {
+  const galleryPath = path.join(__dirname, 'data/gallery_raw.json');
+  if (!fs.existsSync(galleryPath)) return res.json({ audited: 0, total: 0, pending: 0 });
+  const gallery = JSON.parse(fs.readFileSync(galleryPath, 'utf8'));
+  const snUrls  = gallery.filter(p => p.brand === 'sharkninja' && p.url && !p.error).map(p => p.url);
+  const cache   = loadAuditCache();
+  const audited = snUrls.filter(u => cache[u]).length;
+
+  let queuedAt = null;
+  if (fs.existsSync(AUDIT_JOBS_PATH)) {
+    try { queuedAt = JSON.parse(fs.readFileSync(AUDIT_JOBS_PATH, 'utf8')).requested; } catch {}
+  }
+  res.json({ audited, total: snUrls.length, pending: snUrls.length - audited, queuedAt });
+});
+
+// GET: the deterministic + Claude-narrative report generated by audit_pipeline.js.
+app.get('/api/audit/report', (_req, res) => {
+  if (!fs.existsSync(AUDIT_REPORT_PATH)) return res.json({ generatedAt: null });
+  try { res.json(JSON.parse(fs.readFileSync(AUDIT_REPORT_PATH, 'utf8'))); }
+  catch (e) { res.status(500).json({ error: `Could not read audit_report.json: ${e.message}` }); }
+});
 
 // ── Review flags (Phase 3 — color/appearance mismatch monitoring) ────────────
 app.get('/api/reviews/flagged', (_req, res) => {

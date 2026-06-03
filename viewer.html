@@ -192,6 +192,35 @@
   .cr-conditional { background: rgba(245,200,66,0.15); color: var(--yellow); }
   .cr-revise      { background: rgba(255,79,100,0.15); color: var(--red); }
 
+  /* Bulk audit strip + report (Phase 4) */
+  .bulk-audit-strip { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 20px; margin-bottom: 28px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .bulk-audit-meta { flex: 1; min-width: 220px; }
+  .bulk-audit-title { font-size: 13px; font-weight: 600; }
+  .bulk-audit-detail { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .bulk-coverage-bar-wrap { width: 200px; height: 8px; background: var(--surface2); border-radius: 99px; overflow: hidden; margin-right: 12px; }
+  .bulk-coverage-bar { height: 100%; background: var(--sn-orange, #ff6b00); border-radius: 99px; transition: width 0.4s; }
+  .audit-ai-disclaimer { background: rgba(245,200,66,0.10); border: 1px solid rgba(245,200,66,0.30); color: var(--yellow); padding: 10px 14px; border-radius: 8px; font-size: 12px; margin-bottom: 18px; }
+  .audit-report-headline { font-size: 18px; font-weight: 700; line-height: 1.4; margin-bottom: 14px; }
+  .audit-report-narrative { font-size: 13px; line-height: 1.6; color: var(--text); white-space: pre-wrap; margin-bottom: 22px; }
+  .audit-stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 22px; }
+  .audit-stat-card { background: var(--surface2); border-radius: 8px; padding: 12px; }
+  .audit-stat-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+  .audit-stat-value { font-size: 20px; font-weight: 700; margin-top: 4px; }
+  .audit-section-heading { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 18px 0 10px; }
+  .audit-rec-item { background: var(--surface2); border-radius: 8px; padding: 12px 14px; margin-bottom: 8px; border-left: 3px solid var(--sn-orange, #ff6b00); }
+  .audit-rec-title { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+  .audit-rec-detail { font-size: 12px; color: var(--text); margin-bottom: 6px; }
+  .audit-rec-stat { font-size: 11px; color: var(--muted); font-style: italic; }
+  .audit-worst-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: var(--surface2); border-radius: 6px; margin-bottom: 4px; font-size: 12px; }
+  .audit-worst-row a { color: var(--text); text-decoration: none; }
+  .audit-worst-row a:hover { text-decoration: underline; }
+  .audit-worst-score { font-weight: 700; color: var(--red); margin-left: 12px; }
+  .beat-coverage-row { display: flex; align-items: center; gap: 10px; font-size: 12px; margin-bottom: 4px; }
+  .beat-coverage-label { width: 90px; color: var(--muted); }
+  .beat-coverage-bar-wrap { flex: 1; height: 6px; background: var(--surface2); border-radius: 99px; overflow: hidden; }
+  .beat-coverage-bar { height: 100%; background: var(--green); border-radius: 99px; }
+  .beat-coverage-value { width: 40px; text-align: right; color: var(--text); }
+
   /* Color/photo mismatch flag (Phase 3 review monitoring) */
   .color-flag-badge { margin-left: 6px; padding: 2px 8px; border-radius: 99px; font-size: 11px; font-weight: 700; vertical-align: middle; cursor: help; }
   .cf-low    { background: rgba(245,200,66,0.18); color: var(--yellow); }
@@ -589,6 +618,17 @@
   </div>
 </div>
 
+<!-- Audit Report modal (Phase 4) -->
+<div class="modal-backdrop" id="audit-report-modal" onclick="if (event.target === this) closeAuditReport()">
+  <div class="modal" style="max-width:780px">
+    <div class="modal-header">
+      <div class="modal-title">Catalog Creative Audit — Report</div>
+      <button class="modal-close" onclick="closeAuditReport()">×</button>
+    </div>
+    <div class="modal-body" id="audit-report-modal-body"></div>
+  </div>
+</div>
+
 <div class="main" id="app">
   <div class="loading">
     <div class="spinner"></div>
@@ -788,6 +828,23 @@ function applyFilters() {
     if (sortKey === 'rating_asc')  return (a.rating ?? 99) - (b.rating ?? 99);
     if (sortKey === 'reviews_desc') return (b.reviewCount ?? -1) - (a.reviewCount ?? -1);
     if (sortKey === 'reviews_asc')  return (a.reviewCount ?? 99999) - (b.reviewCount ?? 99999);
+    if (sortKey === 'audit_score_asc') {
+      // Worst first; PDPs without an audit go to the bottom.
+      const sa = auditCache[a.url]?.galleryScore;
+      const sb = auditCache[b.url]?.galleryScore;
+      if (sa == null && sb == null) return 0;
+      if (sa == null) return 1;
+      if (sb == null) return -1;
+      return Number(sa) - Number(sb);
+    }
+    if (sortKey === 'audit_score_desc') {
+      const sa = auditCache[a.url]?.galleryScore;
+      const sb = auditCache[b.url]?.galleryScore;
+      if (sa == null && sb == null) return 0;
+      if (sa == null) return 1;
+      if (sb == null) return -1;
+      return Number(sb) - Number(sa);
+    }
     return 0;
   });
 
@@ -1018,6 +1075,20 @@ function render(data) {
       </div>
     </div>
 
+    <!-- Bulk Creative Audit strip (Phase 4) -->
+    <div class="bulk-audit-strip" id="bulk-audit-strip">
+      <div class="refresh-icon">★</div>
+      <div class="bulk-audit-meta">
+        <div class="bulk-audit-title">Catalog Creative Audit</div>
+        <div class="bulk-audit-detail" id="bulk-audit-detail">Loading coverage…</div>
+      </div>
+      <div class="bulk-coverage-bar-wrap"><div class="bulk-coverage-bar" id="bulk-coverage-bar" style="width:0%"></div></div>
+      <div class="refresh-actions">
+        <button class="btn btn-ghost btn-sm" id="bulk-audit-btn" onclick="triggerBulkAudit()">Run Bulk Audit</button>
+        <button class="btn btn-ghost btn-sm" id="audit-report-btn" onclick="showAuditReport()">View Report</button>
+      </div>
+    </div>
+
     <!-- Brand Cards -->
     <div class="section-title">By Brand</div>
     <div class="brand-grid">
@@ -1089,6 +1160,8 @@ function render(data) {
         <option value="rating_asc">Rating ↑</option>
         <option value="reviews_desc">Most reviewed</option>
         <option value="reviews_asc">Least reviewed</option>
+        <option value="audit_score_asc">Audit score (worst first)</option>
+        <option value="audit_score_desc">Audit score (best first)</option>
       </select>
     </div>
     <div class="pdp-table-wrap" id="pdp-table-wrap">
@@ -1614,7 +1687,7 @@ window.startCrawl = async () => {
       // Auto-reload data immediately so the brand appears as soon as modal is closed
       fetch('./data/gallery_raw.json')
         .then(r => r.json())
-        .then(async d => { allData = d; await loadAuditCache(); await loadReviewFlags(); render(d); loadRefreshStatus(); })
+        .then(async d => { allData = d; await loadAuditCache(); await loadReviewFlags(); await loadBulkAuditStatus(); await loadAuditReport(); render(d); loadRefreshStatus(); })
         .catch(() => {});
 
       document.getElementById('modal-run-btn').textContent = 'View Dashboard';
@@ -1809,6 +1882,120 @@ function renderReviewFlagSection(pdpUrl) {
   `;
 }
 
+// ── Bulk audit + report (Phase 4) ────────────────────────────────────────────
+let bulkAuditStatus = null;
+let auditReport = null;
+
+async function loadBulkAuditStatus() {
+  try {
+    bulkAuditStatus = await fetch('/api/audit/bulk/status').then(r => r.json());
+    renderBulkAuditStrip();
+  } catch { bulkAuditStatus = null; }
+}
+
+async function loadAuditReport() {
+  try {
+    auditReport = await fetch('/api/audit/report').then(r => r.json());
+  } catch { auditReport = null; }
+}
+
+function renderBulkAuditStrip() {
+  const detail = document.getElementById('bulk-audit-detail');
+  const bar    = document.getElementById('bulk-coverage-bar');
+  if (!detail || !bulkAuditStatus) return;
+  const { audited, total, pending, queuedAt } = bulkAuditStatus;
+  const pct = total ? Math.round((audited / total) * 100) : 0;
+  const queued = queuedAt ? ` · job queued ${fmtDate(queuedAt)}` : '';
+  detail.innerHTML = `${audited} of ${total} SharkNinja PDPs audited (${pct}%) · ${pending} pending${queued}`;
+  if (bar) bar.style.width = pct + '%';
+}
+
+async function triggerBulkAudit() {
+  const btn = document.getElementById('bulk-audit-btn');
+  if (btn) { btn.disabled = true; btn.textContent = 'Queuing…'; }
+  try {
+    await fetch('/api/audit/bulk/trigger', { method: 'POST' });
+    await loadBulkAuditStatus();
+    alert('Bulk audit queued. The job will run with the next scheduled cron (Wednesday 2 AM UTC) — on Render free tier we cannot remotely trigger a cron run mid-week.');
+  } catch (e) {
+    alert('Could not queue bulk audit: ' + e.message);
+  } finally {
+    if (btn) { btn.disabled = false; btn.textContent = 'Run Bulk Audit'; }
+  }
+}
+
+function showAuditReport() {
+  if (!auditReport || !auditReport.generatedAt) {
+    alert('No audit report yet — it generates after the bulk-audit cron runs (Wednesday 2 AM UTC).');
+    return;
+  }
+  document.getElementById('audit-report-modal-body').innerHTML = renderAuditReportBody(auditReport);
+  document.getElementById('audit-report-modal').classList.add('open');
+}
+
+function closeAuditReport() {
+  document.getElementById('audit-report-modal').classList.remove('open');
+}
+
+function renderAuditReportBody(report) {
+  const s = report.stats || {};
+  const n = report.narrative;
+  const cov = s.coverage || { audited: 0, total: 0 };
+  const dist = s.scoreDistribution || {};
+
+  const beatRows = Object.entries(s.beatPresenceRates || {})
+    .sort((a, b) => a[1] - b[1])
+    .map(([beat, rate]) => {
+      const pct = Math.round(rate * 100);
+      return `<div class="beat-coverage-row">
+        <div class="beat-coverage-label">${escapeHtml(beat)}</div>
+        <div class="beat-coverage-bar-wrap"><div class="beat-coverage-bar" style="width:${pct}%"></div></div>
+        <div class="beat-coverage-value">${pct}%</div>
+      </div>`;
+    }).join('');
+
+  const worstRows = (s.topWorst || []).map(w => `
+    <div class="audit-worst-row">
+      <a href="${escapeHtml(w.url)}" target="_blank">${escapeHtml(w.sku)} — ${escapeHtml(w.readiness || '')}</a>
+      <span class="audit-worst-score">${Number(w.galleryScore).toFixed(1)}</span>
+    </div>`).join('');
+
+  const recItem = (r) => `<div class="audit-rec-item">
+    <div class="audit-rec-title">${escapeHtml(r.title || '')}</div>
+    <div class="audit-rec-detail">${escapeHtml(r.detail || '')}</div>
+    ${r.supportingStat ? `<div class="audit-rec-stat">${escapeHtml(r.supportingStat)}</div>` : ''}
+  </div>`;
+
+  const quickWins  = (n?.quickWins  || []).map(recItem).join('') || '<div style="color:var(--muted);font-size:12px">No items.</div>';
+  const longerTerm = (n?.longerTerm || []).map(recItem).join('') || '<div style="color:var(--muted);font-size:12px">No items.</div>';
+
+  return `
+    <div class="audit-ai-disclaimer">AI draft — review before acting. Statistics are computed deterministically; narrative and recommendations are LLM-generated and may contain errors.</div>
+    ${n?.headline ? `<div class="audit-report-headline">${escapeHtml(n.headline)}</div>` : ''}
+    ${n?.narrative ? `<div class="audit-report-narrative">${escapeHtml(n.narrative)}</div>` : ''}
+
+    <div class="audit-stats-grid">
+      <div class="audit-stat-card"><div class="audit-stat-label">Coverage</div><div class="audit-stat-value">${cov.audited} / ${cov.total}</div></div>
+      <div class="audit-stat-card"><div class="audit-stat-label">Avg Score</div><div class="audit-stat-value">${s.averageScore ?? '—'}</div></div>
+      <div class="audit-stat-card"><div class="audit-stat-label">Revise / Total</div><div class="audit-stat-value">${dist.Revise ?? 0} / ${cov.audited}</div></div>
+    </div>
+
+    <div class="audit-section-heading">Beat Coverage (% of audited PDPs presenting each beat)</div>
+    ${beatRows}
+
+    <div class="audit-section-heading">Quick Wins</div>
+    ${quickWins}
+
+    <div class="audit-section-heading">Longer-Term</div>
+    ${longerTerm}
+
+    <div class="audit-section-heading">Top 15 Lowest-Scoring PDPs</div>
+    ${worstRows}
+
+    <div style="margin-top:18px;font-size:11px;color:var(--muted)">Generated: ${fmtDate(report.generatedAt)}</div>
+  `;
+}
+
 // ── Refresh schedule ─────────────────────────────────────────────────────────
 window.refreshStatus = null;
 
@@ -1983,7 +2170,7 @@ initDiscoverTrigger();
 // ── Load data
 fetch('./data/gallery_raw.json')
   .then(r => r.json())
-  .then(async data => { allData = data; await loadAuditCache(); await loadReviewFlags(); render(data); loadRefreshStatus(); })
+  .then(async data => { allData = data; await loadAuditCache(); await loadReviewFlags(); await loadBulkAuditStatus(); await loadAuditReport(); render(data); loadRefreshStatus(); })
   .catch(() => {
     document.getElementById('app').innerHTML = `
       <div class="loading">

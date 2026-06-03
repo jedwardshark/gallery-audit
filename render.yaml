@@ -11,3 +11,13 @@ services:
     schedule: "0 2 * * 0"
     dockerCommand: "node refresh.js"
     autoDeploy: true
+
+  # Bulk Creative Audit — Wednesday 2 AM UTC, 3 days offset from gallery refresh.
+  # Audits up to BULK_AUDIT_MAX SharkNinja PDPs that have never been audited or
+  # whose gallery image set has changed. Generates audit_report.json at the end.
+  - type: cron
+    name: gallery-audit-bulkaudit
+    runtime: docker
+    schedule: "0 2 * * 3"
+    dockerCommand: "node audit_pipeline.js"
+    autoDeploy: true
