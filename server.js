@@ -1194,7 +1194,7 @@ app.post('/api/creative-audit', async (req, res) => {
 
     const message = await anthropic.messages.create({
       model: 'claude-sonnet-4-6',
-      max_tokens: 2048,
+      max_tokens: 8192,
       messages: [{
         role: 'user',
         content: [
@@ -1207,11 +1207,29 @@ app.post('/api/creative-audit', async (req, res) => {
       }],
     });
 
+    if (message.stop_reason === 'max_tokens') {
+      return res.status(502).json({
+        error: 'Audit response was truncated (hit max_tokens). Try fewer images or a shorter prompt.',
+        stopReason: message.stop_reason,
+      });
+    }
+
     let rawText = message.content[0].text.trim();
     // Strip markdown fences if present
     rawText = rawText.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '').trim();
 
-    const result = JSON.parse(rawText);
+    let result;
+    try {
+      result = JSON.parse(rawText);
+    } catch (parseErr) {
+      console.error('[Audit] JSON parse failed:', parseErr.message);
+      console.error('[Audit] Raw response (first 500 chars):', rawText.slice(0, 500));
+      return res.status(502).json({
+        error: `Model returned invalid JSON: ${parseErr.message}`,
+        stopReason: message.stop_reason,
+        rawPreview: rawText.slice(0, 500),
+      });
+    }
     result.auditedAt    = new Date().toISOString();
     result.imageCount   = images.length;
     result.sampledCount = imageBlocks.length;
