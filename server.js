@@ -1162,7 +1162,8 @@ app.post('/api/creative-audit', async (req, res) => {
   const cache = loadAuditCache();
   if (cache[pdpUrl]) return res.json({ cached: true, ...cache[pdpUrl] });
 
-  if (!process.env.ANTHROPIC_API_KEY) {
+  const apiKey = process.env.ANTHROPIC_API_KEY;
+  if (!apiKey) {
     return res.status(500).json({ error: 'ANTHROPIC_API_KEY not set. Add it to a .env file in the project root.' });
   }
 
@@ -1183,7 +1184,13 @@ app.post('/api/creative-audit', async (req, res) => {
   }
 
   try {
-    const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+    // SharkNinja AI Hub tokens (sn_live_*) use Authorization: Bearer instead of x-api-key.
+    // baseURL also reads ANTHROPIC_BASE_URL via the SDK, but we set it explicitly for clarity.
+    const useBearer = apiKey.startsWith('sn_live_');
+    const anthropic = new Anthropic({
+      baseURL: process.env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com',
+      ...(useBearer ? { authToken: apiKey, apiKey: null } : { apiKey }),
+    });
 
     const message = await anthropic.messages.create({
       model: 'claude-sonnet-4-6',
