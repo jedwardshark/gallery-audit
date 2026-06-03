@@ -614,6 +614,14 @@ let searchQuery = '';
 let sortKey = 'gallery_desc';
 let expandedRows = new Set();
 
+// JSON-stringify a value for safe embedding inside a double-quoted HTML attribute
+// (e.g. onclick="..."). JSON.stringify wraps strings in " which would otherwise
+// terminate the attribute early; we escape & and " to entities so the browser
+// decodes them back to valid JS at event-handler parse time.
+function attrJSON(v) {
+  return JSON.stringify(v).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+}
+
 function countClass(n) {
   if (n === 0) return 'count-0';
   if (n <= 3) return 'count-low';
@@ -834,7 +842,7 @@ function renderTable() {
           ${cachedAudit
             ? renderAuditHTML(cachedAudit)
             : `<div class="audit-cta">
-                 <button class="btn btn-ghost btn-sm" onclick="runCreativeAudit(${JSON.stringify(p.url)},${JSON.stringify(p.brandName)},${globalIdx})">Run Creative Audit</button>
+                 <button class="btn btn-ghost btn-sm" onclick="runCreativeAudit(${attrJSON(p.url)},${attrJSON(p.brandName)},${globalIdx})">Run Creative Audit</button>
                  <span class="audit-cta-hint">Scores this gallery against brand.com creative standards using Claude vision</span>
                </div>`
           }
@@ -1665,7 +1673,7 @@ function renderAuditHTML(r) {
       <span class="readiness-pill rp-${rpKey}">${r.readiness}</span>
       <span class="audit-category-tag">${r.detectedCategory} · brand.com</span>
       <span class="audit-meta">${fmtDate(r.auditedAt)} · ${sampledNote}
-        <button onclick="rerunAudit(${JSON.stringify(r._url || '')})" style="margin-left:8px;background:none;border:none;color:var(--muted);cursor:pointer;font-size:11px;padding:0" title="Re-run audit">↺</button>
+        <button onclick="rerunAudit(${attrJSON(r._url || '')})" style="margin-left:8px;background:none;border:none;color:var(--muted);cursor:pointer;font-size:11px;padding:0" title="Re-run audit">↺</button>
       </span>
     </div>
     <div class="audit-subsection">
