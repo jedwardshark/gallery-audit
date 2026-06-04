@@ -1428,6 +1428,9 @@ function diffBrand(brandKey, previousByUrl, newResults) {
 }
 
 function computeNextRun(cronExpression) {
+  // Computes the next fire time for a 5-field "min hour * * weekday" cron expression
+  // in UTC — Render Cron Jobs (and our refresh.js) interpret schedules as UTC, so we
+  // must reason in UTC throughout (otherwise an EDT/PDT server box would mis-compute).
   const parts = cronExpression.split(' ');
   if (parts.length !== 5) return null;
   const minute  = parseInt(parts[0]);
@@ -1436,14 +1439,14 @@ function computeNextRun(cronExpression) {
   if ([minute, hour, weekday].some(isNaN)) return null;
 
   const now = new Date();
-  let daysUntil = (weekday - now.getDay() + 7) % 7;
+  let daysUntil = (weekday - now.getUTCDay() + 7) % 7;
   if (daysUntil === 0) {
-    const passedToday = now.getHours() > hour || (now.getHours() === hour && now.getMinutes() >= minute);
+    const passedToday = now.getUTCHours() > hour || (now.getUTCHours() === hour && now.getUTCMinutes() >= minute);
     if (passedToday) daysUntil = 7;
   }
   const next = new Date(now);
-  next.setDate(now.getDate() + daysUntil);
-  next.setHours(hour, minute, 0, 0);
+  next.setUTCDate(now.getUTCDate() + daysUntil);
+  next.setUTCHours(hour, minute, 0, 0);
   return next.toISOString();
 }
 
@@ -1562,11 +1565,23 @@ app.get('/api/refresh/status', (req, res) => {
   const historyPath = path.join(__dirname, 'data/refresh_history.json');
   const config  = fs.existsSync(configPath)  ? JSON.parse(fs.readFileSync(configPath,  'utf8')) : { enabled: true, schedule: '0 2 * * 0' };
   const history = fs.existsSync(historyPath) ? JSON.parse(fs.readFileSync(historyPath, 'utf8')) : [];
+  const schedule = config.schedule || '0 2 * * 0';
+
+  // lastRun: derive from refresh_history.json — the authoritative source of completed runs.
+  // The stored config.lastRun has historically gone stale on git-backed persistence;
+  // we intentionally ignore it here.
+  const lastRun = history[0]?.completedAt || history[0]?.startedAt || null;
+
+  // nextRun: always computed live from the cron schedule. Stored config.nextRun is ignored
+  // because it's only refreshed when the cron itself ran successfully — which is precisely
+  // when the widget tends to read it most.
+  const nextRun = computeNextRun(schedule);
+
   res.json({
     enabled:       config.enabled !== false,
-    schedule:      config.schedule || '0 2 * * 0',
-    lastRun:       config.lastRun  || null,
-    nextRun:       config.nextRun  || computeNextRun(config.schedule || '0 2 * * 0'),
+    schedule,
+    lastRun,
+    nextRun,
     recentHistory: history.slice(0, 8),
   });
 });
