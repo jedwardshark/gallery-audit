@@ -1,0 +1,127 @@
+{
+  "generatedAt": "2026-06-04T18:50:06.298Z",
+  "stats": {
+    "coverage": {
+      "audited": 2,
+      "total": 287
+    },
+    "hasData": true,
+    "averageScore": 6.4,
+    "scoreDistribution": {
+      "Approved": 0,
+      "Conditional": 2,
+      "Revise": 0
+    },
+    "scorePercentiles": {
+      "p10": 6.4,
+      "p25": 6.4,
+      "p50": 6.4,
+      "p75": 6.4,
+      "p90": 6.4
+    },
+    "beatPresenceRates": {
+      "hero": 1,
+      "lifestyle": 0.5,
+      "benefit": 1,
+      "technical": 0.5,
+      "detail": 0,
+      "social": 0,
+      "proof": 0
+    },
+    "categoryBreakdown": {
+      "Electronics": 2
+    },
+    "topWorst": [
+      {
+        "url": "https://www.sharkninja.com/ninja-air-fryer-pro-4-in-1/AF141.html",
+        "sku": "AF141",
+        "galleryScore": 6.4,
+        "readiness": "Conditional",
+        "category": "Electronics",
+        "beatsMissing": [
+          "lifestyle",
+          "detail",
+          "social",
+          "proof"
+        ],
+        "criticalSample": [
+          "Reposition to Beat 3 or 4 — leading with a regulatory badge before showing the product or a lifestyle moment signals anxiety rather than confidence; move the hero product shot to position 1.",
+          "Increase product scale — the appliance occupies roughly 35% of frame height; cropping tighter or raising the unit optically would assert visual authority befitting a hero-adjacent slot.",
+          "Elevate food lighting — warmer, directional light with slight specular highlights on the fries and Brussels sprouts would dramatically increase appetite appeal and premium feel; current flat lighting undersells the food's appeal."
+        ]
+      },
+      {
+        "url": "https://www.sharkninja.com/ninja-air-fryer-pro-xl-6-in-1/AF181.html",
+        "sku": "AF181",
+        "galleryScore": 6.4,
+        "readiness": "Conditional",
+        "category": "Electronics",
+        "beatsMissing": [
+          "technical",
+          "detail",
+          "social",
+          "proof"
+        ],
+        "criticalSample": [
+          "Replace CGI render with real product photography in an actual dishwasher — CGI compositing reads as low-trust on brand.com and undermines the premium positioning Ninja commands at this price tier.",
+          "Increase contrast between the dark basket/plate and the dishwasher interior by introducing a lighter rack environment or a hero-light rim that separates product edges from background.",
+          "The background unit is underexposed — viewers lose the control panel detail that differentiates this SKU from lower-tier Ninja models; add a practical hair-light or rim light on the background product."
+        ]
+      }
+    ]
+  },
+  "narrative": {
+    "headline": "With only 2 of 287 SKUs audited and both landing at a 'Conditional' 6.4 average score, the catalog has zero audit-ready assets and critical creative gaps that require immediate triage before broader rollout.",
+    "narrative": "The current audit covers just 2 SKUs out of a 287-product catalog — less than 1% coverage — making it premature to draw catalog-wide conclusions, but the early signal is concerning: both audited SKUs scored 6.4 and received a 'Conditional' readiness rating, meaning zero assets are approved for use as-is. With an average score of 6.4 and a perfectly flat score distribution across all percentiles (p10 through p90 all at 6.4), there is no differentiation in quality across the sample, suggesting a systemic creative baseline issue rather than isolated outliers.\n\nBeat presence analysis reveals the most actionable gaps. While hero and benefit beats are present across 100% of audited SKUs, lifestyle and technical beats appear in only 50% of assets, and detail, social, and proof beats are entirely absent — a 0% presence rate across the board. These missing beats represent the storytelling layers that drive conversion confidence: real-world context, close-up craftsmanship, social validation, and third-party proof. For the two Electronics SKUs reviewed, specific issues include CGI renders undermining premium positioning (AF181), poor food lighting reducing appetite appeal (AF141), and regulatory badges leading the visual sequence before product or lifestyle moments — all of which signal execution gaps that are correctable without full re-shoots in some cases.\n\nThe priority now is twofold: accelerate audit coverage across the remaining 285 SKUs to establish a true baseline, while simultaneously addressing the highest-impact creative fixes on the two audited SKUs. The findings from AF141 and AF181 likely reflect patterns that will surface repeatedly at scale — making these two SKUs a valuable pilot for establishing a repeatable remediation playbook.",
+    "quickWins": [
+      {
+        "title": "Fix image sequencing on AF141",
+        "detail": "Reposition the regulatory badge away from the lead slot and place the hero product shot at position 1 to open with confidence rather than anxiety — a single asset reorder requiring no re-shoot.",
+        "supportingStat": "AF141 critical feedback: 'Reposition to Beat 3 or 4 — leading with a regulatory badge before showing the product or a lifestyle moment signals anxiety rather than confidence.'"
+      },
+      {
+        "title": "Replace CGI render on AF181 with real photography",
+        "detail": "Swap the current CGI dishwasher composite on AF181 for an authentic product photo to restore premium trust signals on brand.com, directly addressing the low-trust read flagged in the audit.",
+        "supportingStat": "AF181 critical feedback: 'Replace CGI render with real product photography in an actual dishwasher — CGI compositing reads as low-trust on brand.com and undermines the premium positioning Ninja commands at this price tier.'"
+      },
+      {
+        "title": "Add detail beat assets to both audited SKUs",
+        "detail": "Commission close-up detail shots for AF141 and AF181 to bring the 0% detail beat presence rate off zero and give consumers the craftsmanship cues that support premium price justification.",
+        "supportingStat": "beatPresenceRates: 'detail': 0 — detail beat is absent across 100% of audited SKUs."
+      },
+      {
+        "title": "Source or produce lifestyle imagery for AF141",
+        "detail": "AF141 is missing a lifestyle beat; adding one in-use contextual image would bring lifestyle coverage from 50% to 100% across the audited set and directly address a known conversion driver.",
+        "supportingStat": "beatPresenceRates: 'lifestyle': 0.5 — lifestyle beat is present in only 50% of audited SKUs; AF141 beatsMissing includes 'lifestyle'."
+      },
+      {
+        "title": "Improve food and product lighting on AF141 in next available studio session",
+        "detail": "Introduce warmer directional light with specular highlights on food subjects during the next studio pass to elevate appetite appeal without requiring a full concept re-shoot.",
+        "supportingStat": "AF141 critical feedback: 'Elevate food lighting — warmer, directional light with slight specular highlights on the fries and Brussels sprouts would dramatically increase appetite appeal and premium feel; current flat lighting undersells the food's appeal.'"
+      }
+    ],
+    "longerTerm": [
+      {
+        "title": "Scale audit coverage to the full 287-SKU catalog",
+        "detail": "With only 2 of 287 SKUs audited (less than 1% coverage), the team is operating without a reliable creative baseline; a phased audit rollout across all SKUs is essential to prioritize re-shoot and remediation investment accurately.",
+        "supportingStat": "coverage: 'audited': 2, 'total': 287 — current audit represents 0.7% of the catalog."
+      },
+      {
+        "title": "Develop a catalog-wide social proof and UGC integration strategy",
+        "detail": "Social and proof beats are at 0% presence across all audited SKUs, representing a systemic gap in validation content that, at catalog scale, likely suppresses conversion rates across the entire Electronics assortment.",
+        "supportingStat": "beatPresenceRates: 'social': 0, 'proof': 0 — both beats are entirely absent across 100% of audited SKUs."
+      },
+      {
+        "title": "Establish a technical beat content standard and production template",
+        "detail": "Technical beats are present in only 50% of audited SKUs; creating a repeatable production brief and template for technical callout imagery will ensure consistent spec communication as audit coverage expands to the full catalog.",
+        "supportingStat": "beatPresenceRates: 'technical': 0.5 — technical beat missing in 50% of audited SKUs; AF181 beatsMissing includes 'technical'."
+      },
+      {
+        "title": "Audit and eliminate CGI renders across the Electronics category",
+        "detail": "The CGI issue flagged on AF181 may be present across other Electronics SKUs; a category-level audit to identify and replace low-trust CGI composites with real photography would protect premium brand positioning at scale.",
+        "supportingStat": "AF181 critical feedback: 'CGI compositing reads as low-trust on brand.com and undermines the premium positioning Ninja commands at this price tier'; categoryBreakdown: 'Electronics': 2 audited SKUs, both Conditional."
+      }
+    ]
+  },
+  "disclaimer": "AI-generated draft — review before acting. Statistics are computed from audit data; narrative and recommendations are LLM-generated and may contain errors."
+}
