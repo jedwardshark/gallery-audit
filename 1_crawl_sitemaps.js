@@ -3,6 +3,8 @@ import * as cheerio from 'cheerio';
 import fs from 'fs';
 import zlib from 'zlib';
 import { chromium } from 'playwright';
+import { fileURLToPath } from 'url';
+import path from 'path';
 import { BRANDS, TARGET_BRANDS } from './config.js';
 
 function getSegment(pathname, index) {
@@ -80,7 +82,7 @@ async function crawlBrevilleCategories(brand) {
   return [...allProductUrls].filter(u => brand.pdpPattern.test(u));
 }
 
-async function crawlBrand(brandKey) {
+export async function crawlBrand(brandKey) {
   const brand = BRANDS[brandKey];
   console.log(`\n🔍 Crawling ${brand.name}...`);
 
@@ -146,4 +148,7 @@ async function crawlAll() {
   console.log('   Saved to data/urls/');
 }
 
-crawlAll();
+// Gate the CLI auto-run so importing this module (e.g. from server.js for the weekly
+// refresh's sitemap re-discovery phase) does NOT trigger a full multi-brand crawl.
+const isMain = process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1]);
+if (isMain) crawlAll();

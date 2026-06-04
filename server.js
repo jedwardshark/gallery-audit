@@ -10,6 +10,8 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import pLimit from 'p-limit';
 import Anthropic from '@anthropic-ai/sdk';
+import { crawlBrand } from './1_crawl_sitemaps.js';
+import { BRANDS as SITEMAP_BRAND_CONFIG } from './config.js';
 import { config as dotenvConfig } from 'dotenv';
 dotenvConfig();
 
@@ -1477,6 +1479,45 @@ async function runFullRefresh(streamId = null) {
     brandMap[p.brand].urls.add(p.url);
   });
 
+  // ─ Sitemap re-discovery phase ─
+  // Re-fetch each brand's sitemap (or category pages) so newly-launched SKUs that
+  // weren't in the original crawl get picked up. Reuses crawlBrand() from
+  // 1_crawl_sitemaps.js — no new crawler logic. Brands not in config.js (e.g.
+  // user-added via the Add Brand modal) are skipped since we don't know their sitemap.
+  // Memory: sharkninja/vitamix/williamssonoma use pure HTTP (negligible). Dyson and
+  // Breville use Playwright; crawlBrand opens then closes its browser per call, so
+  // peak memory matches the existing single-browser extract pattern (~300MB).
+  const newlyDiscoveredCounts = {};
+  log('Re-crawling sitemaps for newly-launched SKUs…');
+  progress(2, 'Re-crawling sitemaps…');
+
+  // Discovery in SharkNinja-first order so SN's new SKUs are guaranteed-merged even if
+  // a later brand's crawl hangs.
+  const brandKeysForDiscovery = Object.keys(brandMap).sort((a, b) => {
+    if (a === 'sharkninja') return -1;
+    if (b === 'sharkninja') return 1;
+    return 0;
+  });
+
+  for (const brandKey of brandKeysForDiscovery) {
+    if (!SITEMAP_BRAND_CONFIG[brandKey]) {
+      log(`  ${brandKey} — not in config.js, skipping discovery (URLs from gallery_raw.json only)`);
+      continue;
+    }
+    try {
+      const discovered = await crawlBrand(brandKey);
+      const discoveredUrls = discovered.map(p => p.url);
+      const before = brandMap[brandKey].urls.size;
+      discoveredUrls.forEach(u => brandMap[brandKey].urls.add(u));
+      const added = brandMap[brandKey].urls.size - before;
+      newlyDiscoveredCounts[brandKey] = added;
+      log(`  ${brandKey} — sitemap has ${discoveredUrls.length} URLs · ${added} new since last crawl`);
+    } catch (e) {
+      log(`  ${brandKey} — discovery FAILED (non-fatal): ${e.message}`);
+      newlyDiscoveredCounts[brandKey] = 0;
+    }
+  }
+
   const brandConfigs = loadBrandConfigs();
   const brands = Object.values(brandMap).map(b => ({
     ...b,
@@ -1500,6 +1541,7 @@ async function runFullRefresh(streamId = null) {
     completedAt: null,
     brands: {},
     totals: { added: 0, removed: 0, changed: 0, unchanged: 0, errors: 0 },
+    newlyDiscovered: newlyDiscoveredCounts,
   };
 
   const allNewResults = [];

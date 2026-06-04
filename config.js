@@ -5,7 +5,11 @@ export const BRANDS = {
       'https://www.sharkninja.com/sitemap_index.xml',
       'https://www.sharkninja.com/sitemaps/sitemap.xml',
     ],
-    pdpPattern: /\/(shark|ninja)-[a-z0-9-]+-[a-z]{2}\d+/i,
+    // PDP URL shape on sharkninja.com is /{shark|ninja-slug}/{SKU}.html — match the
+    // slug-then-SKU.html structure, not the older "SKU embedded in slug" pattern
+    // that this regex previously required. Old pattern accidentally only matched
+    // ~26 PDPs whose SKU happened to also appear inside the slug.
+    pdpPattern: /\/(shark|ninja)-[a-z0-9-]+\/[A-Z0-9-]+\.html$/i,
     familySegment: 0,
     categorySegment: 1,
     gallerySelectors: [

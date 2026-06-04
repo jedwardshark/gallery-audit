@@ -22,6 +22,14 @@ const FILES_TO_COMMIT = [
   'data/refresh_history.json',
   'data/refresh_config.json',
   'data/reviews_flagged.json',
+  // Per-brand URL lists are refreshed by the sitemap re-discovery phase in runFullRefresh.
+  // commitFileIfChanged is a no-op for files that don't exist locally, so unused brands here
+  // are harmless.
+  'data/urls/sharkninja.json',
+  'data/urls/vitamix.json',
+  'data/urls/breville.json',
+  'data/urls/dyson.json',
+  'data/urls/williamssonoma.json',
 ];
 
 // Rolling-window size for the weekly review pipeline. ~75 per week covers all 293
@@ -97,10 +105,14 @@ async function main() {
   }
 
   const t = record.totals;
+  const discoveredTotal = Object.values(record.newlyDiscovered || {}).reduce((s, n) => s + n, 0);
+  const discoverySuffix = discoveredTotal > 0
+    ? ` · discovered ${discoveredTotal} new SKU(s) from sitemaps`
+    : '';
   const reviewSuffix = reviewSummary
     ? ` · reviews: ${reviewSummary.processed} PDPs scanned, ${reviewSummary.totalFlagged} flagged`
     : '';
-  const message = `chore(refresh): weekly auto-refresh — +${t.added} new, ${t.changed} changed, ${t.removed} removed${reviewSuffix}`;
+  const message = `chore(refresh): weekly auto-refresh — +${t.added} new, ${t.changed} changed, ${t.removed} removed${discoverySuffix}${reviewSuffix}`;
 
   let failures = 0;
   for (const f of FILES_TO_COMMIT) {
