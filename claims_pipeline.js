@@ -38,9 +38,14 @@ const CLAIM_EXTRACT_MAX = parseInt(process.env.CLAIM_EXTRACT_MAX || '50', 10);
 const IMAGES_PER_PDP    = 6;
 const GAP_FLOOR         = 2; // ≥2 competitor PDPs required to count as a "gap"
 
-const GH_TOKEN  = process.env.GITHUB_TOKEN;
-const GH_REPO   = process.env.GITHUB_REPO;
-const GH_BRANCH = process.env.GITHUB_BRANCH || 'main';
+// Trim — Render's env editor silently appends \n/spaces that ride into the auth header
+// and cause 403s on every request. Same defense as refresh.js.
+const GH_TOKEN_RAW = process.env.GITHUB_TOKEN || '';
+const GH_TOKEN  = GH_TOKEN_RAW.trim();
+const GH_REPO   = (process.env.GITHUB_REPO   || '').trim();
+const GH_BRANCH = (process.env.GITHUB_BRANCH || 'main').trim();
+const GH_TOKEN_HAD_WS = GH_TOKEN_RAW.length !== GH_TOKEN.length;
+console.log(`[Claims-Commit] GH_TOKEN length=${GH_TOKEN.length} · whitespace stripped=${GH_TOKEN_HAD_WS} · repo=${GH_REPO} · branch=${GH_BRANCH}`);
 
 // Comparable category taxonomy. Categories live across brands so they can be compared.
 const CATEGORIES = [

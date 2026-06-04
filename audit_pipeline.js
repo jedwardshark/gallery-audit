@@ -30,9 +30,14 @@ const AUDIT_JOBS_PATH   = path.join(__dirname, 'data/audit_jobs.json');
 
 const BULK_AUDIT_MAX = parseInt(process.env.BULK_AUDIT_MAX || '50', 10);
 
-const GH_TOKEN  = process.env.GITHUB_TOKEN;
-const GH_REPO   = process.env.GITHUB_REPO;
-const GH_BRANCH = process.env.GITHUB_BRANCH || 'main';
+// Trim — Render's env editor silently appends \n/spaces that ride into the auth header
+// and cause 403s on every request. Same defense as refresh.js.
+const GH_TOKEN_RAW = process.env.GITHUB_TOKEN || '';
+const GH_TOKEN  = GH_TOKEN_RAW.trim();
+const GH_REPO   = (process.env.GITHUB_REPO   || '').trim();
+const GH_BRANCH = (process.env.GITHUB_BRANCH || 'main').trim();
+const GH_TOKEN_HAD_WS = GH_TOKEN_RAW.length !== GH_TOKEN.length;
+console.log(`[BulkAudit-Commit] GH_TOKEN length=${GH_TOKEN.length} · whitespace stripped=${GH_TOKEN_HAD_WS} · repo=${GH_REPO} · branch=${GH_BRANCH}`);
 
 // ── Eligibility: who needs an audit this run? ────────────────────────────────
 function urlSetSignature(images) {

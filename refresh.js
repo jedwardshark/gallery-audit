@@ -13,9 +13,15 @@ import { runReviewPipelineRolling } from './review_pipeline.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const GH_TOKEN  = process.env.GITHUB_TOKEN;
-const GH_REPO   = process.env.GITHUB_REPO;
-const GH_BRANCH = process.env.GITHUB_BRANCH || 'main';
+// Trim aggressively — Render's env var editor (and copy-paste from password managers)
+// will silently append \n or spaces, which then ride into the "Bearer ${token}" header
+// and cause 403 "Resource not accessible by personal access token" on every request.
+const GH_TOKEN_RAW = process.env.GITHUB_TOKEN || '';
+const GH_TOKEN  = GH_TOKEN_RAW.trim();
+const GH_REPO   = (process.env.GITHUB_REPO   || '').trim();
+const GH_BRANCH = (process.env.GITHUB_BRANCH || 'main').trim();
+const GH_TOKEN_HAD_WS = GH_TOKEN_RAW.length !== GH_TOKEN.length;
+console.log(`[Refresh-Commit] GH_TOKEN length=${GH_TOKEN.length} · whitespace stripped=${GH_TOKEN_HAD_WS} · repo=${GH_REPO} · branch=${GH_BRANCH}`);
 
 const FILES_TO_COMMIT = [
   'data/gallery_raw.json',
@@ -85,6 +91,24 @@ async function main() {
   if (!GH_TOKEN || !GH_REPO) {
     console.error('[Refresh] Missing required env vars: GITHUB_TOKEN and GITHUB_REPO (owner/repo)');
     process.exit(1);
+  }
+
+  // --commit-test mode: skip the whole refresh and just exercise the commit code path
+  // with a trivial file. Used to verify GitHub auth in seconds instead of 90 minutes.
+  // Override the cron's Docker Command to "node refresh.js --commit-test" to use it.
+  if (process.argv.includes('--commit-test')) {
+    const testPath = path.join(__dirname, 'data/_commit_test.txt');
+    fs.mkdirSync(path.dirname(testPath), { recursive: true });
+    fs.writeFileSync(testPath, `commit smoke test at ${new Date().toISOString()}\n`);
+    console.log('[Commit-Test] wrote local file, attempting commit via refresh.js code path…');
+    try {
+      await commitFileIfChanged('data/_commit_test.txt', `chore: commit smoke test ${new Date().toISOString()}`);
+      console.log('[Commit-Test] SUCCESS');
+      process.exit(0);
+    } catch (e) {
+      console.error('[Commit-Test] FAILED:', e.message);
+      process.exit(1);
+    }
   }
 
   console.log(`[Refresh] Scheduled refresh starting at ${new Date().toISOString()}`);
