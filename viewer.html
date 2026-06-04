@@ -629,6 +629,17 @@
   </div>
 </div>
 
+<!-- Claims Report modal (Phase 5) -->
+<div class="modal-backdrop" id="claims-report-modal" onclick="if (event.target === this) closeClaimsReport()">
+  <div class="modal" style="max-width:820px">
+    <div class="modal-header">
+      <div class="modal-title">Claim Ownability — Report</div>
+      <button class="modal-close" onclick="closeClaimsReport()">×</button>
+    </div>
+    <div class="modal-body" id="claims-report-modal-body"></div>
+  </div>
+</div>
+
 <div class="main" id="app">
   <div class="loading">
     <div class="spinner"></div>
@@ -1086,6 +1097,19 @@ function render(data) {
       <div class="refresh-actions">
         <button class="btn btn-ghost btn-sm" id="bulk-audit-btn" onclick="triggerBulkAudit()">Run Bulk Audit</button>
         <button class="btn btn-ghost btn-sm" id="audit-report-btn" onclick="showAuditReport()">View Report</button>
+      </div>
+    </div>
+
+    <!-- Claim Ownability strip (Phase 5) -->
+    <div class="bulk-audit-strip" id="claims-strip">
+      <div class="refresh-icon">◆</div>
+      <div class="bulk-audit-meta">
+        <div class="bulk-audit-title">Claim Ownability (within crawled set)</div>
+        <div class="bulk-audit-detail" id="claims-detail">Loading coverage…</div>
+      </div>
+      <div class="bulk-coverage-bar-wrap"><div class="bulk-coverage-bar" id="claims-coverage-bar" style="width:0%"></div></div>
+      <div class="refresh-actions">
+        <button class="btn btn-ghost btn-sm" id="claims-report-btn" onclick="showClaimsReport()">View Report</button>
       </div>
     </div>
 
@@ -1687,7 +1711,7 @@ window.startCrawl = async () => {
       // Auto-reload data immediately so the brand appears as soon as modal is closed
       fetch('./data/gallery_raw.json')
         .then(r => r.json())
-        .then(async d => { allData = d; await loadAuditCache(); await loadReviewFlags(); await loadBulkAuditStatus(); await loadAuditReport(); render(d); loadRefreshStatus(); })
+        .then(async d => { allData = d; await loadAuditCache(); await loadReviewFlags(); await loadBulkAuditStatus(); await loadAuditReport(); await loadClaimsStatus(); await loadClaimsReport(); render(d); loadRefreshStatus(); })
         .catch(() => {});
 
       document.getElementById('modal-run-btn').textContent = 'View Dashboard';
@@ -1996,6 +2020,128 @@ function renderAuditReportBody(report) {
   `;
 }
 
+// ── Claim Ownability (Phase 5) ───────────────────────────────────────────────
+let claimsStatus = null;
+let claimsReport = null;
+
+async function loadClaimsStatus() {
+  try {
+    claimsStatus = await fetch('/api/claims/status').then(r => r.json());
+    renderClaimsStrip();
+  } catch { claimsStatus = null; }
+}
+
+async function loadClaimsReport() {
+  try { claimsReport = await fetch('/api/claims/report').then(r => r.json()); }
+  catch { claimsReport = null; }
+}
+
+function renderClaimsStrip() {
+  const detail = document.getElementById('claims-detail');
+  const bar    = document.getElementById('claims-coverage-bar');
+  if (!detail || !claimsStatus) return;
+  const { extracted, total, asymmetry = {} } = claimsStatus;
+  const pct = total ? Math.round((extracted / total) * 100) : 0;
+  const asymStr = Object.entries(asymmetry)
+    .sort((a, b) => b[1] - a[1])
+    .map(([b, n]) => `${b}=${n}`)
+    .join(' · ');
+  detail.innerHTML = `${extracted} of ${total} in-scope PDPs extracted (${pct}%) · within crawled set: ${asymStr}`;
+  if (bar) bar.style.width = pct + '%';
+}
+
+function showClaimsReport() {
+  if (!claimsReport || !claimsReport.generatedAt) {
+    alert('No claims report yet — generates after the claims cron runs (Friday 2 AM UTC).');
+    return;
+  }
+  document.getElementById('claims-report-modal-body').innerHTML = renderClaimsReportBody(claimsReport);
+  document.getElementById('claims-report-modal').classList.add('open');
+}
+
+function closeClaimsReport() {
+  document.getElementById('claims-report-modal').classList.remove('open');
+}
+
+function renderClaimsReportBody(report) {
+  const s = report.stats || {};
+  const n = report.narrative;
+  const asym = report.asymmetry || {};
+
+  const asymBanner = Object.entries(asym)
+    .sort((a, b) => b[1] - a[1])
+    .map(([b, num]) => `N=${num} ${b}`)
+    .join(' · ');
+
+  const claimRow = (r) => `
+    <div class="audit-worst-row">
+      <span>${escapeHtml(r.claim)}</span>
+      <span style="font-size:11px;color:var(--muted)">SN ${r.sharkninjaPdps ?? 0} · comp ${r.competitorPdps ?? 0}</span>
+    </div>`;
+
+  const recItem = (r) => `<div class="audit-rec-item">
+    <div class="audit-rec-title">${escapeHtml(r.title || '')}</div>
+    <div class="audit-rec-detail">${escapeHtml(r.detail || '')}</div>
+    ${r.supportingStat ? `<div class="audit-rec-stat">${escapeHtml(r.supportingStat)}</div>` : ''}
+  </div>`;
+
+  const topGaps     = (s.pooled?.gaps        || []).slice(0, 10).map(claimRow).join('') || '<div style="color:var(--muted);font-size:12px">No gaps above the floor.</div>';
+  const topOwnable  = (s.pooled?.ownable     || []).slice(0, 10).map(claimRow).join('') || '<div style="color:var(--muted);font-size:12px">No ownable-only claims found.</div>';
+  const topShared   = (s.pooled?.tableStakes || []).slice(0, 8).map(claimRow).join('')  || '<div style="color:var(--muted);font-size:12px">No shared claims yet.</div>';
+  const quickWins   = (n?.quickWins  || []).map(recItem).join('') || '<div style="color:var(--muted);font-size:12px">No items.</div>';
+  const longerTerm  = (n?.longerTerm || []).map(recItem).join('') || '<div style="color:var(--muted);font-size:12px">No items.</div>';
+
+  // Per-category — show only categories where SN AND ≥1 competitor PDP exist.
+  const catBlock = Object.entries(s.byCategory || {})
+    .filter(([, c]) => c.sharkninjaPdps > 0 && c.competitorPdps > 0)
+    .sort((a, b) => (b[1].gaps?.length || 0) - (a[1].gaps?.length || 0))
+    .slice(0, 8)
+    .map(([cat, c]) => {
+      const gaps    = (c.gaps    || []).slice(0, 5).map(claimRow).join('') || '<div style="color:var(--muted);font-size:11px;padding:6px 0">none</div>';
+      const ownable = (c.ownable || []).slice(0, 5).map(claimRow).join('') || '<div style="color:var(--muted);font-size:11px;padding:6px 0">none</div>';
+      return `
+        <div style="margin-top:14px;padding:10px 12px;background:var(--surface2);border-radius:8px">
+          <div style="font-weight:700;font-size:13px;margin-bottom:6px">${escapeHtml(cat)} <span style="color:var(--muted);font-weight:400;font-size:11px">(SN N=${c.sharkninjaPdps} · comp N=${c.competitorPdps})</span></div>
+          <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-top:8px">Gaps</div>
+          ${gaps}
+          <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-top:8px">Ownable</div>
+          ${ownable}
+        </div>`;
+    }).join('');
+
+  return `
+    <div class="audit-ai-disclaimer">AI draft — review before acting. All findings are within the crawled set only and not absolute ownability claims. Coverage is asymmetric — based on ${escapeHtml(asymBanner)} (GAP floor: ≥${report.gapFloor || 2} competitor PDPs).</div>
+    ${n?.headline ? `<div class="audit-report-headline">${escapeHtml(n.headline)}</div>` : ''}
+    ${n?.narrative ? `<div class="audit-report-narrative">${escapeHtml(n.narrative)}</div>` : ''}
+
+    <div class="audit-stats-grid">
+      <div class="audit-stat-card"><div class="audit-stat-label">Canonical Claims</div><div class="audit-stat-value">${s.totalCanonicalClaims ?? 0}</div></div>
+      <div class="audit-stat-card"><div class="audit-stat-label">Pooled Gaps</div><div class="audit-stat-value">${s.pooled?.gaps?.length ?? 0}</div></div>
+      <div class="audit-stat-card"><div class="audit-stat-label">SN-Only Ownable</div><div class="audit-stat-value">${s.pooled?.ownable?.length ?? 0}</div></div>
+    </div>
+
+    <div class="audit-section-heading">Top Pooled Gaps (within crawled set)</div>
+    ${topGaps}
+
+    <div class="audit-section-heading">Top SN-Only Ownable Claims</div>
+    ${topOwnable}
+
+    <div class="audit-section-heading">Top Shared / Table Stakes</div>
+    ${topShared}
+
+    <div class="audit-section-heading">Quick Wins</div>
+    ${quickWins}
+
+    <div class="audit-section-heading">Longer-Term</div>
+    ${longerTerm}
+
+    <div class="audit-section-heading">By Category</div>
+    ${catBlock || '<div style="color:var(--muted);font-size:12px">No category overlap yet — run a fuller backfill.</div>'}
+
+    <div style="margin-top:18px;font-size:11px;color:var(--muted)">Generated: ${fmtDate(report.generatedAt)}</div>
+  `;
+}
+
 // ── Refresh schedule ─────────────────────────────────────────────────────────
 window.refreshStatus = null;
 
@@ -2170,7 +2316,7 @@ initDiscoverTrigger();
 // ── Load data
 fetch('./data/gallery_raw.json')
   .then(r => r.json())
-  .then(async data => { allData = data; await loadAuditCache(); await loadReviewFlags(); await loadBulkAuditStatus(); await loadAuditReport(); render(data); loadRefreshStatus(); })
+  .then(async data => { allData = data; await loadAuditCache(); await loadReviewFlags(); await loadBulkAuditStatus(); await loadAuditReport(); await loadClaimsStatus(); await loadClaimsReport(); render(data); loadRefreshStatus(); })
   .catch(() => {
     document.getElementById('app').innerHTML = `
       <div class="loading">

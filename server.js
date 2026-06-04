@@ -1292,6 +1292,29 @@ app.get('/api/audit/report', (_req, res) => {
   catch (e) { res.status(500).json({ error: `Could not read audit_report.json: ${e.message}` }); }
 });
 
+// ── Claim ownability (Phase 5) ────────────────────────────────────────────────
+const CLAIMS_REPORT_PATH = path.join(__dirname, 'data/claims_report.json');
+const CLAIMS_DATA_PATH   = path.join(__dirname, 'data/claims_extracted.json');
+
+app.get('/api/claims/status', (_req, res) => {
+  const galleryPath = path.join(__dirname, 'data/gallery_raw.json');
+  if (!fs.existsSync(galleryPath)) return res.json({ extracted: 0, total: 0, asymmetry: {} });
+  const gallery = JSON.parse(fs.readFileSync(galleryPath, 'utf8'));
+  const inScope = new Set(['sharkninja', 'vitamix', 'breville', 'dyson']);
+  const pool = gallery.filter(p => inScope.has(p.brand) && p.url && !p.error && p.images?.length);
+  const claims = fs.existsSync(CLAIMS_DATA_PATH) ? JSON.parse(fs.readFileSync(CLAIMS_DATA_PATH, 'utf8')) : { pdps: {} };
+  const extracted = pool.filter(p => claims.pdps[p.url]).length;
+  const asymmetry = {};
+  pool.forEach(p => { asymmetry[p.brand] = (asymmetry[p.brand] || 0) + 1; });
+  res.json({ extracted, total: pool.length, pending: pool.length - extracted, asymmetry });
+});
+
+app.get('/api/claims/report', (_req, res) => {
+  if (!fs.existsSync(CLAIMS_REPORT_PATH)) return res.json({ generatedAt: null });
+  try { res.json(JSON.parse(fs.readFileSync(CLAIMS_REPORT_PATH, 'utf8'))); }
+  catch (e) { res.status(500).json({ error: `Could not read claims_report.json: ${e.message}` }); }
+});
+
 // ── Review flags (Phase 3 — color/appearance mismatch monitoring) ────────────
 app.get('/api/reviews/flagged', (_req, res) => {
   const p = path.join(__dirname, 'data/reviews_flagged.json');
@@ -1458,6 +1481,15 @@ async function runFullRefresh(streamId = null) {
     imageHost:  brandConfigs[b.brandKey]?.imageHost  || '',
     useStealth: brandConfigs[b.brandKey]?.useStealth || false,
   }));
+
+  // SharkNinja-first ordering: SN's data is the freshest priority across every run.
+  // This only reorders the brand iteration — per-run scope, brand eligibility, and
+  // diff/commit behavior are unchanged.
+  brands.sort((a, b) => {
+    if (a.brandKey === 'sharkninja') return -1;
+    if (b.brandKey === 'sharkninja') return 1;
+    return 0;
+  });
 
   const refreshRecord = {
     id: Date.now().toString(),

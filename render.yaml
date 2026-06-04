@@ -21,3 +21,15 @@ services:
     schedule: "0 2 * * 3"
     dockerCommand: "node audit_pipeline.js"
     autoDeploy: true
+
+  # Claim Ownability — Friday 2 AM UTC, 2 days offset from bulk audit.
+  # Extracts substantive product claims from gallery images (SharkNinja, Vitamix,
+  # Breville, Dyson — Williams-Sonoma excluded), normalizes them into a canonical
+  # vocabulary, and writes claims_report.json with deterministic ownability stats
+  # + Claude narrative. Reuses gallery_raw.json — does not re-scrape.
+  - type: cron
+    name: gallery-audit-claims
+    runtime: docker
+    schedule: "0 2 * * 5"
+    dockerCommand: "node claims_pipeline.js"
+    autoDeploy: true
