@@ -913,18 +913,37 @@ async function runPipeline(config, streamId) {
 //         rendered DOM. The fallback should be rare — FO101 alone yields 13 from static HTML.
 
 // Normalize a section folder name → viewType tag the audit prompt understands.
-// e.g. "01_Gallery" → "gallery", "03_5050_LargeCapacity" → "5050", "05_ProductOwners" → "proof"
+// Two folder-naming conventions in the wild:
+//   underscore-separated:  "01_Gallery", "03_5050_LargeCapacity", "05_ProductOwners"
+//   hyphen-separated:      "4-Highlights-Froth", "8-5050-ProductOwners", "0-HeroImages"
 function viewTypeFromSection(sectionFolder) {
-  const m = String(sectionFolder || '').match(/^\d+_([^/_]+)/);
+  // Accept either underscore or hyphen after the leading digit prefix.
+  const m = String(sectionFolder || '').match(/^\d+[_-]([^/_-]+)/);
   if (!m) return 'other';
   const raw = m[1].toLowerCase();
-  // Map idiosyncratic section names to clean audit-vocabulary tags.
-  if (raw === 'gallery')       return 'gallery';
-  if (raw === 'highlights')    return 'highlights';
-  if (raw === '5050')          return '5050';
-  if (raw === 'carousel')      return 'carousel';
-  if (raw === 'productowners') return 'proof';
-  return raw; // future sections fall through with their own name
+  if (raw === 'gallery')        return 'gallery';
+  if (raw === 'heroimages')     return 'gallery';
+  if (raw === 'hero')           return 'gallery';
+  if (raw === 'highlights')     return 'highlights';
+  if (raw === '5050')           return '5050';
+  if (raw === 'carousel')       return 'carousel';
+  if (raw === 'productowners')  return 'proof';
+  return raw;
+}
+
+// Variant-tolerant SKU stem extraction. The URL slug includes variant suffixes that
+// the image library does NOT use as folder names:
+//   AE1001-MASTER.html  →  asset folder is "PDP-AE1001"   (drop "-MASTER")
+//   AE1001C.html        →  asset folder is "PDP-AE1001"   (drop "C" colorway letter)
+//   FA022C-MASTER.html  →  asset folder is "FA022"        (drop both)
+// Strategy: extract leading "<letters><digits>" stem; keep original too for explicit
+// matches against variant-specific folders that DO exist.
+function skuMatchCandidates(rawSku) {
+  const upper = String(rawSku).toUpperCase();
+  const candidates = new Set([upper]);
+  const stemMatch = upper.match(/^([A-Z]+\d+)/);
+  if (stemMatch) candidates.add(stemMatch[1]);
+  return [...candidates];
 }
 
 // SharkNinja images come in TWO URL patterns depending on PDP template version:
@@ -943,61 +962,81 @@ function viewTypeFromSection(sectionFolder) {
 // Dedup keys differ per pattern: new template dedups by the storefront path; old template
 // dedups by "<SKU>_<NN>" so different transform variants of AF141_01.jpg collapse to one.
 function parseStorefrontImagesFromHtml(html, sku) {
-  const skuUpper = String(sku).toUpperCase();
-  const skuStem  = skuUpper.replace(/[^A-Z0-9]/g, '');
-  const skuNumeric = skuStem.replace(/O/g, '0');
+  const candidates = skuMatchCandidates(sku);
+  // Pre-compute O→0 normalized variants for each candidate (SN's image folders have
+  // inconsistent letter-O / digit-0 spellings).
+  const candidatesNormalized = candidates.map(c => c.replace(/O/g, '0').replace(/[^A-Z0-9]/g, ''));
+  const skuStem = candidates[candidates.length - 1]; // longest is the stripped stem
+  const dirMatches = (dirRaw) => {
+    const dir = (dirRaw || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+    const dirN = dir.replace(/O/g, '0');
+    return candidatesNormalized.some(c => dirN === c || dir.startsWith(c) || c.startsWith(dir));
+  };
 
   const HOST_GROUP = `(?:assets\\.sharkninja\\.com|sharkninja-sfcc-prod-res\\.cloudinary\\.com)`;
 
-  // Pattern A: NEW template — section folders under /storefront/products/<SKU>/Desktop/.../
-  const newRe = new RegExp(
+  // Pattern A: storefront/products/<SKU>/Desktop/<NN_Section>/<file>
+  const patternA = new RegExp(
     `https://${HOST_GROUP}/image/upload/[^"'\\s]*?/v\\d+/(storefront/products/([A-Z0-9]+)/Desktop/(\\d+_[^/]+)/[^"'\\s?<>]+)`,
     'gi'
   );
 
-  // Pattern B: OLD template — flat /SharkNinja-NA/<SKU>_<NN>.(jpg|png|webp|gif)
-  // Optional trailing -<colorway>_<size> variants like AF141_01_BK_large.jpg
-  const oldRe = new RegExp(
+  // Pattern B: /SharkNinja-NA/<SKU>_<NN>.(ext) — old flat-numbered template
+  const patternB = new RegExp(
     `https://${HOST_GROUP}/image/upload/[^"'\\s]*?/SharkNinja-NA/(${skuStem}(?:[_-][A-Z0-9]+)*)\\.(?:jpg|jpeg|png|webp|gif)`,
     'gi'
   );
 
-  const seen = new Map(); // dedupKey → image object
+  // Pattern C (newest template, mid-2026): /v\d+/<global_path>/PDP-<SKU>/<region>/<NN-Section>/<file>
+  // Section folder uses hyphens (e.g. "4-Highlights-Froth", "8-5050-ProductOwners").
+  // URL-encoded spaces (%20) appear in the global_path segment — character class allows them.
+  const patternC = new RegExp(
+    `https://${HOST_GROUP}/image/upload/[^"'\\s]*?/v\\d+/([A-Za-z0-9%/_.-]+?/PDP-([A-Z0-9]+)/[^/]+/(\\d+-[^/]+)/[^"'\\s?<>]+)`,
+    'gi'
+  );
+
+  const seen = new Map();
   const sanitizeUrl = u => u.replace(/[&"'<>].*$/, '').replace(/\?_i=.*$/, '');
 
-  // ─ New template ─
+  // ─ Pattern A ─
   let m;
-  while ((m = newRe.exec(html)) !== null) {
-    const fullUrl       = sanitizeUrl(m[0]);
-    const storefrontPath = m[1];
-    const dirSku         = (m[2] || '').toUpperCase();
-    const sectionFolder  = m[3];
-    // SKU directory tolerance for letter-O/digit-0 inconsistency in SN's library.
-    const dirNormalized = dirSku.replace(/O/g, '0');
-    if (dirNormalized !== skuNumeric && !dirSku.startsWith(skuStem) && !skuStem.startsWith(dirSku)) continue;
-    if (seen.has(storefrontPath)) continue;
-    seen.set(storefrontPath, {
-      src:          fullUrl,
-      sectionFolder,
-      viewType:     viewTypeFromSection(sectionFolder),
+  while ((m = patternA.exec(html)) !== null) {
+    const dirSku = m[2] || '';
+    if (!dirMatches(dirSku)) continue;
+    const dedupKey = m[1];
+    if (seen.has(dedupKey)) continue;
+    seen.set(dedupKey, {
+      src:           sanitizeUrl(m[0]),
+      sectionFolder: m[3],
+      viewType:      viewTypeFromSection(m[3]),
     });
   }
 
-  // ─ Old template ─
-  // Dedup key = filename stem (e.g. "AF141_01") so transform variants of the same
-  // underlying file collapse together.
-  while ((m = oldRe.exec(html)) !== null) {
-    const fullUrl  = sanitizeUrl(m[0]);
+  // ─ Pattern B ─
+  while ((m = patternB.exec(html)) !== null) {
     const baseName = (m[1] || '').toUpperCase();
-    // The base sequence number tag — strip colorway/size suffixes for the dedup key.
     const seqMatch = baseName.match(new RegExp(`^${skuStem}_(\\d+)`, 'i'));
     if (!seqMatch) continue;
     const dedupKey = `${skuStem}_${seqMatch[1]}`;
     if (seen.has(dedupKey)) continue;
     seen.set(dedupKey, {
-      src:          fullUrl,
-      sectionFolder: '01_Gallery', // synthetic — old template = gallery carousel
-      viewType:     'gallery',
+      src:           sanitizeUrl(m[0]),
+      sectionFolder: '01_Gallery',
+      viewType:      'gallery',
+    });
+  }
+
+  // ─ Pattern C ─
+  // Dedup by the captured path (group 1) so transform variants of the same file collapse.
+  while ((m = patternC.exec(html)) !== null) {
+    const dirSku = m[2] || '';
+    if (!dirMatches(dirSku)) continue;
+    const dedupKey = m[1];
+    if (seen.has(dedupKey)) continue;
+    seen.set(dedupKey, {
+      src:           sanitizeUrl(m[0]),
+      sectionFolder: m[3],
+      viewType:      viewTypeFromSection(m[3]),
     });
   }
 
