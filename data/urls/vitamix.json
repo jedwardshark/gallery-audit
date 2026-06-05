@@ -1,0 +1,723 @@
+[
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/5300",
+    "family": "5300",
+    "category": "5300"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/7500",
+    "family": "7500",
+    "category": "7500"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/s55",
+    "family": "s55",
+    "category": "s55"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-s50",
+    "family": "certified-reconditioned-s50",
+    "category": "certified-reconditioned-s50"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/turboblend-two-speed",
+    "family": "turboblend-two-speed",
+    "category": "turboblend-two-speed"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/7500-with-aer-disc",
+    "family": "7500-with-aer-disc",
+    "category": "7500-with-aer-disc"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/low-profile-64-ounce-container",
+    "family": "low-profile-64-ounce-container",
+    "category": "low-profile-64-ounce-container"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/64-ounce-low-profile-container-with-self-detect",
+    "family": "64-ounce-low-profile-container-with-self-detect",
+    "category": "64-ounce-low-profile-container-with-self-detect"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/8-piece-straw-set",
+    "family": "8-piece-straw-set",
+    "category": "8-piece-straw-set"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/5-speed-immersion-blender",
+    "family": "5-speed-immersion-blender",
+    "category": "5-speed-immersion-blender"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/a2300",
+    "family": "a2300",
+    "category": "a2300"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/a2300-family-pack",
+    "family": "a2300-family-pack",
+    "category": "a2300-family-pack"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/a2500",
+    "family": "a2500",
+    "category": "a2500"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/aer-disc-container",
+    "family": "aer-disc-container",
+    "category": "aer-disc-container"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-explorian",
+    "family": "certified-reconditioned-explorian",
+    "category": "certified-reconditioned-explorian"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-v1200",
+    "family": "certified-reconditioned-v1200",
+    "category": "certified-reconditioned-v1200"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-a2500",
+    "family": "certified-reconditioned-a2500",
+    "category": "certified-reconditioned-a2500"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-a3500",
+    "family": "certified-reconditioned-a3500",
+    "category": "certified-reconditioned-a3500"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/creations-ii",
+    "family": "creations-ii",
+    "category": "creations-ii"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/creations-gallery",
+    "family": "creations-gallery",
+    "category": "creations-gallery"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-7500",
+    "family": "certified-reconditioned-7500",
+    "category": "certified-reconditioned-7500"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-professional-series-750",
+    "family": "certified-reconditioned-professional-series-750",
+    "category": "certified-reconditioned-professional-series-750"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-standard",
+    "family": "certified-reconditioned-standard",
+    "category": "certified-reconditioned-standard"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/tamper-holder",
+    "family": "tamper-holder",
+    "category": "tamper-holder"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/cutting-board-4-piece-set",
+    "family": "cutting-board-4-piece-set",
+    "category": "cutting-board-4-piece-set"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/e310",
+    "family": "e310",
+    "category": "e310"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/e320-and-pca-explorian-blender",
+    "family": "e320-and-pca-explorian-blender",
+    "category": "e320-and-pca-explorian-blender"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/explorian-series-tamper-holder",
+    "family": "explorian-series-tamper-holder",
+    "category": "explorian-series-tamper-holder"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/food-processor-attachment",
+    "family": "food-processor-attachment",
+    "category": "food-processor-attachment"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/foodcycler-fc-50",
+    "family": "foodcycler-fc-50",
+    "category": "foodcycler-fc-50"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/mini-tamper",
+    "family": "mini-tamper",
+    "category": "mini-tamper"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/low-profile-tamper",
+    "family": "low-profile-tamper",
+    "category": "low-profile-tamper"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/professional-series-750",
+    "family": "professional-series-750",
+    "category": "professional-series-750"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/personal-cup-adapter",
+    "family": "personal-cup-adapter",
+    "category": "personal-cup-adapter"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-5300",
+    "family": "certified-reconditioned-5300",
+    "category": "certified-reconditioned-5300"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/s2-low-profile-tamper",
+    "family": "s2-low-profile-tamper",
+    "category": "s2-low-profile-tamper"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/silicone-blender-spatula",
+    "family": "silicone-blender-spatula",
+    "category": "silicone-blender-spatula"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/ascent-and-venturist-series-tamper-holder",
+    "family": "ascent-and-venturist-series-tamper-holder",
+    "category": "ascent-and-venturist-series-tamper-holder"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/s-series-blade-base",
+    "family": "s-series-blade-base",
+    "category": "s-series-blade-base"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/48-ounce-stainless-steel-container",
+    "family": "48-ounce-stainless-steel-container",
+    "category": "48-ounce-stainless-steel-container"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/classic-tamper",
+    "family": "classic-tamper",
+    "category": "classic-tamper"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/turboblend-three-speed",
+    "family": "turboblend-three-speed",
+    "category": "turboblend-three-speed"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/vitamix-onetm",
+    "family": "vitamix-onetm",
+    "category": "vitamix-onetm"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/whole-grains-cookbook",
+    "family": "whole-grains-cookbook",
+    "category": "whole-grains-cookbook"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/immersion-blender-whisk",
+    "family": "immersion-blender-whisk",
+    "category": "immersion-blender-whisk"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/immersion-station",
+    "family": "immersion-station",
+    "category": "immersion-station"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/food-processor-blade-disc",
+    "family": "food-processor-blade-disc",
+    "category": "food-processor-blade-disc"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/food-processor-attachment-veggie-stick-disc",
+    "family": "food-processor-attachment-veggie-stick-disc",
+    "category": "food-processor-attachment-veggie-stick-disc"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/food-processor-flat-lid",
+    "family": "food-processor-flat-lid",
+    "category": "food-processor-flat-lid"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/food-processor-attachment-julienne-disc",
+    "family": "food-processor-attachment-julienne-disc",
+    "category": "food-processor-attachment-julienne-disc"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/food-processor-attachment-stack-and-store-disc-case",
+    "family": "food-processor-attachment-stack-and-store-disc-case",
+    "category": "food-processor-attachment-stack-and-store-disc-case"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/immersion-blender-storage-case",
+    "family": "immersion-blender-storage-case",
+    "category": "immersion-blender-storage-case"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/immersion-blender-mini-chopper",
+    "family": "immersion-blender-mini-chopper",
+    "category": "immersion-blender-mini-chopper"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/immersion-blending-jar",
+    "family": "immersion-blending-jar",
+    "category": "immersion-blending-jar"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/simply-smoothies-cookbook",
+    "family": "simply-smoothies-cookbook",
+    "category": "simply-smoothies-cookbook"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/a3500-with-stainless-steel-container",
+    "family": "a3500-with-stainless-steel-container",
+    "category": "a3500-with-stainless-steel-container"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/simply-soups-cookbook",
+    "family": "simply-soups-cookbook",
+    "category": "simply-soups-cookbook"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/24-ounce-tumbler",
+    "family": "24-ounce-tumbler",
+    "category": "24-ounce-tumbler"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/4-piece-immersion-blender-bundle",
+    "family": "4-piece-immersion-blender-bundle",
+    "category": "4-piece-immersion-blender-bundle"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/4-piece-deluxe-immersion-blender-bundle",
+    "family": "4-piece-deluxe-immersion-blender-bundle",
+    "category": "4-piece-deluxe-immersion-blender-bundle"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/a2300-super-bundle",
+    "family": "a2300-super-bundle",
+    "category": "a2300-super-bundle"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/under-blade-scraper",
+    "family": "under-blade-scraper",
+    "category": "under-blade-scraper"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/simply-entertaining-cookbook",
+    "family": "simply-entertaining-cookbook",
+    "category": "simply-entertaining-cookbook"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/20-ounce-travel-cup",
+    "family": "20-ounce-travel-cup",
+    "category": "20-ounce-travel-cup"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/32-ounce-container",
+    "family": "32-ounce-container",
+    "category": "32-ounce-container"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/32-ounce-dry-grains-container",
+    "family": "32-ounce-dry-grains-container",
+    "category": "32-ounce-dry-grains-container"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/48-ounce-container",
+    "family": "48-ounce-container",
+    "category": "48-ounce-container"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/48-ounce-dry-grains-container-with-self-detect",
+    "family": "48-ounce-dry-grains-container-with-self-detect",
+    "category": "48-ounce-dry-grains-container-with-self-detect"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/48-ounce-container-with-self-detect",
+    "family": "48-ounce-container-with-self-detect",
+    "category": "48-ounce-container-with-self-detect"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/5200-standard-getting-started",
+    "family": "5200-standard-getting-started",
+    "category": "5200-standard-getting-started"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/classic-64-ounce-container",
+    "family": "classic-64-ounce-container",
+    "category": "classic-64-ounce-container"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/food-processor-attachment-bundle",
+    "family": "food-processor-attachment-bundle",
+    "category": "food-processor-attachment-bundle"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/propel-series-510",
+    "family": "propel-series-510",
+    "category": "propel-series-510"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/propel-series-750",
+    "family": "propel-series-750",
+    "category": "propel-series-750"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/foodcycler-eco-5",
+    "family": "foodcycler-eco-5",
+    "category": "foodcycler-eco-5"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/48-ounce-color-containers-with-self-detect",
+    "family": "48-ounce-color-containers-with-self-detect",
+    "category": "48-ounce-color-containers-with-self-detect"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/foodcycler-eco-5-bucket-and-lid",
+    "family": "foodcycler-eco-5-bucket-and-lid",
+    "category": "foodcycler-eco-5-bucket-and-lid"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/v1200-super-pack",
+    "family": "v1200-super-pack",
+    "category": "v1200-super-pack"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-explorian-with-programs",
+    "family": "certified-reconditioned-explorian-with-programs",
+    "category": "certified-reconditioned-explorian-with-programs"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/a3500-gold-label",
+    "family": "a3500-gold-label",
+    "category": "a3500-gold-label"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/e310-and-pca-bundle",
+    "family": "e310-and-pca-bundle",
+    "category": "e310-and-pca-bundle"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/propel-750-classic-bundle",
+    "family": "propel-750-classic-bundle",
+    "category": "propel-750-classic-bundle"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/5-speed-immersion-blender-complete-bundle",
+    "family": "5-speed-immersion-blender-complete-bundle",
+    "category": "5-speed-immersion-blender-complete-bundle"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-propel-510",
+    "family": "certified-reconditioned-propel-510",
+    "category": "certified-reconditioned-propel-510"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-propel-750",
+    "family": "certified-reconditioned-propel-750",
+    "category": "certified-reconditioned-propel-750"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/2-speed-immersion-blender-whisk-attachment",
+    "family": "2-speed-immersion-blender-whisk-attachment",
+    "category": "2-speed-immersion-blender-whisk-attachment"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/propel-series-410",
+    "family": "propel-series-410",
+    "category": "propel-series-410"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/ascent-x2",
+    "family": "ascent-x2",
+    "category": "ascent-x2"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/ascent-x3",
+    "family": "ascent-x3",
+    "category": "ascent-x3"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/ascent-x4",
+    "family": "ascent-x4",
+    "category": "ascent-x4"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/ascent-x5",
+    "family": "ascent-x5",
+    "category": "ascent-x5"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/ascent-x5-smartprep-kitchen-system",
+    "family": "ascent-x5-smartprep-kitchen-system",
+    "category": "ascent-x5-smartprep-kitchen-system"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/5200-legacy-bundle",
+    "family": "5200-legacy-bundle",
+    "category": "5200-legacy-bundle"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-venturist-pro",
+    "family": "certified-reconditioned-venturist-pro",
+    "category": "certified-reconditioned-venturist-pro"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/ascent-x4-gourmet-smartprep-kitchen-system",
+    "family": "ascent-x4-gourmet-smartprep-kitchen-system",
+    "category": "ascent-x4-gourmet-smartprep-kitchen-system"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/ascent-x2-smartprep-kitchen-system",
+    "family": "ascent-x2-smartprep-kitchen-system",
+    "category": "ascent-x2-smartprep-kitchen-system"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/5-speed-immersion-blender-3-piece-bundle",
+    "family": "5-speed-immersion-blender-3-piece-bundle",
+    "category": "5-speed-immersion-blender-3-piece-bundle"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/a2500-plus-aer-disc-container",
+    "family": "a2500-plus-aer-disc-container",
+    "category": "a2500-plus-aer-disc-container"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/5200-plus-stainless-steel-container",
+    "family": "5200-plus-stainless-steel-container",
+    "category": "5200-plus-stainless-steel-container"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/ascent-x5-with-stainless-steel-container",
+    "family": "ascent-x5-with-stainless-steel-container",
+    "category": "ascent-x5-with-stainless-steel-container"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/vx1-and-pca-bundle",
+    "family": "vx1-and-pca-bundle",
+    "category": "vx1-and-pca-bundle"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/vx1",
+    "family": "vx1",
+    "category": "vx1"
+  },
+  {
+    "brand": "vitamix",
+    "brandName": "Vitamix",
+    "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-alta-pro",
+    "family": "certified-reconditioned-alta-pro",
+    "category": "certified-reconditioned-alta-pro"
+  }
+]
