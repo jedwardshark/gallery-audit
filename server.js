@@ -1212,6 +1212,10 @@ export async function runCreativeAuditForPdp({ pdpUrl, brandName, images, apiKey
   const message = await anthropic.messages.create({
     model: 'claude-sonnet-4-6',
     max_tokens: 8192,
+    // Slight variance to break up zone-center clustering on similar galleries — observed
+    // multiple SN PDPs scoring identical 6.4/6.8 with default temperature. Low enough that
+    // re-running the same PDP still produces stable scores (±0.2 typical).
+    temperature: 0.3,
     messages: [{
       role: 'user',
       content: [
