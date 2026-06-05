@@ -67,6 +67,14 @@
 
   /* ── Chart ── */
   .chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 36px; }
+  /* Accordion (used for the distribution-charts panel; reuses chevron glyphs from PDP rows). */
+  .accordion { margin-bottom: 36px; }
+  .accordion-header { cursor: pointer; padding: 14px 18px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; display: flex; justify-content: space-between; align-items: center; user-select: none; font-size: 13px; font-weight: 600; transition: background 0.12s; }
+  .accordion-header:hover { background: var(--surface2); }
+  .accordion-header.open { border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent; }
+  .accordion-chevron { color: var(--muted); font-size: 12px; }
+  .accordion-body { padding-top: 16px; }
+  .accordion-body.collapsed { display: none; }
   .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 24px; }
   .chart-card canvas { width: 100% !important; }
   .chart-title { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
@@ -120,6 +128,9 @@
   /* ── Image Lightbox row ── */
   .image-expand { display: none; background: var(--bg); border-bottom: 1px solid var(--border); padding: 20px 16px 20px 106px; }
   .image-expand.open { display: block; }
+  .live-pdp-link { font-size: 12px; margin-bottom: 14px; }
+  .live-pdp-link a { color: var(--sn-orange); text-decoration: none; font-weight: 600; }
+  .live-pdp-link a:hover { text-decoration: underline; }
   .image-grid { display: flex; flex-wrap: wrap; gap: 10px; }
   .image-grid img { width: 100px; height: 100px; object-fit: cover; border-radius: 6px; border: 1px solid var(--border); cursor: zoom-in; transition: transform 0.15s; }
   .image-grid img:hover { transform: scale(1.04); border-color: var(--sn-orange); }
@@ -945,8 +956,12 @@ function renderTable() {
     expand.className = 'image-expand' + (expandedRows.has(globalIdx) ? ' open' : '');
     expand.id = `expand-${globalIdx}`;
 
+    // Direct link to the live PDP — uses p.url as-is (same URL already rendered in the
+    // row label). target=_blank + rel=noopener,noreferrer is standard external-link hygiene.
+    const liveUrlLink = `<div class="live-pdp-link"><a href="${escapeHtml(p.url)}" target="_blank" rel="noopener noreferrer">View live page ↗</a></div>`;
+
     if (p.images.length === 0) {
-      expand.innerHTML = '<div class="empty-gallery">No gallery images captured for this PDP.</div>';
+      expand.innerHTML = `${liveUrlLink}<div class="empty-gallery">No gallery images captured for this PDP.</div>`;
     } else {
       lbImageMap.set(globalIdx, p.images.map(img => img.src));
       const imgs = p.images.map((img, i) =>
@@ -963,7 +978,7 @@ function renderTable() {
                </div>`
           }
         </div>`;
-      expand.innerHTML = `<div class="image-grid">${imgs}</div>${auditSection}${renderReviewFlagSection(p.url)}`;
+      expand.innerHTML = `${liveUrlLink}<div class="image-grid">${imgs}</div>${auditSection}${renderReviewFlagSection(p.url)}`;
     }
     tableEl.appendChild(expand);
   });
@@ -1187,14 +1202,22 @@ function render(data) {
         <canvas id="chart-total" height="180"></canvas>
       </div>
     </div>
-    <div class="chart-row" id="dist-charts">
-      ${stats.map(s => `
-        <div class="chart-card">
-          <div class="chart-title">${s.name} — Gallery Size Distribution</div>
-          <div class="chart-sub"># PDPs with N gallery images</div>
-          <canvas id="dist-${s.brand}" height="160"></canvas>
+    <div class="accordion">
+      <div class="accordion-header open" id="dist-accordion-header" onclick="toggleDistAccordion()">
+        <span>Gallery Size Distribution by Brand</span>
+        <span class="accordion-chevron" id="dist-accordion-chevron">▲</span>
+      </div>
+      <div class="accordion-body" id="dist-accordion-body">
+        <div class="chart-row" id="dist-charts">
+          ${stats.map(s => `
+            <div class="chart-card">
+              <div class="chart-title">${s.name} — Gallery Size Distribution</div>
+              <div class="chart-sub"># PDPs with N gallery images</div>
+              <canvas id="dist-${s.brand}" height="160"></canvas>
+            </div>
+          `).join('')}
         </div>
-      `).join('')}
+      </div>
     </div>
 
     <!-- PDP Browser -->
@@ -1240,6 +1263,15 @@ function render(data) {
       s.sizes.forEach(n => dist[n] = (dist[n] || 0) + 1);
       drawDistChart(document.getElementById(`dist-${s.brand}`), dist, brandColor(s.brand));
     });
+
+    // Collapse the distribution accordion on the next frame — by now Chart.js has
+    // committed its draw against laid-out canvases, so collapsing won't break sizing.
+    requestAnimationFrame(() => {
+      document.getElementById('dist-accordion-body')?.classList.add('collapsed');
+      document.getElementById('dist-accordion-header')?.classList.remove('open');
+      const chev = document.getElementById('dist-accordion-chevron');
+      if (chev) chev.textContent = '▼';
+    });
   });
 
   filtered = [...data];
@@ -1254,6 +1286,16 @@ window.setBrand = (brand, btn) => {
 };
 window.setSearch = (val) => { searchQuery = val.toLowerCase(); applyFilters(); };
 window.setSort = (val) => { sortKey = val; applyFilters(); };
+window.toggleDistAccordion = () => {
+  const body   = document.getElementById('dist-accordion-body');
+  const header = document.getElementById('dist-accordion-header');
+  const chev   = document.getElementById('dist-accordion-chevron');
+  if (!body || !header || !chev) return;
+  const opening = body.classList.contains('collapsed');
+  body.classList.toggle('collapsed', !opening);
+  header.classList.toggle('open', opening);
+  chev.textContent = opening ? '▲' : '▼';
+};
 window.goPage = goPage;
 window.openLightbox = openLightbox;
 window.lbStep = lbStep;
