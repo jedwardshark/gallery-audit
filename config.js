@@ -95,6 +95,11 @@ export const BRANDS = {
     gallerySelectors: [
       'img.hero-variant',
     ],
+    // Breville's asset CDN namespaces gallery images by SKU (e.g. /BES995/...).
+    // Enabling this filter rejects any captured src whose path doesn't contain the
+    // SKU — defense against cross-sell carousels (which use other SKUs' paths) and
+    // promo tiles slipping through the gallerySelectors scope.
+    enforceSkuInPath: true,
   },
 };
 

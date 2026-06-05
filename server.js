@@ -1199,7 +1199,19 @@ async function extractOnePdp(url, brandKey, brandName, imageHost, stdBrowser, st
       }
 
       await progressiveScroll(page, extraWait);
-      const images = await extractAllImageSrcs(page, imageHost || '');
+      // Tighten capture using brand-specific gallery selectors. Reduces over-capture
+      // from cross-sell carousels, color swatches, recommendation widgets, promo
+      // tiles. SKU-in-path filter is brand-opt-in (BRANDS[key].enforceSkuInPath) —
+      // only safe for brands whose asset CDN includes the SKU in URL paths (Breville
+      // does: /BES995/...; Vitamix and Williams-Sonoma do not, so don't enforce there).
+      const brandCfg = SITEMAP_BRAND_CONFIG[brandKey] || {};
+      const skuForFilter = brandCfg.enforceSkuInPath
+        ? (pathParts[pathParts.length - 1] || '').toUpperCase()
+        : null;
+      const images = await extractAllImageSrcs(page, imageHost || '', {
+        gallerySelectors: brandCfg.gallerySelectors,
+        skuForFilter,
+      });
 
       return {
         ...base,
@@ -1250,14 +1262,26 @@ async function progressiveScroll(page, baseWait = 2000) {
 // of structural pass for competitors — narrow the selector to known PDP gallery container
 // classes (per-brand) instead of blanket img[src*=imageHost], OR add per-brand exclusion
 // regexes for nav/recommendation/avatar URL patterns.
-async function extractAllImageSrcs(page, imageHost) {
-  return page.evaluate((host) => {
+async function extractAllImageSrcs(page, imageHost, opts = {}) {
+  // opts.gallerySelectors: optional array of CSS selectors that narrow the DOM scope
+  //   to specific gallery containers/images. Used by competitor brands whose pages
+  //   pack the layout with cross-sell carousels, color swatches, and promo tiles —
+  //   without scoping, every brand-hosted <img> gets captured (Breville bes995 = 121
+  //   images, ~80% of which are chrome). When this is set, only <img> elements
+  //   matching one of the selectors (or <img> descendants of matching containers)
+  //   are read. Selectors come from BRANDS[brandKey].gallerySelectors in config.js.
+  //
+  // opts.skuForFilter: defensive secondary filter — image src path must contain this
+  //   substring (case-insensitive). Catches anything that leaks through the selector
+  //   (e.g. a cross-sell that happens to use the same image class).
+  return page.evaluate(({ host, selectors, sku }) => {
     const seen = new Set();
     const results = [];
 
     function add(src, meta = {}) {
       if (!src || src.startsWith('data:') || seen.has(src)) return;
       if (host && !src.includes(host)) return;
+      if (sku && !src.toLowerCase().includes(sku.toLowerCase())) return;
       seen.add(src);
       results.push({ src, alt: meta.alt || '', width: meta.width || 0, height: meta.height || 0 });
     }
@@ -1269,8 +1293,26 @@ async function extractAllImageSrcs(page, imageHost) {
       return parts[0]?.[0] || null;
     }
 
+    // Scope: gallerySelectors when provided, otherwise the whole page (legacy behavior
+    // for /api/host-discovery and brands without configured selectors).
+    let scopedImgs;
+    if (Array.isArray(selectors) && selectors.length) {
+      const collected = new Set();
+      for (const sel of selectors) {
+        try {
+          document.querySelectorAll(sel).forEach(el => {
+            if (el.tagName === 'IMG') collected.add(el);
+            else el.querySelectorAll('img').forEach(img => collected.add(img));
+          });
+        } catch { /* ignore invalid selector */ }
+      }
+      scopedImgs = [...collected];
+    } else {
+      scopedImgs = Array.from(document.querySelectorAll('img'));
+    }
+
     // img tags
-    document.querySelectorAll('img').forEach(img => {
+    scopedImgs.forEach(img => {
       const w = img.naturalWidth || img.width || 0;
       const h = img.naturalHeight || img.height || 0;
       const meta = { alt: img.alt || '', width: w, height: h };
@@ -1302,7 +1344,7 @@ async function extractAllImageSrcs(page, imageHost) {
     });
 
     return results.filter(img => !img.width || img.width >= (host ? 150 : 300));
-  }, imageHost);
+  }, { host: imageHost, selectors: opts.gallerySelectors || null, sku: opts.skuForFilter || null });
 }
 
 // ── Group images by CDN hostname ─────────────────────────────────────────────
