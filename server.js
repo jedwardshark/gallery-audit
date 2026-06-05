@@ -1481,11 +1481,34 @@ export async function runCreativeAuditForPdp({ pdpUrl, brandName, images, apiKey
   return result;
 }
 
+// Same threshold as audit_pipeline.js — keep them in sync. Both call sites enforce
+// the guardrail; per-row endpoint also writes a skip record so the viewer's column
+// surfaces "Too few images (N)" instead of leaving the row looking unaudited.
+const MIN_IMAGES_FOR_AUDIT = 5;
+
 app.post('/api/creative-audit', async (req, res) => {
   const { pdpUrl, brandName, images } = req.body;
 
   const cache = loadAuditCache();
   if (cache[pdpUrl]) return res.json({ cached: true, ...cache[pdpUrl] });
+
+  // Guardrail: skip audit for PDPs with too few captured images. Counts the live
+  // images array passed in the request (sourced from gallery_raw.json), which is
+  // the exact set the audit would otherwise sample.
+  const liveImageCount = Array.isArray(images) ? images.length : 0;
+  if (liveImageCount < MIN_IMAGES_FOR_AUDIT) {
+    const skipRecord = {
+      skipped:          true,
+      skipReason:       'insufficient_images',
+      imageCount:       liveImageCount,
+      minRequired:      MIN_IMAGES_FOR_AUDIT,
+      auditedImageUrls: [...(images || [])].map(img => img.src).sort(),
+      skippedAt:        new Date().toISOString(),
+    };
+    cache[pdpUrl] = skipRecord;
+    saveAuditCache(cache);
+    return res.json({ skipped: true, ...skipRecord });
+  }
 
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) return res.status(500).json({ error: 'ANTHROPIC_API_KEY not set' });

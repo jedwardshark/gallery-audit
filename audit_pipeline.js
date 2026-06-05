@@ -29,6 +29,10 @@ const REPORT_PATH       = path.join(__dirname, 'data/audit_report.json');
 const AUDIT_JOBS_PATH   = path.join(__dirname, 'data/audit_jobs.json');
 
 const BULK_AUDIT_MAX = parseInt(process.env.BULK_AUDIT_MAX || '50', 10);
+// Minimum captured images required to run an audit. PDPs with fewer get a "skipped"
+// record so they're visible (potentially a capture bug to investigate) rather than
+// silently dropped. Threshold reads p.images.length — the live capture count.
+const MIN_IMAGES_FOR_AUDIT = 5;
 
 // Trim — Render's env editor silently appends \n/spaces that ride into the auth header
 // and cause 403s on every request. Same defense as refresh.js.
@@ -80,11 +84,32 @@ export async function runBulkAuditRolling({ log = (m) => console.log(m) } = {}) 
   log(`[BulkAudit] Pool: ${snPdps.length} SharkNinja PDPs · already audited: ${snPdps.filter(p => cache[p.url]).length}`);
   log(`[BulkAudit] This run: ${targets.length} PDPs (cap: BULK_AUDIT_MAX=${BULK_AUDIT_MAX})`);
 
-  let audited = 0, failed = 0;
+  let audited = 0, failed = 0, skipped = 0;
   for (let i = 0; i < targets.length; i++) {
     const p = targets[i];
     const sku = (p.url.split('/').pop() || '').replace('.html', '');
     log(`[BulkAudit] [${i + 1}/${targets.length}] ${sku}`);
+
+    // Guardrail: skip PDPs with too few captured images. Writes a distinct "skipped"
+    // record so the viewer can surface "Too few images (N)" — important for spotting
+    // under-capture bugs. We still record auditedImageUrls so a future refresh that
+    // adds more images will mark the PDP eligible again via the URL-set-diff check.
+    const liveImageCount = Array.isArray(p.images) ? p.images.length : 0;
+    if (liveImageCount < MIN_IMAGES_FOR_AUDIT) {
+      cache[p.url] = {
+        skipped:            true,
+        skipReason:         'insufficient_images',
+        imageCount:         liveImageCount,
+        minRequired:        MIN_IMAGES_FOR_AUDIT,
+        auditedImageUrls:   [...(p.images || [])].map(img => img.src).sort(),
+        skippedAt:          new Date().toISOString(),
+      };
+      fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
+      skipped++;
+      log(`[BulkAudit]   SKIPPED — only ${liveImageCount} captured image(s) (min ${MIN_IMAGES_FOR_AUDIT})`);
+      continue;
+    }
+
     try {
       const result = await runCreativeAuditForPdp({
         pdpUrl: p.url, brandName: p.brandName, images: p.images, apiKey,
@@ -103,7 +128,7 @@ export async function runBulkAuditRolling({ log = (m) => console.log(m) } = {}) 
   // Clear the queued-request marker now that we've run, so the UI stops showing "queued".
   if (fs.existsSync(AUDIT_JOBS_PATH)) fs.unlinkSync(AUDIT_JOBS_PATH);
 
-  log(`[BulkAudit] Done — audited:${audited} failed:${failed}`);
+  log(`[BulkAudit] Done — audited:${audited} skipped:${skipped} failed:${failed}`);
   return { audited, failed, totalSnPdps: snPdps.length, eligible: targets.length };
 }
 
