@@ -1,5 +1,5 @@
 {
-  "lastUpdatedAt": "2026-06-03T21:08:23.649Z",
+  "lastUpdatedAt": "2026-06-05T00:52:17.161Z",
   "pdps": {
     "https://www.sharkninja.com/ninja-air-fryer-pro-4-in-1/AF141.html": {
       "lastScrapedAt": "2026-06-03T21:08:14.471Z",
@@ -13,6 +13,1654 @@
       "lastScrapedAt": "2026-06-03T21:08:23.634Z",
       "totalReviews": 8,
       "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-spatula/AMC14.html": {
+      "lastScrapedAt": "2026-06-04T23:48:26.201Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-spoon/AMC15.html": {
+      "lastScrapedAt": "2026-06-04T23:48:53.461Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-mini-warmer---cooking-system/AMC17.html": {
+      "lastScrapedAt": "2026-06-04T23:49:20.450Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-instant-cooker-glass-lid/APC02.html": {
+      "lastScrapedAt": "2026-06-04T23:49:48.899Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-vacuum-a73-with-wi-fi/AV753.html": {
+      "lastScrapedAt": "2026-06-04T23:50:02.611Z",
+      "totalReviews": 5,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-instant-cooker-steam-rack/APC01.html": {
+      "lastScrapedAt": "2026-06-04T23:50:29.858Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-powerboost-cordless-2-in-1-car%2Fhome-handheld-powervac/BH102.html": {
+      "lastScrapedAt": "2026-06-04T23:50:49.242Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-professional-plus-food-processor/BN601.html": {
+      "lastScrapedAt": "2026-06-04T23:50:58.490Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-nutri-blender-pro-with-auto-iq/BN401.html": {
+      "lastScrapedAt": "2026-06-04T23:51:27.247Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-professional-plus-blender-with-auto-iq/BN701.html": {
+      "lastScrapedAt": "2026-06-04T23:51:40.225Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-professional-plus-blender-duo-with-auto-iq/BN751.html": {
+      "lastScrapedAt": "2026-06-04T23:52:02.480Z",
+      "totalReviews": 8,
+      "keywordFiltered": 4,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-professional-plus-kitchen-system-with-auto-iq/BN801.html": {
+      "lastScrapedAt": "2026-06-04T23:52:18.298Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ultracyclone-pet-pro-cordless-handheld-vacuum/CH951.html": {
+      "lastScrapedAt": "2026-06-04T23:52:35.829Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-ultracrush-professional-kitchen-system/BP401.html": {
+      "lastScrapedAt": "2026-06-04T23:52:52.602Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-freshbrew-coffee-maker/CE451.html": {
+      "lastScrapedAt": "2026-06-04T23:53:13.052Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-prestige-smart-xl-air-fryer-countertop-oven/DT501.html": {
+      "lastScrapedAt": "2026-06-04T23:53:38.157Z",
+      "totalReviews": 8,
+      "keywordFiltered": 4,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-hot-iced-xl-coffee-maker-with-rapid-cold-brew/CM371.html": {
+      "lastScrapedAt": "2026-06-04T23:53:52.859Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-foodi-smart-xl-6-in-1-indoor-grill-air-fryer-with-built-in-thermometer/DG551.html": {
+      "lastScrapedAt": "2026-06-04T23:54:05.136Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-prestige-smart-xl-air-fryer-countertop-oven-pro-cook/DT551.html": {
+      "lastScrapedAt": "2026-06-04T23:54:24.768Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-foodi-flexbasket-air-fryer-with-7qt-megazone/DZ071.html": {
+      "lastScrapedAt": "2026-06-04T23:54:39.574Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-foodi-6-in-1-smart-10-qt.-2-basket-air-fryer/DZ550.html": {
+      "lastScrapedAt": "2026-06-04T23:54:48.988Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-foodi-6-in-1-indoor-grill-4-quart-air-fryer/EG201.html": {
+      "lastScrapedAt": "2026-06-04T23:55:06.285Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-carpetxpert-with-stainstriker-upright-deep-carpet-cleaner/EX201.html": {
+      "lastScrapedAt": "2026-06-04T23:55:25.933Z",
+      "totalReviews": 7,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-flexbreeze-indoor-outdoor-pedestal-table-fan-with-cover/FA202.html": {
+      "lastScrapedAt": "2026-06-04T23:55:44.279Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-carpetxpert-hairpro-with-stainstriker/EX301.html": {
+      "lastScrapedAt": "2026-06-04T23:56:02.499Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-foodi-6-in-1-8-qt.-2-basket-air-fryer-with-dualzone-technology/DZ201.html": {
+      "lastScrapedAt": "2026-06-04T23:56:12.008Z",
+      "totalReviews": 1,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-french-door-premier-air-fryer-convection-oven-toaster-stainless-steel/FO101.html": {
+      "lastScrapedAt": "2026-06-04T23:56:30.538Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-slushi-professional-frozen-drink-maker/FS301.html": {
+      "lastScrapedAt": "2026-06-04T23:56:46.000Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-dualbrew-coffee-grounds-pods/GP161.html": {
+      "lastScrapedAt": "2026-06-04T23:57:01.142Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---blue-frost/FW312.html": {
+      "lastScrapedAt": "2026-06-04T23:57:19.799Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-sizzle-indoor-grill-griddle/GR101.html": {
+      "lastScrapedAt": "2026-06-04T23:57:33.759Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-speedstyle-essential-high-velocity-dryer-with-concentrator/HD301.html": {
+      "lastScrapedAt": "2026-06-04T23:57:40.689Z",
+      "totalReviews": 2,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-flexstyle-air-styling-drying-system/HD430.html": {
+      "lastScrapedAt": "2026-06-04T23:58:08.280Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-flexstyle-air-styling-drying-system-with-diffuser/HD435.html": {
+      "lastScrapedAt": "2026-06-04T23:58:37.915Z",
+      "totalReviews": 8,
+      "keywordFiltered": 6,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-speedstyle-pro-flex-hair-dryer-system-mocha-silver/HD542.html": {
+      "lastScrapedAt": "2026-06-04T23:59:06.994Z",
+      "totalReviews": 8,
+      "keywordFiltered": 5,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-speedstyle-pro-hair-dryer-straight-wavy/HD731.html": {
+      "lastScrapedAt": "2026-06-04T23:59:35.919Z",
+      "totalReviews": 8,
+      "keywordFiltered": 4,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-air-purifier-with-true-hepa/HP102.html": {
+      "lastScrapedAt": "2026-06-04T23:59:58.208Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-neverchange-air-purifier/HP152.html": {
+      "lastScrapedAt": "2026-06-05T00:00:27.621Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-air-purifier-max-with-true-hepa/HP201.html": {
+      "lastScrapedAt": "2026-06-05T00:00:36.883Z",
+      "totalReviews": 1,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-air-purifier-max-with-true-hepa/HP202.html": {
+      "lastScrapedAt": "2026-06-05T00:00:58.408Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-clean-sense-air-purifier-max-with-odor-neutralizer-technology/HP232.html": {
+      "lastScrapedAt": "2026-06-05T00:01:19.252Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-neverchange-air-purifier-max/HP301.html": {
+      "lastScrapedAt": "2026-06-05T00:01:26.271Z",
+      "totalReviews": 5,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-neverchange-air-purifier-max/HP302.html": {
+      "lastScrapedAt": "2026-06-05T00:01:40.128Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-breatheclear-max-with-neverchange-air-purifier-dove/HP362.html": {
+      "lastScrapedAt": "2026-06-05T00:01:56.781Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-rocket-pro-dlx-corded-stick-vacuum/HV371.html": {
+      "lastScrapedAt": "2026-06-05T00:02:24.643Z",
+      "totalReviews": 8,
+      "keywordFiltered": 5,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ultralight-petpro-corded-stick-vacuum/HZ702.html": {
+      "lastScrapedAt": "2026-06-05T00:02:42.393Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-rocket-corded-stick-vacuum/HV251.html": {
+      "lastScrapedAt": "2026-06-05T00:03:06.639Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-stainforce-cordless-portable-spot-spill-cleaner/HX101.html": {
+      "lastScrapedAt": "2026-06-05T00:03:21.492Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-neverclog-cold-press-juicer/JC151.html": {
+      "lastScrapedAt": "2026-06-05T00:03:42.349Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-artisan-5-in-1-portable-electric-pizza-outdoor-oven/MO201.html": {
+      "lastScrapedAt": "2026-06-05T00:04:01.140Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-precision-temperature-kettle/KT200.html": {
+      "lastScrapedAt": "2026-06-05T00:04:18.776Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-detect-lift-away-adv-corded-upright-vacuum/LA492.html": {
+      "lastScrapedAt": "2026-06-05T00:04:42.522Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-navigator-lift-away-deluxe-upright-vacuum/NV360.html": {
+      "lastScrapedAt": "2026-06-05T00:05:01.485Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-single-serve-pods-grounds-specialty-coffee-maker-black/PB051.html": {
+      "lastScrapedAt": "2026-06-05T00:05:18.362Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-proconnect-smart-cooking-system/PG305.html": {
+      "lastScrapedAt": "2026-06-05T00:05:38.995Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-stainstriker-portable-carpet-upholstery-cleaner/PX201.html": {
+      "lastScrapedAt": "2026-06-05T00:05:57.269Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-stainstriker-hairpro-portable-spot-stain-deep-cleaner/PX251.html": {
+      "lastScrapedAt": "2026-06-05T00:06:15.646Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-steamspot-steam-mop-with-steam-blaster/S2001.html": {
+      "lastScrapedAt": "2026-06-05T00:06:34.972Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-steam-mop/S1000.html": {
+      "lastScrapedAt": "2026-06-05T00:06:59.655Z",
+      "totalReviews": 8,
+      "keywordFiltered": 4,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-steam-pickup-3-in-1-hard-floor-cleaner/SD201.html": {
+      "lastScrapedAt": "2026-06-05T00:07:26.671Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-steam-scrub-steam-scrubbing-and-sanitizing-steam-blaster-mop/S8201.html": {
+      "lastScrapedAt": "2026-06-05T00:07:49.841Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-doublestack-2-basket-10-qt-air-fryer-with-smart-thermometer/SL451.html": {
+      "lastScrapedAt": "2026-06-05T00:08:07.467Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flip-toaster-oven-air-fryer/SP151.html": {
+      "lastScrapedAt": "2026-06-05T00:08:20.988Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-doublestack-8-qt-2-basket-air-fryer/SL201.html": {
+      "lastScrapedAt": "2026-06-05T00:08:40.096Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-twisti-high-speed-blender-duo-euro-pro-bundle/SS151.html": {
+      "lastScrapedAt": "2026-06-05T00:09:01.586Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-doublestack-xl-2-basket-10-qt-air-fryer/SL401.html": {
+      "lastScrapedAt": "2026-06-05T00:09:13.210Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-foodi-smoothie-bowl-maker-and-nutrient-extractor-1200wp-4-auto-iq/SS101.html": {
+      "lastScrapedAt": "2026-06-05T00:09:24.183Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-foodi-power-blender-ultimate-system/SS401.html": {
+      "lastScrapedAt": "2026-06-05T00:09:43.565Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-detect-power-blender-pro/TB201.html": {
+      "lastScrapedAt": "2026-06-05T00:09:56.589Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-detect-duo-power-blender-smoothie-maker-with-blendsense/TB301.html": {
+      "lastScrapedAt": "2026-06-05T00:10:28.276Z",
+      "totalReviews": 8,
+      "keywordFiltered": 5,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-detect-kitchen-system-power-blender-plus-processor-pro-with-blendsense-technology/TB401.html": {
+      "lastScrapedAt": "2026-06-05T00:10:45.003Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-vacmop-pet-multi-surface-floor-cleaner-2l/VCO60.html": {
+      "lastScrapedAt": "2026-06-05T00:11:11.973Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-vacmop-disposable-pads-10-ct/VMP10.html": {
+      "lastScrapedAt": "2026-06-05T00:11:39.038Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-vacmop-reveal-cordless-floor-vacuum-and-spray-mop/VM401.html": {
+      "lastScrapedAt": "2026-06-05T00:11:56.200Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-vacmop-disposable-pads-16-ct/VMP16.html": {
+      "lastScrapedAt": "2026-06-05T00:12:23.148Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-messmaster-portable-wet%2Fdry-vacuum/VS101.html": {
+      "lastScrapedAt": "2026-06-05T00:12:42.247Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-hydrovac-messmaster-corded-3-in-1-vacuum-mop-and-self-cleaning-system/WD161.html": {
+      "lastScrapedAt": "2026-06-05T00:13:02.810Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-vacmop-disposable-hard-floor-pads-30-ct/VMP30.html": {
+      "lastScrapedAt": "2026-06-05T00:13:29.837Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-hydrovac-messmaster-cordless-3-in-1-cleaner/WD261.html": {
+      "lastScrapedAt": "2026-06-05T00:13:53.823Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-rotator-pet-upright-vacuum-with-powerfins-hairpro-and-odor-neutralizer-technology/ZU102.html": {
+      "lastScrapedAt": "2026-06-05T00:14:16.619Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-foodi-silicone-mitts/AMC108.html": {
+      "lastScrapedAt": "2026-06-05T00:14:43.530Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-hydroduo-cordless-wet-dry-hard-floor-cleaner/WW201.html": {
+      "lastScrapedAt": "2026-06-05T00:14:59.060Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-stratos-duoclean-powerfins-hairpro-upright-vacuum/AZ3002.html": {
+      "lastScrapedAt": "2026-06-05T00:15:21.167Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-foodi-neverstick-premium-12-cup-muffin-pan/B30212.html": {
+      "lastScrapedAt": "2026-06-05T00:15:40.526Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-prochef-wireless-thermometer/WP100.html": {
+      "lastScrapedAt": "2026-06-05T00:15:52.214Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-clean-empty-cordless-stick-vacuum-auto-empty-system/BU3521.html": {
+      "lastScrapedAt": "2026-06-05T00:16:15.047Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-belgian-waffle-maker-pro-neverstick/BW1001.html": {
+      "lastScrapedAt": "2026-06-05T00:16:49.826Z",
+      "totalReviews": 8,
+      "keywordFiltered": 6,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-neverstick-premium-5-piece-bakeware-set/B35005.html": {
+      "lastScrapedAt": "2026-06-05T00:17:08.872Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-everclad-commercial-grade-stainless-steel-cookware-12-piece-set/C99012.html": {
+      "lastScrapedAt": "2026-06-05T00:17:30.670Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-espresso-coffee-barista-system/CFN601.html": {
+      "lastScrapedAt": "2026-06-05T00:17:54.372Z",
+      "totalReviews": 8,
+      "keywordFiltered": 4,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-double-stack-xl-countertop-oven-air-fryer/DCT601.html": {
+      "lastScrapedAt": "2026-06-05T00:18:12.679Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-dualbrew-pro-specialty-coffee-system/CFP301.html": {
+      "lastScrapedAt": "2026-06-05T00:18:39.666Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-dualbrew-hot-iced-coffee-maker/CFP101.html": {
+      "lastScrapedAt": "2026-06-05T00:18:55.630Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-carpetxpert-with-stainstriker-upright-deep-carpet-cleaner/EX201B.html": {
+      "lastScrapedAt": "2026-06-05T00:19:09.274Z",
+      "totalReviews": 7,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-carpetxpert-hairpro-with-stainstriker/EX301B.html": {
+      "lastScrapedAt": "2026-06-05T00:19:20.048Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-carpetxpert-deep-clean-pro-formula-48oz/EXCM48.html": {
+      "lastScrapedAt": "2026-06-05T00:19:47.028Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-deep-clean-pet-formula-48oz/EXCP48.html": {
+      "lastScrapedAt": "2026-06-05T00:20:14.201Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-double-stack-xl-countertop-oven-air-fryer-with-pro-cook-system/DCT651.html": {
+      "lastScrapedAt": "2026-06-05T00:20:28.231Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-powerdetect-ultra-light-corded-stick-vacuum/HZ4002.html": {
+      "lastScrapedAt": "2026-06-05T00:20:48.983Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-stainstriker-oxy-multiplier-formula-32oz/EXOX32.html": {
+      "lastScrapedAt": "2026-06-05T00:21:16.101Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-stainforce-cordless-portable-stain-cleaner/HX101B.html": {
+      "lastScrapedAt": "2026-06-05T00:21:29.687Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-powerdetect-speed-cordless-stick-vacuum/IA1241.html": {
+      "lastScrapedAt": "2026-06-05T00:21:50.358Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-cordless-powerdetect-clean-empty-system/IP3251.html": {
+      "lastScrapedAt": "2026-06-05T00:22:09.767Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html": {
+      "lastScrapedAt": "2026-06-05T00:22:19.688Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-powerdetect-cordless-stick-vacuum/IP1251.html": {
+      "lastScrapedAt": "2026-06-05T00:22:36.222Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-rocket-dirt-engage-lightweight/IZ362H.html": {
+      "lastScrapedAt": "2026-06-05T00:22:43.334Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-vertex-cordless-stick-vacuum-with-duoclean-powerfins/IZ462H.html": {
+      "lastScrapedAt": "2026-06-05T00:22:59.768Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-powerpro-reveal-cordless-vacuum/IZ376H.html": {
+      "lastScrapedAt": "2026-06-05T00:23:26.743Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-neverdull-system-knife-sharpener/K31300.html": {
+      "lastScrapedAt": "2026-06-05T00:23:44.142Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-neverdull-14-piece-premium-knife-system/K32014.html": {
+      "lastScrapedAt": "2026-06-05T00:24:07.218Z",
+      "totalReviews": 8,
+      "keywordFiltered": 4,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-neverdull-12-piece-premium-knife-system/K32012.html": {
+      "lastScrapedAt": "2026-06-05T00:24:24.931Z",
+      "totalReviews": 8,
+      "keywordFiltered": 4,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-neverdull-17-piece-premium-knife-system/K32017.html": {
+      "lastScrapedAt": "2026-06-05T00:24:39.750Z",
+      "totalReviews": 8,
+      "keywordFiltered": 4,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-neverdull-premium-13-piece-wood-series-knife-system/K52013.html": {
+      "lastScrapedAt": "2026-06-05T00:25:02.554Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-neverdull-premium-14-piece-stainless-knife-system/K62014.html": {
+      "lastScrapedAt": "2026-06-05T00:25:29.602Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-14-in-1-possiblecooker-pro-8.5-qt/MC1001.html": {
+      "lastScrapedAt": "2026-06-05T00:25:44.600Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-deep-clean-pet-formula-6oz/PXCP6C.html": {
+      "lastScrapedAt": "2026-06-05T00:26:11.499Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-10-in-1-everyday-possiblecooker-pro-6.5-qt/MC1101.html": {
+      "lastScrapedAt": "2026-06-05T00:26:28.107Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-combi-all-in-one-multicooker-oven-and-air-fryer/SFP701.html": {
+      "lastScrapedAt": "2026-06-05T00:26:43.578Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-turboblade-ultra-customizable-bladeless-tower-fan-charcoal/TF202S.html": {
+      "lastScrapedAt": "2026-06-05T00:27:10.196Z",
+      "totalReviews": 8,
+      "keywordFiltered": 4,
+      "flaggedCount": 1,
+      "severity": "low",
+      "flaggedReviews": [
+        {
+          "title": "White isn’t right (it’s gray)",
+          "text": "I ordered the white and gold fan however what arrived was a gray and rose gold fan. I thought I accidentally picked the wrong color however they don’t even sell a gray fan. I’m not sure if this is an old color or if the color white is misleading. If you are looking for white, this isn’t it.",
+          "rating": 3,
+          "submittedAt": "2026-05-25T01:49:31.000+00:00",
+          "confidence": "medium",
+          "reason": "The customer ordered a product listed as 'white and gold' but received what they describe as 'gray and rose gold,' implying the listing's color description (and by extension its visual representation) does not match the actual product received.",
+          "relevantQuote": "I ordered the white and gold fan however what arrived was a gray and rose gold fan. I thought I accidentally picked the wrong color however they don't even sell a gray fan. I'm not sure if this is an old color or if the color white is misleading."
+        }
+      ]
+    },
+    "https://www.sharkninja.com/shark-hydrovac-disinfectant-cleaning-solution-2l/WDCD60.html": {
+      "lastScrapedAt": "2026-06-05T00:27:37.123Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-pet-pro-cordless-stick-vacuum-with-multiflex/UZ351H.html": {
+      "lastScrapedAt": "2026-06-05T00:27:52.952Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-hydrovac-multi-surface-concentrate-1l/WDCM30.html": {
+      "lastScrapedAt": "2026-06-05T00:28:19.867Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-mini-prep-bowl-kit/XPB003.html": {
+      "lastScrapedAt": "2026-06-05T00:28:46.966Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-professional-prep-system/XSK770.html": {
+      "lastScrapedAt": "2026-06-05T00:29:14.036Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ai-ultra-robot-self-empty/AV2501S.html": {
+      "lastScrapedAt": "2026-06-05T00:29:26.892Z",
+      "totalReviews": 6,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-powerdetect-self-emptying-robot-vacuum-av2820s/AV2820S.html": {
+      "lastScrapedAt": "2026-06-05T00:29:53.893Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-blast-portable-blender-tinted-aqua/BC151AQ.html": {
+      "lastScrapedAt": "2026-06-05T00:30:10.371Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-blast-portable-blender-black/BC151BK.html": {
+      "lastScrapedAt": "2026-06-05T00:30:20.687Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-blast-portable-blender-cranberry/BC151CR.html": {
+      "lastScrapedAt": "2026-06-05T00:30:35.209Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-blast-portable-blender-forest-green/BC151EM.html": {
+      "lastScrapedAt": "2026-06-05T00:30:44.869Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-blast-portable-blender-lemon-meringue/BC151LB.html": {
+      "lastScrapedAt": "2026-06-05T00:30:58.556Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-blast-portable-blender-tinted-lavender/BC151LD.html": {
+      "lastScrapedAt": "2026-06-05T00:31:13.413Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-blast-portable-blender-muted-lavender/BC151ML.html": {
+      "lastScrapedAt": "2026-06-05T00:31:25.922Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-blast-portable-blender-denim-blue/BC151NV.html": {
+      "lastScrapedAt": "2026-06-05T00:31:43.453Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-blast-portable-blender-deep-navy/BC151ND.html": {
+      "lastScrapedAt": "2026-06-05T00:31:53.673Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-blast-portable-blender-tinted-mint/BC151MT.html": {
+      "lastScrapedAt": "2026-06-05T00:32:07.759Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-blast-portable-blender-passion-fruit/BC151PR.html": {
+      "lastScrapedAt": "2026-06-05T00:32:27.439Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-blast-portable-blender-tinted-pink/BC151PK.html": {
+      "lastScrapedAt": "2026-06-05T00:32:42.378Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-blast-portable-blender-metallic-vanilla-bean/BC151VB.html": {
+      "lastScrapedAt": "2026-06-05T00:32:52.229Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-blast-max-cordless-portable-blender-cool-grey/BC251GY.html": {
+      "lastScrapedAt": "2026-06-05T00:33:08.379Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-blast-portable-blender-white/BC151WH.html": {
+      "lastScrapedAt": "2026-06-05T00:33:18.712Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-luxe-cafe-pro-designed-by-david-beckham/ES771BK.html": {
+      "lastScrapedAt": "2026-06-05T00:33:32.048Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-foodi-xlprogrillgriddle-beginners/CBIG6XX.html": {
+      "lastScrapedAt": "2026-06-05T00:33:58.931Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-frostvault-30qt-hard-cooler-with-cold-dry-zone-slate-gray/FB131GY.html": {
+      "lastScrapedAt": "2026-06-05T00:34:23.416Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-frostvault-30qt-hard-cooler-with-cold-dry-zone-lakeshore-blue/FB131BL.html": {
+      "lastScrapedAt": "2026-06-05T00:34:34.964Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-frostvault-30qt-hard-cooler-with-cold-dry-zone-cloud-white/FB131WH.html": {
+      "lastScrapedAt": "2026-06-05T00:34:46.174Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-foodi-6-in-1-10-qt.-xl-2-basket-air-fryer-with-dualzone-technology-stone-and-soft-gold/DZ401SD.html": {
+      "lastScrapedAt": "2026-06-05T00:34:59.251Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-frostvault-50qt-hard-cooler-with-cold-dry-zone-olive-green/FB151GN.html": {
+      "lastScrapedAt": "2026-06-05T00:35:24.316Z",
+      "totalReviews": 8,
+      "keywordFiltered": 4,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-frostvault-50qt-hard-cooler-with-cold-dry-zone-slate-gray/FB151GY.html": {
+      "lastScrapedAt": "2026-06-05T00:35:41.064Z",
+      "totalReviews": 8,
+      "keywordFiltered": 4,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-frostvault-50qt-hard-cooler-with-cold-dry-zone-lakeshore-blue/FB151BL.html": {
+      "lastScrapedAt": "2026-06-05T00:35:59.669Z",
+      "totalReviews": 8,
+      "keywordFiltered": 4,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-frostvault-30qt-wheeled-cooler-with-cold-dry-zone-lakeshore-blue/FB230BL.html": {
+      "lastScrapedAt": "2026-06-05T00:36:23.048Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-frostvault-50qt-hard-cooler-with-cold-dry-zone-cloud-white/FB151WH.html": {
+      "lastScrapedAt": "2026-06-05T00:36:39.959Z",
+      "totalReviews": 8,
+      "keywordFiltered": 4,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-frostvault-30qt-wheeled-cooler-with-dry-zone-slate-gray/FB230GY.html": {
+      "lastScrapedAt": "2026-06-05T00:36:50.192Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-facialpro-glow-at-home-hydro-powered-facial-system-blue/FH320SN.html": {
+      "lastScrapedAt": "2026-06-05T00:37:12.408Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-crispi-portable-cooking-system/FN101PK.html": {
+      "lastScrapedAt": "2026-06-05T00:37:30.209Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-crispi-4-in-1-portable-glass-air-fryer-cooking-system/FN101GY.html": {
+      "lastScrapedAt": "2026-06-05T00:37:45.688Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-crispi-4-in-1-portable-glass-air-fryer-cooking-system-sage/FN101SG.html": {
+      "lastScrapedAt": "2026-06-05T00:38:01.741Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-slushi-professional-frozen-drink-maker-tote-bundle/FS301BB.html": {
+      "lastScrapedAt": "2026-06-05T00:38:14.698Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-crispi-5-in-1-portable-glass-air-fryer-cooking-system/FN103BF.html": {
+      "lastScrapedAt": "2026-06-05T00:38:26.905Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-crispi-4-in-1-portable-glass-air-fryer-cooking-system-stone/FN101ST.html": {
+      "lastScrapedAt": "2026-06-05T00:38:44.057Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-slushi-max-smart-frozen-drink-maker-150-oz-mocha/FS605BR.html": {
+      "lastScrapedAt": "2026-06-05T00:38:58.405Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---blue-frost/FW312B2.html": {
+      "lastScrapedAt": "2026-06-05T00:39:25.555Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---blue-frost/FW312FH.html": {
+      "lastScrapedAt": "2026-06-05T00:39:39.462Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---lilac-chill/FW312PL.html": {
+      "lastScrapedAt": "2026-06-05T00:39:56.898Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-cryoglow-marilyn-monroe-icon-collection-red-blue-infrared-iqled-face-mask-under-eye-cooling-ruby-glow/FW322RD.html": {
+      "lastScrapedAt": "2026-06-05T00:40:09.097Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-flexstyle-air-styling-drying-system/HD400B2.html": {
+      "lastScrapedAt": "2026-06-05T00:40:23.692Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-flexstyle-air-styling-drying-system-mocha-silver/HD431BR.html": {
+      "lastScrapedAt": "2026-06-05T00:40:37.181Z",
+      "totalReviews": 5,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-flexstyle-marilyn-monroe-icon-collection-air-styling-drying-system-ruby-red-diamond/HD442JR.html": {
+      "lastScrapedAt": "2026-06-05T00:40:58.054Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-flexstyle-air-styling-drying-system-orchid-sunrise/HD434PU.html": {
+      "lastScrapedAt": "2026-06-05T00:41:13.211Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-neverchange-air-purifier-compact-pro-dove/HP072B2.html": {
+      "lastScrapedAt": "2026-06-05T00:41:36.616Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-neverchange-air-purifier/HP152B2.html": {
+      "lastScrapedAt": "2026-06-05T00:41:54.163Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-glam-ceramic-powerful-air-styling-drying-system-with-diffuser/HD6052S.html": {
+      "lastScrapedAt": "2026-06-05T00:42:33.596Z",
+      "totalReviews": 8,
+      "keywordFiltered": 5,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-stainforce-dual-formula-refill-cartridge-16.9oz/HXCM500.html": {
+      "lastScrapedAt": "2026-06-05T00:43:01.038Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-glossi-marilyn-monroe-icon-collection-2-in-1-hot-tool-and-air-glosser-liquid-gold/HT302GD.html": {
+      "lastScrapedAt": "2026-06-05T00:43:30.964Z",
+      "totalReviews": 8,
+      "keywordFiltered": 5,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-neverstick-vivid-8-inch-glass-lid/LID20C2.html": {
+      "lastScrapedAt": "2026-06-05T00:43:58.093Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-neverstick-premium-8-inch-glass-lid/LID20C3.html": {
+      "lastScrapedAt": "2026-06-05T00:44:25.217Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-neverstick-premium-nest-system-8-inch-glass-lid/LID20C5.html": {
+      "lastScrapedAt": "2026-06-05T00:44:52.769Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-neverstick-vivid-10-1%2F4-inch-glass-lid/LID26C2.html": {
+      "lastScrapedAt": "2026-06-05T00:45:19.923Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-neverstick-premium-10-1%2F4-inch-glass-lid/LID26C3.html": {
+      "lastScrapedAt": "2026-06-05T00:45:47.149Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-neverstick-premium-nest-system-10-1%2F4-inch-glass-lid/LID26C5.html": {
+      "lastScrapedAt": "2026-06-05T00:46:14.329Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-neverstick-essential-12-inch-glass-lid/LID30C1.html": {
+      "lastScrapedAt": "2026-06-05T00:46:41.602Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-neverstick-vivid-12-inch-glass-lid/LID30C2.html": {
+      "lastScrapedAt": "2026-06-05T00:47:08.699Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-neverstick-premium-nest-system-12-inch-glass-lid/LID30C5.html": {
+      "lastScrapedAt": "2026-06-05T00:47:35.938Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-fireside360-outdoor-heater-fire-pit-and-top-cover-bundle/OF105GY.html": {
+      "lastScrapedAt": "2026-06-05T00:48:02.584Z",
+      "totalReviews": 8,
+      "keywordFiltered": 5,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-creami-deluxe-11-in-1-ice-cream-maker-bundle/NC501B1.html": {
+      "lastScrapedAt": "2026-06-05T00:48:27.510Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-neverstick-premium-12-inch-glass-lid/LID30C3.html": {
+      "lastScrapedAt": "2026-06-05T00:48:54.522Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-single-serve-pods-grounds-specialty-coffee-maker-glacier-blue/PB051GB.html": {
+      "lastScrapedAt": "2026-06-05T00:49:06.525Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-woodfire-outdoor-grill-smoker-og301/OG301SN.html": {
+      "lastScrapedAt": "2026-06-05T00:49:20.586Z",
+      "totalReviews": 6,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-proconnect-smart-cooking-system-pg305/PG305B1.html": {
+      "lastScrapedAt": "2026-06-05T00:49:35.936Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-single-serve-pods-grounds-specialty-coffee-maker-sage-green/PB051SG.html": {
+      "lastScrapedAt": "2026-06-05T00:49:48.475Z",
+      "totalReviews": 8,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-breakfast-bar/REC4852.html": {
+      "lastScrapedAt": "2026-06-05T00:50:15.411Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-proconnect-smart-cooking-system-pg305/PG305B3.html": {
+      "lastScrapedAt": "2026-06-05T00:50:31.790Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-wandvac-power-pet-cordless-handheld-vacuum/WV410BL.html": {
+      "lastScrapedAt": "2026-06-05T00:50:45.619Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-hydrovac-multi-surface-concentrate/WDCM30C.html": {
+      "lastScrapedAt": "2026-06-05T00:51:12.728Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ai-ultra-robot/AV2501AE.html": {
+      "lastScrapedAt": "2026-06-05T00:51:23.290Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ai-ultra-robot-self-empty-robot-vacuum-av2511ae/AV2511AE.html": {
+      "lastScrapedAt": "2026-06-05T00:51:39.344Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-matrix-plus-2-in-1-robot-self-empty-xl/AV2610WA.html": {
+      "lastScrapedAt": "2026-06-05T00:51:46.300Z",
+      "totalReviews": 8,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-matrix-plus-2-in-1-robot-self-empty-xl/AV2620WA.html": {
+      "lastScrapedAt": "2026-06-05T00:51:53.426Z",
+      "totalReviews": 3,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-matrix-plus-2-in-1-robot-self-empty-xl/AV2630WA.html": {
+      "lastScrapedAt": "2026-06-05T00:52:00.435Z",
+      "totalReviews": 1,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-vacmop-reveal-cordless-floor-vacuum-and-spray-mop/VM401SN.html": {
+      "lastScrapedAt": "2026-06-05T00:52:17.125Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
       "flaggedCount": 0,
       "severity": "none",
       "flaggedReviews": []
