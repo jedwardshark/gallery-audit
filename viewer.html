@@ -90,11 +90,14 @@
 
   /* ── PDP Table ── */
   .pdp-table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 36px; }
-  .pdp-row { display: grid; grid-template-columns: 90px 1fr 100px 120px 80px; align-items: center; padding: 12px 16px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.12s; gap: 16px; }
+  .pdp-row { display: grid; grid-template-columns: 90px 1fr 100px 100px 140px 60px; align-items: center; padding: 12px 16px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.12s; gap: 16px; }
   .pdp-row:last-child { border-bottom: none; }
   .pdp-row:hover { background: var(--surface2); }
   .pdp-row.expanded { background: var(--surface2); }
-  .pdp-row-header { display: grid; grid-template-columns: 90px 1fr 100px 120px 80px; padding: 10px 16px; border-bottom: 1px solid var(--border); gap: 16px; background: var(--surface2); }
+  .pdp-row-header { display: grid; grid-template-columns: 90px 1fr 100px 100px 140px 60px; padding: 10px 16px; border-bottom: 1px solid var(--border); gap: 16px; background: var(--surface2); }
+  .audit-cell-empty { color: var(--muted); font-size: 11px; font-style: italic; }
+  .audit-cell-pill { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 99px; font-size: 11px; font-weight: 700; line-height: 1.4; }
+  .audit-cell-pill .audit-cell-band { font-weight: 600; font-size: 10px; opacity: 0.85; text-transform: capitalize; }
   .pdp-row-header span { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
   .thumb-strip { display: flex; gap: 3px; }
   .thumb { width: 24px; height: 24px; border-radius: 3px; object-fit: cover; background: var(--surface2); flex-shrink: 0; }
@@ -417,8 +420,9 @@
     .brand-grid { grid-template-columns: repeat(2, 1fr); }
     .chart-row { grid-template-columns: 1fr; }
     .pdp-row, .pdp-row-header { grid-template-columns: 64px 1fr 80px; }
-    .pdp-row > *:nth-child(4), .pdp-row > *:nth-child(5),
-    .pdp-row-header > *:nth-child(4), .pdp-row-header > *:nth-child(5) { display: none; }
+    /* Mobile: hide brand, gallery-size, and the new audit columns; show preview/product/expand. */
+    .pdp-row > *:nth-child(3), .pdp-row > *:nth-child(4), .pdp-row > *:nth-child(5),
+    .pdp-row-header > *:nth-child(3), .pdp-row-header > *:nth-child(4), .pdp-row-header > *:nth-child(5) { display: none; }
     .image-expand { padding-left: 16px; }
   }
 </style>
@@ -856,6 +860,15 @@ function applyFilters() {
       if (sb == null) return -1;
       return Number(sb) - Number(sa);
     }
+    if (sortKey === 'updated_desc') {
+      // Newest extractedAt first; PDPs without a timestamp sink to the bottom.
+      const ta = a.extractedAt ? Date.parse(a.extractedAt) : null;
+      const tb = b.extractedAt ? Date.parse(b.extractedAt) : null;
+      if (ta == null && tb == null) return 0;
+      if (ta == null) return 1;
+      if (tb == null) return -1;
+      return tb - ta;
+    }
     return 0;
   });
 
@@ -890,10 +903,16 @@ function renderTable() {
     const cnt = p.galleryImageCount;
     const badge = `<span class="count-badge ${countClass(cnt)}">${cnt}</span>`;
 
+    // Dedicated Creative Audit cell — shows "Not yet audited" for PDPs without a cached
+    // audit so they read as missing-data rather than score 0. Pulled out of the Gallery
+    // Size cell where it was previously rendered as a small inline badge.
     const ca = auditCache[p.url];
-    const creativeBadge = ca
-      ? `<span class="creative-score-badge cr-${ca.readiness.toLowerCase().split(' ')[0]}" title="Creative score: ${ca.readiness}">${ca.galleryScore.toFixed(1)}</span>`
-      : '';
+    const auditCellHtml = ca
+      ? `<span class="audit-cell-pill cr-${ca.readiness.toLowerCase().split(' ')[0]}" title="Creative Audit: ${ca.readiness} (${ca.galleryScore.toFixed(1)}/10)">
+           ${ca.galleryScore.toFixed(1)}
+           <span class="audit-cell-band">${ca.readiness}</span>
+         </span>`
+      : `<span class="audit-cell-empty">Not yet audited</span>`;
 
     const flagData = reviewFlags[p.url];
     const colorFlagBadge = (flagData && flagData.flaggedCount > 0)
@@ -907,7 +926,8 @@ function renderTable() {
       <div class="thumb-strip">${thumbHtml || '<span style="color:var(--muted);font-size:11px">—</span>'}</div>
       <div><div class="pdp-family">${dot}${p.family.replace(/-/g, ' ')}${p.sku ? ` <span class="sku-tag">${p.sku}</span>` : ''}${renderStars(p.rating, p.reviewCount)}</div><div class="pdp-url">${p.url}</div></div>
       <div>${dot}${p.brandName}</div>
-      <div>${badge}${creativeBadge}${colorFlagBadge}</div>
+      <div>${badge}${colorFlagBadge}</div>
+      <div>${auditCellHtml}</div>
       <div class="expand-icon">${expandedRows.has(globalIdx) ? '▲' : '▼'}</div>
     `;
     row.addEventListener('click', () => toggleRow(globalIdx, p, row));
@@ -1186,11 +1206,12 @@ function render(data) {
         <option value="reviews_asc">Least reviewed</option>
         <option value="audit_score_asc">Audit score (worst first)</option>
         <option value="audit_score_desc">Audit score (best first)</option>
+        <option value="updated_desc">Most recently updated</option>
       </select>
     </div>
     <div class="pdp-table-wrap" id="pdp-table-wrap">
       <div class="pdp-row-header">
-        <span>Preview</span><span>Product</span><span>Brand</span><span>Gallery Size</span><span></span>
+        <span>Preview</span><span>Product</span><span>Brand</span><span>Gallery Size</span><span>Creative Audit</span><span></span>
       </div>
       <div id="pdp-table-body"></div>
     </div>
