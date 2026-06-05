@@ -1189,21 +1189,28 @@ function render(data) {
     </div>
 
     <!-- Charts -->
-    <div class="section-title">Gallery Size Analysis</div>
-    <div class="chart-row">
-      <div class="chart-card">
-        <div class="chart-title">Average Gallery Images per PDP</div>
-        <div class="chart-sub">Number of images in the PDP gallery carousel</div>
-        <canvas id="chart-avg" height="180"></canvas>
+    <div class="accordion">
+      <div class="accordion-header open" id="analysis-accordion-header" onclick="toggleAccordion('analysis')">
+        <span>Gallery Size Analysis</span>
+        <span class="accordion-chevron" id="analysis-accordion-chevron">▲</span>
       </div>
-      <div class="chart-card">
-        <div class="chart-title">Total Images Captured</div>
-        <div class="chart-sub">Raw volume of images collected per brand</div>
-        <canvas id="chart-total" height="180"></canvas>
+      <div class="accordion-body" id="analysis-accordion-body">
+        <div class="chart-row">
+          <div class="chart-card">
+            <div class="chart-title">Average Gallery Images per PDP</div>
+            <div class="chart-sub">Number of images in the PDP gallery carousel</div>
+            <canvas id="chart-avg" height="180"></canvas>
+          </div>
+          <div class="chart-card">
+            <div class="chart-title">Total Images Captured</div>
+            <div class="chart-sub">Raw volume of images collected per brand</div>
+            <canvas id="chart-total" height="180"></canvas>
+          </div>
+        </div>
       </div>
     </div>
     <div class="accordion">
-      <div class="accordion-header open" id="dist-accordion-header" onclick="toggleDistAccordion()">
+      <div class="accordion-header open" id="dist-accordion-header" onclick="toggleAccordion('dist')">
         <span>Gallery Size Distribution by Brand</span>
         <span class="accordion-chevron" id="dist-accordion-chevron">▲</span>
       </div>
@@ -1264,13 +1271,15 @@ function render(data) {
       drawDistChart(document.getElementById(`dist-${s.brand}`), dist, brandColor(s.brand));
     });
 
-    // Collapse the distribution accordion on the next frame — by now Chart.js has
-    // committed its draw against laid-out canvases, so collapsing won't break sizing.
+    // Collapse both chart accordions on the next frame — by now Chart.js has committed
+    // its draws against laid-out canvases, so collapsing won't break sizing.
     requestAnimationFrame(() => {
-      document.getElementById('dist-accordion-body')?.classList.add('collapsed');
-      document.getElementById('dist-accordion-header')?.classList.remove('open');
-      const chev = document.getElementById('dist-accordion-chevron');
-      if (chev) chev.textContent = '▼';
+      for (const prefix of ['analysis', 'dist']) {
+        document.getElementById(`${prefix}-accordion-body`)?.classList.add('collapsed');
+        document.getElementById(`${prefix}-accordion-header`)?.classList.remove('open');
+        const chev = document.getElementById(`${prefix}-accordion-chevron`);
+        if (chev) chev.textContent = '▼';
+      }
     });
   });
 
@@ -1286,10 +1295,12 @@ window.setBrand = (brand, btn) => {
 };
 window.setSearch = (val) => { searchQuery = val.toLowerCase(); applyFilters(); };
 window.setSort = (val) => { sortKey = val; applyFilters(); };
-window.toggleDistAccordion = () => {
-  const body   = document.getElementById('dist-accordion-body');
-  const header = document.getElementById('dist-accordion-header');
-  const chev   = document.getElementById('dist-accordion-chevron');
+// Generic accordion toggle — IDs follow the pattern <prefix>-accordion-{body,header,chevron}.
+// Used by the Gallery Size Analysis ('analysis') and Distribution-by-Brand ('dist') accordions.
+window.toggleAccordion = (prefix) => {
+  const body   = document.getElementById(`${prefix}-accordion-body`);
+  const header = document.getElementById(`${prefix}-accordion-header`);
+  const chev   = document.getElementById(`${prefix}-accordion-chevron`);
   if (!body || !header || !chev) return;
   const opening = body.classList.contains('collapsed');
   body.classList.toggle('collapsed', !opening);
