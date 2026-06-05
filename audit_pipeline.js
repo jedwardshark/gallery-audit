@@ -327,6 +327,24 @@ async function commitArtifacts(summary) {
 
 // ── CLI entry: invoked by the gallery-audit-bulkaudit cron service ───────────
 async function main() {
+  // --commit-test: skip the audit loop and just exercise the commit code path with
+  // one trivial file. Used to verify GitHub auth in seconds, not hours. Override the
+  // cron's Docker Command to "node audit_pipeline.js --commit-test" to use.
+  if (process.argv.includes('--commit-test')) {
+    const testPath = path.join(__dirname, 'data/_commit_test.txt');
+    fs.mkdirSync(path.dirname(testPath), { recursive: true });
+    fs.writeFileSync(testPath, `commit smoke test at ${new Date().toISOString()}\n`);
+    console.log('[Commit-Test] wrote local file, attempting commit via audit_pipeline.js code path…');
+    try {
+      await commitFileIfChanged('data/_commit_test.txt', `chore: commit smoke test ${new Date().toISOString()}`);
+      console.log('[Commit-Test] SUCCESS');
+      process.exit(0);
+    } catch (e) {
+      console.error('[Commit-Test] FAILED:', e.message);
+      process.exit(1);
+    }
+  }
+
   console.log(`[BulkAudit] Starting at ${new Date().toISOString()}`);
   const auditSummary = await runBulkAuditRolling();
   const report = await generateAuditReport();

@@ -563,6 +563,24 @@ async function commitArtifacts(summary) {
 
 // ── CLI entry (invoked by gallery-audit-claims cron) ────────────────────────
 async function main() {
+  // --commit-test: skip the extraction loop and just exercise the commit code path
+  // with one trivial file. Override the cron's Docker Command to
+  // "node claims_pipeline.js --commit-test" to use.
+  if (process.argv.includes('--commit-test')) {
+    const testPath = path.join(__dirname, 'data/_commit_test.txt');
+    fs.mkdirSync(path.dirname(testPath), { recursive: true });
+    fs.writeFileSync(testPath, `commit smoke test at ${new Date().toISOString()}\n`);
+    console.log('[Commit-Test] wrote local file, attempting commit via claims_pipeline.js code path…');
+    try {
+      await commitFileIfChanged('data/_commit_test.txt', `chore: commit smoke test ${new Date().toISOString()}`);
+      console.log('[Commit-Test] SUCCESS');
+      process.exit(0);
+    } catch (e) {
+      console.error('[Commit-Test] FAILED:', e.message);
+      process.exit(1);
+    }
+  }
+
   console.log(`[Claims] Starting at ${new Date().toISOString()}`);
   const extractSummary = await runClaimsExtractionRolling();
   if (extractSummary.extracted > 0) {
