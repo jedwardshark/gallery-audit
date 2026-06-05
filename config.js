@@ -16,6 +16,13 @@ export const BRANDS = {
       'img[src*="sharkninja-sfcc-prod-res.cloudinary.com"]',
     ],
   },
+  // TODO (follow-up, 2026-06): Dyson extractor currently returns 0 images on every PDP
+  // (28/28 PDPs with galleryImageCount: 0). Likely cause: dyson.com moved their image
+  // CDN since the original crawl, or block-detection is firing on every page. The
+  // extractor needs a fresh investigation — what host serves Dyson product images today,
+  // and is the imageHost filter (or lack thereof — Dyson has none configured here)
+  // letting them through? Probably need to set an imageHost for Dyson via the Add Brand
+  // flow or hard-code one similar to how SharkNinja was handled.
   dyson: {
     name: 'Dyson',
     sitemaps: ['https://www.dyson.com/sitemapindex.xml'],

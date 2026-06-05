@@ -901,42 +901,219 @@ async function runPipeline(config, streamId) {
 }
 
 // ── SharkNinja: pull gallery via Cloudinary list API (no browser needed) ─────
-async function extractSharkNinjaViaCloudinary(url, brandName) {
+// SharkNinja PDP template (as of 2026-06) organizes product imagery into labeled section
+// folders, not a single gallery carousel. The legacy Cloudinary list-by-SKU API only
+// returns the "01_Gallery" tag, which is now sparse or empty on most SKUs while the real
+// creative lives in /02_Highlights/, /03_5050_*/, /04_Carousel_*/, /05_ProductOwners/.
+// This hybrid extractor scrapes the live PDP and captures all storefront/products/<SKU>/
+// images across every section folder, deduped by storefront-relative base path.
+//
+// Step 1: static HTML fetch with Cheerio (fast, no browser).
+// Step 2: if Cheerio finds <3 distinct storefront images, fall back to Playwright on the
+//         rendered DOM. The fallback should be rare — FO101 alone yields 13 from static HTML.
+
+// Normalize a section folder name → viewType tag the audit prompt understands.
+// e.g. "01_Gallery" → "gallery", "03_5050_LargeCapacity" → "5050", "05_ProductOwners" → "proof"
+function viewTypeFromSection(sectionFolder) {
+  const m = String(sectionFolder || '').match(/^\d+_([^/_]+)/);
+  if (!m) return 'other';
+  const raw = m[1].toLowerCase();
+  // Map idiosyncratic section names to clean audit-vocabulary tags.
+  if (raw === 'gallery')       return 'gallery';
+  if (raw === 'highlights')    return 'highlights';
+  if (raw === '5050')          return '5050';
+  if (raw === 'carousel')      return 'carousel';
+  if (raw === 'productowners') return 'proof';
+  return raw; // future sections fall through with their own name
+}
+
+// SharkNinja images come in TWO URL patterns depending on PDP template version:
+//
+//   Old template (e.g. AF141, AMC14): flat numbered files
+//     https://assets.sharkninja.com/image/upload/<xforms>/SharkNinja-NA/AF141_01.jpg
+//     → viewType: "gallery" (this IS the carousel; no section folders)
+//
+//   New template (e.g. FO101): section-folder layout
+//     https://assets.sharkninja.com/image/upload/<xforms>/v1/storefront/products/<SKU>/Desktop/<NN_Section>/<file>
+//     → viewType: derived from section folder (highlights, 5050, carousel, proof)
+//
+// Both patterns appear on both hosts (assets.sharkninja.com is the primary; the legacy
+// sharkninja-sfcc-prod-res.cloudinary.com still resolves for some files).
+//
+// Dedup keys differ per pattern: new template dedups by the storefront path; old template
+// dedups by "<SKU>_<NN>" so different transform variants of AF141_01.jpg collapse to one.
+function parseStorefrontImagesFromHtml(html, sku) {
+  const skuUpper = String(sku).toUpperCase();
+  const skuStem  = skuUpper.replace(/[^A-Z0-9]/g, '');
+  const skuNumeric = skuStem.replace(/O/g, '0');
+
+  const HOST_GROUP = `(?:assets\\.sharkninja\\.com|sharkninja-sfcc-prod-res\\.cloudinary\\.com)`;
+
+  // Pattern A: NEW template — section folders under /storefront/products/<SKU>/Desktop/.../
+  const newRe = new RegExp(
+    `https://${HOST_GROUP}/image/upload/[^"'\\s]*?/v\\d+/(storefront/products/([A-Z0-9]+)/Desktop/(\\d+_[^/]+)/[^"'\\s?<>]+)`,
+    'gi'
+  );
+
+  // Pattern B: OLD template — flat /SharkNinja-NA/<SKU>_<NN>.(jpg|png|webp|gif)
+  // Optional trailing -<colorway>_<size> variants like AF141_01_BK_large.jpg
+  const oldRe = new RegExp(
+    `https://${HOST_GROUP}/image/upload/[^"'\\s]*?/SharkNinja-NA/(${skuStem}(?:[_-][A-Z0-9]+)*)\\.(?:jpg|jpeg|png|webp|gif)`,
+    'gi'
+  );
+
+  const seen = new Map(); // dedupKey → image object
+  const sanitizeUrl = u => u.replace(/[&"'<>].*$/, '').replace(/\?_i=.*$/, '');
+
+  // ─ New template ─
+  let m;
+  while ((m = newRe.exec(html)) !== null) {
+    const fullUrl       = sanitizeUrl(m[0]);
+    const storefrontPath = m[1];
+    const dirSku         = (m[2] || '').toUpperCase();
+    const sectionFolder  = m[3];
+    // SKU directory tolerance for letter-O/digit-0 inconsistency in SN's library.
+    const dirNormalized = dirSku.replace(/O/g, '0');
+    if (dirNormalized !== skuNumeric && !dirSku.startsWith(skuStem) && !skuStem.startsWith(dirSku)) continue;
+    if (seen.has(storefrontPath)) continue;
+    seen.set(storefrontPath, {
+      src:          fullUrl,
+      sectionFolder,
+      viewType:     viewTypeFromSection(sectionFolder),
+    });
+  }
+
+  // ─ Old template ─
+  // Dedup key = filename stem (e.g. "AF141_01") so transform variants of the same
+  // underlying file collapse together.
+  while ((m = oldRe.exec(html)) !== null) {
+    const fullUrl  = sanitizeUrl(m[0]);
+    const baseName = (m[1] || '').toUpperCase();
+    // The base sequence number tag — strip colorway/size suffixes for the dedup key.
+    const seqMatch = baseName.match(new RegExp(`^${skuStem}_(\\d+)`, 'i'));
+    if (!seqMatch) continue;
+    const dedupKey = `${skuStem}_${seqMatch[1]}`;
+    if (seen.has(dedupKey)) continue;
+    seen.set(dedupKey, {
+      src:          fullUrl,
+      sectionFolder: '01_Gallery', // synthetic — old template = gallery carousel
+      viewType:     'gallery',
+    });
+  }
+
+  return Array.from(seen.values()).map((img, i) => ({ ...img, sequencePosition: i + 1 }));
+}
+
+// Cloudinary list-by-tag — the old extractor's source. Still authoritative for
+// OLD-template PDPs whose carousel hydrates client-side: the HTML only renders 1-2
+// visible thumbnails, but the API returns the complete tagged set (e.g. AF141 → 8).
+// On NEW-template PDPs the same API typically returns just 1 hero (still useful to merge).
+async function fetchSharkNinjaListApi(sku) {
+  try {
+    const { data } = await axios.get(
+      `https://sharkninja-sfcc-prod-res.cloudinary.com/image/list/${sku.toLowerCase()}.json`,
+      { timeout: 15000, headers: HEADERS }
+    );
+    return (data.resources || []).map(r => ({
+      src:           `https://assets.sharkninja.com/image/upload/f_auto,q_auto,w_1200/${r.public_id}`,
+      sectionFolder: '01_Gallery',
+      viewType:      'gallery',
+      // Dedup key for old-template assets is the filename stem (e.g. "AF141_01"),
+      // which the list API exposes as the trailing segment of public_id.
+      _dedupKey:     (r.public_id.split('/').pop() || '').toUpperCase(),
+    }));
+  } catch {
+    return [];
+  }
+}
+
+export async function extractSharkNinjaHybrid(url, brandName, browser) {
   const pathParts = new URL(url).pathname.split('/').filter(Boolean);
-  // Last segment is SKU.html; everything before is the product-family slug
   const lastSeg   = pathParts[pathParts.length - 1] || '';
   const sku       = lastSeg.replace(/\.html$/i, '').toUpperCase();
   const family    = pathParts.length > 1 ? pathParts[pathParts.length - 2] : pathParts[0] || 'unknown';
   const category  = pathParts.length > 2 ? pathParts[pathParts.length - 3] : family;
-
   const base = { brand: 'sharkninja', brandName, url, sku, family, category };
 
-  const apiUrl = `https://sharkninja-sfcc-prod-res.cloudinary.com/image/list/${sku.toLowerCase()}.json`;
+  // ─ Source A: legacy Cloudinary list API (gives full gallery on old-template PDPs) ─
+  // Runs in parallel with the HTML fetch — both are independent network calls.
+  const apiPromise = fetchSharkNinjaListApi(sku);
 
+  // ─ Source B: HTML parsing — static Cheerio first, Playwright fallback ─
+  let htmlImages = [];
+  let extractorPath = 'cheerio';
   try {
-    const { data } = await axios.get(apiUrl, { timeout: 15000, headers: HEADERS });
-    const images = (data.resources || []).map((r, i) => {
-      const viewType = r.metadata?.find(m => m.external_id === 'sfcc-view-type')?.value || '';
-      return {
-        src: `https://sharkninja-sfcc-prod-res.cloudinary.com/image/upload/f_auto,q_auto,w_800/${r.public_id}`,
-        alt: r.context?.custom?.alt || '',
-        width: r.width,
-        height: r.height,
-        viewType,
-        sequencePosition: i + 1,
-      };
-    });
-    return { ...base, galleryImageCount: images.length, images, extractedAt: new Date().toISOString() };
-  } catch (e) {
-    return { ...base, images: [], galleryImageCount: 0, error: e.message, extractedAt: new Date().toISOString() };
+    const { data: html } = await axios.get(url, { timeout: 20000, maxRedirects: 5, headers: HEADERS });
+    htmlImages = parseStorefrontImagesFromHtml(html, sku);
+  } catch {
+    htmlImages = [];
   }
+
+  if (htmlImages.length < 3 && browser) {
+    extractorPath = 'playwright';
+    let page = null;
+    try {
+      page = await browser.newPage();
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+      await page.waitForTimeout(2000);
+      // Scroll in steps to trigger lazy-loaded sections (highlights / 5050 / carousel
+      // / productowners blocks typically defer rendering until scrolled into view).
+      for (let i = 1; i <= 4; i++) {
+        await page.evaluate(s => window.scrollTo(0, document.body.scrollHeight * s / 4), i);
+        await page.waitForTimeout(1200);
+      }
+      htmlImages = parseStorefrontImagesFromHtml(await page.content(), sku);
+    } catch {
+      // Browser path failed — keep whatever Cheerio produced.
+    } finally {
+      if (page) await page.close().catch(() => {});
+    }
+  }
+
+  // ─ Merge: union of API gallery + HTML sections, deduped ─
+  // Dedup keys differ by source: API entries use filename stem; HTML new-template
+  // entries use the storefront-relative path; HTML old-template entries use filename
+  // stem (matches the API). The dedup keys are pre-computed on each image to keep
+  // this merge stable across both URL patterns.
+  const apiImages = await apiPromise;
+  // Compute dedup key per HTML image: old-template uses filename stem, new uses path.
+  const tagHtmlImage = (img) => {
+    if (img.sectionFolder === '01_Gallery') {
+      // Old-template image — derive filename stem from src
+      const m = img.src.match(/SharkNinja-NA\/([A-Z0-9_-]+)\.(?:jpg|jpeg|png|webp|gif)/i);
+      const stem = m ? m[1].toUpperCase() : img.src;
+      return { ...img, _dedupKey: stem.replace(/[_-]+/, '_') };
+    }
+    // New-template — dedup by storefront path embedded in URL
+    const m = img.src.match(/(storefront\/products\/[^"'\s?]+)/);
+    return { ...img, _dedupKey: m ? m[1] : img.src };
+  };
+  const taggedHtml = htmlImages.map(tagHtmlImage);
+
+  const seen = new Set();
+  const merged = [];
+  for (const img of [...apiImages, ...taggedHtml]) {
+    if (seen.has(img._dedupKey)) continue;
+    seen.add(img._dedupKey);
+    const { _dedupKey, ...rest } = img;
+    merged.push({ ...rest, sequencePosition: merged.length + 1 });
+  }
+
+  return {
+    ...base,
+    galleryImageCount: merged.length,
+    images:            merged,
+    extractorPath,     // 'cheerio' or 'playwright' (HTML source); API always also tried
+    extractedAt:       new Date().toISOString(),
+  };
 }
 
 // ── Extract one PDP: standard browser first, stealth retry on error ─────────
 async function extractOnePdp(url, brandKey, brandName, imageHost, stdBrowser, stealthBrowser, preferStealth) {
-  // SharkNinja uses Cloudinary API — no browser needed
+  // SharkNinja: hybrid static+browser extractor scrapes section-block imagery from
+  // the live PDP (legacy catalog API is now sparse). Browser is passed for fallback.
   if (brandKey === 'sharkninja') {
-    return extractSharkNinjaViaCloudinary(url, brandName);
+    return extractSharkNinjaHybrid(url, brandName, stealthBrowser || stdBrowser);
   }
 
   const pathParts = new URL(url).pathname.split('/').filter(Boolean);
@@ -1021,6 +1198,19 @@ async function progressiveScroll(page, baseWait = 2000) {
 
 // ── Extract all gallery-candidate image URLs from the page ──────────────────
 // Reads: img[src], img[data-src/*], srcset, picture>source, background-image inline styles
+//
+// TODO (follow-up, 2026-06): the imageHost filter on competitor brands is permissive —
+// any image on the brand's primary host counts as "gallery." This over-counts in
+// practice because it also catches:
+//   - Header/nav logos and icons
+//   - Recommended-product thumbnails ("you may also like…")
+//   - Reviews-section avatars / mini product shots
+//   - Promotional banners and email-signup imagery
+// Symptom: Breville PDPs storing 39-122 images each (median 55), well above the realistic
+// gallery size of ~10-15. After the SharkNinja section-aware fix lands, do the same kind
+// of structural pass for competitors — narrow the selector to known PDP gallery container
+// classes (per-brand) instead of blanket img[src*=imageHost], OR add per-brand exclusion
+// regexes for nav/recommendation/avatar URL patterns.
 async function extractAllImageSrcs(page, imageHost) {
   return page.evaluate((host) => {
     const seen = new Set();
@@ -1107,8 +1297,41 @@ function saveAuditCache(cache) {
   fs.writeFileSync(AUDIT_CACHE_PATH, JSON.stringify(cache, null, 2));
 }
 
+// Sampling for the Creative Audit. Two strategies:
+//   - If images carry viewType tags (SharkNinja hybrid extractor), sample ACROSS view
+//     types so the audit sees a representative spread of every PDP section, not 6 from
+//     one block. Round-robin pick: 1 per viewType, then 2 per viewType, etc.
+//   - If images don't carry viewType (legacy/competitor brands), fall back to the
+//     position-based even sample.
 function sampleGalleryImages(images, max = 6) {
   if (images.length <= max) return images;
+
+  const tagged = images.filter(img => img.viewType);
+  const useCrossSection = tagged.length >= images.length * 0.5; // mostly tagged → use it
+
+  if (useCrossSection) {
+    const buckets = {};
+    images.forEach(img => {
+      const k = img.viewType || 'other';
+      (buckets[k] = buckets[k] || []).push(img);
+    });
+    const keys = Object.keys(buckets);
+    const picked = [];
+    // Round-robin: take index 0 from each bucket, then 1, etc., until quota.
+    for (let i = 0; picked.length < max; i++) {
+      let advanced = false;
+      for (const k of keys) {
+        if (i < buckets[k].length && picked.length < max) {
+          picked.push(buckets[k][i]);
+          advanced = true;
+        }
+      }
+      if (!advanced) break;
+    }
+    return picked;
+  }
+
+  // Legacy fallback: evenly spaced across the array.
   const out = [images[0]];
   const step = (images.length - 1) / (max - 1);
   for (let i = 1; i < max - 1; i++) out.push(images[Math.round(i * step)]);
@@ -1142,6 +1365,15 @@ Beat 1 "hero" — product identification | Beat 2 "lifestyle" — product in use
 Beat 3 "benefit" — benefit callout | Beat 4 "technical" — how it works
 Beat 5 "detail" — quality/material close-up | Beat 6 "social" — diverse lifestyle
 Beat 7 "proof" — awards/social proof
+
+Some assets carry a "section:" label indicating which labeled block of the brand.com PDP
+they came from. Use it as a strong prior when assigning each asset's most likely beat:
+  - section: gallery     → typically hero or lifestyle
+  - section: highlights  → typically benefit or technical (feature callouts)
+  - section: 5050        → typically benefit or detail (split-section feature blocks)
+  - section: carousel    → typically benefit or lifestyle (in-page secondary carousel)
+  - section: proof       → typically social or proof (testimonials, ratings, awards)
+Treat the label as a prior, not a rule — confirm visually before assigning the beat.
 
 For each image, score relevant dimensions 1–10 (null if not applicable):
 - composition: framing, negative space, product prominence
@@ -1193,15 +1425,25 @@ export async function runCreativeAuditForPdp({ pdpUrl, brandName, images, apiKey
   if (!apiKey) throw new Error('ANTHROPIC_API_KEY not set');
 
   const sampled = sampleGalleryImages(images, 6);
-  const imageBlocks = (await Promise.all(
+  // Fetch image bytes + keep the original sampled metadata so we can pair each image
+  // with its section label in the prompt.
+  const fetched = (await Promise.all(
     sampled.map(async img => {
       try {
         const { data, mediaType } = await fetchImageBase64(img.src);
-        return { type: 'image', source: { type: 'base64', media_type: mediaType, data } };
+        return { img, block: { type: 'image', source: { type: 'base64', media_type: mediaType, data } } };
       } catch { return null; }
     })
   )).filter(Boolean);
-  if (!imageBlocks.length) throw new Error('Could not fetch any gallery images for analysis');
+  if (!fetched.length) throw new Error('Could not fetch any gallery images for analysis');
+
+  const imageBlocks = fetched.map(f => f.block);
+  // Section labels for each image, indexed in the same order as imageBlocks.
+  // If no images carry a viewType (legacy brands), the list collapses to empty and the
+  // prompt's section-prior guidance falls back to pure visual judgment.
+  const sectionLabels = fetched.map((f, i) =>
+    f.img.viewType ? `Image ${i + 1}: section: ${f.img.viewType}` : `Image ${i + 1}: (no section label)`
+  ).join('\n');
 
   const useBearer = apiKey.startsWith('sn_live_');
   const anthropic = new Anthropic({
@@ -1220,7 +1462,7 @@ export async function runCreativeAuditForPdp({ pdpUrl, brandName, images, apiKey
       role: 'user',
       content: [
         ...imageBlocks,
-        { type: 'text', text: `${CREATIVE_AUDIT_PROMPT}\n\nBrand: ${brandName}\nPDP: ${pdpUrl}\nImages shown: ${imageBlocks.length} of ${images.length} total (evenly sampled).` },
+        { type: 'text', text: `${CREATIVE_AUDIT_PROMPT}\n\nBrand: ${brandName}\nPDP: ${pdpUrl}\nImages shown: ${imageBlocks.length} of ${images.length} total (sampled across PDP sections when available).\n\nSection labels for the assets shown above:\n${sectionLabels}` },
       ],
     }],
   });
@@ -1375,10 +1617,17 @@ async function reExtractBrand(brandKey, brandName, urls, imageHost, useStealth, 
   let done = 0;
 
   if (brandKey === 'sharkninja') {
-    // No browser — Cloudinary direct HTTP. Sequential to avoid even small memory spikes.
-    for (const url of urls) {
-      results.push(await extractSharkNinjaViaCloudinary(url, brandName));
-      onProgress?.(++done, urls.length);
+    // Hybrid extractor: Cheerio first, falls back to Playwright at <3 images.
+    // Need a browser available for the fallback. Launch one stealth browser shared
+    // across all SN PDPs in this run; only opens pages when fallback fires.
+    const snBrowser = await chromiumStealth.launch({ headless: true });
+    try {
+      for (const url of urls) {
+        results.push(await extractSharkNinjaHybrid(url, brandName, snBrowser));
+        onProgress?.(++done, urls.length);
+      }
+    } finally {
+      await snBrowser.close();
     }
     return results;
   }
