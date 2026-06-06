@@ -422,13 +422,6 @@
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
-    "url": "https://www.sharkninja.com/ninja-flexflame-proconnect-smart-cooking-system/PG305.html",
-    "family": "ninja-flexflame-proconnect-smart-cooking-system",
-    "category": "PG305.html"
-  },
-  {
-    "brand": "sharkninja",
-    "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-stainstriker-portable-carpet-upholstery-cleaner/PX201.html",
     "family": "shark-stainstriker-portable-carpet-upholstery-cleaner",
     "category": "PX201.html"
@@ -1129,6 +1122,13 @@
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
+    "url": "https://www.sharkninja.com/ninja-luxe-cafe-mini-plus-autofroth-espresso-machine-black/ES351BK.html",
+    "family": "ninja-luxe-cafe-mini-plus-autofroth-espresso-machine-black",
+    "category": "ES351BK.html"
+  },
+  {
+    "brand": "sharkninja",
+    "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-luxe-cafe-pro-espresso-machine-by-david-beckham/ES771BK.html",
     "family": "ninja-luxe-cafe-pro-espresso-machine-by-david-beckham",
     "category": "ES771BK.html"
@@ -1139,6 +1139,13 @@
     "url": "https://www.sharkninja.com/shark-deep-clean-ultra-formula-with-stain-guardian-48oz/EXCMU48.html",
     "family": "shark-deep-clean-ultra-formula-with-stain-guardian-48oz",
     "category": "EXCMU48.html"
+  },
+  {
+    "brand": "sharkninja",
+    "brandName": "SharkNinja",
+    "url": "https://www.sharkninja.com/shark-flexbreeze-hydrogo-misting-portable-fan-dark-gray/FA052FF.html",
+    "family": "shark-flexbreeze-hydrogo-misting-portable-fan-dark-gray",
+    "category": "FA052FF.html"
   },
   {
     "brand": "sharkninja",
@@ -1426,20 +1433,6 @@
     "url": "https://www.sharkninja.com/ninja-single-serve-pods-grounds-specialty-coffee-maker-sage-green/PB051SG.html",
     "family": "ninja-single-serve-pods-grounds-specialty-coffee-maker-sage-green",
     "category": "PB051SG.html"
-  },
-  {
-    "brand": "sharkninja",
-    "brandName": "SharkNinja",
-    "url": "https://www.sharkninja.com/ninja-flexflame-proconnect-smart-cooking-system-pg305/PG305B1.html",
-    "family": "ninja-flexflame-proconnect-smart-cooking-system-pg305",
-    "category": "PG305B1.html"
-  },
-  {
-    "brand": "sharkninja",
-    "brandName": "SharkNinja",
-    "url": "https://www.sharkninja.com/ninja-flexflame-proconnect-smart-cooking-system-pg305/PG305B3.html",
-    "family": "ninja-flexflame-proconnect-smart-cooking-system-pg305",
-    "category": "PG305B3.html"
   },
   {
     "brand": "sharkninja",
@@ -4195,6 +4188,13 @@
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
+    "url": "https://www.sharkninja.com/shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---sage-green/FW312SGFH.html",
+    "family": "shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---sage-green",
+    "category": "FW312SGFH.html"
+  },
+  {
+    "brand": "sharkninja",
+    "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/shark-flexstyle-spearmint/HD400TGSN.html",
     "family": "shark-flexstyle-spearmint",
     "category": "HD400TGSN.html"
@@ -6015,6 +6015,13 @@
   {
     "brand": "sharkninja",
     "brandName": "SharkNinja",
+    "url": "https://www.sharkninja.com/ninja-4-qt-cleancrisp-glass-container/XSKSFN4QTB1.html",
+    "family": "ninja-4-qt-cleancrisp-glass-container",
+    "category": "XSKSFN4QTB1.html"
+  },
+  {
+    "brand": "sharkninja",
+    "brandName": "SharkNinja",
     "url": "https://www.sharkninja.com/ninja-6-cup-cleancrisp-glass-container/XSKSFN6CUPB.html",
     "family": "ninja-6-cup-cleancrisp-glass-container",
     "category": "XSKSFN6CUPB.html"
@@ -6123,6 +6130,20 @@
     "url": "https://www.sharkninja.com/ninja-dualzone-10-qt-6-in-1-2-basket-air-fryer/DZ901-MASTER.html",
     "family": "ninja-dualzone-10-qt-6-in-1-2-basket-air-fryer",
     "category": "DZ901-MASTER.html"
+  },
+  {
+    "brand": "sharkninja",
+    "brandName": "SharkNinja",
+    "url": "https://www.sharkninja.com/ninja-luxe-cafe-mini-espresso-machine/ES301-MASTER.html",
+    "family": "ninja-luxe-cafe-mini-espresso-machine",
+    "category": "ES301-MASTER.html"
+  },
+  {
+    "brand": "sharkninja",
+    "brandName": "SharkNinja",
+    "url": "https://www.sharkninja.com/ninja-luxe-cafe-mini-plus-autofroth-espresso-machine/ES351-MASTER.html",
+    "family": "ninja-luxe-cafe-mini-plus-autofroth-espresso-machine",
+    "category": "ES351-MASTER.html"
   },
   {
     "brand": "sharkninja",
