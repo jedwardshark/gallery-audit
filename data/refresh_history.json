@@ -1,5 +1,3209 @@
 [
   {
+    "id": "1780693107659",
+    "startedAt": "2026-06-05T20:58:27.659Z",
+    "completedAt": "2026-06-06T06:26:51.626Z",
+    "brands": {
+      "sharkninja": {
+        "brandName": "SharkNinja",
+        "added": 6,
+        "removed": 0,
+        "changed": 85,
+        "unchanged": 875,
+        "errors": 0,
+        "details": {
+          "added": [
+            {
+              "url": "https://www.sharkninja.com/ninja-luxe-cafe-mini-plus-autofroth-espresso-machine-black/ES351BK.html",
+              "count": 0
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-flexbreeze-hydrogo-misting-portable-fan-dark-gray/FA052FF.html",
+              "count": 9
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---sage-green/FW312SGFH.html",
+              "count": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-4-qt-cleancrisp-glass-container/XSKSFN4QTB1.html",
+              "count": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-luxe-cafe-mini-espresso-machine/ES301-MASTER.html",
+              "count": 3
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-luxe-cafe-mini-plus-autofroth-espresso-machine/ES351-MASTER.html",
+              "count": 3
+            }
+          ],
+          "removed": [],
+          "changed": [
+            {
+              "url": "https://www.sharkninja.com/ninja-air-fryer-pro-xl-6-in-1/AF181.html",
+              "prevCount": 19,
+              "newCount": 21,
+              "delta": 2
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-ion-robot-vacuum-a73-with-wi-fi/AV753.html",
+              "prevCount": 1,
+              "newCount": 2,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-ultracrush-professional-kitchen-system/BP401.html",
+              "prevCount": 7,
+              "newCount": 9,
+              "delta": 2
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-freshbrew-coffee-maker/CE451.html",
+              "prevCount": 12,
+              "newCount": 14,
+              "delta": 2
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-flexbreeze-indoor-outdoor-pedestal-table-fan-with-cover/FA202.html",
+              "prevCount": 8,
+              "newCount": 9,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-french-door-premier-air-fryer-convection-oven-toaster-stainless-steel/FO101.html",
+              "prevCount": 1,
+              "newCount": 11,
+              "delta": 10
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-slushi-professional-frozen-drink-maker/FS301.html",
+              "prevCount": 2,
+              "newCount": 4,
+              "delta": 2
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-dualbrew-coffee-grounds-pods/GP161.html",
+              "prevCount": 9,
+              "newCount": 11,
+              "delta": 2
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---blue-frost/FW312.html",
+              "prevCount": 3,
+              "newCount": 4,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-speedstyle-pro-flex-hair-dryer-system-mocha-silver/HD542.html",
+              "prevCount": 10,
+              "newCount": 16,
+              "delta": 6
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-speedstyle-pro-hair-dryer-straight-wavy/HD731.html",
+              "prevCount": 7,
+              "newCount": 8,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-air-purifier-max-with-true-hepa/HP201.html",
+              "prevCount": 1,
+              "newCount": 2,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-air-purifier-max-with-true-hepa/HP202.html",
+              "prevCount": 9,
+              "newCount": 10,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-neverchange-air-purifier-max/HP301.html",
+              "prevCount": 1,
+              "newCount": 2,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-breatheclear-max-with-neverchange-air-purifier-dove/HP362.html",
+              "prevCount": 1,
+              "newCount": 3,
+              "delta": 2
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-rocket-corded-stick-vacuum/HV251.html",
+              "prevCount": 1,
+              "newCount": 3,
+              "delta": 2
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-stainforce-cordless-portable-spot-spill-cleaner/HX101.html",
+              "prevCount": 8,
+              "newCount": 9,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-precision-temperature-kettle/KT200.html",
+              "prevCount": 9,
+              "newCount": 8,
+              "delta": -1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-detect-lift-away-adv-corded-upright-vacuum/LA492.html",
+              "prevCount": 7,
+              "newCount": 8,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-flexflame-proconnect-smart-cooking-system/PG305.html",
+              "prevCount": 1,
+              "newCount": 5,
+              "delta": 4
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-doublestack-8-qt-2-basket-air-fryer/SL201.html",
+              "prevCount": 10,
+              "newCount": 11,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-vacmop-reveal-cordless-floor-vacuum-and-spray-mop/VM401.html",
+              "prevCount": 2,
+              "newCount": 3,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-foodi-neverstick-premium-12-cup-muffin-pan/B30212.html",
+              "prevCount": 1,
+              "newCount": 2,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-prochef-wireless-thermometer/WP100.html",
+              "prevCount": 7,
+              "newCount": 8,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-clean-empty-cordless-stick-vacuum-auto-empty-system/BU3521.html",
+              "prevCount": 7,
+              "newCount": 8,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-dualbrew-hot-iced-coffee-maker/CFP101.html",
+              "prevCount": 8,
+              "newCount": 9,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-powerdetect-speed-cordless-stick-vacuum/IA1241.html",
+              "prevCount": 1,
+              "newCount": 3,
+              "delta": 2
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html",
+              "prevCount": 1,
+              "newCount": 3,
+              "delta": 2
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-powerdetect-cordless-stick-vacuum/IP1251.html",
+              "prevCount": 7,
+              "newCount": 6,
+              "delta": -1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-neverdull-14-piece-premium-knife-system/K32014.html",
+              "prevCount": 9,
+              "newCount": 10,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-neverdull-17-piece-premium-knife-system/K32017.html",
+              "prevCount": 10,
+              "newCount": 11,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-14-in-1-possiblecooker-pro-8.5-qt/MC1001.html",
+              "prevCount": 1,
+              "newCount": 3,
+              "delta": 2
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-combi-all-in-one-multicooker-oven-and-air-fryer/SFP701.html",
+              "prevCount": 10,
+              "newCount": 9,
+              "delta": -1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-blast-portable-blender-forest-green/BC151EM.html",
+              "prevCount": 12,
+              "newCount": 1,
+              "delta": -11
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-blast-portable-blender-tinted-pink/BC151PK.html",
+              "prevCount": 12,
+              "newCount": 1,
+              "delta": -11
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-blast-portable-blender-metallic-vanilla-bean/BC151VB.html",
+              "prevCount": 12,
+              "newCount": 1,
+              "delta": -11
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-flexstyle-air-styling-drying-system-mocha-silver/HD431BR.html",
+              "prevCount": 2,
+              "newCount": 10,
+              "delta": 8
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-flexstyle-marilyn-monroe-icon-collection-air-styling-drying-system-ruby-red-diamond/HD442JR.html",
+              "prevCount": 1,
+              "newCount": 8,
+              "delta": 7
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-flexstyle-air-styling-drying-system-orchid-sunrise/HD434PU.html",
+              "prevCount": 1,
+              "newCount": 2,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-glam-ceramic-powerful-air-styling-drying-system-with-diffuser/HD6052S.html",
+              "prevCount": 2,
+              "newCount": 1,
+              "delta": -1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-flexflame-proconnect-smart-cooking-system-pg305/PG305B1.html",
+              "prevCount": 2,
+              "newCount": 4,
+              "delta": 2
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-flexflame-proconnect-smart-cooking-system-pg305/PG305B3.html",
+              "prevCount": 1,
+              "newCount": 3,
+              "delta": 2
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-glam-ceramic-powerful-air-styling-drying-system-starlight-dream/HD6042SPL.html",
+              "prevCount": 1,
+              "newCount": 4,
+              "delta": 3
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-carpetforce-upright-carpet-cleaner/EX502.html",
+              "prevCount": 1,
+              "newCount": 3,
+              "delta": 2
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-flexbreeze-hydrogo-misting-portable-fan-dark-gray/FA052.html",
+              "prevCount": 6,
+              "newCount": 7,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-stainforce-reusable-spray-head/HXCMS.html",
+              "prevCount": 0,
+              "newCount": 1,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-creami-xl-deluxe-11-in-1-ice-cream-and-frozen-treat-maker/NC501.html",
+              "prevCount": 19,
+              "newCount": 16,
+              "delta": -3
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-creami-scoop-swirl-ice-cream-soft-serve-maker/NC701.html",
+              "prevCount": 25,
+              "newCount": 27,
+              "delta": 2
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-deep-clean-ultra-formula-with-stain-guardian-48oz/EXCMU48.html",
+              "prevCount": 1,
+              "newCount": 2,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-smart-scoop/927FK100.html",
+              "prevCount": 0,
+              "newCount": 1,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-grounds-adapter/930FK100.html",
+              "prevCount": 0,
+              "newCount": 1,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-pod-adapter/931FK100.html",
+              "prevCount": 0,
+              "newCount": 1,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-neverchangeanti-allergen-true-hepa-filter/HE3FKPET.html",
+              "prevCount": 2,
+              "newCount": 1,
+              "delta": -1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-ion-robot-replacement-li-ion-battery/RVBAT850.html",
+              "prevCount": 3,
+              "newCount": 1,
+              "delta": -2
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-ion-robot-brushroll/1180FK750.html",
+              "prevCount": 1,
+              "newCount": 2,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-ion-robot-series-3-dust-cup/1189FK750.html",
+              "prevCount": 0,
+              "newCount": 1,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-everymess-stain-eliminator-tool/1502DC100.html",
+              "prevCount": 0,
+              "newCount": 1,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-everymess-squeegee-tool/1503DC100.html",
+              "prevCount": 0,
+              "newCount": 1,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-everymess-crevice-tool/1504DC100.html",
+              "prevCount": 0,
+              "newCount": 1,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-ai-robot-post-motor-filter-door/152HG2300.html",
+              "prevCount": 2,
+              "newCount": 1,
+              "delta": -1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-robot-triple-side-brushes-2/153HG2300.html",
+              "prevCount": 2,
+              "newCount": 1,
+              "delta": -1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-robot-triple-side-brushes-2/406GP2300.html",
+              "prevCount": 2,
+              "newCount": 1,
+              "delta": -1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-robot-li-ion-battery/RVBAT850A.html",
+              "prevCount": 2,
+              "newCount": 1,
+              "delta": -1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-creami-xl-tubs-2-pack-compatible-with-nc500-series-creami-ice-cream-makers/XSKPNTLD2.html",
+              "prevCount": 2,
+              "newCount": 1,
+              "delta": -1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-foodi-flexbasket-air-fryer-with-11qt-megazone-crisper-tray-without-side-indents/264CY600CO.html",
+              "prevCount": 0,
+              "newCount": 1,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-foodi-flexbasket-air-fryer-with-11qt-megazone-middle-basket-divider/268CY600CO.html",
+              "prevCount": 0,
+              "newCount": 1,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-foodi-smart-thermometer-cyberspace/878CY550GY.html",
+              "prevCount": 0,
+              "newCount": 1,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-foodi-6qt-5-in-1-2-basket-air-fryer-with-dualzone-technology---dz090gy-cyberspace-stainless-steel-digital-control-1760w/911CY090GY.html",
+              "prevCount": 0,
+              "newCount": 1,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-dual-zone-6qt-left-side-basket/912CY090GY.html",
+              "prevCount": 0,
+              "newCount": 1,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-dual-zone-6qt-right-side-basket/913CY090GY.html",
+              "prevCount": 0,
+              "newCount": 1,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-detect-tb201-1800-peak-watt-blender-motor-base-with-blendsense-technology/XBASETB200.html",
+              "prevCount": 0,
+              "newCount": 1,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-iq-robot-base-pre-motor-filters/XPMFRV1100.html",
+              "prevCount": 2,
+              "newCount": 1,
+              "delta": -1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-air-fryer-pro-xl-6-in-1/AF181-MASTER.html",
+              "prevCount": 1,
+              "newCount": 3,
+              "delta": 2
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-dualzone-8-qt-dual-air-fryer/DZ801-MASTER.html",
+              "prevCount": 1,
+              "newCount": 3,
+              "delta": 2
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-dualzone-10-qt-6-in-1-2-basket-air-fryer/DZ901-MASTER.html",
+              "prevCount": 1,
+              "newCount": 3,
+              "delta": 2
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-flexbreeze-hydrogo-misting-portable-fan/FA052-MASTER.html",
+              "prevCount": 2,
+              "newCount": 3,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-breatheclear-with-neverchange-air-purifier/HP162-MASTER.html",
+              "prevCount": 1,
+              "newCount": 3,
+              "delta": 2
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-autobarista-fully-automatic-espresso-machine/AE1001-MASTER.html",
+              "prevCount": 1,
+              "newCount": 7,
+              "delta": 6
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-autobarista-pro-fully-automatic-espresso-machine/AE1051-MASTER.html",
+              "prevCount": 1,
+              "newCount": 8,
+              "delta": 7
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-double-stack-xl-countertop-oven-air-fryer/DCT601-MASTER.html",
+              "prevCount": 1,
+              "newCount": 2,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-possiblecooker-pro-multicooker/MC1001-MASTER.html",
+              "prevCount": 1,
+              "newCount": 3,
+              "delta": 2
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-facialpro-glow-replenishment-kit/XSKFH3-MASTER.html",
+              "prevCount": 0,
+              "newCount": 1,
+              "delta": 1
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-robot-single-side-brushes-4/XSKSDEBRSH2300.html",
+              "prevCount": 2,
+              "newCount": 1,
+              "delta": -1
+            },
+            {
+              "url": "https://www.sharkninja.com/ninja-autobarista-pro-fully-automatic-limited-edition-espresso-machine/AE1051PREM-MASTER.html",
+              "prevCount": 1,
+              "newCount": 6,
+              "delta": 5
+            },
+            {
+              "url": "https://www.sharkninja.com/shark-hydro-infuse-bha-hydrator/XSKINDHDI300-MASTER.html",
+              "prevCount": 0,
+              "newCount": 1,
+              "delta": 1
+            }
+          ]
+        }
+      },
+      "vitamix": {
+        "brandName": "Vitamix",
+        "added": 0,
+        "removed": 0,
+        "changed": 38,
+        "unchanged": 65,
+        "errors": 0,
+        "details": {
+          "added": [],
+          "removed": [],
+          "changed": [
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/5300",
+              "prevCount": 25,
+              "newCount": 28,
+              "delta": 3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-s50",
+              "prevCount": 32,
+              "newCount": 29,
+              "delta": -3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/turboblend-two-speed",
+              "prevCount": 28,
+              "newCount": 32,
+              "delta": 4
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/7500-with-aer-disc",
+              "prevCount": 32,
+              "newCount": 31,
+              "delta": -1
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/a2300-family-pack",
+              "prevCount": 35,
+              "newCount": 36,
+              "delta": 1
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-explorian",
+              "prevCount": 42,
+              "newCount": 41,
+              "delta": -1
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-a2500",
+              "prevCount": 34,
+              "newCount": 33,
+              "delta": -1
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/creations-gallery",
+              "prevCount": 25,
+              "newCount": 28,
+              "delta": 3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-7500",
+              "prevCount": 27,
+              "newCount": 30,
+              "delta": 3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/tamper-holder",
+              "prevCount": 21,
+              "newCount": 24,
+              "delta": 3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/e310",
+              "prevCount": 47,
+              "newCount": 46,
+              "delta": -1
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/explorian-series-tamper-holder",
+              "prevCount": 15,
+              "newCount": 19,
+              "delta": 4
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/food-processor-attachment",
+              "prevCount": 52,
+              "newCount": 58,
+              "delta": 6
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/personal-cup-adapter",
+              "prevCount": 29,
+              "newCount": 32,
+              "delta": 3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/48-ounce-stainless-steel-container",
+              "prevCount": 44,
+              "newCount": 41,
+              "delta": -3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/food-processor-attachment-stack-and-store-disc-case",
+              "prevCount": 22,
+              "newCount": 25,
+              "delta": 3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/a3500-with-stainless-steel-container",
+              "prevCount": 28,
+              "newCount": 25,
+              "delta": -3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/24-ounce-tumbler",
+              "prevCount": 11,
+              "newCount": 8,
+              "delta": -3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/4-piece-deluxe-immersion-blender-bundle",
+              "prevCount": 46,
+              "newCount": 48,
+              "delta": 2
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/classic-64-ounce-container",
+              "prevCount": 25,
+              "newCount": 28,
+              "delta": 3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/foodcycler-eco-5",
+              "prevCount": 48,
+              "newCount": 45,
+              "delta": -3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/v1200-super-pack",
+              "prevCount": 56,
+              "newCount": 53,
+              "delta": -3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/propel-750-classic-bundle",
+              "prevCount": 64,
+              "newCount": 61,
+              "delta": -3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/5-speed-immersion-blender-complete-bundle",
+              "prevCount": 40,
+              "newCount": 37,
+              "delta": -3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-propel-750",
+              "prevCount": 40,
+              "newCount": 37,
+              "delta": -3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-propel-510",
+              "prevCount": 48,
+              "newCount": 44,
+              "delta": -4
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/2-speed-immersion-blender-whisk-attachment",
+              "prevCount": 56,
+              "newCount": 52,
+              "delta": -4
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/propel-series-410",
+              "prevCount": 52,
+              "newCount": 48,
+              "delta": -4
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/ascent-x2",
+              "prevCount": 47,
+              "newCount": 44,
+              "delta": -3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/ascent-x3",
+              "prevCount": 44,
+              "newCount": 40,
+              "delta": -4
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/ascent-x5",
+              "prevCount": 44,
+              "newCount": 41,
+              "delta": -3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/5200-legacy-bundle",
+              "prevCount": 48,
+              "newCount": 45,
+              "delta": -3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/ascent-x5-smartprep-kitchen-system",
+              "prevCount": 56,
+              "newCount": 53,
+              "delta": -3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/ascent-x4-gourmet-smartprep-kitchen-system",
+              "prevCount": 33,
+              "newCount": 36,
+              "delta": 3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/5200-plus-stainless-steel-container",
+              "prevCount": 56,
+              "newCount": 57,
+              "delta": 1
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/vx1-and-pca-bundle",
+              "prevCount": 50,
+              "newCount": 48,
+              "delta": -2
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/vx1",
+              "prevCount": 65,
+              "newCount": 68,
+              "delta": 3
+            },
+            {
+              "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-alta-pro",
+              "prevCount": 52,
+              "newCount": 54,
+              "delta": 2
+            }
+          ]
+        }
+      },
+      "breville": {
+        "brandName": "Breville",
+        "added": 0,
+        "removed": 0,
+        "changed": 1,
+        "unchanged": 54,
+        "errors": 0,
+        "details": {
+          "added": [],
+          "removed": [],
+          "changed": [
+            {
+              "url": "https://www.breville.com/en-us/product/bes450",
+              "prevCount": 102,
+              "newCount": 101,
+              "delta": -1
+            }
+          ]
+        }
+      },
+      "williamssonoma": {
+        "brandName": "Williams-Sonoma",
+        "added": 241,
+        "removed": 0,
+        "changed": 230,
+        "unchanged": 346,
+        "errors": 0,
+        "details": {
+          "added": [
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-specialty-ss-wok/",
+              "count": 40
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/miyabi-kaizen-ii-six-inch-chef-knife/",
+              "count": 47
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-stanley-tucci-stainless-steel-ceramic-nonstick-18-piece-cookware-set/",
+              "count": 53
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/miyabi-iki-paring-knife/",
+              "count": 44
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/global-classic-butchers-prep-knife-set/",
+              "count": 52
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/faux-fig-tree-in-pot/",
+              "count": 31
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-essential-stainless-steel-saute-pan/",
+              "count": 47
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-outdoor-gas-griddle/",
+              "count": 33
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/whynter-upright-auto-compressor-ice-cream-maker/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/smeg-6-piece-knife-block-set/",
+              "count": 45
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/braun-multiquick-9-hand-blender-imode-technology/",
+              "count": 54
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-stanley-steak-knife-set-with-ashwood-in-drawer-block/",
+              "count": 48
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/nespresso-vertuoplus-deluxe-coffee-and-espresso-machine/",
+              "count": 45
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/miyabi-tenmei-chef-knife-8-in/",
+              "count": 47
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/bistro-double-wall-espresso-mugs/",
+              "count": 37
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-stainless-steel-sauce-pan/",
+              "count": 51
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-butterscrotch-bundt-cake-mix/",
+              "count": 45
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/delonghi-la-specialista-arte-evo-espresso-machine-with-cold-brew-technology/",
+              "count": 58
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-stainless-steel-12-piece-steak-knife-dinner-set/",
+              "count": 40
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/marble-cheese-knives/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/goldtouch-leakproof-springform-pan/",
+              "count": 48
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cuisinart-wonder-ice-cream-maker/",
+              "count": 50
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/lodge-skillet-leather-helper-handle/",
+              "count": 40
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/laguiole-steak-knife-set/",
+              "count": 49
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-classic-ikon-15-piece-in-drawer-knife-set/",
+              "count": 44
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ruffoni-copper-artichoke-handle-braiser/",
+              "count": 49
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ruffoni-historia-braiser-with-lovebirds-finial/",
+              "count": 48
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/staub-cast-iron-gratin-embossed-lid/",
+              "count": 65
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-signature-saucepan/",
+              "count": 54
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/nordic-ware-mini-bundt-cake-pan/",
+              "count": 74
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/berti-intero-knife-block-set-of-6/",
+              "count": 36
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-classic-hollow-ground-asian-chefs-knife/",
+              "count": 41
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/miyabi-birchwood-9in-bread-knife/",
+              "count": 50
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/global-classic-knife-2-piece-set/",
+              "count": 57
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-shiranami-master-utility-knife-6-12/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-shiranami-chefs-knife-8/",
+              "count": 39
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/black-velvet-bundt-cake/",
+              "count": 37
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-ns-pro-ceramic-nonstick-essential-pan/",
+              "count": 50
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/scanpan-techniq-nonstick-dutch-oven/",
+              "count": 45
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/miyabi-tenmei-steak-knives-set-of-4/",
+              "count": 51
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/hestan-nanobond-fry-pan-set/",
+              "count": 43
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/made-in-stainless-steel-fry-pan-set/",
+              "count": 37
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-collective-slow-cooker/",
+              "count": 52
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-spin-and-go-personal-blender/",
+              "count": 54
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/global-6-inch-flexible-boning-knife/",
+              "count": 50
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ruffoni-historia-hammered-copper-stockpot-with-tree-knob/",
+              "count": 50
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cangshan-maya-bread-knife-9-in/",
+              "count": 51
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cangshan-maya-serrated-utility-knife-5-in/",
+              "count": 53
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-toughened-nonstick-pro-fry-pan/",
+              "count": 47
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-forte-plus-fry-pan-set/",
+              "count": 43
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/hestan-probond-luxe-ss-skillet/",
+              "count": 42
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-elite-olivewood-steak-knives-set-of-4/",
+              "count": 47
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-g5-graphite-stock-pot/",
+              "count": 59
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/hestan-probond-luxe-stainless-steel-stockpot/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-encore-chef-knife-8/",
+              "count": 42
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mickey-minnie-mouse-cakelet-pan/",
+              "count": 53
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-vanilla-bundt-cake-mix/",
+              "count": 45
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ruffoni-copper-artichoke-handle-fry-pan/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/lotus-the-short-order-griddle/",
+              "count": 51
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-pro-2-piece-knife-set/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-tucci-ha-4-piece-saucepan-set/",
+              "count": 44
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/nordic-ware-pirouette-bundt-pan/",
+              "count": 53
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-signature-cast-iron-omelette-pan/",
+              "count": 49
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-d3-tri-ply-stainless-steel-saucepan-set-1-12-3-qt/",
+              "count": 45
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-preserved-spanish-moss/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/peugeot-appolia-ceramic-pie-dish/",
+              "count": 38
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-stanley-tucci-ss-4-piece-saucepan-set-gold-handles/",
+              "count": 47
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/nespresso-citiz-espresso-machine/",
+              "count": 43
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/pantry-cereal-and-soup-bowl/",
+              "count": 60
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-classic-4-and-half-inch-asian-utility-knife/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-classic-9-piece-knife-block-set/",
+              "count": 45
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/golden-malted-pancake-and-waffle-mix/",
+              "count": 53
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cuisinart-induction-motor-food-processor/",
+              "count": 51
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/michel-bras-3-inch-paring-knife/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/open-box-lodge-chef-collection-seasoned-cast-iron-reversible-griddlegrill/",
+              "count": 29
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/nespresso-vertuoplus-deluxe-coffee-espresso-aeroccino-breville/",
+              "count": 41
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/illy-espresso-ground/",
+              "count": 51
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-copper-core-nonstick-fry-pan/",
+              "count": 50
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-goldtouch-tart-pan-bottom/",
+              "count": 54
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-kanren-bread-knife/",
+              "count": 42
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-gourmet-16-piece-knife-block-set-acacia/",
+              "count": 45
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ws-pantry-stacked-tumblers/",
+              "count": 39
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/nordic-ware-party-bundt-cake-pan/",
+              "count": 79
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/usa-pan-nonstick-half-sheet-baking-rack/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/breville-sear-and-press-waffle-plates/",
+              "count": 42
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-gourmet-3-piece-starter-knife-set/",
+              "count": 41
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-d5-stainless-steel-10-12-fry-pan-set/",
+              "count": 55
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/emile-henry-dutch-oven-2/",
+              "count": 47
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/made-in-seasoned-cast-iron-dutch-oven/",
+              "count": 44
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/smeg-retro-hand-blender/",
+              "count": 49
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/robert-welch-signature-chefs-knife/",
+              "count": 39
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-premiere-4in-paring-knife/",
+              "count": 49
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/staub-enameled-cast-iron-heart-dutch-oven/",
+              "count": 41
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ruffoni-opus-prima-hammered-ss-saute-pan-garlic-knob/",
+              "count": 36
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/tiger-micom-rice-cooker-and-warmer/",
+              "count": 42
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-hikari-serrated-master-utility-knife-7-in/",
+              "count": 45
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/flour-shop-cakelet-pan/",
+              "count": 51
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-premiere-max-ss-ceramic-ns-mesh-hybrid-14pc-set/",
+              "count": 49
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-fuji-santoku-knife/",
+              "count": 55
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/smeg-retro-hand-blender-with-accessories/",
+              "count": 48
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ws-goldtouchpro-ns-muffin-pan/",
+              "count": 76
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/bialetti-moka-mackenzie-childs-stovetop-espresso-maker/",
+              "count": 47
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/bialetti-dolce-gabanna-espresso-cups-with-stirrers-blue/",
+              "count": 35
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/kuvings-hands-free-slow-juicer-auto10/",
+              "count": 47
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mackenzie-childs-slate-wild-rose-tea-kettle/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/nordic-ware-mickey-mouse-pancake-pan/",
+              "count": 48
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/skinnytaste-air-fryer-cookbook/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/nfl-monogrammed-lodge-seasoned-cast-iron-skillet-12/",
+              "count": 43
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-d5-stainless-steel-fry-pan/",
+              "count": 51
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-premiere-stainless-steel-ceramic-nonstick-fry-pan-set/",
+              "count": 42
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/bellegem-belgian-waffle-mix/",
+              "count": 47
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-pro-4-piece-prep-knife-set/",
+              "count": 52
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/marble-and-brass-cheese-knives/",
+              "count": 43
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/michel-bras-quitidien-utility-knife/",
+              "count": 51
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/scanpan-haptiq-fry-pan/",
+              "count": 43
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/staub-traditional-skillet-promo/",
+              "count": 39
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cuisinart-griddler-elite/",
+              "count": 51
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-tucci-ss-essential-pan/",
+              "count": 53
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/colored-pressure-cooker-with-2-racks/",
+              "count": 40
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-uncoated-ss-10-pc-set/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-wooden-magnetic-knife-bar-maple/",
+              "count": 37
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-classic-utility-knife/",
+              "count": 54
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-stainless-steel-saute-pan/",
+              "count": 47
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/kitchenaid-6-speed-hand-mixer/",
+              "count": 52
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-premiere-tasting-spoon/",
+              "count": 50
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/emile-henry-bread-pot/",
+              "count": 68
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-thermo-clad-copper-pro-saute-pan-4-12-qt/",
+              "count": 48
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/boska-round-board-with-knives/",
+              "count": 42
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-fuji-6-and-a-half-inch-master-utility-knife/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-spectrum-bread-knife/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-classic-ultimate-everyday-knife-7-inch/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/philips-compact-pasta-maker/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/nespresso-vertuo-espresso-coffee-maker-breville/",
+              "count": 47
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/hestan-nanobond-skillet/",
+              "count": 44
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/global-ukon-2-piece-prep-set-paring-and-chefs-knife/",
+              "count": 48
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-pro-ultimate-bread-knife-10/",
+              "count": 43
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-pantry-lazy-susan/",
+              "count": 38
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/scanpan-techniq-nonstick-windsor-pan/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/hestan-probond-stainless-steel-open-skillet/",
+              "count": 47
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/littledeer-wooden-pot-scoop-spoon/",
+              "count": 50
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-tns-braiser-glass-lid/",
+              "count": 54
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mackenzie-childs-royal-english-garden-tea-kettle/",
+              "count": 56
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ws-sous-vide-pump-bag/",
+              "count": 38
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/scanpan-nordiqa-nonstick-fry-pan-set/",
+              "count": 39
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-forte-plus-ceramic-nonstick-3-piece-fry-pan-set/",
+              "count": 36
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cangshan-kuro-chefs-knife/",
+              "count": 45
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-pantry-noodle-bowls/",
+              "count": 51
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cangshan-kita-knife-block-set-of-17/",
+              "count": 55
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ws-thermoclad-induction-stock-pot/",
+              "count": 45
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-premier-ultimate-utility-knife/",
+              "count": 53
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cangshan-maya-nakiri-knife/",
+              "count": 50
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/blendtec-professional-blender-800/",
+              "count": 51
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ws-espresso-carafe/",
+              "count": 30
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/silpat-silicone-mini-muffin-pan-20-well/",
+              "count": 52
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/bake-from-scratch-x-williams-sonoma-bundt-mix-trio/",
+              "count": 45
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ws-pantry-stacked-mugs/",
+              "count": 40
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-thermo-clad-copper-pro-nonstick-fry-pan-12/",
+              "count": 40
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-kaji-hollow-ground-slicer-knife/",
+              "count": 53
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/smithey-ironware-seasoned-cast-iron-classic-skillet/",
+              "count": 38
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/dubost-laguiole-black-faux-horn-steak-knives-set-of-6/",
+              "count": 44
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-j-a-henckels-professional-s-10-piece-knife-block-set/",
+              "count": 44
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mackenzie-childs-emerald-check-electric-kettle/",
+              "count": 51
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-partner-utility-knife-6/",
+              "count": 47
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cuisinart-4-slice-metal-classic-toaster/",
+              "count": 49
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-classic-gokujo-boning-fillet-knife/",
+              "count": 48
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-spectra-thermobond-ceramic-nonstick-11-pc-set/",
+              "count": 49
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/usa-pan-traditional-finish-9-inch-by-13-inch-cake-pan/",
+              "count": 40
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/nordic-ware-scottish-scone-pan/",
+              "count": 52
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-four-star-eco-steak-knives-set-of-4/",
+              "count": 55
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cangshan-yari-santoku-knife-7/",
+              "count": 54
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/bellegum-waffle-family-size-mix/",
+              "count": 47
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-bread-knife-8/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-stainless-steel-potato-masher/",
+              "count": 51
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/nespresso-by-delonghi-vertuo-next-deluxe/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cangshan-maya-sashimi-knife/",
+              "count": 41
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/joseph-joseph-drawerstore-gray-expanding-cookware-organizer/",
+              "count": 38
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/laguiole-stainless-steel-steak-knife-set/",
+              "count": 56
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cuisinart-chefs-classic-ceramic-ns-saucepan/",
+              "count": 44
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-forte-plus-stock-pot/",
+              "count": 47
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/kitchenaid-compact-tankless-grain-and-rice-cooker/",
+              "count": 37
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/el-porteno-assorted-veggie-empanadas/",
+              "count": 43
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mackenzie-childs-confetti-check-tea-kettle/",
+              "count": 52
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-in-drawer-14-slot-knife-organizer/",
+              "count": 38
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mauviel-m-elite-b-hammered-ss-wok/",
+              "count": 47
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/rabbit-pro-electric-wine-set/",
+              "count": 47
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-5-qt-gourmet-plus-slow-cooker/",
+              "count": 38
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/star-wars-r2d2-toaster/",
+              "count": 49
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-reserve-ceramic-nonstick-muffin-pan/",
+              "count": 50
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-fuji-7inch-asian-chefs-knife/",
+              "count": 45
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mackenzie-childs-sterling-checkered-tea-kettle/",
+              "count": 53
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-stanley-tucci-olivewood-universal-multitool/",
+              "count": 56
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/usa-pan-traditional-finish-jelly-roll-pan/",
+              "count": 45
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/de-buyer-mineral-b-carbon-steel-omelette-pan-8/",
+              "count": 42
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/novato-60-low-rect-propane-fire-table-natural-gas-conversion-kit/",
+              "count": 30
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-essential-stainless-steel-fry-pan/",
+              "count": 45
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-classic-20-piece-knife-block-set/",
+              "count": 40
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/joseph-joseph-extend-slim-steel-expandable-dish-rack/",
+              "count": 48
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/honeycomb-cheese-knives-set-of-3/",
+              "count": 52
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-muffin-mix-pumpkin-spice/",
+              "count": 35
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/magimix-food-processor-14-cup-2017/",
+              "count": 49
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-premiere-flat-whisk/",
+              "count": 55
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-gourmand-enameled-cast-iron-braiser-4-piece-set/",
+              "count": 50
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/made-in-stainless-steel-saucepan-set/",
+              "count": 30
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ruffoni-historia-hammered-copper-stockpot-with-pineapple-knob/",
+              "count": 38
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/vitamix-ascent-x4-blender/",
+              "count": 44
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/clearshield-nonstick-half-sheet-pan/",
+              "count": 50
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cuisinart-coffee-maker-ss-serve-brewer-ice/",
+              "count": 44
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-premiere-stainless-steel-ceramic-nonstick-roaster-16/",
+              "count": 45
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-pantry-extension-soup-bowls-with-handles/",
+              "count": 29
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mauviel-copper-m150b-stew-stock-pot-6-13-qt/",
+              "count": 43
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ruffoni-opus-prima-saucepan-stag-knob/",
+              "count": 45
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/global-anniversary-utility-knife/",
+              "count": 54
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-kramer-carbon-5in-utility-knife/",
+              "count": 44
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cuisinart-15-piece-triple-rivet-knife-block-set/",
+              "count": 45
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-classic-hollow-ground-santoku-knife/",
+              "count": 57
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-stanley-tucci-stainless-steel-ceramic-nonstick-3-piece-fry-pan-set/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/hold-everything-expandable-in-drawer-tool-organizer/",
+              "count": 40
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/lodge-blacklock-cast-iron-5-piece-set/",
+              "count": 49
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cuisinart-10-piece-wood-ceramic-knife-set/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-gourmet-4-piece-knife-set-in-acacia-tray/",
+              "count": 48
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cuisinart-freeze-ease-pro-ice-cream-maker/",
+              "count": 50
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ws-bbq-tools-and-steak-knives/",
+              "count": 37
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ws-goldtouchpro-cake-pan/",
+              "count": 41
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cuisinart-perfectemp-electric-tea-kettle/",
+              "count": 49
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/smeg-dolce-and-gabbana-manual-espresso-machine-blu-mediterraneo/",
+              "count": 49
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-d5-stock-pot-with-immersion-blender/",
+              "count": 55
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/staub-baby-wok/",
+              "count": 40
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/braun-multiquick-hand-blender-with-food-processor-whisk-beater/",
+              "count": 58
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-pro-6-inch-cleaver/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/hartwick-tri-panel-screen-antique-brass/",
+              "count": 25
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-espresso-mug/",
+              "count": 34
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/smeg-espresso-grinder/",
+              "count": 52
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-kanren-seven-inch-rocking-santoku-knife/",
+              "count": 47
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/kitchenaid-13-cup-food-processor-with-dicing-kit/",
+              "count": 54
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-tucci-walnut-pizza-board/",
+              "count": 32
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/aluminum-angle-food-cake-pan/",
+              "count": 45
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/miyabi-black-9in-bread-knife/",
+              "count": 52
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/jura-x10-commercial-espresso-machine/",
+              "count": 41
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/smeg-honeycomb-electric-kettle/",
+              "count": 46
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cuckoo-heating-pressure-twin-pressure-rice-cooker/",
+              "count": 40
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ws-outdoor-round-skillet-trivet-chicken-chim/",
+              "count": 43
+            }
+          ],
+          "removed": [],
+          "changed": [
+            {
+              "url": "https://www.williams-sonoma.com/products/scanpan-techniq-wok/",
+              "prevCount": 35,
+              "newCount": 39,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-copper-core-4-quart-soup-pot-and-ladle/",
+              "prevCount": 54,
+              "newCount": 50,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/william-morris-pie-dish/",
+              "prevCount": 37,
+              "newCount": 41,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-reserve-pro-ceramic-nonstick-fry-pan/",
+              "prevCount": 42,
+              "newCount": 49,
+              "delta": 7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-elite-multi-grill-and-griddle/",
+              "prevCount": 49,
+              "newCount": 52,
+              "delta": 3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cuisinart-fifteen-piece-stainless-steel-hollow-handle-knife-set/",
+              "prevCount": 46,
+              "newCount": 51,
+              "delta": 5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-premiere-6pc-set/",
+              "prevCount": 45,
+              "newCount": 50,
+              "delta": 5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/nespresso-vertuoplus-deluxe-coffee-espresso-machine-aeroccino/",
+              "prevCount": 49,
+              "newCount": 53,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-premier-kiritsuke-knife/",
+              "prevCount": 47,
+              "newCount": 48,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cuisinart-fusionelite-hybrid-ceramic-ns-ss-skillet/",
+              "prevCount": 33,
+              "newCount": 41,
+              "delta": 8
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/scanpan-techniq-nonstick-modern-skillet/",
+              "prevCount": 49,
+              "newCount": 42,
+              "delta": -7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-premiere-8in-bread-knife/",
+              "prevCount": 48,
+              "newCount": 52,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/global-classic-ludo-essential-4-piece-knife-set/",
+              "prevCount": 52,
+              "newCount": 53,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/fellow-series-1-espresso-machine/",
+              "prevCount": 41,
+              "newCount": 45,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ws-thermo-clad-cookie-sheet/",
+              "prevCount": 41,
+              "newCount": 40,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/capresso-ec-select-espresso-machine/",
+              "prevCount": 47,
+              "newCount": 43,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-240-1000-3000-grit-tri-stone-sharpener/",
+              "prevCount": 38,
+              "newCount": 34,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-g5-graphite-fry-pan/",
+              "prevCount": 54,
+              "newCount": 58,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-premier-7-inch-asian-chefs-knife/",
+              "prevCount": 39,
+              "newCount": 34,
+              "delta": -5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/breville-smart-crystal-luxe-kettle/",
+              "prevCount": 53,
+              "newCount": 55,
+              "delta": 2
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-premier-3-piece-knife-starter-set/",
+              "prevCount": 45,
+              "newCount": 46,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-d3-triply-ss-nonstick-pro-omelette-pan/",
+              "prevCount": 48,
+              "newCount": 42,
+              "delta": -6
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-avocado-folding-knife/",
+              "prevCount": 47,
+              "newCount": 43,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-classic-bread-knife/",
+              "prevCount": 45,
+              "newCount": 49,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/hestan-titum-fusion-nonstick-covered-skillet/",
+              "prevCount": 43,
+              "newCount": 44,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/dualit-new-generation-classic-2-slice-toaster/",
+              "prevCount": 48,
+              "newCount": 53,
+              "delta": 5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cleartouch-quarter-sheet-pan-rack/",
+              "prevCount": 51,
+              "newCount": 47,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-classic-8-piece-student-knife-roll-set/",
+              "prevCount": 43,
+              "newCount": 42,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-kaji-3-piece-knife-starter-set/",
+              "prevCount": 44,
+              "newCount": 47,
+              "delta": 3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-hikari-9-inch-bread-knife/",
+              "prevCount": 44,
+              "newCount": 45,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-premier-knives-set-of-16/",
+              "prevCount": 41,
+              "newCount": 44,
+              "delta": 3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/open-box-ascaso-steel-duo-programmable-espresso-machine/",
+              "prevCount": 92,
+              "newCount": 96,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-tucci-ha-fry-pan/",
+              "prevCount": 48,
+              "newCount": 50,
+              "delta": 2
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/breville-control-grip-immersion-blender/",
+              "prevCount": 50,
+              "newCount": 54,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/clearshield-nonstick-jelly-roll-pan/",
+              "prevCount": 46,
+              "newCount": 50,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cleartouch-toaster-oven-set/",
+              "prevCount": 48,
+              "newCount": 47,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cuisinart-ice-100-compressor-ice-cream-maker/",
+              "prevCount": 49,
+              "newCount": 53,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/open-box-balsam-hill-lit-poinsettia-celebration-pot-filler/",
+              "prevCount": 33,
+              "newCount": 92,
+              "delta": 59
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mauviel-copper-m150b-fry-pan/",
+              "prevCount": 49,
+              "newCount": 42,
+              "delta": -7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/smithey-ironware-seasoned-cast-iron-grill-pan-12/",
+              "prevCount": 47,
+              "newCount": 54,
+              "delta": 7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/aarke-electric-kettle/",
+              "prevCount": 38,
+              "newCount": 43,
+              "delta": 5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ws-pantry-white-wine-glasses/",
+              "prevCount": 42,
+              "newCount": 39,
+              "delta": -3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/emile-henry-deep-dish-pizza-pan/",
+              "prevCount": 49,
+              "newCount": 45,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/global-classic-vegetable-knife/",
+              "prevCount": 50,
+              "newCount": 46,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-premier-paring-knife/",
+              "prevCount": 40,
+              "newCount": 41,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/hestan-ovenbond-loaf-pan/",
+              "prevCount": 60,
+              "newCount": 61,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/kramer-damascus-8-inch-narrow-chefs-knife/",
+              "prevCount": 37,
+              "newCount": 42,
+              "delta": 5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-classic-8inch-butcher-knife/",
+              "prevCount": 37,
+              "newCount": 43,
+              "delta": 6
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/lodge-chef-honeycomb-skillet/",
+              "prevCount": 41,
+              "newCount": 46,
+              "delta": 5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/delonghi-la-specialista-opera-espresso-machine-with-cold-brew/",
+              "prevCount": 54,
+              "newCount": 55,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/global-40th-anniversary-knife-block-set-of-5/",
+              "prevCount": 49,
+              "newCount": 51,
+              "delta": 2
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ws-signature-thermo-clad-stainless-steel-omelette-pan/",
+              "prevCount": 39,
+              "newCount": 35,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zojirushi-micom-rice-cooker/",
+              "prevCount": 32,
+              "newCount": 37,
+              "delta": 5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/hestan-probond-luxe-ss-saucepan/",
+              "prevCount": 44,
+              "newCount": 43,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-signature-enameled-cast-iron-covered-oval-casserole-sale/",
+              "prevCount": 28,
+              "newCount": 27,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-traditionaltouch-half-sheet-pan-with-rack/",
+              "prevCount": 43,
+              "newCount": 44,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-cast-aluminum-fondue-pot/",
+              "prevCount": 34,
+              "newCount": 38,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/scanpan-professional-nonstick-10-piece-cookware-set/",
+              "prevCount": 37,
+              "newCount": 45,
+              "delta": 8
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-classic-4-piece-bbq-knife-set/",
+              "prevCount": 46,
+              "newCount": 43,
+              "delta": -3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-kaji-11-piece-knife-block-set/",
+              "prevCount": 42,
+              "newCount": 47,
+              "delta": 5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-essential-stainless-steel-2-piece-fry-pan-set-9-12-11/",
+              "prevCount": 43,
+              "newCount": 40,
+              "delta": -3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-soup-pot/",
+              "prevCount": 62,
+              "newCount": 60,
+              "delta": -2
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cangshan-kita-nakiri-knife/",
+              "prevCount": 51,
+              "newCount": 44,
+              "delta": -7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-classic-steak-knife/",
+              "prevCount": 45,
+              "newCount": 48,
+              "delta": 3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cuckoo-induction-heating-twin-pressure-rice-cooker/",
+              "prevCount": 48,
+              "newCount": 43,
+              "delta": -5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-logo-pot-holder/",
+              "prevCount": 41,
+              "newCount": 42,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/harry-potter-hogwarts-castle-ice-mold-set-of-2/",
+              "prevCount": 56,
+              "newCount": 54,
+              "delta": -2
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-partner-serrated-utility-knife-5/",
+              "prevCount": 46,
+              "newCount": 45,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-copper-core-nonstick-3-piece-fry-pan-set/",
+              "prevCount": 46,
+              "newCount": 50,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/brunch-cocktails-espresso-martini/",
+              "prevCount": 46,
+              "newCount": 50,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/goldtouch-baguette-loaf-pan/",
+              "prevCount": 61,
+              "newCount": 65,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-nonstick-pro-release-mini-cake-pan-6-well/",
+              "prevCount": 46,
+              "newCount": 45,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/hestan-probond-titum-essential-pan/",
+              "prevCount": 51,
+              "newCount": 54,
+              "delta": 3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-stanley-tucci-ceramic-nonstick-lasagna-pan/",
+              "prevCount": 53,
+              "newCount": 56,
+              "delta": 3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ruffoni-historia-hammered-copper-jam-pot-9-qt/",
+              "prevCount": 38,
+              "newCount": 39,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/whynter-upright-ice-cream-maker-with-yogurt-bowl-churn-blade/",
+              "prevCount": 52,
+              "newCount": 42,
+              "delta": -10
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-d5-stainless-steel-deep-skillet-set/",
+              "prevCount": 55,
+              "newCount": 50,
+              "delta": -5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-tucci-ha-fry-pan-set/",
+              "prevCount": 51,
+              "newCount": 46,
+              "delta": -5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/usa-pan-goldtouch-nonstick-broiler-pan/",
+              "prevCount": 46,
+              "newCount": 43,
+              "delta": -3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/peter-rabbit-ceramic-teapot/",
+              "prevCount": 29,
+              "newCount": 19,
+              "delta": -10
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-signature-thermo-clad-nonstick-saucepan-set/",
+              "prevCount": 36,
+              "newCount": 40,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-classic-ikon-chefs-knife/",
+              "prevCount": 43,
+              "newCount": 39,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cangshan-kita-santoku-knife-7/",
+              "prevCount": 51,
+              "newCount": 52,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mk-childs-rosy-check-espresso-cups-saucers/",
+              "prevCount": 37,
+              "newCount": 36,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-ceramic-nonstick-stir-fry-pan/",
+              "prevCount": 41,
+              "newCount": 46,
+              "delta": 5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-ns-plus-covered-fry-pan/",
+              "prevCount": 49,
+              "newCount": 48,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/global-bread-knife/",
+              "prevCount": 54,
+              "newCount": 51,
+              "delta": -3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-rapid-boil-tea-kettle/",
+              "prevCount": 43,
+              "newCount": 47,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/traeger-flatrock-flat-top-griddle/",
+              "prevCount": 42,
+              "newCount": 38,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/scanpan-classic-fry-pan/",
+              "prevCount": 42,
+              "newCount": 46,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/hold-everything-expandable-over-the-sink-drying-rack/",
+              "prevCount": 47,
+              "newCount": 44,
+              "delta": -3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cornufe-wok-adapter/",
+              "prevCount": 44,
+              "newCount": 43,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/smeg-classico-stand-mixer/",
+              "prevCount": 43,
+              "newCount": 42,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-four-star-eco-serrated-utility-knife-5/",
+              "prevCount": 44,
+              "newCount": 43,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mackenzie-childs-teakettle-violet-check/",
+              "prevCount": 52,
+              "newCount": 48,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ws-encore-knives-collection/",
+              "prevCount": 47,
+              "newCount": 46,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-pro-le-blanc-7-inch-slim-chef-knife/",
+              "prevCount": 34,
+              "newCount": 41,
+              "delta": 7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-ns-pro-release-loaf-pan/",
+              "prevCount": 47,
+              "newCount": 50,
+              "delta": 3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-silicone-wide-tongs/",
+              "prevCount": 41,
+              "newCount": 47,
+              "delta": 6
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/jura-j8-fully-auto-espresso-machine/",
+              "prevCount": 28,
+              "newCount": 29,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-classic-hollow-ground-nakiri-knife/",
+              "prevCount": 52,
+              "newCount": 58,
+              "delta": 6
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/regalis-spanish-smoked-trout-roe/",
+              "prevCount": 35,
+              "newCount": 39,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/paella-pan/",
+              "prevCount": 49,
+              "newCount": 44,
+              "delta": -5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/nespresso-essenza-mini-espresso-maker/",
+              "prevCount": 40,
+              "newCount": 46,
+              "delta": 6
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-70th-anniversary-dualit-classic-4-slice-toaster/",
+              "prevCount": 41,
+              "newCount": 40,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mackenzie-childs-juniper-check-tea-kettle/",
+              "prevCount": 52,
+              "newCount": 51,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-4-slice-digital-waffle-maker-removable-plates/",
+              "prevCount": 30,
+              "newCount": 37,
+              "delta": 7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-signature-square-baking-dish/",
+              "prevCount": 55,
+              "newCount": 54,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/bialetti-moka-stovetop-espresso-maker-cream/",
+              "prevCount": 40,
+              "newCount": 44,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/staub-cast-iron-3-and-one-half-qt-braiser/",
+              "prevCount": 45,
+              "newCount": 41,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-stanley-tucci-ss-saucepan-gold-handle/",
+              "prevCount": 51,
+              "newCount": 45,
+              "delta": -6
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/lodge-enameled-cast-iron-dutch-oven/",
+              "prevCount": 44,
+              "newCount": 36,
+              "delta": -8
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/smithey-seasoned-cast-iron-9pc-cookware-set/",
+              "prevCount": 47,
+              "newCount": 37,
+              "delta": -10
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/scanpan-techniq-essential-pan-4-qt/",
+              "prevCount": 46,
+              "newCount": 38,
+              "delta": -8
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-goldtouch-silicone-nonstick-half-sheet-pan-with-rack/",
+              "prevCount": 45,
+              "newCount": 39,
+              "delta": -6
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-espresso-powder/",
+              "prevCount": 39,
+              "newCount": 31,
+              "delta": -8
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-essential-stainless-steel-saucepan/",
+              "prevCount": 43,
+              "newCount": 36,
+              "delta": -7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-kaji-8-piece-knife-block-set/",
+              "prevCount": 45,
+              "newCount": 40,
+              "delta": -5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cleartouch-half-sheet-pan-rack/",
+              "prevCount": 51,
+              "newCount": 45,
+              "delta": -6
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/nordic-ware-rose-cakelet-pan/",
+              "prevCount": 38,
+              "newCount": 44,
+              "delta": 6
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-hikari-7-inch-santoku-knife/",
+              "prevCount": 42,
+              "newCount": 48,
+              "delta": 6
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zojirushi-gourmet-dexpert-electric-skillet-with-yin-yang-hot-pot/",
+              "prevCount": 36,
+              "newCount": 40,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/emile-henry-potter-square-baker/",
+              "prevCount": 53,
+              "newCount": 54,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mickey-mouse-silicone-pancake-molds/",
+              "prevCount": 59,
+              "newCount": 64,
+              "delta": 5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/robbys-buttermilk-pancake-mix/",
+              "prevCount": 38,
+              "newCount": 34,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/braun-mq9137xi-hand-blender-with-imode-technology/",
+              "prevCount": 60,
+              "newCount": 58,
+              "delta": -2
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/smeg-citrus-juicer/",
+              "prevCount": 51,
+              "newCount": 52,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/lemon-panettone/",
+              "prevCount": 25,
+              "newCount": 29,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mauviel-m-elite-b-hammered-ss-saute-pan/",
+              "prevCount": 39,
+              "newCount": 46,
+              "delta": 7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-classic-knives-set-of-3/",
+              "prevCount": 38,
+              "newCount": 40,
+              "delta": 2
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-partner-utility-knives-set-of-3/",
+              "prevCount": 46,
+              "newCount": 47,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/michel-bras-knife-block-11/",
+              "prevCount": 50,
+              "newCount": 46,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-alpine-outdoor-enameled-cast-iron-everyday-pan/",
+              "prevCount": 43,
+              "newCount": 44,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/outset-pre-seasoned-oyster-grill-pan/",
+              "prevCount": 47,
+              "newCount": 50,
+              "delta": 3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-kaji-6-inch-boning-knife/",
+              "prevCount": 41,
+              "newCount": 47,
+              "delta": 6
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/equator-coffee-decaf-eye-of-the-tiger-espresso-coffee-beans/",
+              "prevCount": 52,
+              "newCount": 53,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-modern-heritage-enameled-cast-iron-oval-gratin/",
+              "prevCount": 53,
+              "newCount": 54,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-ns-plus-3-piece-fry-pan-set/",
+              "prevCount": 45,
+              "newCount": 52,
+              "delta": 7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/technivorm-moccamaster-manual-coffee-maker-thermal-carafe/",
+              "prevCount": 42,
+              "newCount": 46,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-hikari-7-piece-knife-block-set/",
+              "prevCount": 53,
+              "newCount": 49,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-copper-core-nonstick-fry-pan-set/",
+              "prevCount": 49,
+              "newCount": 50,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-olivewood-pastry-blender/",
+              "prevCount": 50,
+              "newCount": 58,
+              "delta": 8
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/braun-triforce-power-blender/",
+              "prevCount": 56,
+              "newCount": 64,
+              "delta": 8
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ws-traditional-double-handled-wok-sale/",
+              "prevCount": 35,
+              "newCount": 28,
+              "delta": -7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mauviel-m-elite-b-hammered-ss-dutch-oven/",
+              "prevCount": 47,
+              "newCount": 46,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-stainless-steel-multipot-with-pasta-insert/",
+              "prevCount": 54,
+              "newCount": 55,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-alpine-outdoor-pizza-pan/",
+              "prevCount": 40,
+              "newCount": 39,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/usa-pan-nonstick-baking-pan/",
+              "prevCount": 41,
+              "newCount": 44,
+              "delta": 3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-kaji-bread-knife/",
+              "prevCount": 48,
+              "newCount": 47,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/lodge-chefs-collection-fry-pan/",
+              "prevCount": 46,
+              "newCount": 52,
+              "delta": 6
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/knife-aid-sharpening-knives/",
+              "prevCount": 43,
+              "newCount": 39,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-pro-10-piece-ultimate-knife-set/",
+              "prevCount": 45,
+              "newCount": 46,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/oxo-good-grips-oyster-knife/",
+              "prevCount": 53,
+              "newCount": 45,
+              "delta": -8
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-hikari-8-inch-chefs-knife/",
+              "prevCount": 55,
+              "newCount": 59,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/staub-grill-pan-press-12-inch/",
+              "prevCount": 43,
+              "newCount": 44,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/king-kooker-xl-stockpot/",
+              "prevCount": 36,
+              "newCount": 40,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/robert-welch-kingham-mirror-soft-cheese-knife/",
+              "prevCount": 52,
+              "newCount": 45,
+              "delta": -7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-kaji-chefs-knife/",
+              "prevCount": 42,
+              "newCount": 36,
+              "delta": -6
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cangshan-kuro-bread-knife-9/",
+              "prevCount": 48,
+              "newCount": 52,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-partner-knives-set-of-8/",
+              "prevCount": 43,
+              "newCount": 47,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/scanpan-classic-3-fry-pan-set/",
+              "prevCount": 43,
+              "newCount": 48,
+              "delta": 5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-personal-blender/",
+              "prevCount": 57,
+              "newCount": 50,
+              "delta": -7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/made-in-seasoned-cast-iron-skillet/",
+              "prevCount": 36,
+              "newCount": 37,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-alpine-outdoor-skillet/",
+              "prevCount": 44,
+              "newCount": 48,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mauviel-minis-copper-saucepan/",
+              "prevCount": 34,
+              "newCount": 37,
+              "delta": 3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-stainless-steel-stock-pot-12-quart/",
+              "prevCount": 56,
+              "newCount": 49,
+              "delta": -7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-pro-7-piece-in-drawer-knife-set/",
+              "prevCount": 45,
+              "newCount": 47,
+              "delta": 2
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-four-star-eco-knife-block-set-of-17-brown-ashwood/",
+              "prevCount": 40,
+              "newCount": 39,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/smeg-4-slice-toaster/",
+              "prevCount": 55,
+              "newCount": 50,
+              "delta": -5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/tormek-t-1-knife-sharpener/",
+              "prevCount": 33,
+              "newCount": 37,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/trisha-yearwood-trixie-dust-mashed-potato-casserole/",
+              "prevCount": 35,
+              "newCount": 38,
+              "delta": 3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-stoneware-lasagna-pan/",
+              "prevCount": 49,
+              "newCount": 54,
+              "delta": 5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/miyabi-birchwood-8in-chef-knife/",
+              "prevCount": 41,
+              "newCount": 48,
+              "delta": 7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/jura-e8-fully-automatic-espresso-machine/",
+              "prevCount": 46,
+              "newCount": 43,
+              "delta": -3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/haden-bristol-electric-kettle/",
+              "prevCount": 56,
+              "newCount": 58,
+              "delta": 2
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-classic-ikon-5-inch-serrated-utility-knife/",
+              "prevCount": 49,
+              "newCount": 50,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/balmuda-moon-kettle/",
+              "prevCount": 49,
+              "newCount": 45,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-heritage-stoneware-rectangular-baking-dish/",
+              "prevCount": 52,
+              "newCount": 58,
+              "delta": 6
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/silpat-silicone-muffin-pan-12-well/",
+              "prevCount": 48,
+              "newCount": 56,
+              "delta": 8
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-classic-chefs-knife/",
+              "prevCount": 49,
+              "newCount": 51,
+              "delta": 2
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-signature-loaf-pan/",
+              "prevCount": 58,
+              "newCount": 51,
+              "delta": -7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mackenzie-childs-whistling-rosy-check-tea-kettle/",
+              "prevCount": 52,
+              "newCount": 53,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-gourmet-steak-knives-set-of-4/",
+              "prevCount": 46,
+              "newCount": 39,
+              "delta": -7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/bridgerton-teapot-cake-pops/",
+              "prevCount": 45,
+              "newCount": 46,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/delonghi-magnifica-evo-next-fully-automatic-espresso-machine/",
+              "prevCount": 48,
+              "newCount": 52,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/nordic-ware-daisy-buttercup-cakelet-pan/",
+              "prevCount": 47,
+              "newCount": 51,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/usa-pan-nonstick-quarter-sheet-baking-rack/",
+              "prevCount": 57,
+              "newCount": 56,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cuckoo-exclusive-rice-cooker/",
+              "prevCount": 42,
+              "newCount": 46,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/balmuda-the-toaster-pro/",
+              "prevCount": 49,
+              "newCount": 56,
+              "delta": 7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-four-star-eco-self-sharpening-knife-block-set-of-7/",
+              "prevCount": 44,
+              "newCount": 46,
+              "delta": 2
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-classic-blonde-knives-set-of-11/",
+              "prevCount": 52,
+              "newCount": 51,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/scanpan-nordiqa-nonstick-10pc-set/",
+              "prevCount": 39,
+              "newCount": 34,
+              "delta": -5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cuckoo-micom-rice-cooker/",
+              "prevCount": 35,
+              "newCount": 42,
+              "delta": 7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-d5-stainless-steel-sauce-pan-set/",
+              "prevCount": 48,
+              "newCount": 43,
+              "delta": -5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-stainless-steel-deep-saute-pan-6-quart/",
+              "prevCount": 52,
+              "newCount": 51,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-ns-pro-nonstick-saute-pan/",
+              "prevCount": 52,
+              "newCount": 48,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-premiere-roasting-scoop/",
+              "prevCount": 56,
+              "newCount": 53,
+              "delta": -3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/fellow-espresso-guided-tamper/",
+              "prevCount": 45,
+              "newCount": 47,
+              "delta": 2
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/breville-barista-touch-espresso-maker/",
+              "prevCount": 56,
+              "newCount": 52,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-g5-graphite-sauce-pan/",
+              "prevCount": 51,
+              "newCount": 52,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/hestan-probond-luxe-stainless-steel-covered-skillet/",
+              "prevCount": 42,
+              "newCount": 41,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-copper-core-stockpot/",
+              "prevCount": 58,
+              "newCount": 57,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ws-outdoor-ss-griddle/",
+              "prevCount": 48,
+              "newCount": 47,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/joseph-joseph-helix-potato-ricer/",
+              "prevCount": 50,
+              "newCount": 54,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-modern-heritage-enameled-cast-iron-5pc-set/",
+              "prevCount": 39,
+              "newCount": 47,
+              "delta": 8
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/ws-goldtouchpro-madeleine-pan/",
+              "prevCount": 59,
+              "newCount": 60,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/all-clad-ha1-expert-hard-anodized-nonstick-saute-pan-4-qt/",
+              "prevCount": 45,
+              "newCount": 48,
+              "delta": 3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/le-creuset-modern-heritage-enameled-cast-iron-braiser/",
+              "prevCount": 46,
+              "newCount": 49,
+              "delta": 3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-thermo-clad-nonstick-covered-saucepan-2-qt/",
+              "prevCount": 39,
+              "newCount": 44,
+              "delta": 5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/shun-premier-santoku-knife/",
+              "prevCount": 48,
+              "newCount": 42,
+              "delta": -6
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-ja-henckels-professional-s-7-piece-knife-block-set/",
+              "prevCount": 46,
+              "newCount": 39,
+              "delta": -7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mauviel-copper-m150b-paella-pan-14/",
+              "prevCount": 42,
+              "newCount": 38,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/global-classic-butchers-starter-knife-set/",
+              "prevCount": 46,
+              "newCount": 51,
+              "delta": 5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/lotus-the-four-slice-toaster/",
+              "prevCount": 45,
+              "newCount": 50,
+              "delta": 5
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/greenpan-premiere-knife-block-set-of-8/",
+              "prevCount": 46,
+              "newCount": 52,
+              "delta": 6
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mauviel-copper-curved-splayed-saute-pan/",
+              "prevCount": 49,
+              "newCount": 50,
+              "delta": 1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/williams-sonoma-cleartouch-three-quarter-sheet-pan-with-rack/",
+              "prevCount": 52,
+              "newCount": 51,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/de-buyer-french-steel-crepe-pan/",
+              "prevCount": 49,
+              "newCount": 45,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/fellow-espresso-knock-box/",
+              "prevCount": 48,
+              "newCount": 46,
+              "delta": -2
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/kingham-cake-knife/",
+              "prevCount": 42,
+              "newCount": 46,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-j-a-henckels-professional-s-chefs-knife/",
+              "prevCount": 35,
+              "newCount": 42,
+              "delta": 7
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cuisinart-double-flip-belgian-waffle-maker/",
+              "prevCount": 38,
+              "newCount": 44,
+              "delta": 6
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/zwilling-spectrum-chefs-knife/",
+              "prevCount": 38,
+              "newCount": 41,
+              "delta": 3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/scanpan-techniq-nonstick-bistro-pan/",
+              "prevCount": 51,
+              "newCount": 54,
+              "delta": 3
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/kitchenaid-artisan-stand-mixer-limited-edition-honey/",
+              "prevCount": 47,
+              "newCount": 43,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/cast-iron-tortilla-press-red/",
+              "prevCount": 36,
+              "newCount": 40,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/wusthof-classic-ikon-6-piece-in-drawer-knife-set/",
+              "prevCount": 43,
+              "newCount": 42,
+              "delta": -1
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/bialetti-moka-dolce-and-gabbana-3-cup-2-espresso-cups-and-stirrers/",
+              "prevCount": 45,
+              "newCount": 41,
+              "delta": -4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/scanpan-haptiq-fry-pan-set/",
+              "prevCount": 41,
+              "newCount": 45,
+              "delta": 4
+            },
+            {
+              "url": "https://www.williams-sonoma.com/products/mackenzie-childs-wildflowers-teakettle/",
+              "prevCount": 53,
+              "newCount": 50,
+              "delta": -3
+            }
+          ]
+        }
+      },
+      "dyson": {
+        "brandName": "Dyson",
+        "added": 0,
+        "removed": 0,
+        "changed": 0,
+        "unchanged": 0,
+        "errors": 28,
+        "details": {
+          "added": [],
+          "removed": [],
+          "changed": []
+        }
+      }
+    },
+    "totals": {
+      "added": 247,
+      "removed": 0,
+      "changed": 354,
+      "unchanged": 1340,
+      "errors": 28
+    },
+    "newlyDiscovered": {
+      "sharkninja": 6,
+      "vitamix": 0,
+      "breville": 0,
+      "williamssonoma": 241,
+      "dyson": 0
+    }
+  },
+  {
     "id": "1780599621991",
     "startedAt": "2026-06-04T19:00:21.991Z",
     "completedAt": "2026-06-04T23:47:58.643Z",
