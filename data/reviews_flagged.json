@@ -1,5 +1,5 @@
 {
-  "lastUpdatedAt": "2026-06-06T07:48:41.638Z",
+  "lastUpdatedAt": "2026-06-07T14:00:16.317Z",
   "pdps": {
     "https://www.sharkninja.com/ninja-air-fryer-pro-4-in-1/AF141.html": {
       "lastScrapedAt": "2026-06-03T21:08:14.471Z",
@@ -3418,6 +3418,1342 @@
     },
     "https://www.sharkninja.com/ninja-flip-crumb-tray/254SH150.html": {
       "lastScrapedAt": "2026-06-06T07:48:41.489Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-woodfire-xl-built-in-thermometer-grey/258HY800.html": {
+      "lastScrapedAt": "2026-06-07T12:53:44.818Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-woodfire-xl-built-in-thermometer-single-storage/259HY800.html": {
+      "lastScrapedAt": "2026-06-07T12:54:12.218Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-foodi-flexbasket-air-fryer-with-7qt-megazone-air-fry-basket-with-side-indents/269CY070.html": {
+      "lastScrapedAt": "2026-06-07T12:54:39.424Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-foodi-flexbasket-air-fryer-with-7qt-megazone-crisper-tray-with-side-indents/270CY070.html": {
+      "lastScrapedAt": "2026-06-07T12:55:07.139Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-smart-scoop/319ZG360.html": {
+      "lastScrapedAt": "2026-06-07T12:55:34.714Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-air-fryer-basket/337CY140.html": {
+      "lastScrapedAt": "2026-06-07T12:56:02.441Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-af140-crisper-tray/338CY140.html": {
+      "lastScrapedAt": "2026-06-07T12:56:29.914Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-air-fryer-basket/339CY180.html": {
+      "lastScrapedAt": "2026-06-07T12:56:56.926Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-af180-crisper-tray/340CY180.html": {
+      "lastScrapedAt": "2026-06-07T12:57:24.058Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-doublestack-xl-air-fry-basket/358CY400.html": {
+      "lastScrapedAt": "2026-06-07T12:57:51.548Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-doublestack-xl-2-position-crisper-plate/360CY400.html": {
+      "lastScrapedAt": "2026-06-07T12:58:18.545Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-doublestack-xl-stacked-meal-rack/361CY400.html": {
+      "lastScrapedAt": "2026-06-07T12:58:45.713Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-air-fryer-basket/393CY180.html": {
+      "lastScrapedAt": "2026-06-07T12:59:12.953Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-auto-detect-intelligence-thermometer-holder/406SH551.html": {
+      "lastScrapedAt": "2026-06-07T12:59:40.413Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-auto-detect-intelligence-thermometer/407SH551.html": {
+      "lastScrapedAt": "2026-06-07T13:00:08.635Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-pro-cook-thermometer/439SH651.html": {
+      "lastScrapedAt": "2026-06-07T13:00:36.155Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-pro-cook-thermometer-holder/440SH651.html": {
+      "lastScrapedAt": "2026-06-07T13:01:03.535Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-locking-caster/588CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:01:30.725Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-non-locking-caster/589CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:01:58.410Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-left-side-panel/590CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:02:25.416Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-right-side-panel/591CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:02:52.944Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-back-panel/592CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:03:20.524Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-front-cross-bar/593CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:03:48.240Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-lid-stainless/594CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:04:15.915Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-regulator-hose/595CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:04:43.162Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-propane-heat-shield/596CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:05:10.256Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-tank-divider/597CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:05:37.408Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-left-side-table-with-grey-end-cap/598CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:06:05.022Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-right-side-table-with-grey-end-cap/599CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:06:32.525Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-dials/602CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:06:59.664Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-pilot-burner-flame-tamer/605CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:07:26.738Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-flame-tamer-set/607CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:07:54.160Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-grill-grate/608CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:08:21.613Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-indirect-roast-and-smoke-rack/609CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:08:49.522Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-top-rack-brackets/610CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:09:16.723Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-left-cabinet-door/611CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:09:44.218Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-right-cabinet-door/612CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:10:11.680Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-grease-tray/613CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:10:39.309Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-grease-tray-rails/614CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:11:06.434Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-ignition-module/615CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:11:33.516Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-ultra-prep-splash-guard-lid/615KKU50.html": {
+      "lastScrapedAt": "2026-06-07T13:12:01.320Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-ultra-prep-power-pod-cleaning-brush/616KKU50.html": {
+      "lastScrapedAt": "2026-06-07T13:12:29.133Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-electronics-module/617CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:12:56.511Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-lid-switch-module/618CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:13:24.209Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-main-burner/619CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:13:51.960Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-pilot-burner/620CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:14:19.034Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-burner-set/621CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:14:46.209Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-smoke-box-handle/625CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:15:13.371Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-pellet-box/626CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:15:41.120Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-hardware-set/628CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:16:08.965Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-base-panel/630CY301.html": {
+      "lastScrapedAt": "2026-06-07T13:16:36.455Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-doublestack-xl-air-fry-basket---sl400/633CY400.html": {
+      "lastScrapedAt": "2026-06-07T13:17:04.171Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flip-broil-rack/636SH151.html": {
+      "lastScrapedAt": "2026-06-07T13:17:31.255Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-doublestack-air-fry-basket---sl200/642CY200.html": {
+      "lastScrapedAt": "2026-06-07T13:17:58.738Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-main-burner-flame-tamer/775CY300.html": {
+      "lastScrapedAt": "2026-06-07T13:18:25.809Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-electronics-module/776CY300.html": {
+      "lastScrapedAt": "2026-06-07T13:18:53.260Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-matchstick-holder/777CY300.html": {
+      "lastScrapedAt": "2026-06-07T13:19:20.724Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-doorstop/778CY300.html": {
+      "lastScrapedAt": "2026-06-07T13:19:47.823Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-burner-baffle/779CY300.html": {
+      "lastScrapedAt": "2026-06-07T13:20:15.344Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-burner-baffle-set/780CY300.html": {
+      "lastScrapedAt": "2026-06-07T13:20:43.022Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-lid-black/782CY300.html": {
+      "lastScrapedAt": "2026-06-07T13:21:10.409Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-right-side-table-with-black-end-cap/783CY300.html": {
+      "lastScrapedAt": "2026-06-07T13:21:38.013Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-left-side-table-with-black-end-cap/784CY300.html": {
+      "lastScrapedAt": "2026-06-07T13:22:05.607Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-left-end-cap-black/785CY300.html": {
+      "lastScrapedAt": "2026-06-07T13:22:33.157Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-right-end-cap-black/786CY300.html": {
+      "lastScrapedAt": "2026-06-07T13:23:00.786Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-left-end-cap-grey/787CY300.html": {
+      "lastScrapedAt": "2026-06-07T13:23:28.280Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-right-end-cap-grey/788CY300.html": {
+      "lastScrapedAt": "2026-06-07T13:23:55.268Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-slushi-xl-easy-fill-port-cover/863WA601.html": {
+      "lastScrapedAt": "2026-06-07T13:24:22.353Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-slushi-max-vessel-cover/863WA605.html": {
+      "lastScrapedAt": "2026-06-07T13:24:50.147Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-crispi-powerpod/877CY103.html": {
+      "lastScrapedAt": "2026-06-07T13:25:17.135Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-smart-scoop/927FK100.html": {
+      "lastScrapedAt": "2026-06-07T13:25:44.714Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-grounds-adapter/930FK100.html": {
+      "lastScrapedAt": "2026-06-07T13:26:12.333Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-pod-adapter/931FK100.html": {
+      "lastScrapedAt": "2026-06-07T13:26:40.114Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-fireside360-replacement-battery-cover/989DN100.html": {
+      "lastScrapedAt": "2026-06-07T13:27:07.471Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-facialpro-glow-cleaning-brush-blue/991EL300.html": {
+      "lastScrapedAt": "2026-06-07T13:27:34.551Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-tumbler-straws---6-pack/CFSTRAW6.html": {
+      "lastScrapedAt": "2026-06-07T13:28:02.308Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-crossbody-strap/FA02XLND.html": {
+      "lastScrapedAt": "2026-06-07T13:28:29.343Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-flexbreeze-hydrogo-pro-fan-diamond/FA056GY9.html": {
+      "lastScrapedAt": "2026-06-07T13:28:42.551Z",
+      "totalReviews": 7,
+      "keywordFiltered": 1,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-slushi-xl-slushie-machine-in-cream/FS601CBR.html": {
+      "lastScrapedAt": "2026-06-07T13:29:09.525Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-cryoglow-red-blue-infrared-iqled-face-mask-under-eye-cooling---sage-green/FW312SGS.html": {
+      "lastScrapedAt": "2026-06-07T13:29:23.554Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-flexstyle-x-marilyn-monroe-air-styling-drying-system/HD449PK1.html": {
+      "lastScrapedAt": "2026-06-07T13:29:34.357Z",
+      "totalReviews": 8,
+      "keywordFiltered": 3,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-air-purifier-anti-allergen-filter-with-true-hepa/HE1FKBAS.html": {
+      "lastScrapedAt": "2026-06-07T13:30:01.181Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-air-purifier-max-anti-allergen-filter-with-true-hepa/HE2FKBAS.html": {
+      "lastScrapedAt": "2026-06-07T13:30:28.922Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-neverchangeanti-allergen-true-hepa-filter/HE3FKPET.html": {
+      "lastScrapedAt": "2026-06-07T13:30:56.141Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-air-purifier-4-fan-anti-allergen-nanoseal-filter-with-true-hepa/HE4FKBAS.html": {
+      "lastScrapedAt": "2026-06-07T13:31:23.160Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-air-purifier-4-fan-anti-allergen-hepa-filter-with-advanced-odor-lock/HE4FKPET.html": {
+      "lastScrapedAt": "2026-06-07T13:31:50.381Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-air-purifier-4-fan-anti-allergen-true-hepa-nanoseal-filter-with-advanced-odor-lock-fumes-lock/HE4FKPRO.html": {
+      "lastScrapedAt": "2026-06-07T13:32:17.452Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-he600-series-6-fan-compatible-filter-with-activated-carbon/HE6FKBAS.html": {
+      "lastScrapedAt": "2026-06-07T13:32:44.920Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-air-purifier-6-fan-anti-allergen-true-hepa-nanoseal-filter-with-advanced-odor-lock-fumes-lock/HE6FKPRO.html": {
+      "lastScrapedAt": "2026-06-07T13:33:12.024Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-rocket-self-cleaning-brushroll-corded-stick-vacuum/HV343AMZ.html": {
+      "lastScrapedAt": "2026-06-07T13:33:19.211Z",
+      "totalReviews": 4,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-robot-microfiber-mopping-pads/PADRVWD2.html": {
+      "lastScrapedAt": "2026-06-07T13:33:46.318Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-powerdetect-thermacharged-robot-vacuum-mop-2-in-1-nevertouch-pro-heated-mop-wash-dry-base/RV2930XE.html": {
+      "lastScrapedAt": "2026-06-07T13:33:58.637Z",
+      "totalReviews": 8,
+      "keywordFiltered": 2,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-replacement-li-ion-battery/RVBAT850.html": {
+      "lastScrapedAt": "2026-06-07T13:34:25.620Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-dock-and-charger-kit/RVDOK700.html": {
+      "lastScrapedAt": "2026-06-07T13:34:53.032Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-robot-pre-motor-filter/RVFFK950.html": {
+      "lastScrapedAt": "2026-06-07T13:35:20.208Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-series-replenishment-kit/RVFRK750.html": {
+      "lastScrapedAt": "2026-06-07T13:35:47.680Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-robot-front-wheel-kit/RVFWK950.html": {
+      "lastScrapedAt": "2026-06-07T13:36:14.805Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-thirsti-60l-co2-canister-2-pack/WCX02CO2.html": {
+      "lastScrapedAt": "2026-06-07T13:36:41.962Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-classic-blender-be200-1000-watt-motor-base/XBSBE200.html": {
+      "lastScrapedAt": "2026-06-07T13:37:09.109Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-foodi-air-fryer-unit-4-in-1-replacement-base/XBSDZ100.html": {
+      "lastScrapedAt": "2026-06-07T13:37:36.179Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-foodi-air-fryer-unit-6-in-1-replacement-base/XBSDZ201.html": {
+      "lastScrapedAt": "2026-06-07T13:38:04.211Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-grand-kitchen-system-1200-ks500-1200-watt-motor-base/XBSKS500.html": {
+      "lastScrapedAt": "2026-06-07T13:38:32.015Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-deluxe-kitchen-system-motor-base/XBSKS900.html": {
+      "lastScrapedAt": "2026-06-07T13:38:59.088Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-detect-tb201-1700-peak-watt-blender-motor-base-with-blendsense-technology/XBSTB201.html": {
+      "lastScrapedAt": "2026-06-07T13:39:26.542Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-detect-tb300-1800-peak-watt-blender-motor-base-with-blendsense-technology/XBSTB300.html": {
+      "lastScrapedAt": "2026-06-07T13:39:53.632Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-detect-tb400-1700-peak-watt-blender-motor-base-with-blendsense-technology/XBSTB400.html": {
+      "lastScrapedAt": "2026-06-07T13:40:21.516Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-steampickup-dock/XDKSD200.html": {
+      "lastScrapedAt": "2026-06-07T13:40:49.030Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-integrated-scoop/XMSCP200.html": {
+      "lastScrapedAt": "2026-06-07T13:41:16.041Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-steampickup-main-body/XPDSD200.html": {
+      "lastScrapedAt": "2026-06-07T13:41:43.069Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-woodfire-premium-grill-cover/XSKCOVER.html": {
+      "lastScrapedAt": "2026-06-07T13:42:10.139Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-facialpro-glow-gentle-tip-replenishment-kit/XSKFH3GT.html": {
+      "lastScrapedAt": "2026-06-07T13:42:37.170Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-facialpro-glow-normal-tip-replenishment-kit/XSKFH3NT.html": {
+      "lastScrapedAt": "2026-06-07T13:43:04.242Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-speedstyle-defrizzfast-diffuser/XSKHD3DA.html": {
+      "lastScrapedAt": "2026-06-07T13:43:31.425Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-flexfusion-dual-compartment-travel-case/XSKHD6SB.html": {
+      "lastScrapedAt": "2026-06-07T13:43:58.620Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-artisan-outdoor-oven-cover/XSKMOCVR.html": {
+      "lastScrapedAt": "2026-06-07T13:44:26.168Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-woodfire-outdoor-cast-iron-pan/XSKOCTPN.html": {
+      "lastScrapedAt": "2026-06-07T13:44:53.235Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-woodfire-pellets-all-purpose-blend-2-lb-bag/XSKOP2RL.html": {
+      "lastScrapedAt": "2026-06-07T13:45:20.668Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-upgrades-premium-grill-cover/XSKPGCVR.html": {
+      "lastScrapedAt": "2026-06-07T13:45:47.908Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-woodfire-collapsible-outdoor-grill-stand-compatible-with-og700-series/XSKSTAND.html": {
+      "lastScrapedAt": "2026-06-07T13:46:15.016Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-robot-battery-door/100GP2300.html": {
+      "lastScrapedAt": "2026-06-07T13:46:42.148Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-dust-cup/100KKT752.html": {
+      "lastScrapedAt": "2026-06-07T13:47:09.823Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-iq-robot-dust-bin/100KY1000.html": {
+      "lastScrapedAt": "2026-06-07T13:47:37.210Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ai-robot-post-motor-filter-door/101GP2300.html": {
+      "lastScrapedAt": "2026-06-07T13:48:04.913Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-foodi-xl-pro-air-oven-12-cup-muffin-tray/101KKT200.html": {
+      "lastScrapedAt": "2026-06-07T13:48:32.338Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-foodi-xl-pro-air-oven-dehydrating-kit/101KPP200.html": {
+      "lastScrapedAt": "2026-06-07T13:48:59.427Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-air-fryer-unit/101KY100C.html": {
+      "lastScrapedAt": "2026-06-07T13:49:27.136Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ai-robot-dust-bin/102GP2300.html": {
+      "lastScrapedAt": "2026-06-07T13:49:54.820Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-smart-scoop/104KKW090.html": {
+      "lastScrapedAt": "2026-06-07T13:50:21.868Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-iq-robot-brushroll-door/109KY1000.html": {
+      "lastScrapedAt": "2026-06-07T13:50:49.417Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-iq-robot-battery-door/110KY1000.html": {
+      "lastScrapedAt": "2026-06-07T13:51:16.830Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-dust-bin/1151FK850.html": {
+      "lastScrapedAt": "2026-06-07T13:51:44.242Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-robot-front-wheel/1156FK950.html": {
+      "lastScrapedAt": "2026-06-07T13:52:11.279Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-battery-door/1162FK850.html": {
+      "lastScrapedAt": "2026-06-07T13:52:38.771Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-battery-door/1163FK700.html": {
+      "lastScrapedAt": "2026-06-07T13:53:06.298Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-dust-bin/1169FK870.html": {
+      "lastScrapedAt": "2026-06-07T13:53:33.970Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-brushroll-kit/1170FK870.html": {
+      "lastScrapedAt": "2026-06-07T13:54:01.635Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-side-brushes/1171FK870.html": {
+      "lastScrapedAt": "2026-06-07T13:54:28.843Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-pre-motor-filter/1172FK870.html": {
+      "lastScrapedAt": "2026-06-07T13:54:56.022Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-battery-door/1173FK760.html": {
+      "lastScrapedAt": "2026-06-07T13:55:23.448Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-battery-door/1174FK870.html": {
+      "lastScrapedAt": "2026-06-07T13:55:51.212Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-air-fryer-crisper-plate/117CY171Q.html": {
+      "lastScrapedAt": "2026-06-07T13:56:18.373Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-brushroll/1180FK750.html": {
+      "lastScrapedAt": "2026-06-07T13:56:46.173Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-series-3-dust-cup/1185FK765.html": {
+      "lastScrapedAt": "2026-06-07T13:57:13.728Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-brushroll-kit/1186FK750.html": {
+      "lastScrapedAt": "2026-06-07T13:57:40.811Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-series-3-dust-cup/1187FK754.html": {
+      "lastScrapedAt": "2026-06-07T13:58:08.568Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-series-3-dust-cup/1188FK772.html": {
+      "lastScrapedAt": "2026-06-07T13:58:36.022Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-series-3-dust-cup/1189FK750.html": {
+      "lastScrapedAt": "2026-06-07T13:59:03.536Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ion-robot-series-3-dust-cup/1190FK753.html": {
+      "lastScrapedAt": "2026-06-07T13:59:30.923Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-robot-battery-door/119KY2000.html": {
+      "lastScrapedAt": "2026-06-07T13:59:58.369Z",
       "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
       "totalReviews": 0,
       "keywordFiltered": 0,
