@@ -1138,10 +1138,32 @@ export async function extractSharkNinjaHybrid(url, brandName, browser) {
     merged.push({ ...rest, sequencePosition: merged.length + 1 });
   }
 
+  // Second-pass dedup: collapse mobile/desktop variants of the same underlying asset.
+  // SharkNinja stores many shots as both <Name>_Desktop and <Name>_Mobile (or
+  // <Name>_Desktop-InUse_04 and <Name>_Mobile-InUse_04). These have distinct storefront
+  // paths so the first-pass key-based dedup misses them, but they're the same source
+  // asset rendered for two viewport tiers. Keep the first-seen, drop the duplicate.
+  // Conservative: only strips a "Desktop" or "Mobile" segment when it's a clean
+  // separator-delimited token (so "MobileLarge" stays as-is).
+  const stemSeen = new Set();
+  const deduped = [];
+  for (const img of merged) {
+    const filename = (img.src.split('/').pop() || '').split('?')[0]
+      .replace(/\.(jpg|jpeg|png|webp|gif)$/i, '');
+    let stem = filename.toLowerCase()
+      .replace(/-/g, '_')                                  // normalize separators
+      .replace(/_+/g, '_')                                  // collapse multi
+      .replace(/(?:^|_)(?:desktop|mobile)(?=_|$)/g, '')    // strip platform tokens
+      .replace(/_+/g, '_').replace(/^_|_$/g, '');
+    if (stemSeen.has(stem)) continue;
+    stemSeen.add(stem);
+    deduped.push({ ...img, sequencePosition: deduped.length + 1 });
+  }
+
   return {
     ...base,
-    galleryImageCount: merged.length,
-    images:            merged,
+    galleryImageCount: deduped.length,
+    images:            deduped,
     extractorPath,     // 'cheerio' or 'playwright' (HTML source); API always also tried
     extractedAt:       new Date().toISOString(),
   };
