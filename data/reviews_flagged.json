@@ -1,5 +1,5 @@
 {
-  "lastUpdatedAt": "2026-06-07T14:00:16.317Z",
+  "lastUpdatedAt": "2026-06-09T08:23:15.769Z",
   "pdps": {
     "https://www.sharkninja.com/ninja-air-fryer-pro-4-in-1/AF141.html": {
       "lastScrapedAt": "2026-06-03T21:08:14.471Z",
@@ -4754,6 +4754,456 @@
     },
     "https://www.sharkninja.com/shark-robot-battery-door/119KY2000.html": {
       "lastScrapedAt": "2026-06-07T13:59:58.369Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-possible-cooker-steam-and-roast-rack/123BH1000.html": {
+      "lastScrapedAt": "2026-06-09T08:00:38.454Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-upgrades-16-perforated-pizza-peel-replacement-screws/1248CY300.html": {
+      "lastScrapedAt": "2026-06-09T08:01:05.560Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-flexflame-upgrades-16-perforated-pizza-peel-replacement-handle/1249CY300.html": {
+      "lastScrapedAt": "2026-06-09T08:01:33.011Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-smart-scoop/126KKW400.html": {
+      "lastScrapedAt": "2026-06-09T08:02:00.003Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-facialpro-glow-cleaning-brush-lilac/1289EL300.html": {
+      "lastScrapedAt": "2026-06-09T08:02:26.982Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-robot-dust-bin/131KY2000.html": {
+      "lastScrapedAt": "2026-06-09T08:02:53.953Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-smart-scoop/135KKW300.html": {
+      "lastScrapedAt": "2026-06-09T08:03:20.982Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-360-robot-post-motor-filter-door/135KY2500.html": {
+      "lastScrapedAt": "2026-06-09T08:03:48.383Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-360-robot-base-dust-bin/136KY2500.html": {
+      "lastScrapedAt": "2026-06-09T08:04:15.409Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-steam-scrub-handle-and-wand/137CU7000.html": {
+      "lastScrapedAt": "2026-06-09T08:04:42.395Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-360-robot-dust-bin/139KY2500.html": {
+      "lastScrapedAt": "2026-06-09T08:05:09.461Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-360-robot-brushroll-door/140KY2500.html": {
+      "lastScrapedAt": "2026-06-09T08:05:36.972Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-smart-scoop/141KKW200.html": {
+      "lastScrapedAt": "2026-06-09T08:06:04.546Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-360-robot-front-wheel/141KY2500.html": {
+      "lastScrapedAt": "2026-06-09T08:06:32.024Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-pod-adapter/142KKW300.html": {
+      "lastScrapedAt": "2026-06-09T08:06:59.478Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ai-robot-dust-bin/146HG2300.html": {
+      "lastScrapedAt": "2026-06-09T08:07:26.603Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-uplight-floor-nozzle/1473FC600.html": {
+      "lastScrapedAt": "2026-06-09T08:07:53.592Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-fan-cap/1486ZK020.html": {
+      "lastScrapedAt": "2026-06-09T08:08:20.578Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-fan-cap/1487ZK020.html": {
+      "lastScrapedAt": "2026-06-09T08:08:47.970Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-fan-cap/1488ZK022.html": {
+      "lastScrapedAt": "2026-06-09T08:09:14.960Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-fan-cap/1489ZK022.html": {
+      "lastScrapedAt": "2026-06-09T08:09:41.979Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-fan-cap/1490ZK022.html": {
+      "lastScrapedAt": "2026-06-09T08:10:09.411Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-fan-cap/1491ZK025.html": {
+      "lastScrapedAt": "2026-06-09T08:10:37.453Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-fan-cap/1492ZK025.html": {
+      "lastScrapedAt": "2026-06-09T08:11:04.468Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-everymess-stain-eliminator-tool/1502DC100.html": {
+      "lastScrapedAt": "2026-06-09T08:11:31.977Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-everymess-squeegee-tool/1503DC100.html": {
+      "lastScrapedAt": "2026-06-09T08:11:58.998Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-everymess-crevice-tool/1504DC100.html": {
+      "lastScrapedAt": "2026-06-09T08:12:26.215Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-steam-scrub-handle-and-wand/150CU7001.html": {
+      "lastScrapedAt": "2026-06-09T08:12:53.758Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-robot-battery-door/151HG2300.html": {
+      "lastScrapedAt": "2026-06-09T08:13:20.771Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-steam-scrub-rotating-disc/152CU7000.html": {
+      "lastScrapedAt": "2026-06-09T08:13:47.826Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-ai-robot-post-motor-filter-door/152HG2300.html": {
+      "lastScrapedAt": "2026-06-09T08:14:15.212Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-robot-triple-side-brushes-2/153HG2300.html": {
+      "lastScrapedAt": "2026-06-09T08:14:42.597Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-iq-robot-dust-bin/159KY1100.html": {
+      "lastScrapedAt": "2026-06-09T08:15:09.685Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-sip-lid-with-carry-handle/164KKU100.html": {
+      "lastScrapedAt": "2026-06-09T08:15:36.657Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/ninja-smart-scoop/175FKP100.html": {
+      "lastScrapedAt": "2026-06-09T08:16:03.761Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-battery-door/1790ZK020.html": {
+      "lastScrapedAt": "2026-06-09T08:16:31.356Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-fan-cap/1798ZK020.html": {
+      "lastScrapedAt": "2026-06-09T08:16:58.962Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-instachill-cooling-plate/1836ZK020.html": {
+      "lastScrapedAt": "2026-06-09T08:17:26.063Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-instachill-cooling-plate/1837ZK020.html": {
+      "lastScrapedAt": "2026-06-09T08:17:53.156Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-instachill-cooling-plate/1838ZK020.html": {
+      "lastScrapedAt": "2026-06-09T08:18:20.118Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-instachill-cooling-plate/1839ZK020.html": {
+      "lastScrapedAt": "2026-06-09T08:18:47.590Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-instachill-cooling-plate/1840ZK020.html": {
+      "lastScrapedAt": "2026-06-09T08:19:14.576Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-instachill-cooling-plate/1841ZK020.html": {
+      "lastScrapedAt": "2026-06-09T08:19:41.678Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-instachill-cooling-plate/1843ZK020.html": {
+      "lastScrapedAt": "2026-06-09T08:20:09.153Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-battery-door/1845ZK020.html": {
+      "lastScrapedAt": "2026-06-09T08:20:36.193Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-battery-door/1846ZK020.html": {
+      "lastScrapedAt": "2026-06-09T08:21:03.211Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-battery-door/1847ZK020.html": {
+      "lastScrapedAt": "2026-06-09T08:21:30.857Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-battery-door/1848ZK020.html": {
+      "lastScrapedAt": "2026-06-09T08:21:58.325Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-battery-door/1849ZK020.html": {
+      "lastScrapedAt": "2026-06-09T08:22:25.855Z",
+      "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
+      "totalReviews": 0,
+      "keywordFiltered": 0,
+      "flaggedCount": 0,
+      "severity": "none",
+      "flaggedReviews": []
+    },
+    "https://www.sharkninja.com/shark-chillpill-battery-door/1850ZK020.html": {
+      "lastScrapedAt": "2026-06-09T08:22:52.876Z",
       "scrapeError": "JSON-LD review payload (#bv-jsonld-reviews-data) never appeared",
       "totalReviews": 0,
       "keywordFiltered": 0,
