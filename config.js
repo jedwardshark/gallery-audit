@@ -1,4 +1,20 @@
 export const BRANDS = {
+  dreame: {
+    name: 'Dreame',
+    // US storefront — Shopify-backed.
+    sitemaps: ['https://www.dreametech.com/sitemap.xml'],
+    pdpPattern: /\/products\/[a-z0-9-]+$/i,
+    // pdpExcludeKeywords is an EXCLUSION filter (vs. WS's pdpKeywords which is
+    // inclusion). The extractor checks the URL handle against this pattern and, if it
+    // matches, returns a skip record (skipped: true, skipReason: 'accessory') rather
+    // than calling the JSON API. Accessories remain visible in gallery_raw.json so any
+    // mis-classified real product can be spotted in the viewer.
+    pdpExcludeKeywords: /(brush|mop|filter|cleaning-solution|detergent|water-tank|dust-bag|spare-parts|cover-replacement|\d+pc)/i,
+    familySegment: 1,
+    categorySegment: 1,
+    // No gallerySelectors — Dreame uses the Shopify product JSON API path, not the
+    // DOM scrape, so brand-specific selectors don't apply.
+  },
   sharkninja: {
     name: 'SharkNinja',
     sitemaps: [
