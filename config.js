@@ -9,7 +9,15 @@ export const BRANDS = {
     // matches, returns a skip record (skipped: true, skipReason: 'accessory') rather
     // than calling the JSON API. Accessories remain visible in gallery_raw.json so any
     // mis-classified real product can be spotted in the viewer.
-    pdpExcludeKeywords: /(brush|mop|filter|cleaning-solution|detergent|water-tank|dust-bag|spare-parts|cover-replacement|\d+pc)/i,
+    // Tightened after seed-run inspection: original pattern caught 89 of ~187 accessory
+    // PDPs. Added: accessor (kits), bundle (bundles), bulk-purchasing/flash-sale (B2B and
+    // promo duplicates of real products), battery-pack, fl-oz/ounce (fluid sizing),
+    // wipes, debris-basket / retrieva-hook (pool cleaner accessories), deshedding-kit.
+    // Deliberately NOT included: `cleaner` (would false-positive real "vacuum-cleaner" /
+    // "steam-cleaner" / "pool-cleaner" products), `station` (would false-positive real
+    // Z-series station vacuums), `kit` alone (too broad). Verified zero false-positive
+    // exclusions across all 9 borderline real products in the seed.
+    pdpExcludeKeywords: /(brush|mop|filter|cleaning-solution|detergent|water-tank|dust-bag|spare-parts|cover-replacement|accessor|bundle|bulk-purchasing|flash-sale|battery-pack|fl-oz|ounce|wipes?|debris-basket|retrieva-hook|deshedding-kit|\d+pc)/i,
     familySegment: 1,
     categorySegment: 1,
     // No gallerySelectors — Dreame uses the Shopify product JSON API path, not the

@@ -36,6 +36,7 @@ const FILES_TO_COMMIT = [
   'data/urls/breville.json',
   'data/urls/dyson.json',
   'data/urls/williamssonoma.json',
+  'data/urls/dreame.json',
 ];
 
 // Rolling-window size for the weekly review pipeline. ~75 per week covers all 293
