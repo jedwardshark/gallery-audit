@@ -1485,14 +1485,14 @@ For each image, score relevant dimensions 1–10 (null if not applicable):
 - textLegibility: hierarchy, thumbnail legibility, contrast (infographics only)
 - brandConsistency: color/font/tone coherence with rest of gallery
 
-Gallery score = weighted average of all asset scores. Apply brand.com thresholds:
-Approved ≥7.5 | Conditional 6.0–7.4 | Revise <6.0
+Do NOT emit a gallery-level headline score or readiness band. Those are computed
+downstream from your per-image dimension scores and beat-presence list using a fixed
+formula. Your job is to give accurate, calibrated dimension scores and a clear beat
+analysis — the headline number is derived from those, not picked by you.
 
 Return ONLY valid JSON — no markdown fences, no commentary:
 {
   "detectedCategory": "Electronics | Beauty | Hybrid",
-  "galleryScore": <1-10>,
-  "readiness": "Approved | Conditional | Revise",
   "storyArc": {
     "score": <1-10>,
     "beatsPresent": ["hero","lifestyle",...],
@@ -1518,6 +1518,97 @@ Return ONLY valid JSON — no markdown fences, no commentary:
     { "tier": "critical | recommended | optional", "action": "<specific action>" }
   ]
 }`;
+
+// ── Deterministic gallery scoring ────────────────────────────────────────────
+// galleryScore / readiness are NOT trusted from the model — the model emits per-image
+// dimension scores and beat-presence lists; this function turns those into the headline
+// number with a fixed formula so two audits of the same JSON always yield the same score.
+//
+// Formula:
+//   per-image craft = weighted avg of present dimension scores, weights renormalized over
+//                     the dimensions that actually have values (so an image without
+//                     textLegibility is not penalized for that absence).
+//   gallery craft   = mean of per-image craft scores.
+//   story score     = (distinct beatsPresent / 7) * 10.
+//   galleryScore    = 0.70 * gallery craft + 0.30 * story score, rounded to 1 decimal.
+//   readiness       = >=7.5 Approved, 6.0–7.4 Conditional, <6.0 Revise.
+//
+// scoreBreakdown is returned alongside so any score can be explained — exactly which
+// dimensions contributed, what each per-image craft was, and how the blend resolved.
+const CRAFT_WEIGHTS = {
+  appeal:           0.30,
+  composition:      0.30,
+  lighting:         0.20,
+  brandConsistency: 0.15,
+  textLegibility:   0.05,
+};
+const ALL_BEATS = ['hero','lifestyle','benefit','technical','detail','social','proof'];
+
+export function computeGalleryScore(auditResult) {
+  const assets = Array.isArray(auditResult?.assets) ? auditResult.assets : [];
+
+  // Per-image craft. Renormalize weights across whatever dimensions are present so a
+  // missing dimension neither contributes 0 nor caps the max — it's simply excluded.
+  const perImageRaw = [];
+  const perImage = assets.map((asset, idx) => {
+    const scores = asset?.scores || {};
+    const dimensionsScored = [];
+    let weightedSum = 0;
+    let weightTotal = 0;
+    for (const [dim, w] of Object.entries(CRAFT_WEIGHTS)) {
+      const v = scores[dim];
+      if (typeof v === 'number' && Number.isFinite(v)) {
+        weightedSum += v * w;
+        weightTotal += w;
+        dimensionsScored.push({ dimension: dim, value: v, weight: w });
+      }
+    }
+    const craftRaw = weightTotal > 0 ? weightedSum / weightTotal : null;
+    perImageRaw.push(craftRaw);
+    return {
+      position:       asset?.position ?? idx + 1,
+      craftScore:     craftRaw !== null ? Number(craftRaw.toFixed(3)) : null,
+      dimensionsScored,
+    };
+  });
+
+  // Gallery craft uses RAW per-image values so we don't accumulate rounding error.
+  const validRaw = perImageRaw.filter(n => n !== null);
+  const galleryCraftRaw = validRaw.length
+    ? validRaw.reduce((s, n) => s + n, 0) / validRaw.length
+    : 0;
+
+  // Story completeness — only beats from the canonical 7-beat list count.
+  const presentRaw = auditResult?.storyArc?.beatsPresent || [];
+  const beatsPresent = new Set(
+    presentRaw.map(b => String(b).toLowerCase()).filter(b => ALL_BEATS.includes(b))
+  );
+  const storyCompletenessRaw = (beatsPresent.size / 7) * 10;
+
+  const finalRaw = galleryCraftRaw * 0.70 + storyCompletenessRaw * 0.30;
+  const galleryScore = Number(finalRaw.toFixed(1));
+
+  let readiness;
+  if (galleryScore >= 7.5) readiness = 'Approved';
+  else if (galleryScore >= 6.0) readiness = 'Conditional';
+  else readiness = 'Revise';
+
+  return {
+    galleryScore,
+    readiness,
+    scoreBreakdown: {
+      perImage,
+      galleryCraftAverage:    Number(galleryCraftRaw.toFixed(3)),
+      storyCompletenessScore: Number(storyCompletenessRaw.toFixed(3)),
+      beatsPresentCount:      beatsPresent.size,
+      beatsPresentMatched:    [...beatsPresent].sort(),
+      finalRaw:               Number(finalRaw.toFixed(3)),
+      formula:                '0.70 × galleryCraftAverage + 0.30 × storyCompletenessScore',
+      weights:                CRAFT_WEIGHTS,
+      readinessThresholds:    { Approved: '>=7.5', Conditional: '6.0-7.4', Revise: '<6.0' },
+    },
+  };
+}
 
 // Reusable audit core — used by both /api/creative-audit (single-PDP) and audit_pipeline.js (bulk).
 // Throws on failure; caller handles cache + HTTP semantics.
@@ -1557,10 +1648,11 @@ export async function runCreativeAuditForPdp({ pdpUrl, brandName, images, apiKey
   const message = await anthropic.messages.create({
     model: 'claude-sonnet-4-6',
     max_tokens: 8192,
-    // Slight variance to break up zone-center clustering on similar galleries — observed
-    // multiple SN PDPs scoring identical 6.4/6.8 with default temperature. Low enough that
-    // re-running the same PDP still produces stable scores (±0.2 typical).
-    temperature: 0.3,
+    // Temperature 0 — galleryScore is now computed in code from the model's structured
+    // dimension ratings, so we want those ratings as stable as possible. The cross-PDP
+    // score spread now comes from the deterministic formula (computeGalleryScore), not
+    // from model variance. Re-running the same PDP should produce the same audit.
+    temperature: 0,
     messages: [{
       role: 'user',
       content: [
@@ -1576,6 +1668,17 @@ export async function runCreativeAuditForPdp({ pdpUrl, brandName, images, apiKey
 
   let rawText = message.content[0].text.trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '').trim();
   const result = JSON.parse(rawText);
+
+  // Derive galleryScore/readiness/scoreBreakdown deterministically from the model's
+  // structured ratings. The model itself no longer emits a headline score — any value
+  // present on `result` here for these fields is overwritten with the computed value,
+  // which prevents a stray freehand number from leaking through if the prompt is ever
+  // edited back to emit one.
+  const computed = computeGalleryScore(result);
+  result.galleryScore   = computed.galleryScore;
+  result.readiness      = computed.readiness;
+  result.scoreBreakdown = computed.scoreBreakdown;
+
   result.auditedAt        = new Date().toISOString();
   result.imageCount       = images.length;
   result.sampledCount     = imageBlocks.length;
