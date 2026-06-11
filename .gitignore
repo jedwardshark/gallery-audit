@@ -3,3 +3,4 @@ node_modules/
 *.log
 data/urls/
 .DS_Store
+data/category_overview.pdf
