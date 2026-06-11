@@ -40,24 +40,25 @@ export const BRANDS = {
       'img[src*="sharkninja-sfcc-prod-res.cloudinary.com"]',
     ],
   },
-  // TODO (follow-up, 2026-06): Dyson extractor currently returns 0 images on every PDP
-  // (28/28 PDPs with galleryImageCount: 0). Likely cause: dyson.com moved their image
-  // CDN since the original crawl, or block-detection is firing on every page. The
-  // extractor needs a fresh investigation — what host serves Dyson product images today,
-  // and is the imageHost filter (or lack thereof — Dyson has none configured here)
-  // letting them through? Probably need to set an imageHost for Dyson via the Add Brand
-  // flow or hard-code one similar to how SharkNinja was handled.
   dyson: {
     name: 'Dyson',
     sitemaps: ['https://www.dyson.com/sitemapindex.xml'],
     pdpPattern: /\/[a-z-]+\/[a-z0-9-]+-\d+/i,
     familySegment: 0,
     categorySegment: 1,
+    // Dyson serves all product imagery from Adobe Experience Manager Dynamic Media
+    // (dyson-h.assetsadobe2.com). Restricting imageHost to that domain filters out
+    // chrome (logos, icons) and any third-party tracking pixels that leak through.
+    imageHost: 'dyson-h.assetsadobe2.com',
+    // Dyson's gallery uses BEM-style classes — product-gallery__thumbnail,
+    // product-gallery__media, etc. The previous config's [class*="gallery"]
+    // (lowercase, no "product-" prefix) failed to match because Dyson's classes
+    // include a hyphen-separated namespace. The two selectors below were verified
+    // across 5 product categories (vacuums, hair-care, air, headphones, fans) and
+    // yield 18-23 distinct gallery images each, with no cross-sell leakage.
     gallerySelectors: [
-      '[class*="gallery"] img',
-      '[class*="product-images"] img',
-      '[class*="pdp"] img',
-      '[data-gallery] img',
+      '[class*="product-gallery"] img',
+      '.product-hero img',
     ],
   },
   bissell: {

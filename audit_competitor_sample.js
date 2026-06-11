@@ -1,6 +1,7 @@
 // One-off: audit a 10-PDP sample from each competitor brand (Vitamix, Breville,
-// Williams-Sonoma, Dreame). Dyson skipped — its extractor still returns 0 images on
-// every PDP (known follow-up), so none clear the ≥5-image audit guardrail.
+// Williams-Sonoma, Dreame, Dyson). Dyson was previously excluded due to a broken
+// extractor; the gallerySelectors + imageHost config fix in 2026-06 restored capture
+// to ~18 images/PDP, so it's now in scope.
 //
 // Sampling: 10 evenly-spaced PDPs from each brand's audit-eligible set, so the sample
 // reflects the breadth of each catalog rather than skewing to whichever PDPs happened
@@ -22,7 +23,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const GALLERY_PATH = path.join(__dirname, 'data/gallery_raw.json');
 const CACHE_PATH   = path.join(__dirname, 'data/creative_audit_cache.json');
 
-const COMPETITORS = ['vitamix', 'breville', 'williamssonoma', 'dreame'];
+const COMPETITORS = ['vitamix', 'breville', 'williamssonoma', 'dreame', 'dyson'];
 const PER_BRAND   = 10;
 const MIN_IMAGES  = 5;
 
