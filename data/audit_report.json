@@ -1,0 +1,238 @@
+{
+  "generatedAt": "2026-06-17T02:00:57.397Z",
+  "stats": {
+    "coverage": {
+      "audited": 134,
+      "total": 967
+    },
+    "hasData": true,
+    "averageScore": 6.3,
+    "scoreDistribution": {
+      "Approved": 2,
+      "Conditional": 67,
+      "Revise": 15
+    },
+    "scorePercentiles": {
+      "p10": 5.8,
+      "p25": 6.1,
+      "p50": 6.2,
+      "p75": 6.5,
+      "p90": 6.8
+    },
+    "beatPresenceRates": {
+      "hero": 0.5895522388059702,
+      "lifestyle": 0.5970149253731343,
+      "benefit": 0.5597014925373134,
+      "technical": 0.6044776119402985,
+      "detail": 0.1044776119402985,
+      "social": 0.029850746268656716,
+      "proof": 0.014925373134328358
+    },
+    "categoryBreakdown": {
+      "Electronics": 81,
+      "Unknown": 50,
+      "Hybrid": 3
+    },
+    "topWorst": [
+      {
+        "url": "https://www.sharkninja.com/ninja-air-fryer-pro-4-in-1/AF141.html",
+        "sku": "AF141",
+        "galleryScore": 5.7,
+        "readiness": "Revise",
+        "category": "Electronics",
+        "beatsMissing": [
+          "detail",
+          "social",
+          "proof"
+        ],
+        "criticalSample": [
+          "Remove from position 1 — leading with a certification badge instead of the product causes immediate drop-off; this asset belongs in a highlights or 5050 section, not the gallery hero slot.",
+          "Replace with an environmental hero shot of the air fryer — brand.com allows contextual/moody setups; a dark countertop scene with dramatic side lighting would establish product identity and brand tone simultaneously.",
+          "Promote a version of this shot — without the text bar — to position 1 as the hero; the environmental context is appropriate for brand.com but needs richer, moodier lighting to signal premium quality."
+        ]
+      },
+      {
+        "url": "https://www.sharkninja.com/ninja-air-fryer-pro-xl-6-in-1/AF181.html",
+        "sku": "AF181",
+        "galleryScore": 6,
+        "readiness": "Conditional",
+        "category": "Electronics",
+        "beatsMissing": [
+          "detail",
+          "social",
+          "proof"
+        ],
+        "criticalSample": [
+          "Product is completely absent — this image cannot function as a gallery opener on brand.com; a viewer has no hardware reference point. Replace or reposition as a supporting lifestyle beat after a clear hero shot, or composite the air fryer into the scene.",
+          "The product is partially obscured and pushed to background — the hero unit should be the visual anchor. Reframe to place the air fryer in the foreground with the action happening in front of it, not behind the talent's arm.",
+          "Lighting is flat and slightly cool — the wings read as underlit compared to the warm golden tones in image 1, creating a cross-asset color inconsistency that undermines appetite appeal. Warm the key light to match the food-forward palette established earlier."
+        ]
+      },
+      {
+        "url": "https://www.sharkninja.com/ninja-spatula/AMC14.html",
+        "sku": "AMC14",
+        "galleryScore": null,
+        "beatsMissing": [],
+        "criticalSample": []
+      },
+      {
+        "url": "https://www.sharkninja.com/ninja-spoon/AMC15.html",
+        "sku": "AMC15",
+        "galleryScore": null,
+        "beatsMissing": [],
+        "criticalSample": []
+      },
+      {
+        "url": "https://www.sharkninja.com/ninja-mini-warmer---cooking-system/AMC17.html",
+        "sku": "AMC17",
+        "galleryScore": null,
+        "beatsMissing": [],
+        "criticalSample": []
+      },
+      {
+        "url": "https://www.sharkninja.com/ninja-instant-cooker-glass-lid/APC02.html",
+        "sku": "APC02",
+        "galleryScore": null,
+        "beatsMissing": [],
+        "criticalSample": []
+      },
+      {
+        "url": "https://www.sharkninja.com/shark-ion-robot-vacuum-a73-with-wi-fi/AV753.html",
+        "sku": "AV753",
+        "galleryScore": null,
+        "beatsMissing": [],
+        "criticalSample": []
+      },
+      {
+        "url": "https://www.sharkninja.com/ninja-instant-cooker-steam-rack/APC01.html",
+        "sku": "APC01",
+        "galleryScore": null,
+        "beatsMissing": [],
+        "criticalSample": []
+      },
+      {
+        "url": "https://www.sharkninja.com/ninja-sizzle-indoor-grill-griddle/GR101.html",
+        "sku": "GR101",
+        "galleryScore": 5.7,
+        "readiness": "Revise",
+        "category": "Electronics",
+        "beatsMissing": [
+          "technical",
+          "detail",
+          "social",
+          "proof"
+        ],
+        "criticalSample": [
+          "Wrong product entirely — this dishwasher image must be removed immediately; it destroys purchase confidence in the first second and signals a broken PDP to the shopper",
+          "Replace with a high-impact hero of the Ninja Sizzle unit itself — ideally on a dark or moody environmental surface with the lid open and grill marks visible to establish category and aspiration simultaneously",
+          "No product presence in a gallery asset is a missed conversion opportunity — the shopper cannot connect the food outcome to the Ninja Sizzle unit; overlay the product or reshoot with food plated directly on the grill surface"
+        ]
+      },
+      {
+        "url": "https://www.sharkninja.com/ninja-professional-plus-blender-with-auto-iq/BN701.html",
+        "sku": "BN701",
+        "galleryScore": 5.9,
+        "readiness": "Revise",
+        "category": "Electronics",
+        "beatsMissing": [
+          "detail",
+          "social",
+          "proof"
+        ],
+        "criticalSample": [
+          "Replace this asset in position 1 — the blender must appear in the hero slot; brand.com allows creative latitude but product identification is non-negotiable at position 1; shoot a dramatic environmental hero with the BN701 as the primary subject, food result as supporting context.",
+          "The blender does not appear in this asset — on brand.com, by position 2 the product must have been established; either consolidate these food results into a single aspirational lifestyle shot that includes the machine, or push this grid to a later position after a proper product hero is introduced.",
+          "Text color (cyan/blue) clashes with the warm yellow-green palette of the image — this reduces perceived brand polish; align overlay typography to Ninja's established dark-background white-text system or use a semi-transparent dark bar as seen in other assets."
+        ]
+      },
+      {
+        "url": "https://www.sharkninja.com/ninja-ultracrush-professional-kitchen-system/BP401.html",
+        "sku": "BP401",
+        "galleryScore": 5.9,
+        "readiness": "Revise",
+        "category": "Electronics",
+        "beatsMissing": [
+          "benefit",
+          "detail",
+          "social",
+          "proof"
+        ],
+        "criticalSample": [
+          "White-background hero in slot 1 wastes brand.com's creative latitude — replace or supplement with an environmental/contextual hero shot; a pure spec image in the anchor position suppresses emotional engagement within the critical 2-second scroll decision window.",
+          "Two consecutive white-background images in slots 1 and 2 create a monotonous opening sequence — the gallery loses momentum before the lifestyle content begins, increasing early scroll abandonment risk.",
+          "Product is visually subordinate to the food and talent — the blender occupies roughly 25% of the frame; on mobile thumbnail this risks the product being unrecognizable, undermining the gallery's identification function."
+        ]
+      },
+      {
+        "url": "https://www.sharkninja.com/ninja-foodi-flexbasket-air-fryer-with-7qt-megazone/DZ071.html",
+        "sku": "DZ071",
+        "galleryScore": 6,
+        "readiness": "Conditional",
+        "category": "Electronics",
+        "beatsMissing": [
+          "detail",
+          "social",
+          "proof"
+        ],
+        "criticalSample": [
+          "Remove dimension callouts and spec copy from the hero image — this is a brand.com gallery hero, not a retailer spec sheet; spec data belongs in a dedicated technical beat or product detail section, and cluttering the hero suppresses the 2-second emotional pull that drives scroll depth.",
+          "Replace the pure white background with a dark studio or moody kitchen environment consistent with the brand.com creative latitude — white backgrounds signal retailer PDPs and undercut the premium positioning Ninja is building on owned channels.",
+          "Audit and re-grade all six food panels to a unified color temperature and contrast level — mismatched stock imagery signals low production investment and erodes brand trust on owned channels where consumers are making final purchase decisions."
+        ]
+      },
+      {
+        "url": "https://www.sharkninja.com/ninja-professional-plus-food-processor/BN601.html",
+        "sku": "BN601",
+        "galleryScore": 6.1,
+        "readiness": "Conditional",
+        "category": "Electronics",
+        "beatsMissing": [
+          "detail",
+          "social",
+          "proof"
+        ],
+        "criticalSample": [
+          "Remove from position 1 entirely — a feature-spec infographic as the gallery opener fails the product-identification beat and will increase bounce on mobile where only the first frame is seen; replace with a contextual hero showing the full unit in a styled kitchen environment.",
+          "This asset is doing hero-level work but lacks a human presence or motion cue; on brand.com where creative latitude is permitted, add a hand pouring ingredients or a tight pour-shot to elevate emotional engagement above a static catalog image.",
+          "The gallery now has three consecutive lifestyle frames with the same black-banner-below structure; this repetition signals a lack of creative direction and will cause shoppers to scroll past without reading — break the pattern here with a technical or detail beat instead."
+        ]
+      },
+      {
+        "url": "https://www.sharkninja.com/ninja-professional-plus-kitchen-system-with-auto-iq/BN801.html",
+        "sku": "BN801",
+        "galleryScore": 6.1,
+        "readiness": "Conditional",
+        "category": "Electronics",
+        "beatsMissing": [
+          "lifestyle",
+          "social",
+          "proof"
+        ],
+        "criticalSample": [
+          "Replace this asset as the gallery opener — the hero slot must lead with the product itself, not a recipe book accessory; a brand.com hero should immediately answer 'what is this?' and this image fails that test, increasing bounce risk.",
+          "If a food-result image is retained anywhere in the gallery, it must be paired with or preceded by the machine to establish causality — standalone pesto with no product visible creates attribution confusion.",
+          "The hand pressing the button is the only human element in this asset and it is cropped to a single finger — this is insufficient lifestyle signal; the asset reads as purely technical, which is appropriate for Beat 4 but should not appear this early in the gallery sequence."
+        ]
+      },
+      {
+        "url": "https://www.sharkninja.com/ninja-prestige-smart-xl-air-fryer-countertop-oven-pro-cook/DT551.html",
+        "sku": "DT551",
+        "galleryScore": 6.1,
+        "readiness": "Conditional",
+        "category": "Electronics",
+        "beatsMissing": [
+          "detail",
+          "social",
+          "proof"
+        ],
+        "criticalSample": [
+          "The hero slot on brand.com strongly prefers motion or video — this static lifestyle image undersells the sizzle and steam of active cooking; replace or supplement with a short looping video clip of the two-level cook moment to maximize dwell time and emotional pull in the top gallery position.",
+          "The text band at the bottom consumes roughly 20% of the image height and obscures the food spread — on brand.com where images render larger than on retail, consider moving copy to an adjacent text module and letting the full food tableau breathe as a pure lifestyle image.",
+          "The white background is inconsistent with the contextual environments used in positions 1 and 2 and signals a retailer-repurposed asset — reshoot against a surface and environment consistent with the kitchen context established earlier in the gallery to maintain brand.com premium standards."
+        ]
+      }
+    ]
+  },
+  "narrative": null,
+  "disclaimer": "AI-generated draft — review before acting. Statistics are computed from audit data; narrative and recommendations are LLM-generated and may contain errors."
+}
