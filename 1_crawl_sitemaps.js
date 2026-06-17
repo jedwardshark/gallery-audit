@@ -82,6 +82,45 @@ async function crawlBrevilleCategories(brand) {
   return [...allProductUrls].filter(u => brand.pdpPattern.test(u));
 }
 
+// Generic category-page crawler using stealth Playwright. Used by brands behind bot
+// protection (e.g. Miele's Akamai) where Breville-style plain chromium gets 403'd.
+// Filters extracted links by brand.pdpPattern — the link discovery step is intentionally
+// broad (all <a href>) and the pattern is the canonical "is this a PDP" check.
+async function crawlCategoriesViaStealthBrowser(brand) {
+  const { chromium: stealth } = await import('playwright-extra');
+  const Stealth = (await import('puppeteer-extra-plugin-stealth')).default;
+  stealth.use(Stealth());
+  const browser = await stealth.launch({ headless: true });
+  const page = await browser.newPage();
+  const allProductUrls = new Set();
+
+  for (const categoryUrl of brand.categoryPages) {
+    try {
+      await page.goto(categoryUrl, { waitUntil: 'networkidle', timeout: 30000 });
+      await page.waitForTimeout(2500);
+      await page.evaluate(async () => {
+        for (let i = 0; i < 5; i++) {
+          window.scrollBy(0, window.innerHeight);
+          await new Promise(r => setTimeout(r, 600));
+        }
+      });
+      const links = await page.evaluate(() =>
+        Array.from(document.querySelectorAll('a[href]')).map(a => a.href)
+      );
+      links.forEach(l => {
+        const cleaned = l.split('?')[0];
+        if (brand.pdpPattern.test(cleaned)) allProductUrls.add(cleaned);
+      });
+      process.stdout.write(`\r   ${allProductUrls.size} URLs found...`);
+    } catch (e) {
+      console.warn(`\n   ⚠️  Skipped: ${categoryUrl} — ${e.message}`);
+    }
+  }
+
+  await browser.close();
+  return [...allProductUrls];
+}
+
 export async function crawlBrand(brandKey) {
   const brand = BRANDS[brandKey];
   console.log(`\n🔍 Crawling ${brand.name}...`);
@@ -90,6 +129,9 @@ export async function crawlBrand(brandKey) {
 
   if (brandKey === 'breville') {
     allUrls = await crawlBrevilleCategories(brand);
+  } else if (brandKey === 'miele') {
+    // Miele runs behind Akamai bot protection — must use stealth Playwright.
+    allUrls = await crawlCategoriesViaStealthBrowser(brand);
   } else {
     const useBrowser = brandKey === 'dyson';
     const queue = [...brand.sitemaps];

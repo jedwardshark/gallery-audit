@@ -40,6 +40,46 @@ export const BRANDS = {
       'img[src*="sharkninja-sfcc-prod-res.cloudinary.com"]',
     ],
   },
+  miele: {
+    name: 'Miele',
+    // No accessible sitemap (Akamai serves a failover HTML page on /sitemap.xml).
+    // Discovery happens via crawlBrand's categoryPages mechanism (Breville-style):
+    // walk a top-level category list, harvest /product/<id>/<slug> links from each.
+    // The category list below is the visible top-level appliance taxonomy at /search.
+    categoryPages: [
+      'https://www.mieleusa.com/category/1014414/ranges',
+      'https://www.mieleusa.com/category/1022125/ovens',
+      'https://www.mieleusa.com/category/1013128/combi-steam-ovens',
+      'https://www.mieleusa.com/category/1013130/microwave-ovens',
+      'https://www.mieleusa.com/category/1022127/warming-and-vacuum-sealing-drawers',
+      'https://www.mieleusa.com/category/1013778/cooktops',
+      'https://www.mieleusa.com/category/1014080/ventilation-hoods',
+      'https://www.mieleusa.com/category/1013131/coffee-machines',
+      'https://www.mieleusa.com/category/1014099/dishwashers',
+      'https://www.mieleusa.com/category/1014098/refrigeration',
+      'https://www.mieleusa.com/category/1014097/wine-conditioning',
+      'https://www.mieleusa.com/category/1014096/washing-machines',
+      'https://www.mieleusa.com/category/1014095/dryers',
+      'https://www.mieleusa.com/category/1014094/vacuum-cleaners',
+    ],
+    pdpPattern: /\/product\/\d+\/[a-z0-9-]+/i,
+    familySegment: 1,
+    categorySegment: 1,
+    // Miele uses Akamai bot protection — every page fetch must go through stealth
+    // Playwright. The existing extractOnePdp path uses chromiumStealth, so we just
+    // mark this brand as preferring stealth from the start.
+    useStealthBrowser: true,
+    // Image CDN — media.miele.com. cdn.cookielaw.org (cookie banner) and others are
+    // filtered out by the imageHost constraint.
+    imageHost: 'media.miele.com',
+    // Deliberately NO gallerySelectors for V1. The [class*="_miele-gallery"] scope
+    // only catches the hero carousel (2-6 images) and misses the rich below-fold
+    // feature content (typically 25-60+ more images per PDP). Host-only filter
+    // captures everything from media.miele.com — likely includes some related/
+    // recommended-product imagery from compare modules, but that's a more useful
+    // first cut than under-counting. TODO (follow-up): tighten with Miele-specific
+    // section selectors once we audit and see what cross-sell pollution looks like.
+  },
   dyson: {
     name: 'Dyson',
     sitemaps: ['https://www.dyson.com/sitemapindex.xml'],
