@@ -23,7 +23,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const GALLERY_PATH = path.join(__dirname, 'data/gallery_raw.json');
 const CACHE_PATH   = path.join(__dirname, 'data/creative_audit_cache.json');
 
-const COMPETITORS = ['vitamix', 'breville', 'williamssonoma', 'dreame', 'dyson', 'miele', 'ooni', 'ourplace', 'fellow'];
+const COMPETITORS = ['vitamix', 'breville', 'williamssonoma', 'dreame', 'dyson', 'miele', 'ooni', 'ourplace', 'fellow', 'sonos', 'nothing', 'bangolufsen', 'rimowa'];
 const PER_BRAND   = 10;
 const MIN_IMAGES  = 5;
 

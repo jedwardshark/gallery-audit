@@ -174,6 +174,78 @@ export const BRANDS = {
     categorySegment: 1,
   },
 
+  // --- Bespoke (non-Shopify) reference brands ---
+  rimowa: {
+    name: 'Rimowa',
+    // Per-country product sitemap. The /sitemap_index.xml has 109 locale-specific
+    // sub-sitemaps; sitemap-products_us.xml is the US storefront.
+    sitemaps: ['https://www.rimowa.com/sitemap-products_us.xml'],
+    pdpPattern: /\/us\/en\/(luggage|re-crafted|accessories|leather-goods)\/[^?]+\.html$/i,
+    familySegment: 2,
+    categorySegment: 3,
+    // Rimowa is behind Akamai (homepage returns 403 to bare-fetch). Stealth Playwright
+    // bypasses; networkidle never quiesces so use domcontentloaded + post-wait.
+    useStealthBrowser: true,
+    // All product imagery served from www.rimowa.com via Salesforce Commerce Cloud
+    // (Demandware) static catalog. The catalog path differentiates real product
+    // imagery from shared-library chrome (mega menu, empty-cart pictograms, etc.).
+    imageHost: 'www.rimowa.com',
+    imageUrlMustContain: 'Sites-rimowa-master-catalog-final',
+    gallerySelectors: ['[class*="product-image"] img'],
+    // Seeded via inline extraction (Miele-style stealth + per-page wait pattern).
+    seedOnly: true,
+  },
+
+  bangolufsen: {
+    name: 'Bang & Olufsen',
+    // Per-locale sitemap — en-us is the US storefront.
+    sitemaps: ['https://www.bang-olufsen.com/en/sitemap-en-us.xml'],
+    // Restrict to actual product categories. The sitemap also includes 113 /story/,
+    // 27 /campaign/, and 12 /faq/ entries with matching depth that aren't PDPs.
+    pdpPattern: /\/en\/us\/(speakers|earphones|headphones|accessories|soundbars)\/[a-z0-9-]+$/i,
+    familySegment: 2,
+    categorySegment: 2,
+    // B&O serves all imagery from Contentful (images.ctfassets.net). Gallery is
+    // lazy-loaded — Playwright + scroll required to populate the carousel beyond hero.
+    imageHost: 'images.ctfassets.net',
+    gallerySelectors: [
+      '[class*="productDetail"] img',
+      '[class*="carouselProductDetail"] img',
+    ],
+    // Seeded via inline extraction (same flow as Nothing).
+    seedOnly: true,
+  },
+
+  nothing: {
+    name: 'Nothing',
+    sitemaps: ['https://us.nothing.tech/sitemap/products/1.xml'],
+    pdpPattern: /\/products\/[a-z0-9-]+$/i,
+    familySegment: 1,
+    categorySegment: 1,
+    // Nothing splits imagery across two CDNs: cdn.sanity.io (newer flagship products,
+    // managed via Sanity CMS) and cdn.shopify.com (older inventory). Multi-host filter
+    // captures both; older single-image PDPs naturally fall out of audit eligibility
+    // via the 5-image guardrail.
+    imageHosts: ['cdn.sanity.io', 'cdn.shopify.com'],
+    // Seeded via inline extraction (see Batch 2 seed flow); rolling-refresh integration
+    // is deferred — central extractor branch can be added later when the catalog stabilizes.
+    seedOnly: true,
+  },
+
+  sonos: {
+    name: 'Sonos',
+    // Single flat sitemap (not an index); contains all locales. Filter is in pdpPattern.
+    sitemaps: ['https://www.sonos.com/sitemap.xml'],
+    // /en-us/shop/<slug> matches both category and PDP URLs — categories naturally fall
+    // out via the 5-image audit-eligible guardrail (they yield <5 media.sonos.com images).
+    pdpPattern: /\/en-us\/shop\/[a-z0-9-]+$/i,
+    familySegment: 1,
+    categorySegment: 2,
+    // Sonos serves all PDP imagery from media.sonos.com. Host-only filter keeps the
+    // signal clean (chrome and analytics pixels live on other hosts).
+    imageHost: 'media.sonos.com',
+  },
+
   breville: {
     name: 'Breville',
     // No XML sitemap for products — crawl category pages via Playwright

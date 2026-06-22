@@ -41,6 +41,10 @@ const FILES_TO_COMMIT = [
   'data/urls/ooni.json',
   'data/urls/ourplace.json',
   'data/urls/fellow.json',
+  'data/urls/sonos.json',
+  'data/urls/nothing.json',
+  'data/urls/bangolufsen.json',
+  'data/urls/rimowa.json',
 ];
 
 // Rolling-window size for the weekly review pipeline. ~75 per week covers all 293
