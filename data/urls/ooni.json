@@ -1,0 +1,835 @@
+[
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/premium-wood-pellets-100-american-oak",
+    "family": "premium-wood-pellets-100-american-oak",
+    "category": "premium-wood-pellets-100-american-oak"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-gas-burner",
+    "family": "ooni-gas-burner",
+    "category": "ooni-gas-burner"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-firestarters",
+    "family": "ooni-firestarters",
+    "category": "ooni-firestarters"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-koda",
+    "family": "ooni-koda",
+    "category": "ooni-koda"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-perforated-pizza-peel",
+    "family": "ooni-perforated-pizza-peel",
+    "category": "ooni-perforated-pizza-peel"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-wooden-pizza-peel",
+    "family": "ooni-wooden-pizza-peel",
+    "category": "ooni-wooden-pizza-peel"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-pizza-cutter-wheel",
+    "family": "ooni-pizza-cutter-wheel",
+    "category": "ooni-pizza-cutter-wheel"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-pizza-cutter-rocker-blade",
+    "family": "ooni-pizza-cutter-rocker-blade",
+    "category": "ooni-pizza-cutter-rocker-blade"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-koda-carry-cover",
+    "family": "ooni-koda-carry-cover",
+    "category": "ooni-koda-carry-cover"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-gas-regulator",
+    "family": "ooni-gas-regulator",
+    "category": "ooni-gas-regulator"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-pizza-dough-scraper",
+    "family": "ooni-pizza-dough-scraper",
+    "category": "ooni-pizza-dough-scraper"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-dual-platform-digital-scales",
+    "family": "ooni-dual-platform-digital-scales",
+    "category": "ooni-dual-platform-digital-scales"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-pizzaiolo-apron",
+    "family": "ooni-pizzaiolo-apron",
+    "category": "ooni-pizzaiolo-apron"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-karu",
+    "family": "ooni-karu",
+    "category": "ooni-karu"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-karu-carry-cover",
+    "family": "ooni-karu-carry-cover",
+    "category": "ooni-karu-carry-cover"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-pro-baking-stones",
+    "family": "ooni-pro-baking-stones",
+    "category": "ooni-pro-baking-stones"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/gas-tank-adaptor",
+    "family": "gas-tank-adaptor",
+    "category": "gas-tank-adaptor"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-koda-16-stone",
+    "family": "ooni-koda-16-stone",
+    "category": "ooni-koda-16-stone"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-karu-baking-stone",
+    "family": "ooni-karu-baking-stone",
+    "category": "ooni-karu-baking-stone"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-pizza-peel",
+    "family": "ooni-pizza-peel",
+    "category": "ooni-pizza-peel"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-koda-16",
+    "family": "ooni-koda-16",
+    "category": "ooni-koda-16"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-koda-16-cover",
+    "family": "ooni-koda-16-cover",
+    "category": "ooni-koda-16-cover"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-fyra-carry-cover",
+    "family": "ooni-fyra-carry-cover",
+    "category": "ooni-fyra-carry-cover"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-natural-gas-conversion-kit",
+    "family": "ooni-natural-gas-conversion-kit",
+    "category": "ooni-natural-gas-conversion-kit"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-shoes",
+    "family": "ooni-shoes",
+    "category": "ooni-shoes"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/pizza-topping-station",
+    "family": "pizza-topping-station",
+    "category": "pizza-topping-station"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-pizza-topping-container-small",
+    "family": "ooni-pizza-topping-container-small",
+    "category": "ooni-pizza-topping-container-small"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-pizza-topping-container-medium",
+    "family": "ooni-pizza-topping-container-medium",
+    "category": "ooni-pizza-topping-container-medium"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-karu-16-cover",
+    "family": "ooni-karu-16-cover",
+    "category": "ooni-karu-16-cover"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-premium-assorted-oak-pack",
+    "family": "ooni-premium-assorted-oak-pack",
+    "category": "ooni-premium-assorted-oak-pack"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/spare-hook-kit-for-ooni-modular-tables",
+    "family": "spare-hook-kit-for-ooni-modular-tables",
+    "category": "spare-hook-kit-for-ooni-modular-tables"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/foot-pack-for-ooni-modular-tables",
+    "family": "foot-pack-for-ooni-modular-tables",
+    "category": "foot-pack-for-ooni-modular-tables"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/connector-kit-for-ooni-modular-tables",
+    "family": "connector-kit-for-ooni-modular-tables",
+    "category": "connector-kit-for-ooni-modular-tables"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-karu-16-stones",
+    "family": "ooni-karu-16-stones",
+    "category": "ooni-karu-16-stones"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-premium-hardwood-5-oak-logs",
+    "family": "ooni-premium-hardwood-5-oak-logs",
+    "category": "ooni-premium-hardwood-5-oak-logs"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/pizza-czar-anthony-falco",
+    "family": "pizza-czar-anthony-falco",
+    "category": "pizza-czar-anthony-falco"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-pizza-oven-gloves",
+    "family": "ooni-pizza-oven-gloves",
+    "category": "ooni-pizza-oven-gloves"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-dough-balls",
+    "family": "ooni-dough-balls",
+    "category": "ooni-dough-balls"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-karu-12-replacement-fuel-tray",
+    "family": "ooni-karu-12-replacement-fuel-tray",
+    "category": "ooni-karu-12-replacement-fuel-tray"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/natural-gas-burner-ooni-karu-16",
+    "family": "natural-gas-burner-ooni-karu-16",
+    "category": "natural-gas-burner-ooni-karu-16"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-folding-table",
+    "family": "ooni-folding-table",
+    "category": "ooni-folding-table"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/grizzler-pan",
+    "family": "grizzler-pan",
+    "category": "grizzler-pan"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/sizzler-pan",
+    "family": "sizzler-pan",
+    "category": "sizzler-pan"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-cast-iron-skillet",
+    "family": "ooni-cast-iron-skillet",
+    "category": "ooni-cast-iron-skillet"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-dual-sided-grizzler-plate",
+    "family": "ooni-dual-sided-grizzler-plate",
+    "category": "ooni-dual-sided-grizzler-plate"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/pizza-prep-lid",
+    "family": "pizza-prep-lid",
+    "category": "pizza-prep-lid"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/pizza-dough-boxes",
+    "family": "pizza-dough-boxes",
+    "category": "pizza-dough-boxes"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-volt-cover",
+    "family": "ooni-volt-cover",
+    "category": "ooni-volt-cover"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-karu-2",
+    "family": "ooni-karu-2",
+    "category": "ooni-karu-2"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-ir-thermometer",
+    "family": "ooni-ir-thermometer",
+    "category": "ooni-ir-thermometer"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-stone-baking-board",
+    "family": "ooni-stone-baking-board",
+    "category": "ooni-stone-baking-board"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-roasting-pan",
+    "family": "ooni-roasting-pan",
+    "category": "ooni-roasting-pan"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/gift-card",
+    "family": "gift-card",
+    "category": "gift-card"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-silicone-trivet",
+    "family": "ooni-silicone-trivet",
+    "category": "ooni-silicone-trivet"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-detroit-style-pizza-pan",
+    "family": "ooni-detroit-style-pizza-pan",
+    "category": "ooni-detroit-style-pizza-pan"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-pan-pizza-spatula",
+    "family": "ooni-pan-pizza-spatula",
+    "category": "ooni-pan-pizza-spatula"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-koda-2-max",
+    "family": "ooni-koda-2-max",
+    "category": "ooni-koda-2-max"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-koda-2-max-cover",
+    "family": "ooni-koda-2-max-cover",
+    "category": "ooni-koda-2-max-cover"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-serving-bundle",
+    "family": "ooni-serving-bundle",
+    "category": "ooni-serving-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-dual-sided-grizzler-cast-iron-skillet-bundle",
+    "family": "ooni-dual-sided-grizzler-cast-iron-skillet-bundle",
+    "category": "ooni-dual-sided-grizzler-cast-iron-skillet-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-pizza-peel-bundle",
+    "family": "ooni-pizza-peel-bundle",
+    "category": "ooni-pizza-peel-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/dough-prep-bundle",
+    "family": "dough-prep-bundle",
+    "category": "dough-prep-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-medium-pizza-table-bundle",
+    "family": "ooni-medium-pizza-table-bundle",
+    "category": "ooni-medium-pizza-table-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-large-pizza-table-bundle",
+    "family": "ooni-large-pizza-table-bundle",
+    "category": "ooni-large-pizza-table-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-fyra-12-fuel-bundle",
+    "family": "ooni-fyra-12-fuel-bundle",
+    "category": "ooni-fyra-12-fuel-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-karu-12-fuel-bundle",
+    "family": "ooni-karu-12-fuel-bundle",
+    "category": "ooni-karu-12-fuel-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-karu-16-fuel-bundle",
+    "family": "ooni-karu-16-fuel-bundle",
+    "category": "ooni-karu-16-fuel-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-pizza-brush-turning-peel-bundle",
+    "family": "ooni-pizza-brush-turning-peel-bundle",
+    "category": "ooni-pizza-brush-turning-peel-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-essential-accessory-bundle",
+    "family": "ooni-essential-accessory-bundle",
+    "category": "ooni-essential-accessory-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-detroit-pizza-prep-bundle",
+    "family": "ooni-detroit-pizza-prep-bundle",
+    "category": "ooni-detroit-pizza-prep-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-koda-16-essentials-bundle",
+    "family": "ooni-koda-16-essentials-bundle",
+    "category": "ooni-koda-16-essentials-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-koda-2-max-essentials-bundle",
+    "family": "ooni-koda-2-max-essentials-bundle",
+    "category": "ooni-koda-2-max-essentials-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-koda-2-max-outdoor-kitchen-bundle",
+    "family": "ooni-koda-2-max-outdoor-kitchen-bundle",
+    "category": "ooni-koda-2-max-outdoor-kitchen-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-karu-2-gas-burner-bundle",
+    "family": "ooni-karu-2-gas-burner-bundle",
+    "category": "ooni-karu-2-gas-burner-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-koda-12-essentials-bundle",
+    "family": "ooni-koda-12-essentials-bundle",
+    "category": "ooni-koda-12-essentials-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-karu-12-essentials-bundle",
+    "family": "ooni-karu-12-essentials-bundle",
+    "category": "ooni-karu-12-essentials-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-karu-2-essentials-bundle",
+    "family": "ooni-karu-2-essentials-bundle",
+    "category": "ooni-karu-2-essentials-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-koda-16-ultimate-bundle",
+    "family": "ooni-koda-16-ultimate-bundle",
+    "category": "ooni-koda-16-ultimate-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-premium-hardwood-5-oak-logs-2-pack",
+    "family": "ooni-premium-hardwood-5-oak-logs-2-pack",
+    "category": "ooni-premium-hardwood-5-oak-logs-2-pack"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-modular-table-medium",
+    "family": "ooni-modular-table-medium",
+    "category": "ooni-modular-table-medium"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-oven-table-cover",
+    "family": "ooni-oven-table-cover",
+    "category": "ooni-oven-table-cover"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-karu-2-pro",
+    "family": "ooni-karu-2-pro",
+    "category": "ooni-karu-2-pro"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-karu-2-pro-gas-burner-bundle",
+    "family": "ooni-karu-2-pro-gas-burner-bundle",
+    "category": "ooni-karu-2-pro-gas-burner-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-karu-2-pro-essentials-bundle",
+    "family": "ooni-karu-2-pro-essentials-bundle",
+    "category": "ooni-karu-2-pro-essentials-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-karu-2-pro-ultimate-bundle",
+    "family": "ooni-karu-2-pro-ultimate-bundle",
+    "category": "ooni-karu-2-pro-ultimate-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-karu-2-pro-gas-burner-bundle-natural-gas",
+    "family": "ooni-karu-2-pro-gas-burner-bundle-natural-gas",
+    "category": "ooni-karu-2-pro-gas-burner-bundle-natural-gas"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-karu-2-pro-essentials-bundle-natural-gas",
+    "family": "ooni-karu-2-pro-essentials-bundle-natural-gas",
+    "category": "ooni-karu-2-pro-essentials-bundle-natural-gas"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-halo-pro-spiral-mixer",
+    "family": "ooni-halo-pro-spiral-mixer",
+    "category": "ooni-halo-pro-spiral-mixer"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-dough-tools",
+    "family": "ooni-dough-tools",
+    "category": "ooni-dough-tools"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/cast-iron-bundle",
+    "family": "cast-iron-bundle",
+    "category": "cast-iron-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-koda-2",
+    "family": "ooni-koda-2",
+    "category": "ooni-koda-2"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-koda-2-pro",
+    "family": "ooni-koda-2-pro",
+    "category": "ooni-koda-2-pro"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-modular-table-large",
+    "family": "ooni-modular-table-large",
+    "category": "ooni-modular-table-large"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/koda-2-pro-essentials-bundle",
+    "family": "koda-2-pro-essentials-bundle",
+    "category": "koda-2-pro-essentials-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-connect-digital-temperature-hub",
+    "family": "ooni-connect-digital-temperature-hub",
+    "category": "ooni-connect-digital-temperature-hub"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-koda-2-carry-cover",
+    "family": "ooni-koda-2-carry-cover",
+    "category": "ooni-koda-2-carry-cover"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-koda-2-pro-cover",
+    "family": "ooni-koda-2-pro-cover",
+    "category": "ooni-koda-2-pro-cover"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/koda-2-essentials-bundle",
+    "family": "koda-2-essentials-bundle",
+    "category": "koda-2-essentials-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-food-probe",
+    "family": "ooni-food-probe",
+    "category": "ooni-food-probe"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-karu-2-pro-gas-burner",
+    "family": "ooni-karu-2-pro-gas-burner",
+    "category": "ooni-karu-2-pro-gas-burner"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-dough-ball-maker-bundle",
+    "family": "ooni-dough-ball-maker-bundle",
+    "category": "ooni-dough-ball-maker-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-volt-2",
+    "family": "ooni-volt-2",
+    "category": "ooni-volt-2"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-dough-ball-prep-kit",
+    "family": "ooni-dough-ball-prep-kit",
+    "category": "ooni-dough-ball-prep-kit"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/cooking-with-ooni",
+    "family": "cooking-with-ooni",
+    "category": "cooking-with-ooni"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/sheet-pan-and-rack-for-ooni-volt-2",
+    "family": "sheet-pan-and-rack-for-ooni-volt-2",
+    "category": "sheet-pan-and-rack-for-ooni-volt-2"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-volt-2-essentials-bundle",
+    "family": "ooni-volt-2-essentials-bundle",
+    "category": "ooni-volt-2-essentials-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-volt-2-proof-to-bake-bundle",
+    "family": "ooni-volt-2-proof-to-bake-bundle",
+    "category": "ooni-volt-2-proof-to-bake-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-compact-peel",
+    "family": "ooni-compact-peel",
+    "category": "ooni-compact-peel"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-pizza-oven-brush",
+    "family": "ooni-pizza-oven-brush",
+    "category": "ooni-pizza-oven-brush"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-turning-peel-infrared-thermometer-bundle",
+    "family": "ooni-turning-peel-infrared-thermometer-bundle",
+    "category": "ooni-turning-peel-infrared-thermometer-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-modular-pizza-oven-table-and-cover-bundle-large",
+    "family": "ooni-modular-pizza-oven-table-and-cover-bundle-large",
+    "category": "ooni-modular-pizza-oven-table-and-cover-bundle-large"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-pizza-oven-table-cover-bundle-medium",
+    "family": "ooni-pizza-oven-table-cover-bundle-medium",
+    "category": "ooni-pizza-oven-table-cover-bundle-medium"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/volt-2-culinary-bundle",
+    "family": "volt-2-culinary-bundle",
+    "category": "volt-2-culinary-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-rotating-pizza-oven-stone",
+    "family": "ooni-rotating-pizza-oven-stone",
+    "category": "ooni-rotating-pizza-oven-stone"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-koda-2-rotating-stone-bundle",
+    "family": "ooni-koda-2-rotating-stone-bundle",
+    "category": "ooni-koda-2-rotating-stone-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-koda-2-pro-rotating-stone-bundle",
+    "family": "ooni-koda-2-pro-rotating-stone-bundle",
+    "category": "ooni-koda-2-pro-rotating-stone-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-koda-2-max-rotating-stone-bundle",
+    "family": "ooni-koda-2-max-rotating-stone-bundle",
+    "category": "ooni-koda-2-max-rotating-stone-bundle"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-signature-perforated-pizza-peel",
+    "family": "ooni-signature-perforated-pizza-peel",
+    "category": "ooni-signature-perforated-pizza-peel"
+  },
+  {
+    "brand": "ooni",
+    "brandName": "Ooni",
+    "url": "https://ooni.com/products/ooni-pizza-turning-peel",
+    "family": "ooni-pizza-turning-peel",
+    "category": "ooni-pizza-turning-peel"
+  }
+]

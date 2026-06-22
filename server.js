@@ -1169,29 +1169,29 @@ export async function extractSharkNinjaHybrid(url, brandName, browser) {
   };
 }
 
-// Dreame: Shopify-backed storefront. Their product JSON endpoint
-// (/products/<handle>.json) returns the canonical gallery image list — no DOM scrape,
-// no browser, no SKU-in-path filter needed. Recon confirmed the JSON exactly matches
-// the visible PDP carousel (other on-page imagery is chrome / below-fold feature blocks
-// that we deliberately exclude for v1; can layer in later if audits feel thin).
+// Generic Shopify product JSON API extractor. Used by any brand running on Shopify
+// where /products/<handle>.json returns the canonical gallery image list — no DOM
+// scrape, no browser, no SKU-in-path filter needed. Currently in use for: Dreame,
+// Ooni, Our Place, Fellow.
 //
-// Accessory tag-and-skip: URL handles matching BRANDS.dreame.pdpExcludeKeywords get a
-// skip record (skipped: true, skipReason: 'accessory') so they remain visible in
-// gallery_raw.json without burning the JSON API call or any downstream audit budget.
-export async function extractDreameViaShopifyJson(url, brandName) {
+// Accessory tag-and-skip: URL handles matching the brand's pdpExcludeKeywords pattern
+// get a skip record (skipped: true, skipReason: 'accessory') so they remain visible
+// in gallery_raw.json without burning the JSON API call or any downstream audit
+// budget. Brands without a pdpExcludeKeywords pattern simply skip the check.
+export async function extractShopifyJsonApi(url, brandKey, brandName) {
   const pathParts = new URL(url).pathname.split('/').filter(Boolean);
   const handle = pathParts[pathParts.length - 1] || 'unknown';
   const base = {
-    brand:    'dreame',
+    brand:    brandKey,
     brandName,
     url,
-    sku:      handle,           // Dreame's effective SKU is the URL handle (Shopify convention).
+    sku:      handle,           // Shopify convention: URL handle is the effective SKU.
     family:   handle,
     category: handle,
   };
 
   // Tag-and-skip accessories before any network call.
-  const excludePattern = SITEMAP_BRAND_CONFIG.dreame?.pdpExcludeKeywords;
+  const excludePattern = SITEMAP_BRAND_CONFIG[brandKey]?.pdpExcludeKeywords;
   if (excludePattern && excludePattern.test(handle)) {
     return {
       ...base,
@@ -1250,9 +1250,9 @@ async function extractOnePdp(url, brandKey, brandName, imageHost, stdBrowser, st
   if (brandKey === 'sharkninja') {
     return extractSharkNinjaHybrid(url, brandName, stealthBrowser || stdBrowser);
   }
-  // Dreame: Shopify product JSON API. No browser needed.
-  if (brandKey === 'dreame') {
-    return extractDreameViaShopifyJson(url, brandName);
+  // Shopify-backed brands route through the generic JSON-API extractor. No browser needed.
+  if (SITEMAP_BRAND_CONFIG[brandKey]?.useShopifyJsonApi) {
+    return extractShopifyJsonApi(url, brandKey, brandName);
   }
 
   const pathParts = new URL(url).pathname.split('/').filter(Boolean);
@@ -1939,11 +1939,11 @@ async function reExtractBrand(brandKey, brandName, urls, imageHost, useStealth, 
     return results;
   }
 
-  if (brandKey === 'dreame') {
-    // Shopify product JSON API — pure HTTP, no browser. Includes accessory
-    // tag-and-skip handled inside the extractor itself.
+  if (SITEMAP_BRAND_CONFIG[brandKey]?.useShopifyJsonApi) {
+    // Shopify product JSON API — pure HTTP, no browser. Accessory tag-and-skip
+    // is handled inside the extractor.
     for (const url of urls) {
-      results.push(await extractDreameViaShopifyJson(url, brandName));
+      results.push(await extractShopifyJsonApi(url, brandKey, brandName));
       onProgress?.(++done, urls.length);
     }
     return results;

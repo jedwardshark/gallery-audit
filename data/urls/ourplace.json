@@ -1,0 +1,737 @@
+[
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/the-main-plate",
+    "family": "the-main-plate",
+    "category": "the-main-plate"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/night-day-glasses",
+    "family": "night-day-glasses",
+    "category": "night-day-glasses"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/single-spruce-steamers",
+    "family": "single-spruce-steamers",
+    "category": "single-spruce-steamers"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/beechwood-spatulas",
+    "family": "beechwood-spatulas",
+    "category": "beechwood-spatulas"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/chefs-knife",
+    "family": "chefs-knife",
+    "category": "chefs-knife"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/serrated-knife",
+    "family": "serrated-knife",
+    "category": "serrated-knife"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/paring-knife",
+    "family": "paring-knife",
+    "category": "paring-knife"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/knife-trio-bundle",
+    "family": "knife-trio-bundle",
+    "category": "knife-trio-bundle"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/perfect-pot",
+    "family": "perfect-pot",
+    "category": "perfect-pot"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/cookware-duo",
+    "family": "cookware-duo",
+    "category": "cookware-duo"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/flipping-platter",
+    "family": "flipping-platter",
+    "category": "flipping-platter"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/fry-deck",
+    "family": "fry-deck",
+    "category": "fry-deck"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/beechwood-spoons",
+    "family": "beechwood-spoons",
+    "category": "beechwood-spoons"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/cast-iron-always-pan",
+    "family": "cast-iron-always-pan",
+    "category": "cast-iron-always-pan"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/bakeware-set",
+    "family": "bakeware-set",
+    "category": "bakeware-set"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/grill-press",
+    "family": "grill-press",
+    "category": "grill-press"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/hot-grips",
+    "family": "hot-grips",
+    "category": "hot-grips"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/tagine",
+    "family": "tagine",
+    "category": "tagine"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/mini-always-pan",
+    "family": "mini-always-pan",
+    "category": "mini-always-pan"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/mini-perfect-pot",
+    "family": "mini-perfect-pot",
+    "category": "mini-perfect-pot"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/fearless-fry",
+    "family": "fearless-fry",
+    "category": "fearless-fry"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/mini-spruce-steamers",
+    "family": "mini-spruce-steamers",
+    "category": "mini-spruce-steamers"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/mini-cookware-duo",
+    "family": "mini-cookware-duo",
+    "category": "mini-cookware-duo"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/always-pan-duo",
+    "family": "always-pan-duo",
+    "category": "always-pan-duo"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/serving-platters",
+    "family": "serving-platters",
+    "category": "serving-platters"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/serving-bowls",
+    "family": "serving-bowls",
+    "category": "serving-bowls"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/night-day-carafe",
+    "family": "night-day-carafe",
+    "category": "night-day-carafe"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/griddle-pan",
+    "family": "griddle-pan",
+    "category": "griddle-pan"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/dinner-plates",
+    "family": "dinner-plates",
+    "category": "dinner-plates"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/night-day-mugs",
+    "family": "night-day-mugs",
+    "category": "night-day-mugs"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/salad-plates",
+    "family": "salad-plates",
+    "category": "salad-plates"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/dessert-plates",
+    "family": "dessert-plates",
+    "category": "dessert-plates"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/tiny-plates",
+    "family": "tiny-plates",
+    "category": "tiny-plates"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/ceramic-tiny-bowls",
+    "family": "ceramic-tiny-bowls",
+    "category": "ceramic-tiny-bowls"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/soup-bowls",
+    "family": "soup-bowls",
+    "category": "soup-bowls"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/diwali-fry-set",
+    "family": "diwali-fry-set",
+    "category": "diwali-fry-set"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/daily-board",
+    "family": "daily-board",
+    "category": "daily-board"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/egg-poacher",
+    "family": "egg-poacher",
+    "category": "egg-poacher"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/shear-genius",
+    "family": "shear-genius",
+    "category": "shear-genius"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/rice-bowl-set",
+    "family": "rice-bowl-set",
+    "category": "rice-bowl-set"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/pleat-trivet",
+    "family": "pleat-trivet",
+    "category": "pleat-trivet"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/cookware-set",
+    "family": "cookware-set",
+    "category": "cookware-set"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/always-essential-cooking-pan",
+    "family": "always-essential-cooking-pan",
+    "category": "always-essential-cooking-pan"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/cookware-bakeware-set",
+    "family": "cookware-bakeware-set",
+    "category": "cookware-bakeware-set"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/hot-grill",
+    "family": "hot-grill",
+    "category": "hot-grill"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/utensil-essentials",
+    "family": "utensil-essentials",
+    "category": "utensil-essentials"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/wonder-oven",
+    "family": "wonder-oven",
+    "category": "wonder-oven"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/wonder-oven-essentials-kit",
+    "family": "wonder-oven-essentials-kit",
+    "category": "wonder-oven-essentials-kit"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/cooker-cups",
+    "family": "cooker-cups",
+    "category": "cooker-cups"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/large-always-pan",
+    "family": "large-always-pan",
+    "category": "large-always-pan"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/always-pan-trio",
+    "family": "always-pan-trio",
+    "category": "always-pan-trio"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/perfect-pot-roasting-rack",
+    "family": "perfect-pot-roasting-rack",
+    "category": "perfect-pot-roasting-rack"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/hosting-apron",
+    "family": "hosting-apron",
+    "category": "hosting-apron"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/party-coupes",
+    "family": "party-coupes",
+    "category": "party-coupes"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/loop-napkins",
+    "family": "loop-napkins",
+    "category": "loop-napkins"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/double-dish-towels",
+    "family": "double-dish-towels",
+    "category": "double-dish-towels"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/hot-mitts",
+    "family": "hot-mitts",
+    "category": "hot-mitts"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/home-cook-apron",
+    "family": "home-cook-apron",
+    "category": "home-cook-apron"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/kitchen-linens-set",
+    "family": "kitchen-linens-set",
+    "category": "kitchen-linens-set"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/dream-cooker",
+    "family": "dream-cooker",
+    "category": "dream-cooker"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/oven-mats",
+    "family": "oven-mats",
+    "category": "oven-mats"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/tall-night-day-glasses",
+    "family": "tall-night-day-glasses",
+    "category": "tall-night-day-glasses"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/serving-set",
+    "family": "serving-set",
+    "category": "serving-set"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/titanium-always-pan-pro",
+    "family": "titanium-always-pan-pro",
+    "category": "titanium-always-pan-pro"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/mini-griddle-pan",
+    "family": "mini-griddle-pan",
+    "category": "mini-griddle-pan"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/oven-rack",
+    "family": "oven-rack",
+    "category": "oven-rack"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/ultimate-bakeware-set",
+    "family": "ultimate-bakeware-set",
+    "category": "ultimate-bakeware-set"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/bakeware-trio",
+    "family": "bakeware-trio",
+    "category": "bakeware-trio"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/mini-oven-mats",
+    "family": "mini-oven-mats",
+    "category": "mini-oven-mats"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/dinner-at-our-place",
+    "family": "dinner-at-our-place",
+    "category": "dinner-at-our-place"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/metallic-knob-set",
+    "family": "metallic-knob-set",
+    "category": "metallic-knob-set"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/wonder-oven-baker-s-kit",
+    "family": "wonder-oven-baker-s-kit",
+    "category": "wonder-oven-baker-s-kit"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/perfect-pot-duo",
+    "family": "perfect-pot-duo",
+    "category": "perfect-pot-duo"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/large-wonder-oven",
+    "family": "large-wonder-oven",
+    "category": "large-wonder-oven"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/large-wonder-oven-essentials-kit",
+    "family": "large-wonder-oven-essentials-kit",
+    "category": "large-wonder-oven-essentials-kit"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/titanium-perfect-pot-pro",
+    "family": "titanium-perfect-pot-pro",
+    "category": "titanium-perfect-pot-pro"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/titanium-mini-always-pan-pro",
+    "family": "titanium-mini-always-pan-pro",
+    "category": "titanium-mini-always-pan-pro"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/titanium-large-always-pan-pro",
+    "family": "titanium-large-always-pan-pro",
+    "category": "titanium-large-always-pan-pro"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/titanium-mini-perfect-pot-pro",
+    "family": "titanium-mini-perfect-pot-pro",
+    "category": "titanium-mini-perfect-pot-pro"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/titanium-pro-always-pan-duo",
+    "family": "titanium-pro-always-pan-duo",
+    "category": "titanium-pro-always-pan-duo"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/titanium-pro-mini-cookware-duo",
+    "family": "titanium-pro-mini-cookware-duo",
+    "category": "titanium-pro-mini-cookware-duo"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/titanium-pro-cookware-duo",
+    "family": "titanium-pro-cookware-duo",
+    "category": "titanium-pro-cookware-duo"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/titanium-pro-cookware-set",
+    "family": "titanium-pro-cookware-set",
+    "category": "titanium-pro-cookware-set"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/titanium-pro-cookware-bakeware-set",
+    "family": "titanium-pro-cookware-bakeware-set",
+    "category": "titanium-pro-cookware-bakeware-set"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/home-chef-set-15pc",
+    "family": "home-chef-set-15pc",
+    "category": "home-chef-set-15pc"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/home-chef-set-25pc",
+    "family": "home-chef-set-25pc",
+    "category": "home-chef-set-25pc"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/hot-grips-crocs",
+    "family": "hot-grips-crocs",
+    "category": "hot-grips-crocs"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/wonder-oven-pro",
+    "family": "wonder-oven-pro",
+    "category": "wonder-oven-pro"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/wonder-oven-pro-essentials-kit",
+    "family": "wonder-oven-pro-essentials-kit",
+    "category": "wonder-oven-pro-essentials-kit"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/wonder-oven-pro-chefs-kit",
+    "family": "wonder-oven-pro-chefs-kit",
+    "category": "wonder-oven-pro-chefs-kit"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/essentials-griddle-pan-set",
+    "family": "essentials-griddle-pan-set",
+    "category": "essentials-griddle-pan-set"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/essentials-pan-trio-8pc",
+    "family": "essentials-pan-trio-8pc",
+    "category": "essentials-pan-trio-8pc"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/essentials-cookware-set-11-pc",
+    "family": "essentials-cookware-set-11-pc",
+    "category": "essentials-cookware-set-11-pc"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/essentials-complete-cookware-set-17-pc",
+    "family": "essentials-complete-cookware-set-17-pc",
+    "category": "essentials-complete-cookware-set-17-pc"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/essentials-cookware-bakeware-set-21-pc",
+    "family": "essentials-cookware-bakeware-set-21-pc",
+    "category": "essentials-cookware-bakeware-set-21-pc"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/hands-free-cold-press-batch-juicer",
+    "family": "hands-free-cold-press-batch-juicer",
+    "category": "hands-free-cold-press-batch-juicer"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/carbon-steel-wok",
+    "family": "carbon-steel-wok",
+    "category": "carbon-steel-wok"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/gift-card",
+    "family": "gift-card",
+    "category": "gift-card"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/cookware-set-plus",
+    "family": "cookware-set-plus",
+    "category": "cookware-set-plus"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/splendor-blender",
+    "family": "splendor-blender",
+    "category": "splendor-blender"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/beechwood-serving-spoons",
+    "family": "beechwood-serving-spoons",
+    "category": "beechwood-serving-spoons"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/essentials-saucepan-set",
+    "family": "essentials-saucepan-set",
+    "category": "essentials-saucepan-set"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/rice-cooker",
+    "family": "rice-cooker",
+    "category": "rice-cooker"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/tiny-cookware-duo",
+    "family": "tiny-cookware-duo",
+    "category": "tiny-cookware-duo"
+  },
+  {
+    "brand": "ourplace",
+    "brandName": "Our Place",
+    "url": "https://fromourplace.com/products/petite-perfect-pot",
+    "family": "petite-perfect-pot",
+    "category": "petite-perfect-pot"
+  }
+]
