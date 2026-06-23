@@ -1845,6 +1845,11 @@ export async function runCreativeAuditForPdp({ pdpUrl, brandName, images, apiKey
   const anthropic = new Anthropic({
     baseURL: process.env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com',
     ...(useBearer ? { authToken: apiKey, apiKey: null } : { apiKey }),
+    // Bump explicit retry count above the SDK default of 2. The audit goes through the
+    // SharkNinja AI Hub gateway → Anthropic, and occasional 500s ("Internal server
+    // error", request_id req_011...) from Anthropic's backend recover within seconds.
+    // 4 retries with exponential backoff buys ~30s of resilience.
+    maxRetries: 4,
   });
 
   const message = await anthropic.messages.create({
