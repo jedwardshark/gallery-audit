@@ -23,6 +23,15 @@
     --brand-breville: #2a9d8f;
     --brand-ws: #6a5acd;
     --brand-dyson: #c0272d;
+    --brand-dreame: #4a90e2;
+    --brand-miele: #b51c25;
+    --brand-ooni: #e95821;
+    --brand-ourplace: #d96e54;
+    --brand-fellow: #b87333;
+    --brand-sonos: #3b6987;
+    --brand-nothing: #a0a0a8;
+    --brand-bangolufsen: #c5a572;
+    --brand-rimowa: #9a9a9a;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; min-height: 100vh; }
@@ -56,6 +65,15 @@
   .brand-card[data-brand="breville"]::before { background: var(--brand-breville); }
   .brand-card[data-brand="williamssonoma"]::before { background: var(--brand-ws); }
   .brand-card[data-brand="dyson"]::before { background: var(--brand-dyson); }
+  .brand-card[data-brand="dreame"]::before { background: var(--brand-dreame); }
+  .brand-card[data-brand="miele"]::before { background: var(--brand-miele); }
+  .brand-card[data-brand="ooni"]::before { background: var(--brand-ooni); }
+  .brand-card[data-brand="ourplace"]::before { background: var(--brand-ourplace); }
+  .brand-card[data-brand="fellow"]::before { background: var(--brand-fellow); }
+  .brand-card[data-brand="sonos"]::before { background: var(--brand-sonos); }
+  .brand-card[data-brand="nothing"]::before { background: var(--brand-nothing); }
+  .brand-card[data-brand="bangolufsen"]::before { background: var(--brand-bangolufsen); }
+  .brand-card[data-brand="rimowa"]::before { background: var(--brand-rimowa); }
   .brand-name { font-size: 14px; font-weight: 600; margin-bottom: 14px; }
   .brand-stat { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--border); }
   .brand-stat:last-child { border-bottom: none; }
@@ -90,6 +108,15 @@
   .filter-btn[data-brand="breville"].active { background: var(--brand-breville); border-color: var(--brand-breville); }
   .filter-btn[data-brand="williamssonoma"].active { background: var(--brand-ws); border-color: var(--brand-ws); }
   .filter-btn[data-brand="dyson"].active { background: var(--brand-dyson); border-color: var(--brand-dyson); }
+  .filter-btn[data-brand="dreame"].active { background: var(--brand-dreame); border-color: var(--brand-dreame); }
+  .filter-btn[data-brand="miele"].active { background: var(--brand-miele); border-color: var(--brand-miele); }
+  .filter-btn[data-brand="ooni"].active { background: var(--brand-ooni); border-color: var(--brand-ooni); }
+  .filter-btn[data-brand="ourplace"].active { background: var(--brand-ourplace); border-color: var(--brand-ourplace); }
+  .filter-btn[data-brand="fellow"].active { background: var(--brand-fellow); border-color: var(--brand-fellow); }
+  .filter-btn[data-brand="sonos"].active { background: var(--brand-sonos); border-color: var(--brand-sonos); }
+  .filter-btn[data-brand="nothing"].active { background: var(--brand-nothing); border-color: var(--brand-nothing); color: #1a1a1a; }
+  .filter-btn[data-brand="bangolufsen"].active { background: var(--brand-bangolufsen); border-color: var(--brand-bangolufsen); color: #1a1a1a; }
+  .filter-btn[data-brand="rimowa"].active { background: var(--brand-rimowa); border-color: var(--brand-rimowa); color: #1a1a1a; }
   .search-box { flex: 1; max-width: 280px; padding: 6px 12px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface2); color: var(--text); font-size: 12px; outline: none; }
   .search-box::placeholder { color: var(--muted); }
   .search-box:focus { border-color: var(--sn-orange); }
@@ -678,6 +705,15 @@ const BRAND_COLORS = {
   breville:       '#2a9d8f',
   williamssonoma: '#6a5acd',
   dyson:          '#c0272d',
+  dreame:         '#4a90e2',
+  miele:          '#b51c25',
+  ooni:           '#e95821',
+  ourplace:       '#d96e54',
+  fellow:         '#b87333',
+  sonos:          '#3b6987',
+  nothing:        '#a0a0a8',
+  bangolufsen:    '#c5a572',
+  rimowa:         '#9a9a9a',
 };
 const BRAND_NAMES = {
   sharkninja:     'SharkNinja',
@@ -685,6 +721,15 @@ const BRAND_NAMES = {
   breville:       'Breville',
   williamssonoma: 'Williams-Sonoma',
   dyson:          'Dyson',
+  dreame:         'Dreame',
+  miele:          'Miele',
+  ooni:           'Ooni',
+  ourplace:       'Our Place',
+  fellow:         'Fellow',
+  sonos:          'Sonos',
+  nothing:        'Nothing',
+  bangolufsen:    'Bang & Olufsen',
+  rimowa:         'Rimowa',
 };
 
 let allData = [];

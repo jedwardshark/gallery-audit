@@ -1243,6 +1243,126 @@ export async function extractShopifyJsonApi(url, brandKey, brandName) {
   }
 }
 
+// Generic extractor for brands whose PDP galleries are lazy-loaded behind an
+// IntersectionObserver — scrolling each candidate img into view forces it to populate
+// its src before we read the DOM. Combined with multi-host filtering (Nothing splits
+// across Sanity + Shopify CDNs) and substring path filtering (Rimowa needs
+// "Sites-rimowa-master-catalog-final" to separate product imagery from chrome).
+//
+// Config flags (set in config.js BRANDS[brandKey]):
+//   useLazyLoadGalleryExtractor: true   — routes here from extractOnePdp
+//   imageHosts: string[]                — allowed hostnames (preferred over imageHost)
+//   imageHost: string                   — single allowed hostname (used if imageHosts absent)
+//   imagePathContains: string           — substring that must appear anywhere in src
+//   gallerySelectors: string[]          — DOM scope; falls back to all <img> if absent
+//   lazyLoadWaitMs: number              — delay per scrollIntoView step (default 200)
+//   initialPageWaitMs: number           — post-goto wait before scroll (default 2500)
+//
+// Currently in use for: Nothing, Bang & Olufsen, Rimowa.
+export async function extractGenericLazyLoadGallery(url, brandKey, brandName, browser) {
+  const cfg = SITEMAP_BRAND_CONFIG[brandKey] || {};
+  const imageHosts = Array.isArray(cfg.imageHosts) ? cfg.imageHosts : (cfg.imageHost ? [cfg.imageHost] : []);
+  const pathContains = cfg.imagePathContains || null;
+  const gallerySelectors = cfg.gallerySelectors || [];
+  const lazyLoadWait = cfg.lazyLoadWaitMs || 200;
+  const initialWait = cfg.initialPageWaitMs || 2500;
+
+  const pathParts = new URL(url).pathname.split('/').filter(Boolean);
+  const handle = (pathParts[pathParts.length - 1] || 'unknown').replace('.html', '');
+  const base = {
+    brand: brandKey,
+    brandName,
+    url,
+    sku: handle,
+    family: pathParts[1] || pathParts[0] || 'unknown',
+    category: pathParts[2] || pathParts[1] || 'unknown',
+  };
+
+  let page = null;
+  try {
+    page = await browser.newPage();
+    await setupPage(page);
+    try {
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
+    } catch { /* continue — partial loads still extract */ }
+    await page.waitForTimeout(initialWait);
+
+    // Akamai/Cloudflare bot-block detection. When the title says "Access Denied" we
+    // record the error and return early instead of timing out on element queries.
+    const title = await page.title();
+    if (/Access Denied/i.test(title)) {
+      return { ...base, galleryImageCount: 0, images: [], error: 'bot-block-detected', extractorPath: 'lazy-load-blocked', extractedAt: new Date().toISOString() };
+    }
+
+    // Trigger lazy load: scroll each candidate element into the viewport so the
+    // IntersectionObserver fires and populates src.
+    if (gallerySelectors.length) {
+      await page.evaluate(async ({ sels, wait }) => {
+        const found = new Set();
+        for (const sel of sels) {
+          try { document.querySelectorAll(sel).forEach(el => found.add(el)); } catch {}
+        }
+        for (const el of found) {
+          el.scrollIntoView({ block: 'center' });
+          await new Promise(r => setTimeout(r, wait));
+        }
+      }, { sels: gallerySelectors, wait: lazyLoadWait });
+      await page.waitForTimeout(1500);
+    }
+
+    // Extract images: scoped to gallerySelectors when provided, then filtered by
+    // imageHosts (any-match) and imagePathContains (substring), then deduped by clean src.
+    const images = await page.evaluate(({ sels, hosts, pathSub }) => {
+      const found = new Set();
+      if (sels && sels.length) {
+        for (const sel of sels) {
+          try {
+            document.querySelectorAll(sel).forEach(el => {
+              if (el.tagName === 'IMG') found.add(el);
+              else el.querySelectorAll('img').forEach(img => found.add(img));
+            });
+          } catch {}
+        }
+      } else {
+        document.querySelectorAll('img').forEach(el => found.add(el));
+      }
+      const out = [];
+      let i = 0;
+      for (const el of found) {
+        const src = el.currentSrc || el.src || el.getAttribute('data-src') || '';
+        if (!src || src.startsWith('data:')) continue;
+        if (hosts.length) {
+          try { if (!hosts.includes(new URL(src).hostname)) continue; } catch { continue; }
+        }
+        if (pathSub && !src.includes(pathSub)) continue;
+        out.push({ src, alt: el.alt || '', width: el.naturalWidth || 0, height: el.naturalHeight || 0, sequencePosition: ++i });
+      }
+      const seen = new Set();
+      const dedupd = [];
+      for (const im of out) {
+        const k = im.src.split('?')[0];
+        if (seen.has(k)) continue;
+        seen.add(k);
+        dedupd.push(im);
+      }
+      return dedupd;
+    }, { sels: gallerySelectors, hosts: imageHosts, pathSub: pathContains });
+
+    return {
+      ...base,
+      productTitle: null,
+      galleryImageCount: images.length,
+      images,
+      extractorPath: 'lazy-load-gallery',
+      extractedAt: new Date().toISOString(),
+    };
+  } catch (e) {
+    return { ...base, galleryImageCount: 0, images: [], error: e.message, extractorPath: 'lazy-load-error', extractedAt: new Date().toISOString() };
+  } finally {
+    if (page) await page.close().catch(() => {});
+  }
+}
+
 // ── Extract one PDP: standard browser first, stealth retry on error ─────────
 async function extractOnePdp(url, brandKey, brandName, imageHost, stdBrowser, stealthBrowser, preferStealth) {
   // SharkNinja: hybrid static+browser extractor scrapes section-block imagery from
@@ -1253,6 +1373,10 @@ async function extractOnePdp(url, brandKey, brandName, imageHost, stdBrowser, st
   // Shopify-backed brands route through the generic JSON-API extractor. No browser needed.
   if (SITEMAP_BRAND_CONFIG[brandKey]?.useShopifyJsonApi) {
     return extractShopifyJsonApi(url, brandKey, brandName);
+  }
+  // Lazy-load gallery brands (Nothing, B&O, Rimowa) — scrollIntoView + multi-host + path-filter.
+  if (SITEMAP_BRAND_CONFIG[brandKey]?.useLazyLoadGalleryExtractor) {
+    return extractGenericLazyLoadGallery(url, brandKey, brandName, preferStealth ? stealthBrowser : stdBrowser);
   }
 
   const pathParts = new URL(url).pathname.split('/').filter(Boolean);

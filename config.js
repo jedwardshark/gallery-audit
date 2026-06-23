@@ -183,17 +183,23 @@ export const BRANDS = {
     pdpPattern: /\/us\/en\/(luggage|re-crafted|accessories|leather-goods)\/[^?]+\.html$/i,
     familySegment: 2,
     categorySegment: 3,
-    // Rimowa is behind Akamai (homepage returns 403 to bare-fetch). Stealth Playwright
-    // bypasses; networkidle never quiesces so use domcontentloaded + post-wait.
+    // Rimowa is behind Akamai — bare-fetch returns 403, and bursts of stealth requests
+    // also get blocked. Routes through extractGenericLazyLoadGallery which checks for
+    // "Access Denied" page titles and surfaces them as errors instead of timing out.
+    // Rolling refresh should be paced (existing reExtractBrand is sequential, fine).
     useStealthBrowser: true,
+    useLazyLoadGalleryExtractor: true,
     // All product imagery served from www.rimowa.com via Salesforce Commerce Cloud
-    // (Demandware) static catalog. The catalog path differentiates real product
+    // (Demandware) static catalog. imagePathContains differentiates real product
     // imagery from shared-library chrome (mega menu, empty-cart pictograms, etc.).
     imageHost: 'www.rimowa.com',
-    imageUrlMustContain: 'Sites-rimowa-master-catalog-final',
-    gallerySelectors: ['[class*="product-image"] img'],
-    // Seeded via inline extraction (Miele-style stealth + per-page wait pattern).
-    seedOnly: true,
+    imagePathContains: 'Sites-rimowa-master-catalog-final',
+    gallerySelectors: [
+      '[class*="product-image"] img',
+      '[class*="primary-images"] img',
+      '[class*="image-container"] img',
+      '[class*="carousel"] img',
+    ],
   },
 
   bangolufsen: {
@@ -205,15 +211,15 @@ export const BRANDS = {
     pdpPattern: /\/en\/us\/(speakers|earphones|headphones|accessories|soundbars)\/[a-z0-9-]+$/i,
     familySegment: 2,
     categorySegment: 2,
-    // B&O serves all imagery from Contentful (images.ctfassets.net). Gallery is
-    // lazy-loaded — Playwright + scroll required to populate the carousel beyond hero.
+    // B&O serves all imagery from Contentful (images.ctfassets.net). Gallery imgs are
+    // IntersectionObserver placeholders — extractGenericLazyLoadGallery's scrollIntoView
+    // step forces them to populate src before extraction reads the DOM.
+    useLazyLoadGalleryExtractor: true,
     imageHost: 'images.ctfassets.net',
     gallerySelectors: [
       '[class*="productDetail"] img',
       '[class*="carouselProductDetail"] img',
     ],
-    // Seeded via inline extraction (same flow as Nothing).
-    seedOnly: true,
   },
 
   nothing: {
@@ -226,10 +232,8 @@ export const BRANDS = {
     // managed via Sanity CMS) and cdn.shopify.com (older inventory). Multi-host filter
     // captures both; older single-image PDPs naturally fall out of audit eligibility
     // via the 5-image guardrail.
+    useLazyLoadGalleryExtractor: true,
     imageHosts: ['cdn.sanity.io', 'cdn.shopify.com'],
-    // Seeded via inline extraction (see Batch 2 seed flow); rolling-refresh integration
-    // is deferred — central extractor branch can be added later when the catalog stabilizes.
-    seedOnly: true,
   },
 
   sonos: {
